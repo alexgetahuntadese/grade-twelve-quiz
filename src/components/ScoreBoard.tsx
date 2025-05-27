@@ -2,17 +2,19 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Trophy, RotateCcw, Home, Star } from 'lucide-react';
+import { Trophy, RotateCcw, Home, Star, BookOpen } from 'lucide-react';
 
 interface ScoreBoardProps {
   score: number;
   total: number;
   subject: string;
+  chapterName?: string;
   onReturnHome: () => void;
   onRetakeQuiz: () => void;
+  onBackToChapters: () => void;
 }
 
-const ScoreBoard = ({ score, total, subject, onReturnHome, onRetakeQuiz }: ScoreBoardProps) => {
+const ScoreBoard = ({ score, total, subject, chapterName, onReturnHome, onRetakeQuiz, onBackToChapters }: ScoreBoardProps) => {
   const percentage = Math.round((score / total) * 100);
   
   const getGrade = (percentage: number) => {
@@ -27,7 +29,7 @@ const ScoreBoard = ({ score, total, subject, onReturnHome, onRetakeQuiz }: Score
   const { grade, color, emoji } = getGrade(percentage);
 
   const getMessage = (percentage: number) => {
-    if (percentage >= 90) return "Outstanding performance! You're ready for the exam! 🎉";
+    if (percentage >= 90) return "Outstanding performance! You've mastered this chapter! 🎉";
     if (percentage >= 80) return "Excellent work! Keep up the great study habits! 👏";
     if (percentage >= 70) return "Good job! A little more practice and you'll excel! 💪";
     if (percentage >= 60) return "Not bad! Focus on reviewing the missed topics. 📚";
@@ -41,10 +43,18 @@ const ScoreBoard = ({ score, total, subject, onReturnHome, onRetakeQuiz }: Score
         <Card className="text-center shadow-2xl">
           <CardHeader className="space-y-4">
             <div className="text-6xl mx-auto">{emoji}</div>
-            <CardTitle className="text-3xl font-bold">Quiz Complete!</CardTitle>
-            <Badge variant="outline" className="mx-auto text-lg px-4 py-2">
-              {subject.charAt(0).toUpperCase() + subject.slice(1)}
-            </Badge>
+            <CardTitle className="text-3xl font-bold">Chapter Complete!</CardTitle>
+            <div className="space-y-2">
+              <Badge variant="outline" className="mx-auto text-lg px-4 py-2">
+                {subject.charAt(0).toUpperCase() + subject.slice(1)}
+              </Badge>
+              {chapterName && (
+                <div className="flex items-center justify-center space-x-2">
+                  <BookOpen className="w-4 h-4 text-blue-500" />
+                  <span className="text-blue-600 font-medium">{chapterName}</span>
+                </div>
+              )}
+            </div>
           </CardHeader>
           
           <CardContent className="space-y-8">
@@ -110,7 +120,16 @@ const ScoreBoard = ({ score, total, subject, onReturnHome, onRetakeQuiz }: Score
                 className="flex items-center space-x-2"
               >
                 <RotateCcw className="w-4 h-4" />
-                <span>Retake Quiz</span>
+                <span>Retake Chapter</span>
+              </Button>
+              
+              <Button 
+                onClick={onBackToChapters}
+                variant="outline"
+                className="flex items-center space-x-2"
+              >
+                <BookOpen className="w-4 h-4" />
+                <span>Other Chapters</span>
               </Button>
               
               <Button 
@@ -118,14 +137,14 @@ const ScoreBoard = ({ score, total, subject, onReturnHome, onRetakeQuiz }: Score
                 className="flex items-center space-x-2"
               >
                 <Home className="w-4 h-4" />
-                <span>Back to Subjects</span>
+                <span>All Subjects</span>
               </Button>
             </div>
 
             {/* Encouragement */}
             <div className="text-center pt-4 border-t border-gray-200">
               <p className="text-sm text-gray-600">
-                Keep practicing to improve your Grade 12 performance! 🌟
+                Complete all chapters to master the subject! 🌟
               </p>
             </div>
           </CardContent>

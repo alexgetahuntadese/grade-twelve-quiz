@@ -6,23 +6,27 @@ import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
 import { BookOpen, Trophy, User, Clock } from 'lucide-react';
 import SubjectCard from '@/components/SubjectCard';
+import ChapterList from '@/components/ChapterList';
 import QuizInterface from '@/components/QuizInterface';
 import ScoreBoard from '@/components/ScoreBoard';
+import { getTotalQuestionsBySubject } from '@/data/questions';
 
 const Index = () => {
-  const [currentView, setCurrentView] = useState('home'); // home, quiz, results
+  const [currentView, setCurrentView] = useState('home'); // home, chapters, quiz, results
   const [selectedSubject, setSelectedSubject] = useState('');
+  const [selectedChapter, setSelectedChapter] = useState('');
   const [userScore, setUserScore] = useState(0);
   const [totalQuestions, setTotalQuestions] = useState(0);
+  const [chapterName, setChapterName] = useState('');
 
   const subjects = [
     {
       id: 'mathematics',
       name: 'Mathematics',
-      description: 'Algebra, Calculus, Geometry & Statistics',
+      description: 'Functions, Calculus & Analytic Geometry',
       icon: '📐',
       color: 'bg-blue-500',
-      questions: 15
+      questions: getTotalQuestionsBySubject('mathematics')
     },
     {
       id: 'physics',
@@ -30,31 +34,31 @@ const Index = () => {
       description: 'Mechanics, Electricity & Modern Physics',
       icon: '⚡',
       color: 'bg-purple-500',
-      questions: 12
+      questions: getTotalQuestionsBySubject('physics')
     },
     {
       id: 'chemistry',
       name: 'Chemistry',
-      description: 'Organic, Inorganic & Physical Chemistry',
+      description: 'Atomic Structure, Bonding & Reactions',
       icon: '🧪',
       color: 'bg-green-500',
-      questions: 14
+      questions: getTotalQuestionsBySubject('chemistry')
     },
     {
       id: 'biology',
       name: 'Biology',
-      description: 'Cell Biology, Genetics & Ecology',
+      description: 'Cell Biology, Genetics & Physiology',
       icon: '🧬',
       color: 'bg-emerald-500',
-      questions: 13
+      questions: getTotalQuestionsBySubject('biology')
     },
     {
       id: 'english',
       name: 'English',
-      description: 'Grammar, Literature & Comprehension',
+      description: 'Grammar, Literature & Vocabulary',
       icon: '📚',
       color: 'bg-red-500',
-      questions: 10
+      questions: getTotalQuestionsBySubject('english')
     },
     {
       id: 'history',
@@ -62,46 +66,78 @@ const Index = () => {
       description: 'Ancient, Medieval & Modern Ethiopia',
       icon: '🏛️',
       color: 'bg-yellow-500',
-      questions: 11
+      questions: getTotalQuestionsBySubject('history')
     }
   ];
 
   const handleSubjectSelect = (subjectId: string) => {
     setSelectedSubject(subjectId);
+    setCurrentView('chapters');
+  };
+
+  const handleChapterSelect = (chapterId: string) => {
+    setSelectedChapter(chapterId);
     setCurrentView('quiz');
   };
 
-  const handleQuizComplete = (score: number, total: number) => {
+  const handleQuizComplete = (score: number, total: number, chapterName: string) => {
     setUserScore(score);
     setTotalQuestions(total);
+    setChapterName(chapterName);
     setCurrentView('results');
   };
 
   const handleReturnHome = () => {
     setCurrentView('home');
     setSelectedSubject('');
+    setSelectedChapter('');
     setUserScore(0);
     setTotalQuestions(0);
+    setChapterName('');
+  };
+
+  const handleBackToChapters = () => {
+    setCurrentView('chapters');
+    setSelectedChapter('');
+    setUserScore(0);
+    setTotalQuestions(0);
+    setChapterName('');
   };
 
   if (currentView === 'quiz') {
     return (
       <QuizInterface 
         subject={selectedSubject}
+        chapterId={selectedChapter}
         onComplete={handleQuizComplete}
-        onBack={handleReturnHome}
+        onBack={handleBackToChapters}
       />
     );
   }
 
   if (currentView === 'results') {
+    const currentSubject = subjects.find(s => s.id === selectedSubject);
     return (
       <ScoreBoard 
         score={userScore}
         total={totalQuestions}
         subject={selectedSubject}
+        chapterName={chapterName}
         onReturnHome={handleReturnHome}
         onRetakeQuiz={() => setCurrentView('quiz')}
+        onBackToChapters={handleBackToChapters}
+      />
+    );
+  }
+
+  if (currentView === 'chapters') {
+    const currentSubject = subjects.find(s => s.id === selectedSubject);
+    return (
+      <ChapterList 
+        subject={selectedSubject}
+        subjectName={currentSubject?.name || ''}
+        onBack={handleReturnHome}
+        onChapterSelect={handleChapterSelect}
       />
     );
   }
@@ -116,7 +152,7 @@ const Index = () => {
               <div className="text-3xl">🇪🇹</div>
               <div>
                 <h1 className="text-2xl font-bold text-gray-800">EthioQuiz</h1>
-                <p className="text-sm text-gray-600">Grade 12 Preparation Platform</p>
+                <p className="text-sm text-gray-600">Grade 12 Chapter-by-Chapter Preparation</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
@@ -133,11 +169,11 @@ const Index = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
-            Master Your Grade 12 Subjects
+            Master Every Chapter, One Quiz at a Time
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Prepare for your Ethiopian Grade 12 examinations with our comprehensive quiz platform. 
-            Test your knowledge across all major subjects and track your progress.
+            Study systematically with our chapter-based quiz system. Each subject is organized into focused chapters 
+            to help you master one topic at a time for your Ethiopian Grade 12 examinations.
           </p>
         </div>
 
@@ -154,16 +190,16 @@ const Index = () => {
           <Card className="text-center hover:shadow-lg transition-shadow">
             <CardContent className="p-6">
               <Trophy className="w-12 h-12 text-yellow-500 mx-auto mb-3" />
-              <h3 className="text-2xl font-bold text-gray-800">75+</h3>
-              <p className="text-gray-600">Practice Questions</p>
+              <h3 className="text-2xl font-bold text-gray-800">20+</h3>
+              <p className="text-gray-600">Chapters to Master</p>
             </CardContent>
           </Card>
           
           <Card className="text-center hover:shadow-lg transition-shadow">
             <CardContent className="p-6">
               <Clock className="w-12 h-12 text-green-500 mx-auto mb-3" />
-              <h3 className="text-2xl font-bold text-gray-800">Real-time</h3>
-              <p className="text-gray-600">Progress Tracking</p>
+              <h3 className="text-2xl font-bold text-gray-800">Focused</h3>
+              <p className="text-gray-600">Chapter-based Learning</p>
             </CardContent>
           </Card>
         </div>
@@ -187,7 +223,7 @@ const Index = () => {
         {/* Footer */}
         <div className="text-center mt-16 py-8 border-t border-gray-200">
           <p className="text-gray-600">
-            Good luck with your Grade 12 preparation! 🌟
+            Study chapter by chapter for better understanding and retention! 📚
           </p>
         </div>
       </div>

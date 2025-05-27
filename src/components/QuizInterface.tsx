@@ -4,28 +4,34 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
-import { ArrowLeft, Clock, CheckCircle, XCircle } from 'lucide-react';
-import { getQuestionsBySubject } from '@/data/questions';
+import { ArrowLeft, Clock, CheckCircle, XCircle, BookOpen } from 'lucide-react';
+import { getQuestionsByChapter, getChaptersBySubject } from '@/data/questions';
 
 interface QuizInterfaceProps {
   subject: string;
-  onComplete: (score: number, total: number) => void;
+  chapterId: string;
+  onComplete: (score: number, total: number, chapterName: string) => void;
   onBack: () => void;
 }
 
-const QuizInterface = ({ subject, onComplete, onBack }: QuizInterfaceProps) => {
+const QuizInterface = ({ subject, chapterId, onComplete, onBack }: QuizInterfaceProps) => {
   const [questions, setQuestions] = useState<any[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string>('');
   const [answers, setAnswers] = useState<{ [key: number]: string }>({});
   const [showFeedback, setShowFeedback] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(90); // 1.5 minutes per question average
+  const [timeLeft, setTimeLeft] = useState(90);
+  const [chapterName, setChapterName] = useState('');
 
   useEffect(() => {
-    const subjectQuestions = getQuestionsBySubject(subject);
-    setQuestions(subjectQuestions);
-    setTimeLeft(subjectQuestions.length * 90); // 1.5 minutes per question
-  }, [subject]);
+    const chapterQuestions = getQuestionsByChapter(subject, chapterId);
+    const chapters = getChaptersBySubject(subject);
+    const chapter = chapters.find(ch => ch.id === chapterId);
+    
+    setQuestions(chapterQuestions);
+    setChapterName(chapter?.name || '');
+    setTimeLeft(chapterQuestions.length * 90);
+  }, [subject, chapterId]);
 
   useEffect(() => {
     if (timeLeft > 0) {
@@ -68,7 +74,7 @@ const QuizInterface = ({ subject, onComplete, onBack }: QuizInterfaceProps) => {
         score++;
       }
     });
-    onComplete(score, questions.length);
+    onComplete(score, questions.length, chapterName);
   };
 
   const formatTime = (seconds: number) => {
@@ -99,6 +105,10 @@ const QuizInterface = ({ subject, onComplete, onBack }: QuizInterfaceProps) => {
           </Button>
           
           <div className="flex items-center space-x-4">
+            <Badge variant="secondary" className="flex items-center space-x-1">
+              <BookOpen className="w-4 h-4" />
+              <span>{chapterName}</span>
+            </Badge>
             <Badge variant="secondary" className="flex items-center space-x-1">
               <Clock className="w-4 h-4" />
               <span>{formatTime(timeLeft)}</span>
