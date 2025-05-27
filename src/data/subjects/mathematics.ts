@@ -2,68 +2,96 @@
 import { Chapter } from '../types';
 
 export const mathematicsChapters: Chapter[] = [
-  {
-    id: 'functions',
-    name: 'Functions',
-    description: 'Understanding mathematical functions and their properties',
-    questions: [
-      // Easy Questions
-      {
-        id: 'func_1',
-        question: 'What is the domain of f(x) = 1/x?',
-        options: ['All real numbers', 'All real numbers except 0', 'Only positive numbers', 'Only negative numbers'],
-        correct: 'All real numbers except 0',
-        explanation: 'Division by zero is undefined, so x cannot equal 0.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'func_2',
-        question: 'If f(x) = 2x + 3, what is f(4)?',
-        options: ['11', '9', '8', '7'],
-        correct: '11',
-        explanation: 'f(4) = 2(4) + 3 = 8 + 3 = 11',
-        difficulty: 'easy'
-      },
-      {
-        id: 'func_3',
-        question: 'What is the range of f(x) = x²?',
-        options: ['All real numbers', 'All positive numbers', 'All non-negative real numbers', 'All negative numbers'],
-        correct: 'All non-negative real numbers',
-        explanation: 'x² is always ≥ 0 for any real number x.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'func_4',
-        question: 'Which of the following represents a linear function?',
-        options: ['f(x) = x²', 'f(x) = 2x + 5', 'f(x) = 1/x', 'f(x) = x³'],
-        correct: 'f(x) = 2x + 5',
-        explanation: 'A linear function has the form f(x) = mx + b where m and b are constants.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'func_5',
-        question: 'What is the y-intercept of f(x) = 3x - 7?',
-        options: ['3', '-7', '7', '0'],
-        correct: '-7',
-        explanation: 'The y-intercept occurs when x = 0, so f(0) = 3(0) - 7 = -7.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'func_6',
-        question: 'If f(x) = x + 2 and g(x) = 3x, what is (f + g)(x)?',
-        options: ['4x + 2', '3x + 2', 'x + 5', '4x'],
-        correct: '4x + 2',
-        explanation: '(f + g)(x) = f(x) + g(x) = (x + 2) + 3x = 4x + 2',
-        difficulty: 'easy'
-      },
-      {
-        id: 'func_7',
-        question: 'What is the slope of the function f(x) = -2x + 1?',
-        options: ['1', '-2', '2', '-1'],
-        correct: '-2',
-        explanation: 'In the form f(x) = mx + b, the slope is m = -2.',
-        difficulty: 'easy'
-      },
+{
+  id: 'functions',
+  name: 'Functions',
+  description: 'Understanding mathematical functions and their properties',
+  questions: [
+    {
+      id: 'func_1',
+      question: 'What is the domain of f(x) = 1/x?',
+      options: ['All real numbers', 'All real numbers except 0', 'Only positive numbers', 'Only negative numbers'],
+      correct: 'All real numbers except 0',
+      explanation: 'Division by zero is undefined, so x cannot equal 0.',
+      difficulty: 'easy'
+    },
+    {
+      id: 'func_2',
+      question: 'What is f(3) if f(x) = x² + 2?',
+      options: ['5', '9', '11', '7'],
+      correct: '11',
+      explanation: 'Substitute x = 3: f(3) = 3² + 2 = 9 + 2 = 11.',
+      difficulty: 'easy'
+    },
+    {
+      id: 'func_3',
+      question: 'Which of the following is not a function?',
+      options: ['y = x²', 'y = √x', 'x = y²', 'y = 2x + 3'],
+      correct: 'x = y²',
+      explanation: 'x = y² fails the vertical line test, so it is not a function.',
+      difficulty: 'easy'
+    },
+    {
+      id: 'func_4',
+      question: 'What is the range of f(x) = x²?',
+      options: ['All real numbers', 'x ≥ 0', 'x > 0', 'x ≤ 0'],
+      correct: 'x ≥ 0',
+      explanation: 'The square of any real number is non-negative.',
+      difficulty: 'easy'
+    },
+    {
+      id: 'func_5',
+      question: 'Which of the following is the inverse of f(x) = 2x + 1?',
+      options: ['f⁻¹(x) = (x - 1)/2', 'f⁻¹(x) = 2x - 1', 'f⁻¹(x) = x + 1', 'f⁻¹(x) = (x + 1)/2'],
+      correct: 'f⁻¹(x) = (x - 1)/2',
+      explanation: 'To find the inverse, solve y = 2x + 1 for x.',
+      difficulty: 'easy'
+    },
+    {
+      id: 'func_6',
+      question: 'If f(x) = x - 3 and g(x) = x², what is (f ∘ g)(2)?',
+      options: ['1', '4', '2', '0'],
+      correct: '-1',
+      explanation: 'g(2) = 4; then f(4) = 4 - 3 = 1.',
+      difficulty: 'easy'
+    },
+    {
+      id: 'func_7',
+      question: 'Which function is linear?',
+      options: ['f(x) = 2x', 'f(x) = x²', 'f(x) = 1/x', 'f(x) = √x'],
+      correct: 'f(x) = 2x',
+      explanation: 'A linear function has the form f(x) = mx + b.',
+      difficulty: 'easy'
+    },
+    {
+      id: 'func_8',
+      question: 'What is the value of f(0) if f(x) = 5x + 7?',
+      options: ['7', '5', '0', '-7'],
+      correct: '7',
+      explanation: 'f(0) = 5×0 + 7 = 7.',
+      difficulty: 'easy'
+    },
+    {
+      id: 'func_9',
+      question: 'What type of function is f(x) = |x|?',
+      options: ['Linear', 'Quadratic', 'Absolute value', 'Exponential'],
+      correct: 'Absolute value',
+      explanation: 'The function has a "V" shape and represents absolute value.',
+      difficulty: 'easy'
+    },
+    {
+      id: 'func_10',
+      question: 'What is the image of x = 2 under f(x) = 3x - 1?',
+      options: ['5', '6', '7', '4'],
+      correct: '5',
+      explanation: 'f(2) = 3×2 - 1 = 6 - 1 = 5.',
+      difficulty: 'easy'
+    }
+  ]
+},
+
+
+
 
       // Medium Questions
       {
