@@ -86,8 +86,6 @@ export const mathematicsChapters: Chapter[] = [
       correct: '5',
       explanation: 'f(2) = 3×2 - 1 = 6 - 1 = 5.',
       difficulty: 'easy'
-    }
-  ]
 },
 
 
