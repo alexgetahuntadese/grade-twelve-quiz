@@ -47,13 +47,13 @@ const QuizInterface = ({ subject, chapterId, difficulty, onComplete, onBack }: Q
   }, [subject, chapterId, difficulty]);
 
   useEffect(() => {
-    if (timeLeft > 0 && !showFeedback) {
+    if (timeLeft > 0) {
       const timer = setTimeout(() => setTimeLeft(timeLeft - 1), 1000);
       return () => clearTimeout(timer);
-    } else if (timeLeft === 0) {
+    } else {
       handleFinishQuiz();
     }
-  }, [timeLeft, showFeedback]);
+  }, [timeLeft]);
 
   const currentQuestion = questions[currentQuestionIndex];
   const progress = ((currentQuestionIndex + 1) / questions.length) * 100;

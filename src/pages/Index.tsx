@@ -7,10 +7,9 @@ import { Badge } from '@/components/ui/badge';
 import { BookOpen, Trophy, User, Clock } from 'lucide-react';
 import SubjectCard from '@/components/SubjectCard';
 import ChapterList from '@/components/ChapterList';
-import DifficultySelector from '@/components/DifficultySelector';
 import QuizInterface from '@/components/QuizInterface';
 import ScoreBoard from '@/components/ScoreBoard';
-import { getTotalQuestionsBySubject, getChaptersBySubject } from '@/data/questions';
+import { getTotalQuestionsBySubject } from '@/data/questions';
 
 const Index = () => {
   const [currentView, setCurrentView] = useState('home'); // home, chapters, difficulty, quiz, results
