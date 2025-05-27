@@ -1,5 +1,6 @@
+import { Chapter } from '../types';
 
-
+export const englishChapters:
 Chapter[] = [
 //1.Functions
 {
@@ -89,9 +90,3 @@ Chapter[] = [
     }
   ]
 }
-
-
----
-
-Would you like me to generate the remaining chapters (Limits & Continuity, Differentiation, etc.) in the same format?
-
