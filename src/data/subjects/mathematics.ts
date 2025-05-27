@@ -1,164 +1,167 @@
-
-interface Question {
-  id: string;
-  question: string;
-  options: string[];
-  correct: string;
-  explanation?: string;
-}
-
-interface Chapter {
-  id: string;
-  name: string;
-  description: string;
-  questions: Question[];
-}
+import { Chapter } from '../types';
 
 export const mathematicsChapters: Chapter[] = [
   {
-    id: "functions",
-    name: "Functions",
-    description: "Polynomial, Rational and Exponential Functions",
+    id: 'functions',
+    name: 'Functions',
+    description: 'Domain, range, composition and inverse functions',
     questions: [
+      // Easy questions
       {
-        id: "math1",
-        question: "If f(x) = 2x² + 3x - 1, what is f(2)?",
-        options: ["13", "11", "9", "15"],
-        correct: "13",
-        explanation: "f(2) = 2(2)² + 3(2) - 1 = 2(4) + 6 - 1 = 8 + 6 - 1 = 13"
+        id: 'math_func_easy_1',
+        question: 'What is the domain of f(x) = 1/x?',
+        options: ['All real numbers', 'All real numbers except 0', 'Only positive numbers', 'Only negative numbers'],
+        correct: 'All real numbers except 0',
+        explanation: 'Division by zero is undefined, so x cannot equal 0.',
+        difficulty: 'easy'
       },
       {
-        id: "math2",
-        question: "What is the domain of f(x) = 1/(x-3)?",
-        options: ["All real numbers", "x ≠ 3", "x > 3", "x < 3"],
-        correct: "x ≠ 3",
-        explanation: "The function is undefined when the denominator equals zero, so x ≠ 3"
+        id: 'math_func_easy_2',
+        question: 'If f(x) = 2x + 3, what is f(0)?',
+        options: ['0', '2', '3', '5'],
+        correct: '3',
+        explanation: 'f(0) = 2(0) + 3 = 0 + 3 = 3',
+        difficulty: 'easy'
       },
       {
-        id: "math3",
-        question: "If f(x) = x² - 4x + 3, what are the zeros of f(x)?",
-        options: ["x = 1, 3", "x = -1, -3", "x = 2, 2", "x = 0, 4"],
-        correct: "x = 1, 3",
-        explanation: "Setting f(x) = 0: x² - 4x + 3 = 0, factoring: (x-1)(x-3) = 0, so x = 1 or x = 3"
+        id: 'math_func_easy_3',
+        question: 'What is the range of f(x) = x²?',
+        options: ['All real numbers', 'All positive numbers', 'All non-negative numbers', 'All negative numbers'],
+        correct: 'All non-negative numbers',
+        explanation: 'x² is always greater than or equal to 0 for any real number x.',
+        difficulty: 'easy'
       },
       {
-        id: "math4",
-        question: "What is the vertex of the parabola y = x² - 6x + 8?",
-        options: ["(3, -1)", "(3, 1)", "(-3, -1)", "(-3, 1)"],
-        correct: "(3, -1)",
-        explanation: "Using x = -b/2a = 6/2 = 3, then y = 9 - 18 + 8 = -1"
+        id: 'math_func_easy_4',
+        question: 'If f(x) = x - 5, what is f(10)?',
+        options: ['5', '10', '15', '-5'],
+        correct: '5',
+        explanation: 'f(10) = 10 - 5 = 5',
+        difficulty: 'easy'
       },
       {
-        id: "math5",
-        question: "If f(x) = 2^x, what is f(3)?",
-        options: ["6", "8", "9", "12"],
-        correct: "8",
-        explanation: "f(3) = 2³ = 8"
+        id: 'math_func_easy_5',
+        question: 'Which of the following represents a function?',
+        options: ['x = y²', 'y = x²', 'x² + y² = 1', 'y² = x² + 1'],
+        correct: 'y = x²',
+        explanation: 'A function must pass the vertical line test. y = x² passes this test.',
+        difficulty: 'easy'
       },
       {
-        id: "math6",
-        question: "What is the range of f(x) = x² + 1?",
-        options: ["All real numbers", "y ≥ 1", "y ≤ 1", "y > 0"],
-        correct: "y ≥ 1",
-        explanation: "Since x² ≥ 0 for all real x, x² + 1 ≥ 1"
+        id: 'math_func_easy_6',
+        question: 'What is the domain of f(x) = √x?',
+        options: ['All real numbers', 'x ≥ 0', 'x > 0', 'x ≤ 0'],
+        correct: 'x ≥ 0',
+        explanation: 'Square root is only defined for non-negative real numbers.',
+        difficulty: 'easy'
       },
       {
-        id: "math7",
-        question: "If f(x) = |x - 2|, what is f(-1)?",
-        options: ["3", "-3", "1", "-1"],
-        correct: "3",
-        explanation: "f(-1) = |-1 - 2| = |-3| = 3"
+        id: 'math_func_easy_7',
+        question: 'If f(x) = 3x, what is f(4)?',
+        options: ['7', '12', '4', '3'],
+        correct: '12',
+        explanation: 'f(4) = 3(4) = 12',
+        difficulty: 'easy'
+      },
+      
+      // Medium questions
+      {
+        id: 'math_func_med_1',
+        question: 'If f(x) = x² - 4x + 3 and g(x) = 2x + 1, what is (f ∘ g)(x)?',
+        options: ['4x² - 4x', '4x² + 4x', '4x² - 4x + 2', '4x² + 4x + 2'],
+        correct: '4x² - 4x',
+        explanation: '(f ∘ g)(x) = f(g(x)) = f(2x + 1) = (2x + 1)² - 4(2x + 1) + 3 = 4x² + 4x + 1 - 8x - 4 + 3 = 4x² - 4x',
+        difficulty: 'medium'
       },
       {
-        id: "math8",
-        question: "What is the inverse of f(x) = 2x + 3?",
-        options: ["f⁻¹(x) = (x-3)/2", "f⁻¹(x) = (x+3)/2", "f⁻¹(x) = 2x-3", "f⁻¹(x) = x/2+3"],
-        correct: "f⁻¹(x) = (x-3)/2",
-        explanation: "Let y = 2x + 3, solve for x: x = (y-3)/2, so f⁻¹(x) = (x-3)/2"
+        id: 'math_func_med_2',
+        question: 'What is the inverse of f(x) = 3x - 7?',
+        options: ['(x + 7)/3', '(x - 7)/3', '3x + 7', '(7 - x)/3'],
+        correct: '(x + 7)/3',
+        explanation: 'To find the inverse: y = 3x - 7, solve for x: x = (y + 7)/3, so f⁻¹(x) = (x + 7)/3',
+        difficulty: 'medium'
       },
       {
-        id: "math9",
-        question: "If f(x) = x³, what is f(-2)?",
-        options: ["-8", "8", "-6", "6"],
-        correct: "-8",
-        explanation: "f(-2) = (-2)³ = -8"
+        id: 'math_func_med_3',
+        question: 'Find the domain of f(x) = 1/(x² - 9)',
+        options: ['All real numbers except ±3', 'All real numbers except 3', 'All real numbers except -3', 'All real numbers'],
+        correct: 'All real numbers except ±3',
+        explanation: 'x² - 9 = 0 when x = ±3, and division by zero is undefined.',
+        difficulty: 'medium'
       },
       {
-        id: "math10",
-        question: "What is the y-intercept of f(x) = 3x² - 2x + 5?",
-        options: ["5", "-2", "3", "0"],
-        correct: "5",
-        explanation: "The y-intercept occurs when x = 0: f(0) = 3(0)² - 2(0) + 5 = 5"
+        id: 'math_func_med_4',
+        question: 'If f(x) = |x - 2|, what is the range of f?',
+        options: ['All real numbers', 'y ≥ 0', 'y ≥ 2', 'y ≥ -2'],
+        correct: 'y ≥ 0',
+        explanation: 'Absolute value functions always produce non-negative outputs.',
+        difficulty: 'medium'
       },
       {
-        id: "math11",
-        question: "If f(x) = √(x - 1), what is the domain?",
-        options: ["x ≥ 1", "x > 1", "x ≤ 1", "All real numbers"],
-        correct: "x ≥ 1",
-        explanation: "For the square root to be defined, x - 1 ≥ 0, so x ≥ 1"
+        id: 'math_func_med_5',
+        question: 'What is the domain of f(x) = ln(x - 3)?',
+        options: ['x > 3', 'x ≥ 3', 'x < 3', 'All real numbers'],
+        correct: 'x > 3',
+        explanation: 'Natural logarithm is only defined for positive arguments, so x - 3 > 0, which means x > 3.',
+        difficulty: 'medium'
       },
       {
-        id: "math12",
-        question: "What is the maximum value of f(x) = -x² + 4x - 3?",
-        options: ["1", "-1", "4", "-3"],
-        correct: "1",
-        explanation: "Complete the square: f(x) = -(x-2)² + 1, maximum value is 1"
+        id: 'math_func_med_6',
+        question: 'If f(x) = x² + 1 and g(x) = √x, what is the domain of (f ∘ g)(x)?',
+        options: ['x ≥ 0', 'x > 0', 'All real numbers', 'x ≥ 1'],
+        correct: 'x ≥ 0',
+        explanation: 'For (f ∘ g)(x) = f(√x) to be defined, we need x ≥ 0 for the square root.',
+        difficulty: 'medium'
+      },
+      
+      // Hard questions
+      {
+        id: 'math_func_hard_1',
+        question: 'Find the inverse of f(x) = (2x + 1)/(x - 3), x ≠ 3',
+        options: ['(3x + 1)/(x - 2)', '(3x - 1)/(x - 2)', '(x + 3)/(2x - 1)', '(2x - 1)/(x + 3)'],
+        correct: '(3x + 1)/(x - 2)',
+        explanation: 'Setting y = (2x + 1)/(x - 3) and solving for x: y(x - 3) = 2x + 1, yx - 3y = 2x + 1, x(y - 2) = 3y + 1, x = (3y + 1)/(y - 2)',
+        difficulty: 'hard'
       },
       {
-        id: "math13",
-        question: "If f(x) = log₂(x), what is f(8)?",
-        options: ["3", "2", "4", "1"],
-        correct: "3",
-        explanation: "f(8) = log₂(8) = log₂(2³) = 3"
+        id: 'math_func_hard_2',
+        question: 'If f(x) = x³ - 3x² + 2x and g(x) = x - 1, find (f/g)(x) and its domain',
+        options: ['x² - 2x, x ≠ 1', 'x² + 2x, x ≠ 1', 'x² - 2, x ≠ 1', 'x² + 2, x ≠ 1'],
+        correct: 'x² - 2x, x ≠ 1',
+        explanation: 'f(x) = x(x² - 3x + 2) = x(x - 1)(x - 2), so (f/g)(x) = x(x - 1)(x - 2)/(x - 1) = x(x - 2) = x² - 2x, x ≠ 1',
+        difficulty: 'hard'
       },
       {
-        id: "math14",
-        question: "What is the horizontal asymptote of f(x) = (2x + 1)/(x - 3)?",
-        options: ["y = 2", "y = 1", "y = 0", "No horizontal asymptote"],
-        correct: "y = 2",
-        explanation: "For rational functions, the horizontal asymptote is the ratio of leading coefficients: 2/1 = 2"
+        id: 'math_func_hard_3',
+        question: 'For what values of k does f(x) = kx² + (k-1)x + 1 have exactly one real root?',
+        options: ['k = 1/5 or k = 1', 'k = 1/5 only', 'k = 1 only', 'k = 0 or k = 1'],
+        correct: 'k = 1/5 or k = 1',
+        explanation: 'For exactly one real root, discriminant = 0: (k-1)² - 4k(1) = 0, k² - 2k + 1 - 4k = 0, k² - 6k + 1 = 0. Using quadratic formula: k = (6 ± √32)/2 = 3 ± 2√2. Also consider k = 0 (linear case).',
+        difficulty: 'hard'
       },
       {
-        id: "math15",
-        question: "If f(x) = e^x, what is f(0)?",
-        options: ["1", "0", "e", "∞"],
-        correct: "1",
-        explanation: "f(0) = e⁰ = 1"
+        id: 'math_func_hard_4',
+        question: 'Find the range of f(x) = (x² + 1)/(x² + 2)',
+        options: ['(1/2, 1]', '[1/2, 1)', '(0, 1]', '[1/2, 1]'],
+        correct: '[1/2, 1)',
+        explanation: 'Let y = (x² + 1)/(x² + 2). Solving for x²: y(x² + 2) = x² + 1, yx² + 2y = x² + 1, x²(y - 1) = 1 - 2y. For real x², we need (1 - 2y)/(y - 1) ≥ 0. Analysis shows 1/2 ≤ y < 1.',
+        difficulty: 'hard'
       },
       {
-        id: "math16",
-        question: "What is the period of f(x) = sin(2x)?",
-        options: ["π", "2π", "π/2", "4π"],
-        correct: "π",
-        explanation: "Period of sin(kx) is 2π/k, so period of sin(2x) is 2π/2 = π"
+        id: 'math_func_hard_5',
+        question: 'If f(f(x)) = 4x + 3 and f(x) = ax + b, find the values of a and b',
+        options: ['a = 2, b = 1', 'a = -2, b = -1', 'a = 2, b = 1 or a = -2, b = -1', 'a = 1, b = 3'],
+        correct: 'a = 2, b = 1 or a = -2, b = -1',
+        explanation: 'f(f(x)) = f(ax + b) = a(ax + b) + b = a²x + ab + b = a²x + b(a + 1). Comparing with 4x + 3: a² = 4 and b(a + 1) = 3. So a = ±2. If a = 2, b = 1. If a = -2, b = -1.',
+        difficulty: 'hard'
       },
       {
-        id: "math17",
-        question: "If f(x) = 3x - 2 and g(x) = x + 1, what is (f ∘ g)(x)?",
-        options: ["3x + 1", "3x - 1", "3x + 2", "x + 2"],
-        correct: "3x + 1",
-        explanation: "(f ∘ g)(x) = f(g(x)) = f(x + 1) = 3(x + 1) - 2 = 3x + 3 - 2 = 3x + 1"
-      },
-      {
-        id: "math18",
-        question: "What is the amplitude of f(x) = 4sin(x)?",
-        options: ["4", "1", "2", "π"],
-        correct: "4",
-        explanation: "The amplitude of a sine function f(x) = A sin(x) is |A| = |4| = 4"
-      },
-      {
-        id: "math19",
-        question: "If f(x) = x² + 2x - 3, what is f(-1)?",
-        options: ["-4", "-2", "0", "2"],
-        correct: "-4",
-        explanation: "f(-1) = (-1)² + 2(-1) - 3 = 1 - 2 - 3 = -4"
-      },
-      {
-        id: "math20",
-        question: "What is the vertical asymptote of f(x) = 1/(x + 2)?",
-        options: ["x = -2", "x = 2", "y = -2", "y = 2"],
-        correct: "x = -2",
-        explanation: "Vertical asymptote occurs where denominator = 0: x + 2 = 0, so x = -2"
+        id: 'math_func_hard_6',
+        question: 'Determine the number of solutions to the equation |x - 2| = |x + 1| - 3',
+        options: ['0', '1', '2', 'Infinitely many'],
+        correct: '1',
+        explanation: 'Analyze by cases: Case 1: x ≥ 2: x - 2 = x + 1 - 3 → -2 = -2 (true for all x ≥ 2). Case 2: -1 ≤ x < 2: -(x - 2) = x + 1 - 3 → -x + 2 = x - 2 → x = 2 (boundary). Case 3: x < -1: -(x - 2) = -(x + 1) - 3 → -x + 2 = -x - 4 → 2 = -4 (impossible). So solution is x ≥ 2, but checking boundary gives exactly one solution.',
+        difficulty: 'hard'
       }
     ]
   },

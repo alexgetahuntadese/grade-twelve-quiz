@@ -12,9 +12,10 @@ import ScoreBoard from '@/components/ScoreBoard';
 import { getTotalQuestionsBySubject } from '@/data/questions';
 
 const Index = () => {
-  const [currentView, setCurrentView] = useState('home'); // home, chapters, quiz, results
+  const [currentView, setCurrentView] = useState('home'); // home, chapters, difficulty, quiz, results
   const [selectedSubject, setSelectedSubject] = useState('');
   const [selectedChapter, setSelectedChapter] = useState('');
+  const [selectedDifficulty, setSelectedDifficulty] = useState<'easy' | 'medium' | 'hard'>('easy');
   const [userScore, setUserScore] = useState(0);
   const [totalQuestions, setTotalQuestions] = useState(0);
   const [chapterName, setChapterName] = useState('');
@@ -77,10 +78,15 @@ const Index = () => {
 
   const handleChapterSelect = (chapterId: string) => {
     setSelectedChapter(chapterId);
+    setCurrentView('difficulty');
+  };
+
+  const handleDifficultySelect = (difficulty: 'easy' | 'medium' | 'hard') => {
+    setSelectedDifficulty(difficulty);
     setCurrentView('quiz');
   };
 
-  const handleQuizComplete = (score: number, total: number, chapterName: string) => {
+  const handleQuizComplete = (score: number, total: number, chapterName: string, difficulty: string) => {
     setUserScore(score);
     setTotalQuestions(total);
     setChapterName(chapterName);
@@ -91,6 +97,7 @@ const Index = () => {
     setCurrentView('home');
     setSelectedSubject('');
     setSelectedChapter('');
+    setSelectedDifficulty('easy');
     setUserScore(0);
     setTotalQuestions(0);
     setChapterName('');
@@ -99,9 +106,15 @@ const Index = () => {
   const handleBackToChapters = () => {
     setCurrentView('chapters');
     setSelectedChapter('');
+    setSelectedDifficulty('easy');
     setUserScore(0);
     setTotalQuestions(0);
     setChapterName('');
+  };
+
+  const handleBackToDifficulty = () => {
+    setCurrentView('difficulty');
+    setSelectedDifficulty('easy');
   };
 
   if (currentView === 'quiz') {
@@ -109,8 +122,9 @@ const Index = () => {
       <QuizInterface 
         subject={selectedSubject}
         chapterId={selectedChapter}
+        difficulty={selectedDifficulty}
         onComplete={handleQuizComplete}
-        onBack={handleBackToChapters}
+        onBack={handleBackToDifficulty}
       />
     );
   }
@@ -124,8 +138,25 @@ const Index = () => {
         subject={selectedSubject}
         chapterName={chapterName}
         onReturnHome={handleReturnHome}
-        onRetakeQuiz={() => setCurrentView('quiz')}
+        onRetakeQuiz={() => setCurrentView('difficulty')}
         onBackToChapters={handleBackToChapters}
+      />
+    );
+  }
+
+  if (currentView === 'difficulty') {
+    const currentSubject = subjects.find(s => s.id === selectedSubject);
+    const chapters = getChaptersBySubject(selectedSubject);
+    const currentChapter = chapters.find(ch => ch.id === selectedChapter);
+    
+    return (
+      <DifficultySelector 
+        subject={selectedSubject}
+        subjectName={currentSubject?.name || ''}
+        chapterId={selectedChapter}
+        chapterName={currentChapter?.name || ''}
+        onBack={handleBackToChapters}
+        onDifficultySelect={handleDifficultySelect}
       />
     );
   }

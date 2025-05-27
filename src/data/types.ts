@@ -5,6 +5,7 @@ export interface Question {
   options: string[];
   correct: string;
   explanation?: string;
+  difficulty: 'easy' | 'medium' | 'hard';
 }
 
 export interface Chapter {

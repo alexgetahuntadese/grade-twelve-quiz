@@ -10,11 +10,12 @@ import { getQuestionsByChapter, getChaptersBySubject } from '@/data/questions';
 interface QuizInterfaceProps {
   subject: string;
   chapterId: string;
-  onComplete: (score: number, total: number, chapterName: string) => void;
+  difficulty: 'easy' | 'medium' | 'hard';
+  onComplete: (score: number, total: number, chapterName: string, difficulty: string) => void;
   onBack: () => void;
 }
 
-const QuizInterface = ({ subject, chapterId, onComplete, onBack }: QuizInterfaceProps) => {
+const QuizInterface = ({ subject, chapterId, difficulty, onComplete, onBack }: QuizInterfaceProps) => {
   const [questions, setQuestions] = useState<any[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string>('');
@@ -23,15 +24,27 @@ const QuizInterface = ({ subject, chapterId, onComplete, onBack }: QuizInterface
   const [timeLeft, setTimeLeft] = useState(90);
   const [chapterName, setChapterName] = useState('');
 
+  const shuffleArray = (array: any[]) => {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  };
+
   useEffect(() => {
-    const chapterQuestions = getQuestionsByChapter(subject, chapterId);
+    const allChapterQuestions = getQuestionsByChapter(subject, chapterId);
+    const filteredQuestions = allChapterQuestions.filter(q => q.difficulty === difficulty);
+    const randomizedQuestions = shuffleArray(filteredQuestions);
+    
     const chapters = getChaptersBySubject(subject);
     const chapter = chapters.find(ch => ch.id === chapterId);
     
-    setQuestions(chapterQuestions);
+    setQuestions(randomizedQuestions);
     setChapterName(chapter?.name || '');
-    setTimeLeft(chapterQuestions.length * 90);
-  }, [subject, chapterId]);
+    setTimeLeft(randomizedQuestions.length * 90);
+  }, [subject, chapterId, difficulty]);
 
   useEffect(() => {
     if (timeLeft > 0) {
@@ -53,17 +66,17 @@ const QuizInterface = ({ subject, chapterId, onComplete, onBack }: QuizInterface
     if (selectedAnswer) {
       setAnswers({ ...answers, [currentQuestionIndex]: selectedAnswer });
       setShowFeedback(true);
-      
-      setTimeout(() => {
-        setShowFeedback(false);
-        setSelectedAnswer('');
-        
-        if (currentQuestionIndex < questions.length - 1) {
-          setCurrentQuestionIndex(currentQuestionIndex + 1);
-        } else {
-          handleFinishQuiz();
-        }
-      }, 1500);
+    }
+  };
+
+  const handleContinue = () => {
+    setShowFeedback(false);
+    setSelectedAnswer('');
+    
+    if (currentQuestionIndex < questions.length - 1) {
+      setCurrentQuestionIndex(currentQuestionIndex + 1);
+    } else {
+      handleFinishQuiz();
     }
   };
 
@@ -74,13 +87,22 @@ const QuizInterface = ({ subject, chapterId, onComplete, onBack }: QuizInterface
         score++;
       }
     });
-    onComplete(score, questions.length, chapterName);
+    onComplete(score, questions.length, chapterName, difficulty);
   };
 
   const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60);
     const secs = seconds % 60;
     return `${mins}:${secs.toString().padStart(2, '0')}`;
+  };
+
+  const getDifficultyColor = (diff: string) => {
+    switch (diff) {
+      case 'easy': return 'bg-green-500';
+      case 'medium': return 'bg-yellow-500';
+      case 'hard': return 'bg-red-500';
+      default: return 'bg-gray-500';
+    }
   };
 
   if (!currentQuestion) {
@@ -108,6 +130,9 @@ const QuizInterface = ({ subject, chapterId, onComplete, onBack }: QuizInterface
             <Badge variant="secondary" className="flex items-center space-x-1">
               <BookOpen className="w-4 h-4" />
               <span>{chapterName}</span>
+            </Badge>
+            <Badge className={`${getDifficultyColor(difficulty)} text-white`}>
+              {difficulty.toUpperCase()}
             </Badge>
             <Badge variant="secondary" className="flex items-center space-x-1">
               <Clock className="w-4 h-4" />
@@ -181,13 +206,22 @@ const QuizInterface = ({ subject, chapterId, onComplete, onBack }: QuizInterface
         {/* Navigation */}
         <div className="flex justify-between">
           <div></div>
-          <Button 
-            onClick={handleNextQuestion}
-            disabled={!selectedAnswer || showFeedback}
-            className="px-8"
-          >
-            {currentQuestionIndex === questions.length - 1 ? 'Finish Quiz' : 'Next Question'}
-          </Button>
+          {!showFeedback ? (
+            <Button 
+              onClick={handleNextQuestion}
+              disabled={!selectedAnswer}
+              className="px-8"
+            >
+              Submit Answer
+            </Button>
+          ) : (
+            <Button 
+              onClick={handleContinue}
+              className="px-8"
+            >
+              {currentQuestionIndex === questions.length - 1 ? 'Finish Quiz' : 'Continue'}
+            </Button>
+          )}
         </div>
       </div>
     </div>
