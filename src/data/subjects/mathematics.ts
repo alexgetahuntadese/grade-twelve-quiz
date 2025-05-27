@@ -1,7 +1,8 @@
 
 import { Chapter } from '../types';
 
-export const mathematicsChapters: Chapter[] = [
+export const mathematicsChapters: 
+Chapter[] = [
 {
   id: 'functions',
   name: 'Functions',
