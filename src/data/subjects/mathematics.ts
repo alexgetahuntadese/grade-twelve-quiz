@@ -197,7 +197,7 @@ export const mathematicsChapters: Chapter[] = [
         correct: 'x = ±1',
         explanation: "f'(x) = 3x² - 3 = 0, so 3x² = 3, x² = 1, x = ±1.",
         difficulty: 'hard'
-      }
+   
     ]
   },
   {
