@@ -350,9 +350,3 @@ export const mathematicsChapters: Chapter[] = [
   ]
 }
 ]
-  ]
-}
-
-  ]
-}
-]
