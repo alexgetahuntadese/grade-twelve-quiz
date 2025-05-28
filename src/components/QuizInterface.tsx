@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -6,6 +5,8 @@ import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
 import { ArrowLeft, Clock, CheckCircle, XCircle, BookOpen } from 'lucide-react';
 import { getQuestionsByChapter, getChaptersBySubject } from '@/data/questions';
+import { useTranslation } from '@/contexts/TranslationContext';
+import LanguageSelector from '@/components/LanguageSelector';
 
 interface QuizInterfaceProps {
   subject: string;
@@ -16,6 +17,7 @@ interface QuizInterfaceProps {
 }
 
 const QuizInterface = ({ subject, chapterId, difficulty, onComplete, onBack }: QuizInterfaceProps) => {
+  const { t } = useTranslation();
   const [questions, setQuestions] = useState<any[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string>('');
@@ -110,7 +112,7 @@ const QuizInterface = ({ subject, chapterId, difficulty, onComplete, onBack }: Q
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto mb-4"></div>
-          <p>Loading questions...</p>
+          <p>{t('loadingQuestions')}</p>
         </div>
       </div>
     );
@@ -123,16 +125,17 @@ const QuizInterface = ({ subject, chapterId, difficulty, onComplete, onBack }: Q
         <div className="flex items-center justify-between mb-6">
           <Button variant="outline" onClick={onBack} className="flex items-center space-x-2">
             <ArrowLeft className="w-4 h-4" />
-            <span>Back</span>
+            <span>{t('back')}</span>
           </Button>
           
           <div className="flex items-center space-x-4">
+            <LanguageSelector />
             <Badge variant="secondary" className="flex items-center space-x-1">
               <BookOpen className="w-4 h-4" />
               <span>{chapterName}</span>
             </Badge>
             <Badge className={`${getDifficultyColor(difficulty)} text-white`}>
-              {difficulty.toUpperCase()}
+              {t(difficulty).toUpperCase()}
             </Badge>
             <Badge variant="secondary" className="flex items-center space-x-1">
               <Clock className="w-4 h-4" />
@@ -148,7 +151,7 @@ const QuizInterface = ({ subject, chapterId, difficulty, onComplete, onBack }: Q
         <div className="mb-6">
           <Progress value={progress} className="h-2" />
           <p className="text-sm text-gray-600 mt-2">
-            Progress: {Math.round(progress)}% complete
+            {t('progress')}: {Math.round(progress)}% {t('complete')}
           </p>
         </div>
 
@@ -156,7 +159,7 @@ const QuizInterface = ({ subject, chapterId, difficulty, onComplete, onBack }: Q
         <Card className="mb-6">
           <CardHeader>
             <CardTitle className="text-xl">
-              Question {currentQuestionIndex + 1}
+              {t('question')} {currentQuestionIndex + 1}
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -196,7 +199,7 @@ const QuizInterface = ({ subject, chapterId, difficulty, onComplete, onBack }: Q
             {showFeedback && currentQuestion.explanation && (
               <div className="mt-6 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
                 <p className="text-sm text-blue-800">
-                  <strong>Explanation:</strong> {currentQuestion.explanation}
+                  <strong>{t('explanation')}:</strong> {currentQuestion.explanation}
                 </p>
               </div>
             )}
@@ -212,14 +215,14 @@ const QuizInterface = ({ subject, chapterId, difficulty, onComplete, onBack }: Q
               disabled={!selectedAnswer}
               className="px-8"
             >
-              Submit Answer
+              {t('submitAnswer')}
             </Button>
           ) : (
             <Button 
               onClick={handleContinue}
               className="px-8"
             >
-              {currentQuestionIndex === questions.length - 1 ? 'Finish Quiz' : 'Continue'}
+              {currentQuestionIndex === questions.length - 1 ? t('finishQuiz') : t('continue')}
             </Button>
           )}
         </div>

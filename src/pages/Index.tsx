@@ -10,9 +10,12 @@ import ChapterList from '@/components/ChapterList';
 import DifficultySelector from '@/components/DifficultySelector';
 import QuizInterface from '@/components/QuizInterface';
 import ScoreBoard from '@/components/ScoreBoard';
+import LanguageSelector from '@/components/LanguageSelector';
 import { getTotalQuestionsBySubject, getChaptersBySubject } from '@/data/questions';
+import { useTranslation } from '@/contexts/TranslationContext';
 
 const Index = () => {
+  const { t } = useTranslation();
   const [currentView, setCurrentView] = useState('home'); // home, chapters, difficulty, quiz, results
   const [selectedSubject, setSelectedSubject] = useState('');
   const [selectedChapter, setSelectedChapter] = useState('');
@@ -24,48 +27,48 @@ const Index = () => {
   const subjects = [
     {
       id: 'mathematics',
-      name: 'Mathematics',
-      description: 'Functions, Calculus & Analytic Geometry',
+      name: t('mathematics'),
+      description: t('mathematicsDesc'),
       icon: '📐',
       color: 'bg-blue-500',
       questions: getTotalQuestionsBySubject('mathematics')
     },
     {
       id: 'physics',
-      name: 'Physics',
-      description: 'Mechanics, Electricity & Modern Physics',
+      name: t('physics'),
+      description: t('physicsDesc'),
       icon: '⚡',
       color: 'bg-purple-500',
       questions: getTotalQuestionsBySubject('physics')
     },
     {
       id: 'chemistry',
-      name: 'Chemistry',
-      description: 'Atomic Structure, Bonding & Reactions',
+      name: t('chemistry'),
+      description: t('chemistryDesc'),
       icon: '🧪',
       color: 'bg-green-500',
       questions: getTotalQuestionsBySubject('chemistry')
     },
     {
       id: 'biology',
-      name: 'Biology',
-      description: 'Cell Biology, Genetics & Physiology',
+      name: t('biology'),
+      description: t('biologyDesc'),
       icon: '🧬',
       color: 'bg-emerald-500',
       questions: getTotalQuestionsBySubject('biology')
     },
     {
       id: 'english',
-      name: 'English',
-      description: 'Grammar, Literature & Vocabulary',
+      name: t('english'),
+      description: t('englishDesc'),
       icon: '📚',
       color: 'bg-red-500',
       questions: getTotalQuestionsBySubject('english')
     },
     {
       id: 'history',
-      name: 'Ethiopian History',
-      description: 'Ancient, Medieval & Modern Ethiopia',
+      name: t('history'),
+      description: t('historyDesc'),
       icon: '🏛️',
       color: 'bg-yellow-500',
       questions: getTotalQuestionsBySubject('history')
@@ -183,14 +186,15 @@ const Index = () => {
             <div className="flex items-center space-x-3">
               <div className="text-3xl">🇪🇹</div>
               <div>
-                <h1 className="text-2xl font-bold text-gray-800">EthioQuiz</h1>
-                <p className="text-sm text-gray-600">Grade 12 Chapter-by-Chapter Preparation</p>
+                <h1 className="text-2xl font-bold text-gray-800">{t('appName')}</h1>
+                <p className="text-sm text-gray-600">{t('appDescription')}</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
+              <LanguageSelector />
               <Badge variant="outline" className="flex items-center space-x-1">
                 <User className="w-4 h-4" />
-                <span>Student</span>
+                <span>{t('student')}</span>
               </Badge>
             </div>
           </div>
@@ -201,11 +205,10 @@ const Index = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
-            Master Every Chapter, One Quiz at a Time
+            {t('heroTitle')}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Study systematically with our chapter-based quiz system. Each subject is organized into focused chapters 
-            to help you master one topic at a time for your Ethiopian Grade 12 examinations.
+            {t('heroDescription')}
           </p>
         </div>
 
@@ -215,7 +218,7 @@ const Index = () => {
             <CardContent className="p-6">
               <BookOpen className="w-12 h-12 text-blue-500 mx-auto mb-3" />
               <h3 className="text-2xl font-bold text-gray-800">{subjects.length}</h3>
-              <p className="text-gray-600">Subjects Available</p>
+              <p className="text-gray-600">{t('subjectsAvailable')}</p>
             </CardContent>
           </Card>
           
@@ -223,15 +226,15 @@ const Index = () => {
             <CardContent className="p-6">
               <Trophy className="w-12 h-12 text-yellow-500 mx-auto mb-3" />
               <h3 className="text-2xl font-bold text-gray-800">20+</h3>
-              <p className="text-gray-600">Chapters to Master</p>
+              <p className="text-gray-600">{t('chaptersToMaster')}</p>
             </CardContent>
           </Card>
           
           <Card className="text-center hover:shadow-lg transition-shadow">
             <CardContent className="p-6">
               <Clock className="w-12 h-12 text-green-500 mx-auto mb-3" />
-              <h3 className="text-2xl font-bold text-gray-800">Focused</h3>
-              <p className="text-gray-600">Chapter-based Learning</p>
+              <h3 className="text-2xl font-bold text-gray-800">{t('focusedLearning')}</h3>
+              <p className="text-gray-600">{t('focusedLearning')}</p>
             </CardContent>
           </Card>
         </div>
@@ -239,7 +242,7 @@ const Index = () => {
         {/* Subject Selection */}
         <div>
           <h3 className="text-2xl font-bold text-gray-800 mb-8 text-center">
-            Choose Your Subject
+            {t('chooseSubject')}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {subjects.map((subject) => (
@@ -255,7 +258,7 @@ const Index = () => {
         {/* Footer */}
         <div className="text-center mt-16 py-8 border-t border-gray-200">
           <p className="text-gray-600">
-            Study chapter by chapter for better understanding and retention! 📚
+            {t('footerText')}
           </p>
         </div>
       </div>
