@@ -171,7 +171,7 @@ export const mathematicsChapters: Chapter[] = [
       options: ['2', '0', '1', 'Does not exist'],
       correct: '2',
       explanation: 'Factor: (x² - 1)/(x - 1) = (x+1); at x = 1, it becomes 2.',
-      difficulty: 'easy'
+      difficulty: 'medium'
     }
   ]
 }
