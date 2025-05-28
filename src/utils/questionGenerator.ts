@@ -152,9 +152,9 @@ const questionTemplates = {
     cell_biology: {
       easy: [
         {
-          template: "Which organelle is responsible for {function} in the cell?",
+          template: "Which organelle is responsible for {func} in the cell?",
           generateOptions: (correct: string) => [correct, "Nucleus", "Ribosome", "Cytoplasm"],
-          explanation: "{correct} is responsible for {function} in cells."
+          explanation: "{correct} is responsible for {func} in cells."
         },
         {
           template: "What is the approximate size of a typical {cellType} cell?",
@@ -177,7 +177,7 @@ const questionTemplates = {
       hard: [
         {
           template: "What is the function of {protein} in cellular {process}?",
-          generateOptions: (function: string) => [function, "Energy production", "DNA replication", "Waste removal"],
+          generateOptions: (func: string) => [func, "Energy production", "DNA replication", "Waste removal"],
           explanation: "{protein} plays a crucial role in {process}."
         },
         {
