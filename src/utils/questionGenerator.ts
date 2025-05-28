@@ -1,6 +1,13 @@
 
 import { Question } from '@/data/types';
 
+// Define the template structure
+interface QuestionTemplate {
+  template: string;
+  generateOptions: (param?: any) => string[];
+  explanation: string;
+}
+
 // Question templates for different subjects and difficulties
 const questionTemplates = {
   mathematics: {
@@ -8,7 +15,7 @@ const questionTemplates = {
       easy: [
         {
           template: "What is f({x}) if f(x) = {equation}?",
-          generateOptions: (correct: number) => [correct, correct + 1, correct - 1, correct + 2],
+          generateOptions: (correct: number) => [correct.toString(), (correct + 1).toString(), (correct - 1).toString(), (correct + 2).toString()],
           explanation: "Substitute x = {x} into the equation."
         },
         {
@@ -25,7 +32,7 @@ const questionTemplates = {
       medium: [
         {
           template: "If f(x) = {a}x + {b} and g(x) = x², what is (f ∘ g)({x})?",
-          generateOptions: (result: number) => [result, result + 5, result - 5, result * 2],
+          generateOptions: (result: number) => [result.toString(), (result + 5).toString(), (result - 5).toString(), (result * 2).toString()],
           explanation: "First find g({x}), then apply f to that result."
         },
         {
@@ -42,7 +49,7 @@ const questionTemplates = {
       hard: [
         {
           template: "What is the limit of (x² - {a²})/(x - {a}) as x approaches {a}?",
-          generateOptions: (a: number) => [2 * a, a, 0, a * a],
+          generateOptions: (a: number) => [(2 * a).toString(), a.toString(), '0', (a * a).toString()],
           explanation: "Factor the numerator and simplify before taking the limit."
         },
         {
@@ -63,41 +70,41 @@ const questionTemplates = {
       easy: [
         {
           template: "A car travels {distance} meters in {time} seconds. What is its average speed?",
-          generateOptions: (speed: number) => [speed, speed + 5, speed - 5, speed * 2],
+          generateOptions: (speed: number) => [speed.toString(), (speed + 5).toString(), (speed - 5).toString(), (speed * 2).toString()],
           explanation: "Speed = distance/time = {distance}/{time} = {result} m/s"
         },
         {
           template: "What is the acceleration of an object that changes velocity from {v1} m/s to {v2} m/s in {t} seconds?",
-          generateOptions: (acc: number) => [acc, acc + 1, acc - 1, acc * 2],
+          generateOptions: (acc: number) => [acc.toString(), (acc + 1).toString(), (acc - 1).toString(), (acc * 2).toString()],
           explanation: "Acceleration = (final velocity - initial velocity)/time"
         },
         {
           template: "What is the kinetic energy of a {mass} kg object moving at {velocity} m/s?",
-          generateOptions: (ke: number) => [ke, ke + 50, ke - 50, ke * 2],
+          generateOptions: (ke: number) => [ke.toString(), (ke + 50).toString(), (ke - 50).toString(), (ke * 2).toString()],
           explanation: "KE = ½mv² = ½ × {mass} × {velocity}² = {result} J"
         }
       ],
       medium: [
         {
           template: "A projectile is launched at {angle}° with initial velocity {v0} m/s. What is its range?",
-          generateOptions: (range: number) => [range, range + 10, range - 10, range * 1.5],
+          generateOptions: (range: number) => [range.toString(), (range + 10).toString(), (range - 10).toString(), (range * 1.5).toString()],
           explanation: "Range = v₀²sin(2θ)/g for projectile motion."
         },
         {
           template: "What is the centripetal force on a {mass} kg object moving in a circle of radius {radius} m at {speed} m/s?",
-          generateOptions: (force: number) => [force, force + 20, force - 20, force * 2],
+          generateOptions: (force: number) => [force.toString(), (force + 20).toString(), (force - 20).toString(), (force * 2).toString()],
           explanation: "Fc = mv²/r = {mass} × {speed}²/{radius} = {result} N"
         }
       ],
       hard: [
         {
           template: "Two objects collide elastically. Object 1 (m₁ = {m1} kg, v₁ = {v1} m/s) hits object 2 (m₂ = {m2} kg, v₂ = 0). What is v₁ after collision?",
-          generateOptions: (v1f: number) => [v1f, v1f + 1, v1f - 1, v1f * 2],
+          generateOptions: (v1f: number) => [v1f.toString(), (v1f + 1).toString(), (v1f - 1).toString(), (v1f * 2).toString()],
           explanation: "Use conservation of momentum and energy for elastic collisions."
         },
         {
           template: "What is the orbital period of a satellite at height h = {h}R above Earth's surface?",
-          generateOptions: (period: string) => [period, "√2 times longer", "2 times longer", "3 times longer"],
+          generateOptions: () => ["√8 times Earth period", "√2 times longer", "2 times longer", "3 times longer"],
           explanation: "Use Kepler's third law: T ∝ r^(3/2)"
         }
       ]
@@ -108,12 +115,12 @@ const questionTemplates = {
       easy: [
         {
           template: "How many electrons can the {shell} electron shell hold?",
-          generateOptions: (electrons: number) => [electrons, electrons + 2, electrons - 2, electrons * 2],
+          generateOptions: (electrons: number) => [electrons.toString(), (electrons + 2).toString(), (electrons - 2).toString(), (electrons * 2).toString()],
           explanation: "The {shell} shell can hold up to {electrons} electrons."
         },
         {
           template: "What is the atomic mass of an atom with {protons} protons and {neutrons} neutrons?",
-          generateOptions: (mass: number) => [mass, mass + 1, mass - 1, mass + 2],
+          generateOptions: (mass: number) => [mass.toString(), (mass + 1).toString(), (mass - 1).toString(), (mass + 2).toString()],
           explanation: "Atomic mass = protons + neutrons = {protons} + {neutrons} = {mass}"
         },
         {
@@ -130,19 +137,19 @@ const questionTemplates = {
         },
         {
           template: "How many orbitals are in the {subshell} subshell?",
-          generateOptions: (orbitals: number) => [orbitals, orbitals + 1, orbitals - 1, orbitals * 2],
+          generateOptions: (orbitals: number) => [orbitals.toString(), (orbitals + 1).toString(), (orbitals - 1).toString(), (orbitals * 2).toString()],
           explanation: "The {subshell} subshell contains {orbitals} orbitals."
         }
       ],
       hard: [
         {
           template: "What is the effective nuclear charge for a {orbital} electron in element Z = {z}?",
-          generateOptions: (zeff: number) => [zeff, zeff + 0.5, zeff - 0.5, zeff + 1],
+          generateOptions: (zeff: number) => [zeff.toString(), (zeff + 0.5).toString(), (zeff - 0.5).toString(), (zeff + 1).toString()],
           explanation: "Use Slater's rules to calculate effective nuclear charge."
         },
         {
           template: "How many unpaired electrons does element Z = {z} have in its ground state?",
-          generateOptions: (unpaired: number) => [unpaired, unpaired + 1, unpaired - 1, unpaired + 2],
+          generateOptions: (unpaired: number) => [unpaired.toString(), (unpaired + 1).toString(), (unpaired - 1).toString(), (unpaired + 2).toString()],
           explanation: "Use Hund's rule to determine electron arrangement."
         }
       ]
@@ -257,7 +264,7 @@ export const generateQuestion = (
   difficulty: 'easy' | 'medium' | 'hard',
   questionIndex: number
 ): Question => {
-  const templates = questionTemplates[subject as keyof typeof questionTemplates]?.[chapterId]?.[difficulty];
+  const templates = questionTemplates[subject as keyof typeof questionTemplates]?.[chapterId]?.[difficulty] as QuestionTemplate[];
   
   if (!templates || templates.length === 0) {
     // Fallback generic question
@@ -289,32 +296,27 @@ export const generateQuestion = (
   let correctAnswer: string;
   let options: string[];
 
-  if (template.generateOptions) {
-    if (question.includes('f(')) {
-      // Function evaluation question
-      const x = values.smallNumber;
-      const a = values.smallNumber;
-      const b = values.smallNumber;
-      const result = a * x + b;
-      
-      question = question.replace('{x}', x.toString()).replace('{equation}', `${a}x + ${b}`);
-      explanation = explanation.replace('{x}', x.toString());
-      
-      options = template.generateOptions(result);
-      correctAnswer = result.toString();
-    } else if (question.includes('speed') || question.includes('acceleration')) {
-      // Physics calculation
-      const result = values.distance / values.time;
-      options = template.generateOptions(result);
-      correctAnswer = result.toString();
-    } else {
-      // Default case
-      options = template.generateOptions(values.number);
-      correctAnswer = options[0];
-    }
+  if (question.includes('f(')) {
+    // Function evaluation question
+    const x = values.smallNumber;
+    const a = values.smallNumber;
+    const b = values.smallNumber;
+    const result = a * x + b;
+    
+    question = question.replace('{x}', x.toString()).replace('{equation}', `${a}x + ${b}`);
+    explanation = explanation.replace('{x}', x.toString());
+    
+    options = template.generateOptions(result);
+    correctAnswer = result.toString();
+  } else if (question.includes('speed') || question.includes('acceleration')) {
+    // Physics calculation
+    const result = values.distance / values.time;
+    options = template.generateOptions(result);
+    correctAnswer = result.toString();
   } else {
-    options = ['Option A', 'Option B', 'Option C', 'Option D'];
-    correctAnswer = 'Option A';
+    // Default case
+    options = template.generateOptions(values.number);
+    correctAnswer = options[0];
   }
 
   return {
