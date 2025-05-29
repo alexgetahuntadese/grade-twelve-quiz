@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
 import { ArrowLeft, Clock, CheckCircle, XCircle, BookOpen } from 'lucide-react';
-import { getFreshQuestionsByChapter, getChaptersBySubject } from '@/data/questions';
+import { getQuestionsForQuiz, getChaptersBySubject } from '@/data/questions';
 import { useTranslation } from '@/contexts/TranslationContext';
 import LanguageSelector from '@/components/LanguageSelector';
 
@@ -27,17 +27,17 @@ const QuizInterface = ({ subject, chapterId, difficulty, onComplete, onBack }: Q
   const [chapterName, setChapterName] = useState('');
 
   useEffect(() => {
-    // Get fresh questions every time the quiz loads
-    const freshQuestions = getFreshQuestionsByChapter(subject, chapterId, difficulty, 10);
+    // Get questions using the existing function
+    const quizQuestions = getQuestionsForQuiz(subject, chapterId, difficulty, 10);
     
     const chapters = getChaptersBySubject(subject);
     const chapter = chapters.find(ch => ch.id === chapterId);
     
-    setQuestions(freshQuestions);
+    setQuestions(quizQuestions);
     setChapterName(chapter?.name || '');
-    setTimeLeft(freshQuestions.length * 90);
+    setTimeLeft(quizQuestions.length * 90);
     
-    console.log(`Generated ${freshQuestions.length} fresh questions for ${subject}/${chapterId}/${difficulty}`);
+    console.log(`Generated ${quizQuestions.length} questions for ${subject}/${chapterId}/${difficulty}`);
   }, [subject, chapterId, difficulty]);
 
   useEffect(() => {
