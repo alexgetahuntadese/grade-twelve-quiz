@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
-import { BookOpen, Trophy, User, Clock } from 'lucide-react';
+import { BookOpen, Trophy, User, Clock, ArrowLeft } from 'lucide-react';
 import SubjectCard from '@/components/SubjectCard';
 import ChapterList from '@/components/ChapterList';
 import DifficultySelector from '@/components/DifficultySelector';
@@ -16,7 +16,8 @@ import { useTranslation } from '@/contexts/TranslationContext';
 
 const Index = () => {
   const { t } = useTranslation();
-  const [currentView, setCurrentView] = useState('home'); // home, chapters, difficulty, quiz, results
+  const [currentView, setCurrentView] = useState('home'); // home, categories, subjects, chapters, difficulty, quiz, results
+  const [selectedCategory, setSelectedCategory] = useState('');
   const [selectedSubject, setSelectedSubject] = useState('');
   const [selectedChapter, setSelectedChapter] = useState('');
   const [selectedDifficulty, setSelectedDifficulty] = useState<'easy' | 'medium' | 'hard'>('easy');
@@ -24,7 +25,7 @@ const Index = () => {
   const [totalQuestions, setTotalQuestions] = useState(0);
   const [chapterName, setChapterName] = useState('');
 
-  const subjects = [
+  const naturalSciences = [
     {
       id: 'mathematics',
       name: t('mathematics'),
@@ -56,6 +57,25 @@ const Index = () => {
       icon: '🧬',
       color: 'bg-emerald-500',
       questions: getTotalQuestionsBySubject('biology')
+    }
+  ];
+
+  const socialSciences = [
+    {
+      id: 'history',
+      name: t('history'),
+      description: t('historyDesc'),
+      icon: '🏛️',
+      color: 'bg-yellow-500',
+      questions: getTotalQuestionsBySubject('history')
+    },
+    {
+      id: 'geography',
+      name: 'Geography',
+      description: 'Study of Earth\'s physical features and human societies',
+      icon: '🌍',
+      color: 'bg-indigo-500',
+      questions: getTotalQuestionsBySubject('geography')
     },
     {
       id: 'english',
@@ -64,16 +84,32 @@ const Index = () => {
       icon: '📚',
       color: 'bg-red-500',
       questions: getTotalQuestionsBySubject('english')
-    },
-    {
-      id: 'history',
-      name: t('history'),
-      description: t('historyDesc'),
-      icon: '🏛️',
-      color: 'bg-yellow-500',
-      questions: getTotalQuestionsBySubject('history')
     }
   ];
+
+  const categories = [
+    {
+      id: 'natural_sciences',
+      name: 'Natural Sciences',
+      description: 'Mathematics, Physics, Chemistry, and Biology',
+      icon: '🔬',
+      color: 'bg-blue-600',
+      subjects: naturalSciences
+    },
+    {
+      id: 'social_sciences',
+      name: 'Social Sciences',
+      description: 'History, Geography, and Language Studies',
+      icon: '🌐',
+      color: 'bg-green-600',
+      subjects: socialSciences
+    }
+  ];
+
+  const handleCategorySelect = (categoryId: string) => {
+    setSelectedCategory(categoryId);
+    setCurrentView('subjects');
+  };
 
   const handleSubjectSelect = (subjectId: string) => {
     setSelectedSubject(subjectId);
@@ -99,12 +135,25 @@ const Index = () => {
 
   const handleReturnHome = () => {
     setCurrentView('home');
+    setSelectedCategory('');
     setSelectedSubject('');
     setSelectedChapter('');
     setSelectedDifficulty('easy');
     setUserScore(0);
     setTotalQuestions(0);
     setChapterName('');
+  };
+
+  const handleBackToCategories = () => {
+    setCurrentView('home');
+    setSelectedCategory('');
+    setSelectedSubject('');
+  };
+
+  const handleBackToSubjects = () => {
+    setCurrentView('subjects');
+    setSelectedSubject('');
+    setSelectedChapter('');
   };
 
   const handleBackToChapters = () => {
@@ -134,7 +183,6 @@ const Index = () => {
   }
 
   if (currentView === 'results') {
-    const currentSubject = subjects.find(s => s.id === selectedSubject);
     return (
       <ScoreBoard 
         score={userScore}
@@ -149,7 +197,9 @@ const Index = () => {
   }
 
   if (currentView === 'difficulty') {
-    const currentSubject = subjects.find(s => s.id === selectedSubject);
+    const currentCategory = categories.find(c => c.id === selectedCategory);
+    const currentSubjects = currentCategory?.subjects || [];
+    const currentSubject = currentSubjects.find(s => s.id === selectedSubject);
     const chapters = getChaptersBySubject(selectedSubject);
     const currentChapter = chapters.find(ch => ch.id === selectedChapter);
     
@@ -166,14 +216,71 @@ const Index = () => {
   }
 
   if (currentView === 'chapters') {
-    const currentSubject = subjects.find(s => s.id === selectedSubject);
+    const currentCategory = categories.find(c => c.id === selectedCategory);
+    const currentSubjects = currentCategory?.subjects || [];
+    const currentSubject = currentSubjects.find(s => s.id === selectedSubject);
     return (
       <ChapterList 
         subject={selectedSubject}
         subjectName={currentSubject?.name || ''}
-        onBack={handleReturnHome}
+        onBack={handleBackToSubjects}
         onChapterSelect={handleChapterSelect}
       />
+    );
+  }
+
+  if (currentView === 'subjects') {
+    const currentCategory = categories.find(c => c.id === selectedCategory);
+    
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-green-50 via-yellow-50 to-red-50">
+        {/* Header */}
+        <div className="bg-white shadow-sm border-b-4 border-gradient-to-r from-green-500 via-yellow-500 to-red-500">
+          <div className="container mx-auto px-4 py-6">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center space-x-3">
+                <Button variant="outline" onClick={handleBackToCategories} className="flex items-center space-x-2">
+                  <ArrowLeft className="w-4 h-4" />
+                  <span>Back to Categories</span>
+                </Button>
+                <div className="text-3xl">{currentCategory?.icon}</div>
+                <div>
+                  <h1 className="text-2xl font-bold text-gray-800">{currentCategory?.name}</h1>
+                  <p className="text-sm text-gray-600">{currentCategory?.description}</p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-4">
+                <LanguageSelector />
+                <Badge variant="outline" className="flex items-center space-x-1">
+                  <User className="w-4 h-4" />
+                  <span>{t('student')}</span>
+                </Badge>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="container mx-auto px-4 py-12">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">
+              Choose a Subject
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Select a subject from {currentCategory?.name} to start your learning journey
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {currentCategory?.subjects.map((subject) => (
+              <SubjectCard
+                key={subject.id}
+                subject={subject}
+                onSelect={handleSubjectSelect}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
     );
   }
 
@@ -217,7 +324,7 @@ const Index = () => {
           <Card className="text-center hover:shadow-lg transition-shadow">
             <CardContent className="p-6">
               <BookOpen className="w-12 h-12 text-blue-500 mx-auto mb-3" />
-              <h3 className="text-2xl font-bold text-gray-800">{subjects.length}</h3>
+              <h3 className="text-2xl font-bold text-gray-800">{naturalSciences.length + socialSciences.length}</h3>
               <p className="text-gray-600">{t('subjectsAvailable')}</p>
             </CardContent>
           </Card>
@@ -225,8 +332,8 @@ const Index = () => {
           <Card className="text-center hover:shadow-lg transition-shadow">
             <CardContent className="p-6">
               <Trophy className="w-12 h-12 text-yellow-500 mx-auto mb-3" />
-              <h3 className="text-2xl font-bold text-gray-800">20+</h3>
-              <p className="text-gray-600">{t('chaptersToMaster')}</p>
+              <h3 className="text-2xl font-bold text-gray-800">2</h3>
+              <p className="text-gray-600">Subject Categories</p>
             </CardContent>
           </Card>
           
@@ -239,18 +346,35 @@ const Index = () => {
           </Card>
         </div>
 
-        {/* Subject Selection */}
+        {/* Category Selection */}
         <div>
           <h3 className="text-2xl font-bold text-gray-800 mb-8 text-center">
-            {t('chooseSubject')}
+            Choose a Category
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {subjects.map((subject) => (
-              <SubjectCard
-                key={subject.id}
-                subject={subject}
-                onSelect={handleSubjectSelect}
-              />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {categories.map((category) => (
+              <Card key={category.id} className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer group">
+                <CardHeader className="text-center">
+                  <div className={`w-20 h-20 ${category.color} rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform`}>
+                    <span className="text-3xl">{category.icon}</span>
+                  </div>
+                  <CardTitle className="text-2xl font-bold">{category.name}</CardTitle>
+                  <CardDescription className="text-base">{category.description}</CardDescription>
+                </CardHeader>
+                
+                <CardContent className="space-y-4">
+                  <div className="text-center text-sm text-gray-600">
+                    <span>{category.subjects.length} Subjects Available</span>
+                  </div>
+                  
+                  <Button 
+                    onClick={() => handleCategorySelect(category.id)}
+                    className="w-full group-hover:bg-gray-800 transition-colors text-lg py-3"
+                  >
+                    Explore {category.name}
+                  </Button>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
