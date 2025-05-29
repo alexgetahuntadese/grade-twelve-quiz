@@ -1,4 +1,3 @@
-
 import { Chapter } from '../types';
 
 export const englishChapters: Chapter[] = [
@@ -7,7 +6,6 @@ export const englishChapters: Chapter[] = [
     name: 'Grammar',
     description: 'Parts of speech, sentence structure, and grammar rules',
     questions: [
-      // Easy Questions
       {
         id: 'gram_1',
         question: 'What is a noun?',
@@ -171,6 +169,121 @@ export const englishChapters: Chapter[] = [
         correct: 'If I had known, I would have come',
         explanation: 'Conditional perfect uses "had + past participle" in the if-clause and "would have + past participle" in the main clause.',
         difficulty: 'hard'
+      }
+    ]
+  },
+  {
+    id: 'literature',
+    name: 'Literature',
+    description: 'Reading comprehension and literary analysis',
+    questions: [
+      {
+        id: 'lit_1',
+        question: 'What is a metaphor?',
+        options: ['A direct comparison using like or as', 'A comparison without using like or as', 'An exaggeration', 'A repetition of sounds'],
+        correct: 'A comparison without using like or as',
+        explanation: 'A metaphor is a figure of speech that makes an implicit comparison without using "like" or "as".',
+        difficulty: 'easy'
+      },
+      {
+        id: 'lit_2',
+        question: 'What is the main character in a story called?',
+        options: ['Antagonist', 'Protagonist', 'Narrator', 'Author'],
+        correct: 'Protagonist',
+        explanation: 'The protagonist is the main character around whom the story revolves.',
+        difficulty: 'easy'
+      }
+    ]
+  },
+  {
+    id: 'writing',
+    name: 'Writing Skills',
+    description: 'Essay writing, composition, and creative writing',
+    questions: [
+      {
+        id: 'writ_1',
+        question: 'What is the first paragraph of an essay called?',
+        options: ['Conclusion', 'Introduction', 'Body', 'Summary'],
+        correct: 'Introduction',
+        explanation: 'The introduction is the opening paragraph that introduces the topic.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'writ_2',
+        question: 'What should a thesis statement do?',
+        options: ['Summarize the essay', 'State the main argument', 'List sources', 'Ask questions'],
+        correct: 'State the main argument',
+        explanation: 'A thesis statement presents the main argument or claim of the essay.',
+        difficulty: 'easy'
+      }
+    ]
+  },
+  {
+    id: 'reading_comprehension',
+    name: 'Reading Comprehension',
+    description: 'Understanding and analyzing written texts',
+    questions: [
+      {
+        id: 'read_1',
+        question: 'What is the main idea of a passage?',
+        options: ['The first sentence', 'The most important point', 'The longest paragraph', 'The conclusion'],
+        correct: 'The most important point',
+        explanation: 'The main idea is the central or most important point the author is making.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'read_2',
+        question: 'What are supporting details?',
+        options: ['Random facts', 'Information that supports the main idea', 'The title', 'The author\'s name'],
+        correct: 'Information that supports the main idea',
+        explanation: 'Supporting details provide evidence or examples that support the main idea.',
+        difficulty: 'easy'
+      }
+    ]
+  },
+  {
+    id: 'vocabulary',
+    name: 'Vocabulary',
+    description: 'Word meanings, synonyms, and antonyms',
+    questions: [
+      {
+        id: 'vocab_1',
+        question: 'What is a synonym for "happy"?',
+        options: ['Sad', 'Joyful', 'Angry', 'Tired'],
+        correct: 'Joyful',
+        explanation: 'A synonym is a word with the same or similar meaning. "Joyful" means the same as "happy".',
+        difficulty: 'easy'
+      },
+      {
+        id: 'vocab_2',
+        question: 'What is an antonym for "hot"?',
+        options: ['Warm', 'Cold', 'Cool', 'Freezing'],
+        correct: 'Cold',
+        explanation: 'An antonym is a word with the opposite meaning. "Cold" is the opposite of "hot".',
+        difficulty: 'easy'
+      }
+    ]
+  },
+  {
+    id: 'poetry',
+    name: 'Poetry',
+    description: 'Poetic devices, forms, and analysis',
+    questions: [
+      {
+        id: 'poet_1',
+        question: 'What is rhyme?',
+        options: ['Words that sound the same', 'Long sentences', 'Short lines', 'Difficult words'],
+        correct: 'Words that sound the same',
+        explanation: 'Rhyme occurs when words have similar ending sounds.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'poet_2',
+        question: 'What is a stanza?',
+        options: ['A single word', 'A group of lines', 'A punctuation mark', 'A type of poem'],
+        correct: 'A group of lines',
+        explanation: 'A stanza is a group of lines in a poem, similar to a paragraph in prose.',
+        difficulty: 'easy'
       }
     ]
   }

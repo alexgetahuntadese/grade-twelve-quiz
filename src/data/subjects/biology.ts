@@ -1,4 +1,3 @@
-
 import { Chapter } from '../types';
 
 export const biologyChapters: Chapter[] = [
@@ -171,6 +170,121 @@ export const biologyChapters: Chapter[] = [
         correct: 'Microtubules',
         explanation: 'Microtubules form the spindle apparatus that moves chromosomes during cell division.',
         difficulty: 'hard'
+      }
+    ]
+  },
+  {
+    id: 'genetics',
+    name: 'Genetics',
+    description: 'Heredity and genetic variation',
+    questions: [
+      {
+        id: 'gen_1',
+        question: 'What does DNA stand for?',
+        options: ['Deoxyribonucleic acid', 'Deoxyribose nucleic acid', 'Diribonucleic acid', 'Deoxyribonuclease acid'],
+        correct: 'Deoxyribonucleic acid',
+        explanation: 'DNA stands for Deoxyribonucleic acid, the molecule that carries genetic information.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'gen_2',
+        question: 'How many chromosomes do humans have?',
+        options: ['23', '46', '44', '48'],
+        correct: '46',
+        explanation: 'Humans have 46 chromosomes arranged in 23 pairs.',
+        difficulty: 'easy'
+      }
+    ]
+  },
+  {
+    id: 'evolution',
+    name: 'Evolution',
+    description: 'How species change over time',
+    questions: [
+      {
+        id: 'evo_1',
+        question: 'Who proposed the theory of evolution by natural selection?',
+        options: ['Mendel', 'Darwin', 'Watson', 'Lamarck'],
+        correct: 'Darwin',
+        explanation: 'Charles Darwin proposed the theory of evolution by natural selection.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'evo_2',
+        question: 'What is natural selection?',
+        options: ['Random changes', 'Survival of the fittest', 'Genetic drift', 'Mutation'],
+        correct: 'Survival of the fittest',
+        explanation: 'Natural selection is the process where organisms better adapted to their environment survive and reproduce.',
+        difficulty: 'easy'
+      }
+    ]
+  },
+  {
+    id: 'ecology',
+    name: 'Ecology',
+    description: 'Interactions between organisms and their environment',
+    questions: [
+      {
+        id: 'eco_1',
+        question: 'What is an ecosystem?',
+        options: ['A single organism', 'A community of organisms', 'Organisms and their environment', 'Just the environment'],
+        correct: 'Organisms and their environment',
+        explanation: 'An ecosystem includes all living organisms and their physical environment.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'eco_2',
+        question: 'What are producers in an ecosystem?',
+        options: ['Carnivores', 'Herbivores', 'Plants', 'Decomposers'],
+        correct: 'Plants',
+        explanation: 'Producers (mainly plants) make their own food through photosynthesis.',
+        difficulty: 'easy'
+      }
+    ]
+  },
+  {
+    id: 'human_biology',
+    name: 'Human Biology',
+    description: 'Human body systems and physiology',
+    questions: [
+      {
+        id: 'hum_1',
+        question: 'How many bones are in the adult human body?',
+        options: ['206', '208', '210', '204'],
+        correct: '206',
+        explanation: 'The adult human skeleton has 206 bones.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'hum_2',
+        question: 'What is the largest organ in the human body?',
+        options: ['Brain', 'Liver', 'Lungs', 'Skin'],
+        correct: 'Skin',
+        explanation: 'The skin is the largest organ by surface area and weight.',
+        difficulty: 'easy'
+      }
+    ]
+  },
+  {
+    id: 'plant_biology',
+    name: 'Plant Biology',
+    description: 'Plant structure, function, and processes',
+    questions: [
+      {
+        id: 'plant_1',
+        question: 'What is photosynthesis?',
+        options: ['Breaking down food', 'Making food from sunlight', 'Breathing', 'Growing'],
+        correct: 'Making food from sunlight',
+        explanation: 'Photosynthesis is the process where plants convert sunlight into chemical energy.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'plant_2',
+        question: 'What gas do plants absorb during photosynthesis?',
+        options: ['Oxygen', 'Carbon dioxide', 'Nitrogen', 'Hydrogen'],
+        correct: 'Carbon dioxide',
+        explanation: 'Plants absorb carbon dioxide from the atmosphere during photosynthesis.',
+        difficulty: 'easy'
       }
     ]
   }

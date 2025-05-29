@@ -1,4 +1,3 @@
-
 import { Chapter } from '../types';
 
 export const chemistryChapters: Chapter[] = [
@@ -7,7 +6,6 @@ export const chemistryChapters: Chapter[] = [
     name: 'Atomic Structure',
     description: 'Atoms, electrons, and periodic trends',
     questions: [
-      // Easy Questions
       {
         id: 'atom_1',
         question: 'What is the charge of a proton?',
@@ -171,6 +169,121 @@ export const chemistryChapters: Chapter[] = [
         correct: '-2 to +2',
         explanation: 'For d orbitals (l=2), ml ranges from -2 to +2, giving 5 possible values.',
         difficulty: 'hard'
+      }
+    ]
+  },
+  {
+    id: 'chemical_bonding',
+    name: 'Chemical Bonding',
+    description: 'How atoms combine to form compounds',
+    questions: [
+      {
+        id: 'bond_1',
+        question: 'What type of bond forms between metals and non-metals?',
+        options: ['Covalent', 'Ionic', 'Metallic', 'Hydrogen'],
+        correct: 'Ionic',
+        explanation: 'Ionic bonds form when electrons are transferred from metals to non-metals.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'bond_2',
+        question: 'What is a covalent bond?',
+        options: ['Sharing of electrons', 'Transfer of electrons', 'Attraction between ions', 'Metallic bonding'],
+        correct: 'Sharing of electrons',
+        explanation: 'Covalent bonds involve the sharing of electron pairs between atoms.',
+        difficulty: 'easy'
+      }
+    ]
+  },
+  {
+    id: 'periodic_table',
+    name: 'Periodic Table',
+    description: 'Organization of elements and periodic trends',
+    questions: [
+      {
+        id: 'per_1',
+        question: 'How many elements are in the modern periodic table?',
+        options: ['92', '103', '118', '120'],
+        correct: '118',
+        explanation: 'As of now, there are 118 confirmed elements in the periodic table.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'per_2',
+        question: 'What is the most abundant element in the universe?',
+        options: ['Oxygen', 'Carbon', 'Hydrogen', 'Helium'],
+        correct: 'Hydrogen',
+        explanation: 'Hydrogen makes up about 75% of the universe\'s mass.',
+        difficulty: 'easy'
+      }
+    ]
+  },
+  {
+    id: 'stoichiometry',
+    name: 'Stoichiometry',
+    description: 'Quantitative relationships in chemical reactions',
+    questions: [
+      {
+        id: 'stoi_1',
+        question: 'What is Avogadro\'s number?',
+        options: ['6.02 × 10²³', '6.02 × 10²²', '6.02 × 10²⁴', '6.02 × 10²¹'],
+        correct: '6.02 × 10²³',
+        explanation: 'Avogadro\'s number is approximately 6.02 × 10²³ particles per mole.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'stoi_2',
+        question: 'What is a mole?',
+        options: ['A small animal', 'A unit of amount', 'A type of reaction', 'A measuring tool'],
+        correct: 'A unit of amount',
+        explanation: 'A mole is the SI unit for amount of substance.',
+        difficulty: 'easy'
+      }
+    ]
+  },
+  {
+    id: 'acids_bases',
+    name: 'Acids and Bases',
+    description: 'Properties and reactions of acids and bases',
+    questions: [
+      {
+        id: 'acid_1',
+        question: 'What is the pH of pure water?',
+        options: ['0', '7', '14', '1'],
+        correct: '7',
+        explanation: 'Pure water has a neutral pH of 7.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'acid_2',
+        question: 'What does pH measure?',
+        options: ['Temperature', 'Pressure', 'Acidity/basicity', 'Density'],
+        correct: 'Acidity/basicity',
+        explanation: 'pH measures the concentration of hydrogen ions, indicating acidity or basicity.',
+        difficulty: 'easy'
+      }
+    ]
+  },
+  {
+    id: 'organic_chemistry',
+    name: 'Organic Chemistry',
+    description: 'Chemistry of carbon compounds',
+    questions: [
+      {
+        id: 'org_1',
+        question: 'What is the simplest hydrocarbon?',
+        options: ['Ethane', 'Methane', 'Propane', 'Butane'],
+        correct: 'Methane',
+        explanation: 'Methane (CH₄) is the simplest hydrocarbon with one carbon atom.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'org_2',
+        question: 'What functional group characterizes alcohols?',
+        options: ['-OH', '-COOH', '-NH₂', '-CHO'],
+        correct: '-OH',
+        explanation: 'Alcohols contain the hydroxyl functional group (-OH).',
+        difficulty: 'easy'
       }
     ]
   }

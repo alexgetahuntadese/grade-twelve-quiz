@@ -1,4 +1,3 @@
-
 import { Chapter } from '../types';
 
 export const historyChapters: Chapter[] = [
@@ -171,6 +170,121 @@ export const historyChapters: Chapter[] = [
         correct: 'D\'mt',
         explanation: 'The Kingdom of D\'mt (c. 980-400 BCE) is considered the first major Ethiopian civilization.',
         difficulty: 'hard'
+      }
+    ]
+  },
+  {
+    id: 'medieval_ethiopia',
+    name: 'Medieval Ethiopia',
+    description: 'The Zagwe and Solomonic dynasties',
+    questions: [
+      {
+        id: 'med_1',
+        question: 'Which dynasty ruled Ethiopia from 1270 to 1974?',
+        options: ['Zagwe', 'Solomonic', 'Axumite', 'Gondarine'],
+        correct: 'Solomonic',
+        explanation: 'The Solomonic dynasty ruled Ethiopia for over 700 years.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'med_2',
+        question: 'Who is credited with building the rock churches of Lalibela?',
+        options: ['King Ezana', 'King Lalibela', 'Emperor Haile Selassie', 'Queen Makeda'],
+        correct: 'King Lalibela',
+        explanation: 'King Lalibela of the Zagwe dynasty commissioned these magnificent churches.',
+        difficulty: 'easy'
+      }
+    ]
+  },
+  {
+    id: 'modern_ethiopia',
+    name: 'Modern Ethiopia',
+    description: 'Ethiopia in the 19th and 20th centuries',
+    questions: [
+      {
+        id: 'mod_1',
+        question: 'Which Ethiopian emperor defeated the Italians at Adwa in 1896?',
+        options: ['Menelik II', 'Haile Selassie', 'Tewodros II', 'Yohannes IV'],
+        correct: 'Menelik II',
+        explanation: 'Emperor Menelik II led Ethiopia to victory against Italy at the Battle of Adwa.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'mod_2',
+        question: 'What year did Ethiopia become a founding member of the United Nations?',
+        options: ['1945', '1941', '1955', '1963'],
+        correct: '1945',
+        explanation: 'Ethiopia was one of the founding members of the UN in 1945.',
+        difficulty: 'easy'
+      }
+    ]
+  },
+  {
+    id: 'world_ancient',
+    name: 'Ancient World Civilizations',
+    description: 'Early civilizations around the world',
+    questions: [
+      {
+        id: 'world_1',
+        question: 'Which river is associated with ancient Egyptian civilization?',
+        options: ['Euphrates', 'Nile', 'Indus', 'Yellow'],
+        correct: 'Nile',
+        explanation: 'Ancient Egyptian civilization developed along the Nile River.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'world_2',
+        question: 'What were the pyramids of Egypt built for?',
+        options: ['Homes', 'Tombs', 'Temples', 'Markets'],
+        correct: 'Tombs',
+        explanation: 'The pyramids were built as tombs for pharaohs and their families.',
+        difficulty: 'easy'
+      }
+    ]
+  },
+  {
+    id: 'medieval_world',
+    name: 'Medieval World',
+    description: 'The Middle Ages around the world',
+    questions: [
+      {
+        id: 'med_world_1',
+        question: 'What system dominated medieval Europe?',
+        options: ['Capitalism', 'Feudalism', 'Socialism', 'Democracy'],
+        correct: 'Feudalism',
+        explanation: 'Feudalism was the dominant social and economic system in medieval Europe.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'med_world_2',
+        question: 'What were the Crusades?',
+        options: ['Trade expeditions', 'Religious wars', 'Scientific missions', 'Art movements'],
+        correct: 'Religious wars',
+        explanation: 'The Crusades were a series of religious wars between Christians and Muslims.',
+        difficulty: 'easy'
+      }
+    ]
+  },
+  {
+    id: 'renaissance',
+    name: 'Renaissance and Exploration',
+    description: 'Cultural rebirth and age of exploration',
+    questions: [
+      {
+        id: 'ren_1',
+        question: 'Where did the Renaissance begin?',
+        options: ['France', 'England', 'Italy', 'Spain'],
+        correct: 'Italy',
+        explanation: 'The Renaissance began in Italy during the 14th century.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'ren_2',
+        question: 'Who painted the Mona Lisa?',
+        options: ['Michelangelo', 'Leonardo da Vinci', 'Raphael', 'Donatello'],
+        correct: 'Leonardo da Vinci',
+        explanation: 'Leonardo da Vinci painted the famous Mona Lisa.',
+        difficulty: 'easy'
       }
     ]
   }

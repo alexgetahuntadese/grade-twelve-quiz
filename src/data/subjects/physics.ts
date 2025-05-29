@@ -1,4 +1,3 @@
-
 import { Chapter } from '../types';
 
 export const physicsChapters: Chapter[] = [
@@ -7,7 +6,6 @@ export const physicsChapters: Chapter[] = [
     name: 'Mechanics',
     description: 'Motion, forces, and energy',
     questions: [
-      // Easy Questions
       {
         id: 'mech_1',
         question: 'What is the SI unit of force?',
@@ -47,130 +45,121 @@ export const physicsChapters: Chapter[] = [
         correct: 'Vector',
         explanation: 'Velocity has both magnitude and direction, making it a vector quantity.',
         difficulty: 'easy'
-      },
+      }
+    ]
+  },
+  {
+    id: 'thermodynamics',
+    name: 'Thermodynamics',
+    description: 'Heat, temperature, and energy transfer',
+    questions: [
       {
-        id: 'mech_6',
-        question: 'What is the formula for kinetic energy?',
-        options: ['KE = mv', 'KE = ½mv²', 'KE = mgh', 'KE = mv²'],
-        correct: 'KE = ½mv²',
-        explanation: 'Kinetic energy is half the product of mass and velocity squared.',
+        id: 'thermo_1',
+        question: 'What is the SI unit of temperature?',
+        options: ['Celsius', 'Fahrenheit', 'Kelvin', 'Rankine'],
+        correct: 'Kelvin',
+        explanation: 'Kelvin is the SI base unit of thermodynamic temperature.',
         difficulty: 'easy'
       },
       {
-        id: 'mech_7',
-        question: 'What happens to an object in free fall (ignoring air resistance)?',
-        options: ['It accelerates downward', 'It moves at constant velocity', 'It accelerates upward', 'It stops moving'],
-        correct: 'It accelerates downward',
-        explanation: 'Objects in free fall accelerate downward due to gravity.',
+        id: 'thermo_2',
+        question: 'What is absolute zero in Kelvin?',
+        options: ['0 K', '-273 K', '273 K', '100 K'],
+        correct: '0 K',
+        explanation: 'Absolute zero is 0 K, the lowest possible temperature.',
+        difficulty: 'easy'
+      }
+    ]
+  },
+  {
+    id: 'waves',
+    name: 'Waves and Sound',
+    description: 'Wave properties, sound, and vibrations',
+    questions: [
+      {
+        id: 'wave_1',
+        question: 'What is the speed of sound in air at room temperature?',
+        options: ['300 m/s', '343 m/s', '400 m/s', '500 m/s'],
+        correct: '343 m/s',
+        explanation: 'Sound travels at approximately 343 m/s in air at 20°C.',
         difficulty: 'easy'
       },
-
-      // Medium Questions
       {
-        id: 'mech_8',
-        question: 'A car accelerates from 0 to 60 m/s in 10 seconds. What is its acceleration?',
-        options: ['6 m/s²', '60 m/s²', '10 m/s²', '600 m/s²'],
-        correct: '6 m/s²',
-        explanation: 'a = Δv/Δt = (60 - 0)/10 = 6 m/s²',
-        difficulty: 'medium'
+        id: 'wave_2',
+        question: 'What is the relationship between frequency and wavelength?',
+        options: ['Directly proportional', 'Inversely proportional', 'No relationship', 'Exponential'],
+        correct: 'Inversely proportional',
+        explanation: 'As frequency increases, wavelength decreases: v = fλ.',
+        difficulty: 'easy'
+      }
+    ]
+  },
+  {
+    id: 'electricity',
+    name: 'Electricity and Magnetism',
+    description: 'Electric charges, circuits, and magnetic fields',
+    questions: [
+      {
+        id: 'elec_1',
+        question: 'What is the unit of electric current?',
+        options: ['Volt', 'Ampere', 'Ohm', 'Watt'],
+        correct: 'Ampere',
+        explanation: 'The ampere (A) is the SI unit of electric current.',
+        difficulty: 'easy'
       },
       {
-        id: 'mech_9',
-        question: 'What is the momentum of a 50 kg object moving at 20 m/s?',
-        options: ['1000 kg⋅m/s', '70 kg⋅m/s', '30 kg⋅m/s', '2.5 kg⋅m/s'],
-        correct: '1000 kg⋅m/s',
-        explanation: 'p = mv = 50 kg × 20 m/s = 1000 kg⋅m/s',
-        difficulty: 'medium'
+        id: 'elec_2',
+        question: 'What is Ohm\'s law?',
+        options: ['V = IR', 'V = I/R', 'I = VR', 'R = VI'],
+        correct: 'V = IR',
+        explanation: 'Ohm\'s law states that voltage equals current times resistance.',
+        difficulty: 'easy'
+      }
+    ]
+  },
+  {
+    id: 'optics',
+    name: 'Optics',
+    description: 'Light, reflection, refraction, and lenses',
+    questions: [
+      {
+        id: 'opt_1',
+        question: 'What is the speed of light in vacuum?',
+        options: ['3 × 10⁸ m/s', '3 × 10⁶ m/s', '3 × 10¹⁰ m/s', '3 × 10⁹ m/s'],
+        correct: '3 × 10⁸ m/s',
+        explanation: 'Light travels at approximately 3 × 10⁸ meters per second in vacuum.',
+        difficulty: 'easy'
       },
       {
-        id: 'mech_10',
-        question: 'If you double the velocity of an object, by what factor does its kinetic energy change?',
-        options: ['2', '4', '8', '16'],
-        correct: '4',
-        explanation: 'KE = ½mv². If v doubles, KE increases by a factor of 2² = 4.',
-        difficulty: 'medium'
+        id: 'opt_2',
+        question: 'What happens when light passes from air to water?',
+        options: ['It speeds up', 'It slows down', 'Speed remains same', 'It stops'],
+        correct: 'It slows down',
+        explanation: 'Light slows down when entering a denser medium like water.',
+        difficulty: 'easy'
+      }
+    ]
+  },
+  {
+    id: 'modern_physics',
+    name: 'Modern Physics',
+    description: 'Quantum mechanics, relativity, and atomic physics',
+    questions: [
+      {
+        id: 'mod_1',
+        question: 'Who proposed the theory of relativity?',
+        options: ['Newton', 'Einstein', 'Bohr', 'Planck'],
+        correct: 'Einstein',
+        explanation: 'Albert Einstein developed both special and general theories of relativity.',
+        difficulty: 'easy'
       },
       {
-        id: 'mech_11',
-        question: 'What is the period of a simple pendulum with length 1 m on Earth?',
-        options: ['2.0 s', '1.0 s', 'π s', '2π s'],
-        correct: '2.0 s',
-        explanation: 'T = 2π√(L/g) = 2π√(1/9.8) ≈ 2.0 s',
-        difficulty: 'medium'
-      },
-      {
-        id: 'mech_12',
-        question: 'What is the centripetal acceleration of an object moving in a circle of radius 5 m at 10 m/s?',
-        options: ['2 m/s²', '20 m/s²', '50 m/s²', '200 m/s²'],
-        correct: '20 m/s²',
-        explanation: 'ac = v²/r = 10²/5 = 100/5 = 20 m/s²',
-        difficulty: 'medium'
-      },
-      {
-        id: 'mech_13',
-        question: 'According to Newton\'s third law, if object A exerts a force on object B, then:',
-        options: ['B exerts an equal and opposite force on A', 'B exerts a greater force on A', 'B exerts no force on A', 'B exerts a smaller force on A'],
-        correct: 'B exerts an equal and opposite force on A',
-        explanation: 'Newton\'s third law states that for every action, there is an equal and opposite reaction.',
-        difficulty: 'medium'
-      },
-
-      // Hard Questions
-      {
-        id: 'mech_14',
-        question: 'A projectile is launched at 45° with initial velocity 50 m/s. What is its maximum height?',
-        options: ['31.9 m', '63.8 m', '127.6 m', '15.9 m'],
-        correct: '31.9 m',
-        explanation: 'h = (v₀sin θ)²/(2g) = (50×sin45°)²/(2×9.8) = (35.36)²/(19.6) ≈ 31.9 m',
-        difficulty: 'hard'
-      },
-      {
-        id: 'mech_15',
-        question: 'Two objects collide elastically. Object 1 (m₁ = 2 kg, v₁ = 3 m/s) hits object 2 (m₂ = 4 kg, v₂ = 0). What is v₁ after collision?',
-        options: ['-1 m/s', '1 m/s', '2 m/s', '0 m/s'],
-        correct: '-1 m/s',
-        explanation: 'For elastic collision: v₁f = ((m₁-m₂)/(m₁+m₂))v₁i = ((2-4)/(2+4))×3 = -1 m/s',
-        difficulty: 'hard'
-      },
-      {
-        id: 'mech_16',
-        question: 'What is the escape velocity from Earth\'s surface?',
-        options: ['7.9 km/s', '11.2 km/s', '15.7 km/s', '9.8 km/s'],
-        correct: '11.2 km/s',
-        explanation: 'Escape velocity ve = √(2GM/R) ≈ 11.2 km/s for Earth.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'mech_17',
-        question: 'A satellite orbits Earth at height h = R (R = Earth radius). What is its orbital period compared to a surface satellite?',
-        options: ['2√2 times longer', '√2 times longer', '2 times longer', '4 times longer'],
-        correct: '2√2 times longer',
-        explanation: 'T ∝ r^(3/2). At height h = R, r = 2R, so T₂/T₁ = (2R/R)^(3/2) = 2^(3/2) = 2√2.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'mech_18',
-        question: 'What is the reduced mass of a system with masses m₁ = 3 kg and m₂ = 6 kg?',
-        options: ['2 kg', '3 kg', '4.5 kg', '9 kg'],
-        correct: '2 kg',
-        explanation: 'μ = m₁m₂/(m₁+m₂) = (3×6)/(3+6) = 18/9 = 2 kg',
-        difficulty: 'hard'
-      },
-      {
-        id: 'mech_19',
-        question: 'A uniform rod of length L rotates about its end. What is its moment of inertia?',
-        options: ['ML²/12', 'ML²/3', 'ML²/2', 'ML²'],
-        correct: 'ML²/3',
-        explanation: 'For a rod rotating about its end: I = ∫₀ᴸ (M/L)x² dx = (M/L)[x³/3]₀ᴸ = ML²/3',
-        difficulty: 'hard'
-      },
-      {
-        id: 'mech_20',
-        question: 'What is the coefficient of restitution for a perfectly inelastic collision?',
-        options: ['0', '1', '0.5', '-1'],
-        correct: '0',
-        explanation: 'In a perfectly inelastic collision, objects stick together, so e = 0.',
-        difficulty: 'hard'
+        id: 'mod_2',
+        question: 'What is a photon?',
+        options: ['A particle of light', 'A type of atom', 'A wave', 'An electron'],
+        correct: 'A particle of light',
+        explanation: 'A photon is a quantum of electromagnetic radiation, or a particle of light.',
+        difficulty: 'easy'
       }
     ]
   }
