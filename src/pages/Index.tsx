@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -57,6 +56,14 @@ const Index = () => {
       icon: '🧬',
       color: 'bg-emerald-500',
       questions: getTotalQuestionsBySubject('biology')
+    },
+    {
+      id: 'technical-drawing',
+      name: 'Technical Drawing',
+      description: 'Technical drawing and drafting skills',
+      icon: '📏',
+      color: 'bg-cyan-500',
+      questions: getTotalQuestionsBySubject('technical-drawing')
     }
   ];
 
@@ -78,12 +85,63 @@ const Index = () => {
       questions: getTotalQuestionsBySubject('geography')
     },
     {
+      id: 'economics',
+      name: 'Economics',
+      description: 'Study of production, distribution, and consumption',
+      icon: '💰',
+      color: 'bg-amber-500',
+      questions: getTotalQuestionsBySubject('economics')
+    },
+    {
+      id: 'general-business',
+      name: 'General Business',
+      description: 'Business fundamentals and entrepreneurship',
+      icon: '💼',
+      color: 'bg-slate-500',
+      questions: getTotalQuestionsBySubject('general-business')
+    }
+  ];
+
+  const commonCourses = [
+    {
       id: 'english',
       name: t('english'),
       description: t('englishDesc'),
       icon: '📚',
       color: 'bg-red-500',
       questions: getTotalQuestionsBySubject('english')
+    },
+    {
+      id: 'civics',
+      name: 'Civics',
+      description: 'Government, citizenship, and civic responsibility',
+      icon: '🏛️',
+      color: 'bg-blue-600',
+      questions: getTotalQuestionsBySubject('civics')
+    },
+    {
+      id: 'physical-education',
+      name: 'Physical Education',
+      description: 'Physical fitness, health, and wellness',
+      icon: '⚽',
+      color: 'bg-orange-500',
+      questions: getTotalQuestionsBySubject('physical-education')
+    },
+    {
+      id: 'information-technology',
+      name: 'Information Technology',
+      description: 'Computer basics and information technology',
+      icon: '💻',
+      color: 'bg-gray-600',
+      questions: getTotalQuestionsBySubject('information-technology')
+    },
+    {
+      id: 'national-language',
+      name: 'National Language',
+      description: 'Ethiopian national language - Amharic',
+      icon: '🇪🇹',
+      color: 'bg-green-600',
+      questions: getTotalQuestionsBySubject('national-language')
     }
   ];
 
@@ -91,7 +149,7 @@ const Index = () => {
     {
       id: 'natural_sciences',
       name: 'Natural Sciences',
-      description: 'Mathematics, Physics, Chemistry, and Biology',
+      description: 'Mathematics, Physics, Chemistry, Biology, and Technical Drawing',
       icon: '🔬',
       color: 'bg-blue-600',
       subjects: naturalSciences
@@ -99,10 +157,18 @@ const Index = () => {
     {
       id: 'social_sciences',
       name: 'Social Sciences',
-      description: 'History, Geography, and Language Studies',
+      description: 'History, Geography, Economics, and Business Studies',
       icon: '🌐',
       color: 'bg-green-600',
       subjects: socialSciences
+    },
+    {
+      id: 'common_courses',
+      name: 'Common Courses',
+      description: 'English, Civics, Physical Education, IT, and National Language',
+      icon: '📖',
+      color: 'bg-purple-600',
+      subjects: commonCourses
     }
   ];
 
@@ -324,7 +390,7 @@ const Index = () => {
           <Card className="text-center hover:shadow-lg transition-shadow">
             <CardContent className="p-6">
               <BookOpen className="w-12 h-12 text-blue-500 mx-auto mb-3" />
-              <h3 className="text-2xl font-bold text-gray-800">{naturalSciences.length + socialSciences.length}</h3>
+              <h3 className="text-2xl font-bold text-gray-800">{naturalSciences.length + socialSciences.length + commonCourses.length}</h3>
               <p className="text-gray-600">{t('subjectsAvailable')}</p>
             </CardContent>
           </Card>
@@ -332,7 +398,7 @@ const Index = () => {
           <Card className="text-center hover:shadow-lg transition-shadow">
             <CardContent className="p-6">
               <Trophy className="w-12 h-12 text-yellow-500 mx-auto mb-3" />
-              <h3 className="text-2xl font-bold text-gray-800">2</h3>
+              <h3 className="text-2xl font-bold text-gray-800">3</h3>
               <p className="text-gray-600">Subject Categories</p>
             </CardContent>
           </Card>
@@ -351,7 +417,7 @@ const Index = () => {
           <h3 className="text-2xl font-bold text-gray-800 mb-8 text-center">
             Choose a Category
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {categories.map((category) => (
               <Card key={category.id} className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer group">
                 <CardHeader className="text-center">

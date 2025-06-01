@@ -1,4 +1,3 @@
-
 import { Question, Chapter } from './types';
 import { mathematicsChapters } from './subjects/mathematics';
 import { physicsChapters } from './subjects/physics';
@@ -7,15 +6,29 @@ import { biologyChapters } from './subjects/biology';
 import { englishChapters } from './subjects/english';
 import { historyChapters } from './subjects/history';
 import { geographyChapters } from './subjects/geography';
+import { technicalDrawingChapters } from './subjects/technical-drawing';
+import { economicsChapters } from './subjects/economics';
+import { generalBusinessChapters } from './subjects/general-business';
+import { civicsChapters } from './subjects/civics';
+import { physicalEducationChapters } from './subjects/physical-education';
+import { informationTechnologyChapters } from './subjects/information-technology';
+import { nationalLanguageChapters } from './subjects/national-language';
 
 export interface QuestionsBySubject {
   mathematics: Chapter[];
   physics: Chapter[];
   chemistry: Chapter[];
   biology: Chapter[];
+  'technical-drawing': Chapter[];
   english: Chapter[];
   history: Chapter[];
   geography: Chapter[];
+  economics: Chapter[];
+  'general-business': Chapter[];
+  civics: Chapter[];
+  'physical-education': Chapter[];
+  'information-technology': Chapter[];
+  'national-language': Chapter[];
 }
 
 export const questionsBySubject: QuestionsBySubject = {
@@ -23,9 +36,16 @@ export const questionsBySubject: QuestionsBySubject = {
   physics: physicsChapters,
   chemistry: chemistryChapters,
   biology: biologyChapters,
+  'technical-drawing': technicalDrawingChapters,
   english: englishChapters,
   history: historyChapters,
-  geography: geographyChapters
+  geography: geographyChapters,
+  economics: economicsChapters,
+  'general-business': generalBusinessChapters,
+  civics: civicsChapters,
+  'physical-education': physicalEducationChapters,
+  'information-technology': informationTechnologyChapters,
+  'national-language': nationalLanguageChapters
 };
 
 export const getTotalQuestionsBySubject = (subject: string): number => {
