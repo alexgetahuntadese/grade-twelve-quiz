@@ -4,288 +4,237 @@ export const biologyChapters: Chapter[] = [
   {
     id: 'cell_biology',
     name: 'Cell Biology',
-    description: 'Cell structure and cellular processes',
+    description: 'Structure and function of cells',
     questions: [
-      // Easy Questions
       {
         id: 'cell_1',
-        question: 'What is the powerhouse of the cell?',
-        options: ['Nucleus', 'Mitochondria', 'Ribosome', 'Chloroplast'],
-        correct: 'Mitochondria',
-        explanation: 'Mitochondria produce ATP through cellular respiration, earning the nickname "powerhouse of the cell".',
+        question: 'What is the basic unit of life?',
+        options: ['Tissue', 'Organ', 'Cell', 'Organism'],
+        correct: 'Cell',
+        explanation: 'The cell is the basic structural and functional unit of all living things.',
         difficulty: 'easy'
       },
       {
         id: 'cell_2',
-        question: 'Which organelle controls the cell\'s activities?',
-        options: ['Mitochondria', 'Nucleus', 'Cytoplasm', 'Cell membrane'],
-        correct: 'Nucleus',
-        explanation: 'The nucleus contains DNA and controls cellular activities.',
+        question: 'Which organelle is responsible for energy production in the cell?',
+        options: ['Nucleus', 'Mitochondria', 'Ribosome', 'Endoplasmic Reticulum'],
+        correct: 'Mitochondria',
+        explanation: 'Mitochondria are the powerhouses of the cell, producing ATP.',
         difficulty: 'easy'
       },
       {
         id: 'cell_3',
-        question: 'What is the basic unit of life?',
-        options: ['Tissue', 'Organ', 'Cell', 'Organism'],
-        correct: 'Cell',
-        explanation: 'The cell is considered the basic structural and functional unit of life.',
+        question: 'What is the function of ribosomes?',
+        options: ['Protein synthesis', 'DNA replication', 'Energy production', 'Waste disposal'],
+        correct: 'Protein synthesis',
+        explanation: 'Ribosomes are responsible for synthesizing proteins.',
         difficulty: 'easy'
       },
       {
         id: 'cell_4',
-        question: 'Which structure is found in plant cells but not animal cells?',
-        options: ['Nucleus', 'Cell wall', 'Mitochondria', 'Ribosome'],
-        correct: 'Cell wall',
-        explanation: 'Plant cells have a rigid cell wall made of cellulose, which animal cells lack.',
+        question: 'What is the role of the cell membrane?',
+        options: ['Protect the cell', 'Control entry and exit of substances', 'Produce energy', 'Store genetic material'],
+        correct: 'Control entry and exit of substances',
+        explanation: 'The cell membrane regulates what enters and exits the cell.',
         difficulty: 'easy'
       },
       {
         id: 'cell_5',
-        question: 'What is the function of ribosomes?',
-        options: ['Energy production', 'Protein synthesis', 'Waste removal', 'DNA storage'],
-        correct: 'Protein synthesis',
-        explanation: 'Ribosomes are the sites of protein synthesis in cells.',
+        question: 'What is the main component of the cell wall in plants?',
+        options: ['Chitin', 'Peptidoglycan', 'Cellulose', 'Lipids'],
+        correct: 'Cellulose',
+        explanation: 'Plant cell walls are primarily made of cellulose.',
         difficulty: 'easy'
       },
       {
         id: 'cell_6',
-        question: 'What surrounds and protects the cell?',
-        options: ['Cell wall', 'Cell membrane', 'Cytoplasm', 'Nuclear envelope'],
-        correct: 'Cell membrane',
-        explanation: 'The cell membrane (plasma membrane) surrounds all cells and controls what enters and exits.',
+        question: 'Which type of cell lacks a nucleus?',
+        options: ['Eukaryotic', 'Prokaryotic', 'Animal', 'Plant'],
+        correct: 'Prokaryotic',
+        explanation: 'Prokaryotic cells do not have a nucleus.',
         difficulty: 'easy'
       },
       {
         id: 'cell_7',
-        question: 'Where does photosynthesis occur in plant cells?',
-        options: ['Mitochondria', 'Nucleus', 'Chloroplasts', 'Vacuole'],
-        correct: 'Chloroplasts',
-        explanation: 'Chloroplasts contain chlorophyll and are the sites of photosynthesis.',
+        question: 'What is the function of the Golgi apparatus?',
+        options: ['Protein synthesis', 'Lipid production', 'Packaging and modification of proteins', 'Energy production'],
+        correct: 'Packaging and modification of proteins',
+        explanation: 'The Golgi apparatus modifies and packages proteins.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'cell_8',
+        question: 'What is the role of lysosomes?',
+        options: ['Protein synthesis', 'Waste disposal', 'Energy production', 'DNA replication'],
+        correct: 'Waste disposal',
+        explanation: 'Lysosomes break down waste materials in the cell.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'cell_9',
+        question: 'What is the process by which cells divide?',
+        options: ['Osmosis', 'Diffusion', 'Mitosis', 'Respiration'],
+        correct: 'Mitosis',
+        explanation: 'Mitosis is the process of cell division.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'cell_10',
+        question: 'Which organelle is responsible for photosynthesis in plant cells?',
+        options: ['Mitochondria', 'Chloroplast', 'Ribosome', 'Nucleus'],
+        correct: 'Chloroplast',
+        explanation: 'Chloroplasts are the site of photosynthesis in plant cells.',
         difficulty: 'easy'
       },
 
       // Medium Questions
       {
-        id: 'cell_8',
-        question: 'What is the difference between prokaryotic and eukaryotic cells?',
-        options: ['Size only', 'Presence of nucleus', 'Number of chromosomes', 'Type of ribosomes'],
-        correct: 'Presence of nucleus',
-        explanation: 'Eukaryotic cells have a membrane-bound nucleus, while prokaryotic cells do not.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'cell_9',
-        question: 'Which organelle is responsible for modifying and packaging proteins?',
-        options: ['Endoplasmic reticulum', 'Golgi apparatus', 'Lysosome', 'Peroxisome'],
-        correct: 'Golgi apparatus',
-        explanation: 'The Golgi apparatus modifies, packages, and ships proteins from the ER.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'cell_10',
-        question: 'What is the function of lysosomes?',
-        options: ['Protein synthesis', 'Energy production', 'Digestion and waste removal', 'DNA replication'],
-        correct: 'Digestion and waste removal',
-        explanation: 'Lysosomes contain digestive enzymes and break down waste materials.',
-        difficulty: 'medium'
-      },
-      {
         id: 'cell_11',
-        question: 'What is the fluid that fills the cell called?',
-        options: ['Plasma', 'Cytoplasm', 'Nucleoplasm', 'Protoplasm'],
-        correct: 'Cytoplasm',
-        explanation: 'Cytoplasm is the gel-like substance that fills the cell and suspends organelles.',
+        question: 'What is the function of the smooth endoplasmic reticulum?',
+        options: ['Protein synthesis', 'Lipid synthesis', 'Energy production', 'Waste disposal'],
+        correct: 'Lipid synthesis',
+        explanation: 'The smooth ER is involved in lipid synthesis and detoxification.',
         difficulty: 'medium'
       },
       {
         id: 'cell_12',
-        question: 'Which type of ER has ribosomes attached?',
-        options: ['Smooth ER', 'Rough ER', 'Both types', 'Neither type'],
-        correct: 'Rough ER',
-        explanation: 'Rough ER has ribosomes attached to its surface, giving it a "rough" appearance.',
+        question: 'What is the function of the rough endoplasmic reticulum?',
+        options: ['Protein synthesis', 'Lipid synthesis', 'Energy production', 'Waste disposal'],
+        correct: 'Protein synthesis',
+        explanation: 'The rough ER is involved in protein synthesis and modification.',
         difficulty: 'medium'
       },
       {
         id: 'cell_13',
-        question: 'What maintains the shape of a plant cell?',
-        options: ['Cell membrane', 'Cytoskeleton', 'Cell wall', 'Vacuole'],
-        correct: 'Cell wall',
-        explanation: 'The rigid cell wall provides structural support and maintains cell shape.',
+        question: 'What is the role of the nucleolus?',
+        options: ['Protein synthesis', 'Ribosome synthesis', 'Energy production', 'Waste disposal'],
+        correct: 'Ribosome synthesis',
+        explanation: 'The nucleolus is the site of ribosome synthesis.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'cell_14',
+        question: 'What is the difference between mitosis and meiosis?',
+        options: ['Mitosis produces identical cells, meiosis produces gametes', 'Mitosis produces gametes, meiosis produces identical cells', 'Mitosis occurs in prokaryotes, meiosis occurs in eukaryotes', 'Mitosis is sexual reproduction, meiosis is asexual reproduction'],
+        correct: 'Mitosis produces identical cells, meiosis produces gametes',
+        explanation: 'Mitosis produces identical daughter cells, while meiosis produces gametes with half the number of chromosomes.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'cell_15',
+        question: 'What is apoptosis?',
+        options: ['Cell growth', 'Cell death', 'Cell division', 'Cell differentiation'],
+        correct: 'Cell death',
+        explanation: 'Apoptosis is programmed cell death.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'cell_16',
+        question: 'What is the function of vacuoles?',
+        options: ['Protein synthesis', 'Storage of water and nutrients', 'Energy production', 'Waste disposal'],
+        correct: 'Storage of water and nutrients',
+        explanation: 'Vacuoles store water, nutrients, and waste products.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'cell_17',
+        question: 'What is the role of centrioles in cell division?',
+        options: ['DNA replication', 'Chromosome separation', 'Protein synthesis', 'Energy production'],
+        correct: 'Chromosome separation',
+        explanation: 'Centrioles help in the separation of chromosomes during cell division.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'cell_18',
+        question: 'What is the function of the cytoskeleton?',
+        options: ['Cell shape and support', 'Protein synthesis', 'Energy production', 'Waste disposal'],
+        correct: 'Cell shape and support',
+        explanation: 'The cytoskeleton provides cell shape and support.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'cell_19',
+        question: 'What is the difference between active and passive transport?',
+        options: ['Active transport requires energy, passive transport does not', 'Passive transport requires energy, active transport does not', 'Active transport moves water, passive transport moves solutes', 'Passive transport moves water, active transport moves solutes'],
+        correct: 'Active transport requires energy, passive transport does not',
+        explanation: 'Active transport requires energy to move substances against their concentration gradient, while passive transport does not.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'cell_20',
+        question: 'What is the process of endocytosis?',
+        options: ['Cell drinking', 'Cell eating', 'Cell waste disposal', 'Cell division'],
+        correct: 'Cell eating',
+        explanation: 'Endocytosis is the process by which cells engulf substances from their surroundings.',
         difficulty: 'medium'
       },
 
       // Hard Questions
       {
-        id: 'cell_14',
-        question: 'Which protein is responsible for active transport across membranes?',
-        options: ['Channel proteins', 'Carrier proteins', 'ATP synthase', 'All of the above'],
-        correct: 'Carrier proteins',
-        explanation: 'Carrier proteins use energy (ATP) to transport substances against concentration gradients.',
+        id: 'cell_21',
+        question: 'What is the role of telomeres in cell aging?',
+        options: ['Protect DNA from damage', 'Shorten with each cell division', 'Lengthen with each cell division', 'Repair DNA'],
+        correct: 'Shorten with each cell division',
+        explanation: 'Telomeres shorten with each cell division, contributing to cell aging.',
         difficulty: 'hard'
       },
       {
-        id: 'cell_15',
-        question: 'What is the approximate size of a typical prokaryotic cell?',
-        options: ['0.1-1 μm', '1-10 μm', '10-100 μm', '100-1000 μm'],
-        correct: '1-10 μm',
-        explanation: 'Prokaryotic cells are typically 1-10 micrometers in diameter.',
+        id: 'cell_22',
+        question: 'What is the function of chaperones in protein folding?',
+        options: ['Break down proteins', 'Assist in protein folding', 'Synthesize proteins', 'Transport proteins'],
+        correct: 'Assist in protein folding',
+        explanation: 'Chaperones assist in the proper folding of proteins.',
         difficulty: 'hard'
       },
       {
-        id: 'cell_16',
-        question: 'Which organelle contains its own DNA and ribosomes?',
-        options: ['Golgi apparatus', 'Lysosome', 'Mitochondria', 'Peroxisome'],
-        correct: 'Mitochondria',
-        explanation: 'Mitochondria have their own circular DNA and 70S ribosomes, supporting endosymbiotic theory.',
+        id: 'cell_23',
+        question: 'What is the role of microRNAs in gene regulation?',
+        options: ['Promote gene expression', 'Inhibit gene expression', 'Repair DNA', 'Replicate DNA'],
+        correct: 'Inhibit gene expression',
+        explanation: 'MicroRNAs inhibit gene expression by binding to mRNA.',
         difficulty: 'hard'
       },
       {
-        id: 'cell_17',
-        question: 'What is the function of the nucleolus?',
-        options: ['DNA storage', 'Ribosome assembly', 'Protein synthesis', 'Energy production'],
-        correct: 'Ribosome assembly',
-        explanation: 'The nucleolus is where ribosomal RNA is synthesized and ribosome subunits are assembled.',
+        id: 'cell_24',
+        question: 'What is the function of ubiquitin in protein degradation?',
+        options: ['Tag proteins for degradation', 'Synthesize proteins', 'Fold proteins', 'Transport proteins'],
+        correct: 'Tag proteins for degradation',
+        explanation: 'Ubiquitin tags proteins for degradation by the proteasome.',
         difficulty: 'hard'
       },
       {
-        id: 'cell_18',
-        question: 'Which structure connects adjacent plant cells?',
-        options: ['Gap junctions', 'Tight junctions', 'Plasmodesmata', 'Desmosomes'],
-        correct: 'Plasmodesmata',
-        explanation: 'Plasmodesmata are channels through cell walls that connect plant cells.',
+        id: 'cell_25',
+        question: 'What is the role of the extracellular matrix?',
+        options: ['Provide cell support and communication', 'Synthesize proteins', 'Produce energy', 'Store genetic material'],
+        correct: 'Provide cell support and communication',
+        explanation: 'The extracellular matrix provides support and communication between cells.',
         difficulty: 'hard'
       },
       {
-        id: 'cell_19',
-        question: 'What is the primary function of peroxisomes?',
-        options: ['Protein synthesis', 'Lipid metabolism', 'DNA repair', 'Cell division'],
-        correct: 'Lipid metabolism',
-        explanation: 'Peroxisomes break down fatty acids and detoxify harmful substances.',
+        id: 'cell_26',
+        question: 'What is the function of gap junctions?',
+        options: ['Cell adhesion', 'Cell communication', 'Cell transport', 'Cell protection'],
+        correct: 'Cell communication',
+        explanation: 'Gap junctions allow direct communication between cells.',
         difficulty: 'hard'
       },
       {
-        id: 'cell_20',
-        question: 'Which cytoskeletal element is involved in chromosome movement during mitosis?',
-        options: ['Microfilaments', 'Intermediate filaments', 'Microtubules', 'All of the above'],
-        correct: 'Microtubules',
-        explanation: 'Microtubules form the spindle apparatus that moves chromosomes during cell division.',
+        id: 'cell_27',
+        question: 'What is the role of the nuclear lamina?',
+        options: ['Provide nuclear shape and support', 'Synthesize proteins', 'Produce energy', 'Store genetic material'],
+        correct: 'Provide nuclear shape and support',
+        explanation: 'The nuclear lamina provides shape and support to the nucleus.',
         difficulty: 'hard'
-      }
-    ]
-  },
-  {
-    id: 'genetics',
-    name: 'Genetics',
-    description: 'Heredity and genetic variation',
-    questions: [
-      {
-        id: 'gen_1',
-        question: 'What does DNA stand for?',
-        options: ['Deoxyribonucleic acid', 'Deoxyribose nucleic acid', 'Diribonucleic acid', 'Deoxyribonuclease acid'],
-        correct: 'Deoxyribonucleic acid',
-        explanation: 'DNA stands for Deoxyribonucleic acid, the molecule that carries genetic information.',
-        difficulty: 'easy'
       },
       {
-        id: 'gen_2',
-        question: 'How many chromosomes do humans have?',
-        options: ['23', '46', '44', '48'],
-        correct: '46',
-        explanation: 'Humans have 46 chromosomes arranged in 23 pairs.',
-        difficulty: 'easy'
-      }
-    ]
-  },
-  {
-    id: 'evolution',
-    name: 'Evolution',
-    description: 'How species change over time',
-    questions: [
-      {
-        id: 'evo_1',
-        question: 'Who proposed the theory of evolution by natural selection?',
-        options: ['Mendel', 'Darwin', 'Watson', 'Lamarck'],
-        correct: 'Darwin',
-        explanation: 'Charles Darwin proposed the theory of evolution by natural selection.',
-        difficulty: 'easy'
+        id: 'cell_28',
+        question: 'What is the function of the signal recognition particle (SRP)?',
+        options: ['Target proteins to the ER', 'Synthesize proteins', 'Fold proteins', 'Transport proteins'],
+        correct: 'Target proteins to the ER',
+        explanation: 'The SRP targets proteins to the endoplasmic reticulum.',
+        difficulty: 'hard'
       },
       {
-        id: 'evo_2',
-        question: 'What is natural selection?',
-        options: ['Random changes', 'Survival of the fittest', 'Genetic drift', 'Mutation'],
-        correct: 'Survival of the fittest',
-        explanation: 'Natural selection is the process where organisms better adapted to their environment survive and reproduce.',
-        difficulty: 'easy'
-      }
-    ]
-  },
-  {
-    id: 'ecology',
-    name: 'Ecology',
-    description: 'Interactions between organisms and their environment',
-    questions: [
-      {
-        id: 'eco_1',
-        question: 'What is an ecosystem?',
-        options: ['A single organism', 'A community of organisms', 'Organisms and their environment', 'Just the environment'],
-        correct: 'Organisms and their environment',
-        explanation: 'An ecosystem includes all living organisms and their physical environment.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'eco_2',
-        question: 'What are producers in an ecosystem?',
-        options: ['Carnivores', 'Herbivores', 'Plants', 'Decomposers'],
-        correct: 'Plants',
-        explanation: 'Producers (mainly plants) make their own food through photosynthesis.',
-        difficulty: 'easy'
-      }
-    ]
-  },
-  {
-    id: 'human_biology',
-    name: 'Human Biology',
-    description: 'Human body systems and physiology',
-    questions: [
-      {
-        id: 'hum_1',
-        question: 'How many bones are in the adult human body?',
-        options: ['206', '208', '210', '204'],
-        correct: '206',
-        explanation: 'The adult human skeleton has 206 bones.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'hum_2',
-        question: 'What is the largest organ in the human body?',
-        options: ['Brain', 'Liver', 'Lungs', 'Skin'],
-        correct: 'Skin',
-        explanation: 'The skin is the largest organ by surface area and weight.',
-        difficulty: 'easy'
-      }
-    ]
-  },
-  {
-    id: 'plant_biology',
-    name: 'Plant Biology',
-    description: 'Plant structure, function, and processes',
-    questions: [
-      {
-        id: 'plant_1',
-        question: 'What is photosynthesis?',
-        options: ['Breaking down food', 'Making food from sunlight', 'Breathing', 'Growing'],
-        correct: 'Making food from sunlight',
-        explanation: 'Photosynthesis is the process where plants convert sunlight into chemical energy.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'plant_2',
-        question: 'What gas do plants absorb during photosynthesis?',
-        options: ['Oxygen', 'Carbon dioxide', 'Nitrogen', 'Hydrogen'],
-        correct: 'Carbon dioxide',
-        explanation: 'Plants absorb carbon dioxide from the atmosphere during photosynthesis.',
-        difficulty: 'easy'
-      }
-    ]
-  }
-];
+        id: 'cell_29',
+        question: 'What is the role of the proteasome?',
+        options: ['Degrade proteins', '

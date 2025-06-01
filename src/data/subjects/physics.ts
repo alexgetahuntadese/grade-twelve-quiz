@@ -1506,5 +1506,257 @@ export const physicsChapters: Chapter[] = [
         difficulty: 'hard'
       }
     ]
+  },
+  {
+    id: 'grade11_waves_optics',
+    name: 'Grade 11: Waves and Optics',
+    description: 'Wave properties, sound, light, and optical phenomena',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g11_wave_easy_1',
+        question: 'What is the speed of light in vacuum?',
+        options: ['3 × 10⁸ m/s', '3 × 10⁶ m/s', '3 × 10¹⁰ m/s', '3 × 10⁴ m/s'],
+        correct: '3 × 10⁸ m/s',
+        explanation: 'The speed of light in vacuum is approximately 3 × 10⁸ m/s',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_wave_easy_2',
+        question: 'What is the relationship between frequency and wavelength?',
+        options: ['Directly proportional', 'Inversely proportional', 'No relationship', 'Exponentially related'],
+        correct: 'Inversely proportional',
+        explanation: 'For waves, v = fλ, so f and λ are inversely proportional at constant speed',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_wave_easy_3',
+        question: 'What type of wave is sound?',
+        options: ['Transverse', 'Longitudinal', 'Electromagnetic', 'Surface'],
+        correct: 'Longitudinal',
+        explanation: 'Sound waves are longitudinal waves with compressions and rarefactions',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_wave_easy_4',
+        question: 'What is the unit of frequency?',
+        options: ['Meter', 'Second', 'Hertz', 'Joule'],
+        correct: 'Hertz',
+        explanation: 'Frequency is measured in Hertz (Hz), which is cycles per second',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_wave_easy_5',
+        question: 'What happens when light passes from air to water?',
+        options: ['It speeds up', 'It slows down', 'Speed remains constant', 'It stops'],
+        correct: 'It slows down',
+        explanation: 'Light slows down when entering a denser medium like water',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_wave_easy_6',
+        question: 'What is reflection?',
+        options: ['Bending of waves', 'Bouncing of waves', 'Absorption of waves', 'Creation of waves'],
+        correct: 'Bouncing of waves',
+        explanation: 'Reflection is the bouncing back of waves when they hit a surface',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_wave_easy_7',
+        question: 'What is refraction?',
+        options: ['Bouncing of waves', 'Bending of waves', 'Absorption of waves', 'Amplification of waves'],
+        correct: 'Bending of waves',
+        explanation: 'Refraction is the bending of waves when they pass from one medium to another',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_wave_easy_8',
+        question: 'Which color has the longest wavelength in visible light?',
+        options: ['Red', 'Blue', 'Green', 'Violet'],
+        correct: 'Red',
+        explanation: 'Red light has the longest wavelength in the visible spectrum',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_wave_easy_9',
+        question: 'What is amplitude?',
+        options: ['Wave speed', 'Maximum displacement', 'Wave frequency', 'Wave period'],
+        correct: 'Maximum displacement',
+        explanation: 'Amplitude is the maximum displacement from the equilibrium position',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_wave_easy_10',
+        question: 'What type of mirror produces virtual images?',
+        options: ['Concave', 'Convex', 'Plane', 'All mirrors'],
+        correct: 'Plane',
+        explanation: 'Plane mirrors always produce virtual, upright images',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions
+      {
+        id: 'g11_wave_med_1',
+        question: 'Calculate the wavelength of a wave with frequency 100 Hz and speed 340 m/s',
+        options: ['3.4 m', '34 m', '0.34 m', '340 m'],
+        correct: '3.4 m',
+        explanation: 'λ = v/f = 340/100 = 3.4 m',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_wave_med_2',
+        question: 'What is the refractive index of a medium where light travels at 2 × 10⁸ m/s?',
+        options: ['1.5', '2.0', '0.67', '1.0'],
+        correct: '1.5',
+        explanation: 'n = c/v = (3 × 10⁸)/(2 × 10⁸) = 1.5',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_wave_med_3',
+        question: 'What is the period of a wave with frequency 50 Hz?',
+        options: ['0.02 s', '0.2 s', '2 s', '20 s'],
+        correct: '0.02 s',
+        explanation: 'T = 1/f = 1/50 = 0.02 s',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_wave_med_4',
+        question: 'Which phenomenon explains why we can hear around corners?',
+        options: ['Reflection', 'Refraction', 'Diffraction', 'Interference'],
+        correct: 'Diffraction',
+        explanation: 'Diffraction allows sound waves to bend around obstacles and corners',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_wave_med_5',
+        question: 'What is the focal length of a concave mirror with radius of curvature 20 cm?',
+        options: ['10 cm', '20 cm', '40 cm', '5 cm'],
+        correct: '10 cm',
+        explanation: 'Focal length f = R/2 = 20/2 = 10 cm for spherical mirrors',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_wave_med_6',
+        question: 'What happens at the critical angle?',
+        options: ['Partial reflection', 'Total internal reflection', 'No reflection', 'Complete transmission'],
+        correct: 'Total internal reflection',
+        explanation: 'At the critical angle, total internal reflection begins to occur',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_wave_med_7',
+        question: 'Two waves interfere constructively. What is the resulting amplitude if each has amplitude 3 units?',
+        options: ['0', '3', '6', '9'],
+        correct: '6',
+        explanation: 'Constructive interference: amplitudes add, so 3 + 3 = 6 units',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_wave_med_8',
+        question: 'What is the wavelength of red light with frequency 4.3 × 10¹⁴ Hz?',
+        options: ['700 nm', '500 nm', '400 nm', '600 nm'],
+        correct: '700 nm',
+        explanation: 'λ = c/f = (3 × 10⁸)/(4.3 × 10¹⁴) ≈ 7 × 10⁻⁷ m = 700 nm',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_wave_med_9',
+        question: 'What is the magnification of a plane mirror?',
+        options: ['-1', '1', '0', 'Infinite'],
+        correct: '1',
+        explanation: 'Plane mirrors produce images of the same size, so magnification = 1',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_wave_med_10',
+        question: 'What is the Doppler effect?',
+        options: ['Change in amplitude', 'Change in frequency due to motion', 'Change in speed', 'Change in direction'],
+        correct: 'Change in frequency due to motion',
+        explanation: 'Doppler effect is the change in frequency due to relative motion between source and observer',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions
+      {
+        id: 'g11_wave_hard_1',
+        question: 'Calculate the critical angle for light going from glass (n=1.5) to air (n=1.0)',
+        options: ['41.8°', '30°', '45°', '60°'],
+        correct: '41.8°',
+        explanation: 'sin θc = n₂/n₁ = 1.0/1.5 = 0.667, so θc = arcsin(0.667) = 41.8°',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_wave_hard_2',
+        question: 'A wave has frequency 200 Hz in air and 150 Hz in water. What is the refractive index of water?',
+        options: ['1.33', '0.75', '1.5', '2.0'],
+        explanation: 'n = f₁/f₂ = 200/150 = 1.33',
+        correct: '1.33',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_wave_hard_3',
+        question: 'What is the path difference for destructive interference?',
+        options: ['nλ', '(n + 1/2)λ', 'λ/2', 'Both B and C'],
+        correct: 'Both B and C',
+        explanation: 'Destructive interference occurs when path difference = (n + 1/2)λ where n = 0,1,2...',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_wave_hard_4',
+        question: 'An object is placed 15 cm from a concave mirror of focal length 10 cm. Where is the image?',
+        options: ['30 cm', '6 cm', '15 cm', '20 cm'],
+        correct: '30 cm',
+        explanation: '1/f = 1/u + 1/v, so 1/10 = 1/15 + 1/v, solving gives v = 30 cm',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_wave_hard_5',
+        question: 'What is the beat frequency when two waves of 440 Hz and 444 Hz interfere?',
+        options: ['4 Hz', '440 Hz', '444 Hz', '884 Hz'],
+        correct: '4 Hz',
+        explanation: 'Beat frequency = |f₁ - f₂| = |440 - 444| = 4 Hz',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_wave_hard_6',
+        question: 'A thin film of oil (n=1.4) on water (n=1.33) appears dark for 600 nm light. What is the minimum thickness?',
+        options: ['107 nm', '214 nm', '300 nm', '428 nm'],
+        correct: '107 nm',
+        explanation: 'For destructive interference in thin films: 2nt = mλ, so t = λ/4n = 600/(4×1.4) = 107 nm',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_wave_hard_7',
+        question: 'What is the resolving power of a grating with 1000 lines in the 2nd order?',
+        options: ['1000', '2000', '500', '4000'],
+        correct: '2000',
+        explanation: 'Resolving power = mN = 2 × 1000 = 2000',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_wave_hard_8',
+        question: 'A concave lens has focal length -20 cm. An object at 30 cm produces an image at what distance?',
+        options: ['-12 cm', '12 cm', '-60 cm', '60 cm'],
+        correct: '-12 cm',
+        explanation: '1/f = 1/u + 1/v, so 1/(-20) = 1/30 + 1/v, solving gives v = -12 cm',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_wave_hard_9',
+        question: 'What is the angular width of the central maximum for single-slit diffraction with slit width 0.1 mm and wavelength 500 nm?',
+        options: ['0.01 rad', '0.005 rad', '0.02 rad', '0.1 rad'],
+        correct: '0.01 rad',
+        explanation: 'Angular width = 2λ/a = 2 × 500 × 10⁻⁹ / 0.1 × 10⁻³ = 0.01 rad',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_wave_hard_10',
+        question: 'Calculate the power of a lens that produces a virtual image at 25 cm for an object at 50 cm',
+        options: ['6 D', '4 D', '2 D', '8 D'],
+        correct: '2 D',
+        explanation: '1/f = 1/u + 1/v = 1/50 + 1/(-25) = 1/50 - 1/25 = -1/50, so f = -50 cm, P = 100/50 = 2 D',
+        difficulty: 'hard'
+      }
+    ]
   }
 ];
