@@ -48,46 +48,6 @@ export const generalBusinessChapters: Chapter[] = [
         explanation: 'Customer service involves helping customers with their needs and questions.',
         difficulty: 'easy'
       },
-      {
-        id: 'bus_fund_easy_6',
-        question: 'What is revenue?',
-        options: ['Money spent', 'Money earned from sales', 'Number of employees', 'Business location'],
-        correct: 'Money earned from sales',
-        explanation: 'Revenue is the total money earned from selling goods or services.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'bus_fund_easy_7',
-        question: 'What is a target market?',
-        options: ['Any customer', 'Specific group of potential customers', 'Employees', 'Competitors'],
-        correct: 'Specific group of potential customers',
-        explanation: 'A target market is a specific group of consumers a business aims to reach.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'bus_fund_easy_8',
-        question: 'What is a brand?',
-        options: ['A product', 'A company\'s identity and reputation', 'A price', 'A location'],
-        correct: 'A company\'s identity and reputation',
-        explanation: 'A brand represents a company\'s identity, values, and reputation in the market.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'bus_fund_easy_9',
-        question: 'What is inventory?',
-        options: ['Employees', 'Goods held for sale', 'Building space', 'Equipment'],
-        correct: 'Goods held for sale',
-        explanation: 'Inventory refers to goods and materials held by a business for sale.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'bus_fund_easy_10',
-        question: 'What is competition?',
-        options: ['Cooperation', 'Other businesses offering similar products', 'Government regulation', 'Customer complaints'],
-        correct: 'Other businesses offering similar products',
-        explanation: 'Competition consists of other businesses that offer similar products or services.',
-        difficulty: 'easy'
-      },
 
       // Medium Questions
       {
@@ -114,62 +74,6 @@ export const generalBusinessChapters: Chapter[] = [
         explanation: 'Cash flow is the movement of money into and out of a business over time.',
         difficulty: 'medium'
       },
-      {
-        id: 'bus_fund_med_4',
-        question: 'What is a SWOT analysis?',
-        options: ['Sales report', 'Strengths, Weaknesses, Opportunities, Threats analysis', 'Employee evaluation', 'Product testing'],
-        correct: 'Strengths, Weaknesses, Opportunities, Threats analysis',
-        explanation: 'SWOT analysis evaluates internal strengths/weaknesses and external opportunities/threats.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'bus_fund_med_5',
-        question: 'What is the marketing mix?',
-        options: ['Different marketing teams', 'Product, Price, Place, Promotion', 'Various advertisements', 'Customer types'],
-        correct: 'Product, Price, Place, Promotion',
-        explanation: 'The marketing mix consists of the 4 Ps: Product, Price, Place, and Promotion.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'bus_fund_med_6',
-        question: 'What is break-even point?',
-        options: ['Maximum profit', 'Point where revenue equals costs', 'Best selling product', 'Highest price'],
-        correct: 'Point where revenue equals costs',
-        explanation: 'Break-even point is where total revenue equals total costs, resulting in no profit or loss.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'bus_fund_med_7',
-        question: 'What is organizational structure?',
-        options: ['Building design', 'How a company arranges its employees and departments', 'Product layout', 'Computer system'],
-        correct: 'How a company arranges its employees and departments',
-        explanation: 'Organizational structure defines how activities are coordinated to achieve company goals.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'bus_fund_med_8',
-        question: 'What is supply chain management?',
-        options: ['Employee training', 'Managing flow of goods from suppliers to customers', 'Marketing strategy', 'Financial planning'],
-        correct: 'Managing flow of goods from suppliers to customers',
-        explanation: 'Supply chain management oversees the flow of goods and services from suppliers to end customers.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'bus_fund_med_9',
-        question: 'What is quality control?',
-        options: ['Price setting', 'Ensuring products meet standards', 'Employee hiring', 'Market expansion'],
-        correct: 'Ensuring products meet standards',
-        explanation: 'Quality control ensures products or services meet established quality standards.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'bus_fund_med_10',
-        question: 'What is market segmentation?',
-        options: ['Dividing market into distinct groups', 'Combining all customers', 'Setting prices', 'Opening new stores'],
-        correct: 'Dividing market into distinct groups',
-        explanation: 'Market segmentation divides a market into distinct groups with similar characteristics.',
-        difficulty: 'medium'
-      },
 
       // Hard Questions
       {
@@ -182,74 +86,196 @@ export const generalBusinessChapters: Chapter[] = [
       },
       {
         id: 'bus_fund_hard_2',
-        question: 'What is vertical integration?',
-        options: ['Expanding horizontally', 'Controlling supply chain stages', 'Hiring more employees', 'Increasing prices'],
-        correct: 'Controlling supply chain stages',
-        explanation: 'Vertical integration involves controlling multiple stages of the supply chain.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'bus_fund_hard_3',
         question: 'What is the concept of economies of scale?',
         options: ['Small production benefits', 'Cost advantages from large-scale production', 'Equal costs always', 'Increasing costs with size'],
         correct: 'Cost advantages from large-scale production',
         explanation: 'Economies of scale refer to cost advantages achieved through large-scale production.',
         difficulty: 'hard'
+      }
+    ]
+  },
+
+  {
+    id: 'grade11_management',
+    name: 'Grade 11: Business Management',
+    description: 'Management principles, leadership, and organizational behavior',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g11_mgmt_easy_1',
+        question: 'What is management?',
+        options: ['Following orders', 'Controlling resources', 'Working alone', 'Only finance'],
+        correct: 'Controlling resources',
+        explanation: 'Management involves controlling resources to achieve organizational goals.',
+        difficulty: 'easy'
       },
       {
-        id: 'bus_fund_hard_4',
-        question: 'What is Porter\'s Five Forces model?',
-        options: ['Marketing strategy', 'Framework for analyzing competitive environment', 'Financial planning tool', 'Employee management system'],
-        correct: 'Framework for analyzing competitive environment',
-        explanation: 'Porter\'s Five Forces analyzes competitive forces that shape industry profitability.',
+        id: 'g11_mgmt_easy_2',
+        question: 'What are the four main functions of management?',
+        options: ['Hiring, firing, training, paying', 'Planning, organizing, leading, controlling', 'Selling, buying, making, delivering', 'Marketing, finance, operations, HR'],
+        correct: 'Planning, organizing, leading, controlling',
+        explanation: 'The four main functions of management are planning, organizing, leading, and controlling.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_mgmt_easy_3',
+        question: 'What is leadership?',
+        options: ['Bossing people around', 'Following rules', 'Influencing and guiding others', 'Working alone'],
+        correct: 'Influencing and guiding others',
+        explanation: 'Leadership involves influencing and guiding others toward achieving goals.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_mgmt_easy_4',
+        question: 'What is delegation?',
+        options: ['Avoiding work', 'Assigning tasks to others', 'Doing everything yourself', 'Firing employees'],
+        correct: 'Assigning tasks to others',
+        explanation: 'Delegation is assigning tasks and authority to others while maintaining responsibility.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_mgmt_easy_5',
+        question: 'What is organizational structure?',
+        options: ['Office layout', 'Company building', 'How organization is arranged', 'Employee benefits'],
+        correct: 'How organization is arranged',
+        explanation: 'Organizational structure defines how activities and reporting relationships are arranged.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions
+      {
+        id: 'g11_mgmt_med_1',
+        question: 'What is the difference between leadership and management?',
+        options: ['No difference', 'Leadership inspires and guides; management controls and plans', 'Leaders make less money', 'Managers have more education'],
+        correct: 'Leadership inspires and guides; management controls and plans',
+        explanation: 'Leadership focuses on inspiring and guiding people, while management focuses on planning, organizing, and controlling resources.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_mgmt_med_2',
+        question: 'What is organizational behavior?',
+        options: ['Company rules', 'Study of how people interact in organizations', 'Marketing strategy', 'Production method'],
+        correct: 'Study of how people interact in organizations',
+        explanation: 'Organizational behavior studies how individuals and groups interact within organizations.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_mgmt_med_3',
+        question: 'What is a matrix organizational structure?',
+        options: ['Single chain of command', 'Employees report to multiple supervisors', 'Only used in manufacturing', 'Flat hierarchy'],
+        correct: 'Employees report to multiple supervisors',
+        explanation: 'In a matrix structure, employees report to both functional and project managers.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions
+      {
+        id: 'g11_mgmt_hard_1',
+        question: 'How does Herzberg\'s Two-Factor Theory relate to employee motivation?',
+        options: ['Not related', 'Distinguishes between hygiene factors and motivators', 'Only applies to executives', 'Based on financial rewards only'],
+        correct: 'Distinguishes between hygiene factors and motivators',
+        explanation: 'Herzberg\'s theory separates hygiene factors (preventing dissatisfaction) from motivators (creating satisfaction).',
         difficulty: 'hard'
       },
       {
-        id: 'bus_fund_hard_5',
-        question: 'What is lean management?',
-        options: ['Reducing employees', 'Eliminating waste and improving efficiency', 'Decreasing quality', 'Lowering prices'],
-        correct: 'Eliminating waste and improving efficiency',
-        explanation: 'Lean management focuses on eliminating waste and continuously improving processes.',
+        id: 'g11_mgmt_hard_2',
+        question: 'What is the difference between transformational and transactional leadership?',
+        options: ['No difference', 'Transformational inspires change; transactional focuses on rewards', 'Only applies to certain industries', 'Based on company size'],
+        correct: 'Transformational inspires change; transactional focuses on rewards',
+        explanation: 'Transformational leadership inspires change through vision, while transactional leadership uses rewards and punishments to motivate.',
+        difficulty: 'hard'
+      }
+    ]
+  },
+
+  {
+    id: 'grade12_international_business',
+    name: 'Grade 12: International Business',
+    description: 'Global trade, international markets, and multinational operations',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_intl_easy_1',
+        question: 'What is international business?',
+        options: ['Local business', 'Business across national borders', 'Only large corporations', 'Government control'],
+        correct: 'Business across national borders',
+        explanation: 'International business involves commercial transactions across national borders.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_intl_easy_2',
+        question: 'What is globalization?',
+        options: ['Local focus', 'Increasing interconnection of world economies', 'Isolation of markets', 'Small business growth'],
+        correct: 'Increasing interconnection of world economies',
+        explanation: 'Globalization is the increasing interdependence and integration of world economies.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_intl_easy_3',
+        question: 'What is an import?',
+        options: ['Selling abroad', 'Buying from abroad', 'Local sales', 'Manufacturing'],
+        correct: 'Buying from abroad',
+        explanation: 'Imports are goods or services bought from other countries.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_intl_easy_4',
+        question: 'What is an export?',
+        options: ['Buying from abroad', 'Selling to other countries', 'Local trade', 'Manufacturing process'],
+        correct: 'Selling to other countries',
+        explanation: 'Exports are goods or services sold to other countries.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_intl_easy_5',
+        question: 'What is a multinational corporation?',
+        options: ['Small business', 'Local company', 'Company operating in multiple countries', 'Government agency'],
+        correct: 'Company operating in multiple countries',
+        explanation: 'A multinational corporation operates in multiple countries beyond its home country.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions
+      {
+        id: 'g12_intl_med_1',
+        question: 'What is a trade barrier?',
+        options: ['Road block', 'Restriction on international trade', 'Trading strategy', 'Marketing technique'],
+        correct: 'Restriction on international trade',
+        explanation: 'Trade barriers are restrictions that limit free trade between countries, such as tariffs or quotas.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_intl_med_2',
+        question: 'What is exchange rate risk?',
+        options: ['Stock market risk', 'Potential loss from currency fluctuations', 'Interest rate change', 'Marketing failure'],
+        correct: 'Potential loss from currency fluctuations',
+        explanation: 'Exchange rate risk is the potential for loss due to changes in currency exchange rates.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_intl_med_3',
+        question: 'What is a trade deficit?',
+        options: ['Trade advantage', 'When imports exceed exports', 'When exports exceed imports', 'Balanced trade'],
+        correct: 'When imports exceed exports',
+        explanation: 'A trade deficit occurs when a country imports more than it exports.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions
+      {
+        id: 'g12_intl_hard_1',
+        question: 'How does the theory of comparative advantage explain international trade?',
+        options: ['Countries should not trade', 'Countries benefit from trade by specializing in products with lowest opportunity cost', 'Only applies to developed nations', 'Based on military power'],
+        correct: 'Countries benefit from trade by specializing in products with lowest opportunity cost',
+        explanation: 'Comparative advantage theory states countries benefit by specializing in production with lower opportunity cost.',
         difficulty: 'hard'
       },
       {
-        id: 'bus_fund_hard_6',
-        question: 'What is the balanced scorecard approach?',
-        options: ['Financial reporting only', 'Multi-perspective performance measurement', 'Single metric focus', 'Employee evaluation only'],
-        correct: 'Multi-perspective performance measurement',
-        explanation: 'Balanced scorecard measures performance from financial, customer, internal, and learning perspectives.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'bus_fund_hard_7',
-        question: 'What is strategic planning?',
-        options: ['Daily operations', 'Long-term goal setting and resource allocation', 'Short-term planning only', 'Emergency response'],
-        correct: 'Long-term goal setting and resource allocation',
-        explanation: 'Strategic planning involves setting long-term goals and determining how to achieve them.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'bus_fund_hard_8',
-        question: 'What is the concept of first-mover advantage?',
-        options: ['Being last to market', 'Benefits of entering market first', 'Following competitors', 'Waiting for others'],
-        correct: 'Benefits of entering market first',
-        explanation: 'First-mover advantage refers to benefits gained by being the first to enter a market.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'bus_fund_hard_9',
-        question: 'What is corporate social responsibility (CSR)?',
-        options: ['Profit maximization only', 'Business commitment to ethical and social issues', 'Government requirement', 'Employee benefits'],
-        correct: 'Business commitment to ethical and social issues',
-        explanation: 'CSR is a business approach that contributes to sustainable development and social welfare.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'bus_fund_hard_10',
-        question: 'What is disruptive innovation?',
-        options: ['Small improvements', 'Innovation that displaces established technologies', 'Expensive upgrades', 'Marketing campaigns'],
-        correct: 'Innovation that displaces established technologies',
-        explanation: 'Disruptive innovation creates new markets and displaces existing technologies or business models.',
+        id: 'g12_intl_hard_2',
+        question: 'What is the difference between standardization and adaptation in international marketing?',
+        options: ['No difference', 'Standardization uses same approach; adaptation customizes for local markets', 'Only applies to certain products', 'Based on company size'],
+        correct: 'Standardization uses same approach; adaptation customizes for local markets',
+        explanation: 'Standardization uses the same marketing approach globally; adaptation customizes marketing for local markets.',
         difficulty: 'hard'
       }
     ]

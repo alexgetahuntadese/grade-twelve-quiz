@@ -130,46 +130,6 @@ export const economicsChapters: Chapter[] = [
         explanation: 'Elasticity measures how responsive demand is to changes in price.',
         difficulty: 'medium'
       },
-      {
-        id: 'econ_basic_med_6',
-        question: 'What is a recession?',
-        options: ['Economic growth', 'Economic decline', 'Stable economy', 'High inflation'],
-        correct: 'Economic decline',
-        explanation: 'A recession is a period of economic decline typically lasting six months or more.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'econ_basic_med_7',
-        question: 'What is comparative advantage?',
-        options: ['Being best at everything', 'Lower opportunity cost in production', 'Highest profits', 'Largest market share'],
-        correct: 'Lower opportunity cost in production',
-        explanation: 'Comparative advantage exists when a country can produce at lower opportunity cost.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'econ_basic_med_8',
-        question: 'What causes economic growth?',
-        options: ['Higher prices only', 'Increased productivity and resources', 'More money printing', 'Higher taxes'],
-        correct: 'Increased productivity and resources',
-        explanation: 'Economic growth comes from increased productivity and availability of resources.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'econ_basic_med_9',
-        question: 'What is market failure?',
-        options: ['Business closure', 'Market not allocating resources efficiently', 'Low prices', 'High demand'],
-        correct: 'Market not allocating resources efficiently',
-        explanation: 'Market failure occurs when markets do not allocate resources efficiently.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'econ_basic_med_10',
-        question: 'What is the business cycle?',
-        options: ['Daily operations', 'Fluctuations in economic activity', 'Company lifecycle', 'Production process'],
-        correct: 'Fluctuations in economic activity',
-        explanation: 'The business cycle refers to the ups and downs in economic activity over time.',
-        difficulty: 'medium'
-      },
 
       // Hard Questions
       {
@@ -187,69 +147,191 @@ export const economicsChapters: Chapter[] = [
         correct: 'Inflation and unemployment tradeoff',
         explanation: 'The Phillips Curve shows the inverse relationship between inflation and unemployment.',
         difficulty: 'hard'
+      }
+    ]
+  },
+  
+  {
+    id: 'grade11_microeconomics',
+    name: 'Grade 11: Microeconomics',
+    description: 'Study of individual economic units and market structures',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g11_micro_easy_1',
+        question: 'What is microeconomics?',
+        options: ['Study of small countries', 'Study of individual economic units', 'Study of the entire economy', 'Study of economic history'],
+        correct: 'Study of individual economic units',
+        explanation: 'Microeconomics is the study of individuals, households, and firms in making decisions regarding resource allocation.',
+        difficulty: 'easy'
       },
       {
-        id: 'econ_basic_hard_3',
-        question: 'What is deadweight loss?',
-        options: ['Company losses', 'Efficiency loss from market distortions', 'Transportation costs', 'Storage costs'],
-        correct: 'Efficiency loss from market distortions',
-        explanation: 'Deadweight loss is the efficiency loss when supply and demand are not in equilibrium.',
+        id: 'g11_micro_easy_2',
+        question: 'What is a monopoly?',
+        options: ['Many sellers', 'One seller', 'Government control', 'International trade'],
+        correct: 'One seller',
+        explanation: 'A monopoly is a market structure with a single seller of a unique product.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_micro_easy_3',
+        question: 'What is perfect competition?',
+        options: ['One dominant firm', 'No competition allowed', 'Many firms selling identical products', 'Government control'],
+        correct: 'Many firms selling identical products',
+        explanation: 'Perfect competition involves many firms selling identical products with no barriers to entry.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_micro_easy_4',
+        question: 'What is consumer surplus?',
+        options: ['Government budget excess', 'Profit', 'Difference between willingness to pay and price paid', 'Extra production'],
+        correct: 'Difference between willingness to pay and price paid',
+        explanation: 'Consumer surplus is the difference between what consumers are willing to pay and what they actually pay.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_micro_easy_5',
+        question: 'What is a production possibility frontier?',
+        options: ['Factory location', 'Maximum output combinations', 'Trade barrier', 'Budget limit'],
+        correct: 'Maximum output combinations',
+        explanation: 'A production possibility frontier shows the maximum possible combinations of two goods that can be produced.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions
+      {
+        id: 'g11_micro_med_1',
+        question: 'What is price elasticity of demand?',
+        options: ['Price flexibility', 'Measure of responsiveness to price changes', 'Government control of prices', 'Supply increase'],
+        correct: 'Measure of responsiveness to price changes',
+        explanation: 'Price elasticity of demand measures how quantity demanded responds to price changes.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_micro_med_2',
+        question: 'What is oligopoly?',
+        options: ['Single seller', 'Few large sellers', 'Many small sellers', 'Government monopoly'],
+        correct: 'Few large sellers',
+        explanation: 'Oligopoly is a market structure with a few large sellers who have significant market power.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_micro_med_3',
+        question: 'What is marginal cost?',
+        options: ['Average cost', 'Fixed cost', 'Cost of producing one more unit', 'Total cost'],
+        correct: 'Cost of producing one more unit',
+        explanation: 'Marginal cost is the additional cost of producing one more unit of output.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions
+      {
+        id: 'g11_micro_hard_1',
+        question: 'What is the Nash equilibrium in game theory?',
+        options: ['Always best strategy', 'Situation where no player can benefit by changing strategy', 'Government regulation', 'Maximum profit'],
+        correct: 'Situation where no player can benefit by changing strategy',
+        explanation: 'Nash equilibrium is when no player can benefit by changing only their own strategy while others keep theirs unchanged.',
         difficulty: 'hard'
       },
       {
-        id: 'econ_basic_hard_4',
-        question: 'What is the Laffer Curve?',
-        options: ['Supply curve', 'Tax rate and tax revenue relationship', 'Demand curve', 'Production curve'],
-        correct: 'Tax rate and tax revenue relationship',
-        explanation: 'The Laffer Curve shows the relationship between tax rates and tax revenue.',
+        id: 'g11_micro_hard_2',
+        question: 'How does a monopolistically competitive firm differ from a perfectly competitive firm in long-run equilibrium?',
+        options: ['No difference', 'Monopolistic competition produces at excess capacity', 'Perfect competition has higher prices', 'Government regulates differently'],
+        correct: 'Monopolistic competition produces at excess capacity',
+        explanation: 'In monopolistic competition, firms produce at excess capacity and don\'t achieve minimum average cost, unlike perfect competition.',
         difficulty: 'hard'
+      }
+    ]
+  },
+  
+  {
+    id: 'grade12_macroeconomics',
+    name: 'Grade 12: Macroeconomics',
+    description: 'Study of economy-wide phenomena including inflation, growth, and employment',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_macro_easy_1',
+        question: 'What is macroeconomics?',
+        options: ['Study of individual households', 'Study of economy as a whole', 'Study of business operations', 'Study of government only'],
+        correct: 'Study of economy as a whole',
+        explanation: 'Macroeconomics is the study of the economy as a whole, including inflation, growth, and employment.',
+        difficulty: 'easy'
       },
       {
-        id: 'econ_basic_hard_5',
-        question: 'What is game theory in economics?',
-        options: ['Sports economics', 'Strategic decision making', 'Market games', 'Computer modeling'],
-        correct: 'Strategic decision making',
-        explanation: 'Game theory analyzes strategic decision making where outcomes depend on others\' actions.',
-        difficulty: 'hard'
+        id: 'g12_macro_easy_2',
+        question: 'What is economic growth?',
+        options: ['Price increases', 'Increase in economic output', 'Population growth', 'More businesses'],
+        correct: 'Increase in economic output',
+        explanation: 'Economic growth is an increase in the production of goods and services over time.',
+        difficulty: 'easy'
       },
       {
-        id: 'econ_basic_hard_6',
+        id: 'g12_macro_easy_3',
+        question: 'What is recession?',
+        options: ['Economic boom', 'Period of declining economic activity', 'Price stability', 'Government surplus'],
+        correct: 'Period of declining economic activity',
+        explanation: 'A recession is a period of declining economic activity, usually defined as two consecutive quarters of negative GDP growth.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_macro_easy_4',
+        question: 'What is aggregate demand?',
+        options: ['Individual demand', 'Total demand for goods and services', 'Government spending', 'Business investment'],
+        correct: 'Total demand for goods and services',
+        explanation: 'Aggregate demand is the total demand for all goods and services in an economy.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_macro_easy_5',
+        question: 'What is the central bank\'s main responsibility?',
+        options: ['Government spending', 'Tax collection', 'Monetary policy', 'Foreign trade'],
+        correct: 'Monetary policy',
+        explanation: 'The central bank is responsible for monetary policy, managing money supply and interest rates.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions
+      {
+        id: 'g12_macro_med_1',
         question: 'What is the multiplier effect?',
-        options: ['Price increases', 'Amplified impact of spending changes', 'Population growth', 'Technology advancement'],
-        correct: 'Amplified impact of spending changes',
-        explanation: 'The multiplier effect shows how initial spending changes have amplified economic impacts.',
+        options: ['Population growth', 'Change in output greater than initial change in spending', 'Tax rate increase', 'International trade'],
+        correct: 'Change in output greater than initial change in spending',
+        explanation: 'The multiplier effect occurs when an initial change in spending leads to a larger change in output.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_macro_med_2',
+        question: 'What is the difference between real and nominal GDP?',
+        options: ['No difference', 'Real GDP adjusts for inflation', 'Nominal is more accurate', 'Real only counts certain sectors'],
+        correct: 'Real GDP adjusts for inflation',
+        explanation: 'Real GDP adjusts for inflation, while nominal GDP does not.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_macro_med_3',
+        question: 'What is the business cycle?',
+        options: ['Daily business operations', 'Regular fluctuations in economic activity', 'Company lifecycle', 'Corporate strategy'],
+        correct: 'Regular fluctuations in economic activity',
+        explanation: 'The business cycle refers to the regular fluctuations in economic activity over time.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions
+      {
+        id: 'g12_macro_hard_1',
+        question: 'How does the IS-LM model analyze macroeconomic equilibrium?',
+        options: ['Supply and demand only', 'Interest rates and output in goods and money markets', 'International trade', 'Government spending only'],
+        correct: 'Interest rates and output in goods and money markets',
+        explanation: 'IS-LM model shows how interest rates and output are determined by equilibrium in goods and money markets.',
         difficulty: 'hard'
       },
       {
-        id: 'econ_basic_hard_7',
-        question: 'What is asymmetric information?',
-        options: ['Equal information', 'Unequal information between parties', 'No information', 'Too much information'],
-        correct: 'Unequal information between parties',
-        explanation: 'Asymmetric information occurs when one party has more or better information than another.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'econ_basic_hard_8',
-        question: 'What is moral hazard?',
-        options: ['Ethical behavior', 'Increased risk-taking due to protection', 'Religious economics', 'Social responsibility'],
-        correct: 'Increased risk-taking due to protection',
-        explanation: 'Moral hazard is when protection from risk consequences leads to increased risk-taking.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'econ_basic_hard_9',
-        question: 'What is the efficient market hypothesis?',
-        options: ['Markets always grow', 'Prices reflect all available information', 'Markets never fail', 'Government controls markets'],
-        correct: 'Prices reflect all available information',
-        explanation: 'The efficient market hypothesis states that asset prices reflect all available information.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'econ_basic_hard_10',
-        question: 'What is creative destruction?',
-        options: ['Art and economics', 'Innovation replacing old technologies', 'Environmental damage', 'War economics'],
-        correct: 'Innovation replacing old technologies',
-        explanation: 'Creative destruction is the process of innovation continuously destroying and replacing old technologies.',
+        id: 'g12_macro_hard_2',
+        question: 'What is the difference between demand-pull and cost-push inflation?',
+        options: ['No difference', 'Demand-pull from excess demand, cost-push from higher production costs', 'Apply to different countries', 'Government regulation'],
+        correct: 'Demand-pull from excess demand, cost-push from higher production costs',
+        explanation: 'Demand-pull inflation results from excess aggregate demand, while cost-push inflation results from higher production costs.',
         difficulty: 'hard'
       }
     ]

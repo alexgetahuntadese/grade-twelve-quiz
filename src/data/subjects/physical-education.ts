@@ -1,507 +1,321 @@
+
 import { Chapter } from '../types';
 
 export const physicalEducationChapters: Chapter[] = [
   {
-    id: 'fitness_health',
-    name: 'Fitness and Health',
-    description: 'Physical fitness, health, and wellness concepts',
+    id: 'fitness_basics',
+    name: 'Fitness Fundamentals',
+    description: 'Basic principles of physical fitness and exercise',
     questions: [
+      // Easy Questions
       {
-        id: 'pe_fitness_easy_1',
+        id: 'fit_basic_1',
         question: 'What is physical fitness?',
-        options: ['Being tall', 'Ability to perform physical activities', 'Having muscles', 'Being thin'],
-        correct: 'Ability to perform physical activities',
-        explanation: 'Physical fitness is the ability to perform physical activities effectively.',
+        options: ['Being muscular', 'Being thin', 'Being healthy and capable of physical activity', 'Being an athlete'],
+        correct: 'Being healthy and capable of physical activity',
+        explanation: 'Physical fitness is the ability to perform daily tasks without undue fatigue.',
         difficulty: 'easy'
       },
       {
-        id: 'pe_fitness_easy_2',
-        question: 'How many minutes of exercise should you get daily?',
-        options: ['10 minutes', '30 minutes', '60 minutes', '120 minutes'],
-        correct: '60 minutes',
-        explanation: 'Health experts recommend at least 60 minutes of physical activity daily for children.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'pe_fitness_easy_3',
+        id: 'fit_basic_2',
         question: 'What is cardiovascular exercise?',
-        options: ['Lifting weights', 'Exercise that strengthens the heart', 'Stretching', 'Balance training'],
-        correct: 'Exercise that strengthens the heart',
-        explanation: 'Cardiovascular exercise strengthens the heart and improves circulation.',
+        options: ['Weight lifting', 'Exercise for the heart and lungs', 'Flexibility training', 'Balance practice'],
+        correct: 'Exercise for the heart and lungs',
+        explanation: 'Cardiovascular exercise strengthens the heart and lungs through sustained activity.',
         difficulty: 'easy'
       },
       {
-        id: 'pe_fitness_easy_4',
-        question: 'What should you do before exercising?',
-        options: ['Eat a big meal', 'Warm up', 'Take a nap', 'Watch TV'],
-        correct: 'Warm up',
-        explanation: 'Warming up prepares your body for exercise and helps prevent injury.',
+        id: 'fit_basic_3',
+        question: 'What is strength training?',
+        options: ['Running', 'Swimming', 'Using resistance to build muscle', 'Stretching'],
+        correct: 'Using resistance to build muscle',
+        explanation: 'Strength training uses resistance to build muscle strength and endurance.',
         difficulty: 'easy'
       },
       {
-        id: 'pe_fitness_easy_5',
+        id: 'fit_basic_4',
         question: 'What is flexibility?',
-        options: ['Muscle strength', 'Range of motion in joints', 'Running speed', 'Body weight'],
+        options: ['Muscle strength', 'Range of motion in joints', 'Heart rate', 'Running speed'],
         correct: 'Range of motion in joints',
-        explanation: 'Flexibility refers to the range of motion available in your joints.',
+        explanation: 'Flexibility refers to the range of motion in your joints and muscles.',
         difficulty: 'easy'
       },
       {
-        id: 'pe_fitness_easy_6',
-        question: 'What should you do after exercising?',
-        options: ['Sit immediately', 'Cool down and stretch', 'Eat immediately', 'Take a hot shower'],
-        correct: 'Cool down and stretch',
-        explanation: 'Cooling down helps your body return to normal and prevents muscle stiffness.',
+        id: 'fit_basic_5',
+        question: 'What is the purpose of a warm-up?',
+        options: ['Cool down body', 'Prepare body for exercise', 'Build muscle', 'Lose weight'],
+        correct: 'Prepare body for exercise',
+        explanation: 'Warm-ups prepare the body for exercise by increasing blood flow and muscle temperature.',
         difficulty: 'easy'
       },
       {
-        id: 'pe_fitness_easy_7',
-        question: 'What is the best way to build muscle strength?',
-        options: ['Running only', 'Resistance training', 'Sleeping more', 'Eating only'],
-        correct: 'Resistance training',
-        explanation: 'Resistance training with weights or bodyweight exercises builds muscle strength.',
+        id: 'fit_basic_6',
+        question: 'What should you drink during exercise?',
+        options: ['Coffee', 'Soda', 'Water', 'Juice'],
+        correct: 'Water',
+        explanation: 'Water is essential during exercise to replace fluids lost through sweat.',
         difficulty: 'easy'
       },
       {
-        id: 'pe_fitness_easy_8',
-        question: 'How much water should you drink during exercise?',
-        options: ['None', 'Small sips regularly', 'Only at the end', 'Large amounts at once'],
-        correct: 'Small sips regularly',
-        explanation: 'Drinking small amounts of water regularly during exercise prevents dehydration.',
+        id: 'fit_basic_7',
+        question: 'What is a cool-down?',
+        options: ['Cold shower', 'Gradual reduction in activity', 'Drinking cold water', 'Air conditioning'],
+        correct: 'Gradual reduction in activity',
+        explanation: 'A cool-down gradually reduces exercise intensity to help the body recover.',
         difficulty: 'easy'
       },
       {
-        id: 'pe_fitness_easy_9',
-        question: 'What is the main benefit of regular exercise?',
-        options: ['Looking good only', 'Improved overall health', 'Making friends', 'Spending time'],
-        correct: 'Improved overall health',
-        explanation: 'Regular exercise improves physical health, mental health, and overall well-being.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'pe_fitness_easy_10',
-        question: 'What type of clothing is best for exercise?',
-        options: ['Heavy clothing', 'Lightweight, breathable clothing', 'Formal wear', 'Winter coats'],
-        correct: 'Lightweight, breathable clothing',
-        explanation: 'Lightweight, breathable clothing allows proper air circulation and movement.',
+        id: 'fit_basic_8',
+        question: 'What is a repetition in strength training?',
+        options: ['One complete movement', 'Type of equipment', 'Rest period', 'Exercise duration'],
+        correct: 'One complete movement',
+        explanation: 'A repetition is one complete movement of a specific exercise.',
         difficulty: 'easy'
       },
 
       // Medium Questions
       {
-        id: 'pe_fitness_med_1',
-        question: 'What are the components of physical fitness?',
-        options: ['Strength only', 'Cardio, strength, flexibility, body composition', 'Running and jumping', 'Diet and sleep'],
-        correct: 'Cardio, strength, flexibility, body composition',
-        explanation: 'The main components are cardiovascular endurance, muscular strength, flexibility, and body composition.',
+        id: 'fit_basic_med_1',
+        question: 'What is the FITT principle?',
+        options: ['Exercise equipment', 'Frequency, Intensity, Time, Type', 'Fitness test', 'Training program'],
+        correct: 'Frequency, Intensity, Time, Type',
+        explanation: 'FITT stands for Frequency, Intensity, Time, and Type - the key components of an exercise program.',
         difficulty: 'medium'
       },
       {
-        id: 'pe_fitness_med_2',
-        question: 'What is aerobic exercise?',
-        options: ['Exercise without oxygen', 'Exercise that uses oxygen continuously', 'Only weight lifting', 'Only stretching'],
-        correct: 'Exercise that uses oxygen continuously',
-        explanation: 'Aerobic exercise requires continuous oxygen consumption and includes activities like running and swimming.',
+        id: 'fit_basic_med_2',
+        question: 'What is VO2 max?',
+        options: ['Maximum speed', 'Maximum oxygen consumption', 'Maximum heart rate', 'Maximum power'],
+        correct: 'Maximum oxygen consumption',
+        explanation: 'VO2 max is the maximum amount of oxygen your body can use during intense exercise.',
         difficulty: 'medium'
       },
       {
-        id: 'pe_fitness_med_3',
-        question: 'What is anaerobic exercise?',
-        options: ['Exercise with continuous oxygen', 'Short bursts of high-intensity exercise', 'Only running', 'Only walking'],
-        correct: 'Short bursts of high-intensity exercise',
-        explanation: 'Anaerobic exercise involves short bursts of high-intensity activity without continuous oxygen.',
+        id: 'fit_basic_med_3',
+        question: 'What is the difference between aerobic and anaerobic exercise?',
+        options: ['No difference', 'Aerobic uses oxygen; anaerobic doesn\'t', 'Only intensity differs', 'Only duration differs'],
+        correct: 'Aerobic uses oxygen; anaerobic doesn\'t',
+        explanation: 'Aerobic exercise uses oxygen for energy; anaerobic exercise occurs without sufficient oxygen.',
         difficulty: 'medium'
       },
       {
-        id: 'pe_fitness_med_4',
+        id: 'fit_basic_med_4',
         question: 'What is target heart rate?',
-        options: ['Fastest heart rate', 'Ideal heart rate range during exercise', 'Resting heart rate', 'Heart rate when sleeping'],
-        correct: 'Ideal heart rate range during exercise',
-        explanation: 'Target heart rate is the ideal range for effective cardiovascular exercise.',
+        options: ['Maximum heart rate', 'Resting heart rate', 'Optimal heart rate during exercise', 'Heart rate during sleep'],
+        correct: 'Optimal heart rate during exercise',
+        explanation: 'Target heart rate is the optimal range for your heart to beat during exercise for cardiovascular benefits.',
         difficulty: 'medium'
       },
       {
-        id: 'pe_fitness_med_5',
-        question: 'What is body composition?',
-        options: ['Only weight', 'Ratio of fat to muscle and bone', 'Height only', 'Age factor'],
-        correct: 'Ratio of fat to muscle and bone',
-        explanation: 'Body composition refers to the proportion of fat, muscle, bone, and other tissues in the body.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'pe_fitness_med_6',
-        question: 'What is the difference between muscular strength and endurance?',
-        options: ['No difference', 'Strength is max force, endurance is sustained activity', 'Both are the same', 'Only strength matters'],
-        correct: 'Strength is max force, endurance is sustained activity',
-        explanation: 'Muscular strength is maximum force production; endurance is the ability to sustain muscle activity.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'pe_fitness_med_7',
-        question: 'What is progressive overload?',
-        options: ['Doing less exercise', 'Gradually increasing exercise difficulty', 'Exercising randomly', 'Only easy exercises'],
-        correct: 'Gradually increasing exercise difficulty',
-        explanation: 'Progressive overload involves gradually increasing exercise intensity to improve fitness.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'pe_fitness_med_8',
-        question: 'What is the recovery principle?',
-        options: ['Never rest', 'Rest is necessary for improvement', 'Exercise daily without break', 'Only rest matters'],
-        correct: 'Rest is necessary for improvement',
-        explanation: 'The body needs rest periods to recover and adapt to exercise stress.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'pe_fitness_med_9',
-        question: 'What is the specificity principle?',
-        options: ['Any exercise works for any goal', 'Training should match specific goals', 'Only general fitness matters', 'All exercises are equal'],
-        correct: 'Training should match specific goals',
-        explanation: 'Training should be specific to the desired outcome or sport-specific skills.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'pe_fitness_med_10',
+        id: 'fit_basic_med_5',
         question: 'What is cross-training?',
-        options: ['Only one type of exercise', 'Combining different types of exercise', 'Angry training', 'Competitive training only'],
-        correct: 'Combining different types of exercise',
-        explanation: 'Cross-training involves participating in various forms of exercise to improve overall fitness.',
+        options: ['Training others', 'Training for a marathon', 'Participating in various activities', 'Weight training only'],
+        correct: 'Participating in various activities',
+        explanation: 'Cross-training involves participating in different activities to work various muscle groups and prevent overuse injuries.',
         difficulty: 'medium'
       },
 
       // Hard Questions
       {
-        id: 'pe_fitness_hard_1',
-        question: 'What is the FITT principle?',
-        options: ['Fitness goals', 'Frequency, Intensity, Time, Type', 'Exercise equipment', 'Nutrition plan'],
-        correct: 'Frequency, Intensity, Time, Type',
-        explanation: 'FITT stands for Frequency, Intensity, Time, and Type - key variables in exercise planning.',
+        id: 'fit_basic_hard_1',
+        question: 'How does periodization benefit a training program?',
+        options: ['Makes it shorter', 'Structures cycles of training intensity', 'Eliminates need for rest', 'Only for athletes'],
+        correct: 'Structures cycles of training intensity',
+        explanation: 'Periodization divides training into phases with varying intensity to optimize performance and recovery.',
         difficulty: 'hard'
       },
       {
-        id: 'pe_fitness_hard_2',
-        question: 'What is VO2 max?',
-        options: ['Maximum heart rate', 'Maximum oxygen uptake', 'Maximum weight lifted', 'Maximum distance run'],
-        correct: 'Maximum oxygen uptake',
-        explanation: 'VO2 max is the maximum rate at which the body can consume oxygen during exercise.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'pe_fitness_hard_3',
-        question: 'What is lactate threshold?',
-        options: ['Maximum heart rate', 'Point where lactate accumulates in blood', 'Maximum strength', 'Flexibility limit'],
-        correct: 'Point where lactate accumulates in blood',
-        explanation: 'Lactate threshold is the exercise intensity at which lactate begins to accumulate in the blood.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'pe_fitness_hard_4',
-        question: 'What is periodization in training?',
-        options: ['Random training', 'Systematic planning of training phases', 'Daily routine', 'One-time workout'],
-        correct: 'Systematic planning of training phases',
-        explanation: 'Periodization is the systematic planning of athletic training with specific phases and goals.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'pe_fitness_hard_5',
-        question: 'What is the difference between concentric and eccentric muscle contractions?',
-        options: ['No difference', 'Concentric shortens, eccentric lengthens', 'Both shorten', 'Both lengthen'],
-        correct: 'Concentric shortens, eccentric lengthens',
-        explanation: 'Concentric contractions shorten the muscle, eccentric contractions lengthen it under tension.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'pe_fitness_hard_6',
-        question: 'What is metabolic equivalent (MET)?',
-        options: ['Weight measurement', 'Energy expenditure measurement', 'Time measurement', 'Distance measurement'],
-        correct: 'Energy expenditure measurement',
-        explanation: 'MET is a unit that measures the energy cost of physical activities.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'pe_fitness_hard_7',
-        question: 'What is the principle of reversibility in fitness?',
-        options: ['Fitness always improves', 'Use it or lose it', 'Fitness never changes', 'Only gains matter'],
-        correct: 'Use it or lose it',
-        explanation: 'The principle of reversibility states that fitness gains are lost when training stops.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'pe_fitness_hard_8',
-        question: 'What is plyometric training?',
-        options: ['Slow movements only', 'Explosive power training', 'Flexibility training', 'Endurance training'],
-        correct: 'Explosive power training',
-        explanation: 'Plyometric training uses explosive movements to develop muscular power.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'pe_fitness_hard_9',
-        question: 'What is the rate of perceived exertion (RPE)?',
-        options: ['Heart rate measurement', 'Subjective intensity scale', 'Weight measurement', 'Time measurement'],
-        correct: 'Subjective intensity scale',
-        explanation: 'RPE is a subjective scale used to measure the intensity of exercise based on how hard it feels.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'pe_fitness_hard_10',
-        question: 'What is delayed onset muscle soreness (DOMS)?',
-        options: ['Immediate pain', 'Muscle soreness 24-48 hours after exercise', 'Chronic pain', 'Injury pain'],
-        correct: 'Muscle soreness 24-48 hours after exercise',
-        explanation: 'DOMS is muscle soreness that occurs 24-48 hours after intense or unfamiliar exercise.',
+        id: 'fit_basic_hard_2',
+        question: 'What is the principle of specificity in training?',
+        options: ['General fitness applies to all activities', 'Training should match your goals', 'Only training one muscle group', 'Always doing the same exercise'],
+        correct: 'Training should match your goals',
+        explanation: 'Specificity means training should be relevant to your specific goals and activities.',
         difficulty: 'hard'
       }
     ]
   },
-
-  // Grade 11 Chapter
+  
   {
-    id: 'grade11_sport_science',
+    id: 'grade11_sports_science',
     name: 'Grade 11: Sports Science',
-    description: 'Scientific principles behind athletic performance and sport techniques',
+    description: 'Scientific principles applied to athletic performance',
     questions: [
       // Easy Questions
       {
-        id: 'g11_pe_easy_1',
-        question: 'What is sport psychology?',
-        options: ['Study of sports history', 'Study of mental factors affecting sports performance', 'Study of sports rules', 'Study of sports equipment'],
-        correct: 'Study of mental factors affecting sports performance',
-        explanation: 'Sport psychology examines the mental factors that affect performance in sports and exercise.',
+        id: 'g11_sport_easy_1',
+        question: 'What is sports science?',
+        options: ['Playing sports', 'Science applied to sports and exercise', 'Sports statistics', 'Sports equipment'],
+        correct: 'Science applied to sports and exercise',
+        explanation: 'Sports science applies scientific principles to improve athletic performance and health.',
         difficulty: 'easy'
       },
       {
-        id: 'g11_pe_easy_2',
-        question: 'What is biomechanics in sports?',
-        options: ['Sports equipment', 'Study of mechanical principles in human movement', 'Sports medicine', 'Training program'],
-        correct: 'Study of mechanical principles in human movement',
-        explanation: 'Biomechanics applies mechanical principles to understand human movement in sports.',
+        id: 'g11_sport_easy_2',
+        question: 'What is biomechanics?',
+        options: ['Exercise equipment', 'Study of body movement', 'Sports medicine', 'Weight training'],
+        correct: 'Study of body movement',
+        explanation: 'Biomechanics is the study of mechanical principles in relation to human movement.',
         difficulty: 'easy'
       },
       {
-        id: 'g11_pe_easy_3',
-        question: 'What is an isotonic exercise?',
-        options: ['Static exercise', 'Exercise with muscle length changing', 'Stretching only', 'Balance training'],
-        correct: 'Exercise with muscle length changing',
-        explanation: 'Isotonic exercises involve muscle length changing during contraction, like lifting weights.',
+        id: 'g11_sport_easy_3',
+        question: 'What are fast-twitch muscle fibers?',
+        options: ['Slow muscles', 'Muscles for endurance', 'Muscles for speed and power', 'Core muscles'],
+        correct: 'Muscles for speed and power',
+        explanation: 'Fast-twitch muscle fibers contract quickly and powerfully but fatigue faster.',
         difficulty: 'easy'
       },
       {
-        id: 'g11_pe_easy_4',
-        question: 'What is an isometric exercise?',
-        options: ['Movement exercise', 'Muscle contraction without joint movement', 'Flexibility exercise', 'Endurance training'],
-        correct: 'Muscle contraction without joint movement',
-        explanation: 'Isometric exercises involve muscle contraction without joint movement, like wall sits.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g11_pe_easy_5',
+        id: 'g11_sport_easy_4',
         question: 'What is sports nutrition?',
-        options: ['Any diet', 'Study of nutrients for optimal athletic performance', 'Weight loss program', 'Cooking for athletes'],
-        correct: 'Study of nutrients for optimal athletic performance',
-        explanation: 'Sports nutrition studies how nutrients affect athletic performance and recovery.',
+        options: ['Fast food', 'Study of diet for athletic performance', 'Only vitamins', 'Only proteins'],
+        correct: 'Study of diet for athletic performance',
+        explanation: 'Sports nutrition is the study of nutrients and supplements that improve athletic performance.',
         difficulty: 'easy'
       },
       {
-        id: 'g11_pe_easy_6',
+        id: 'g11_sport_easy_5',
         question: 'What is motor learning?',
-        options: ['Car driving', 'Process of acquiring movement skills', 'Muscle building', 'Equipment knowledge'],
+        options: ['Driving cars', 'Process of acquiring movement skills', 'Engine study', 'Memory test'],
         correct: 'Process of acquiring movement skills',
         explanation: 'Motor learning is the process of acquiring and refining movement skills through practice.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g11_pe_easy_7',
-        question: 'What is the role of carbohydrates for athletes?',
-        options: ['Not important', 'Primary energy source', 'Only for weight gain', 'Only for muscle building'],
-        correct: 'Primary energy source',
-        explanation: 'Carbohydrates are the primary energy source for athletic activities.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g11_pe_easy_8',
-        question: 'What is sports physiology?',
-        options: ['Sports history', 'Study of body\'s response to physical activity', 'Sports psychology', 'Sports management'],
-        correct: 'Study of body\'s response to physical activity',
-        explanation: 'Sports physiology examines how the body responds and adapts to physical activity.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g11_pe_easy_9',
-        question: 'What is the importance of protein for athletes?',
-        options: ['Not needed', 'Muscle repair and growth', 'Only for energy', 'No athletic benefits'],
-        correct: 'Muscle repair and growth',
-        explanation: 'Protein is essential for muscle repair and growth after exercise.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g11_pe_easy_10',
-        question: 'What is the principle of overload?',
-        options: ['Avoiding exercise', 'Increasing demands on the body for adaptation', 'Random training', 'Decreasing intensity'],
-        correct: 'Increasing demands on the body for adaptation',
-        explanation: 'The overload principle involves gradually increasing exercise demands to improve fitness.',
         difficulty: 'easy'
       },
 
       // Medium Questions
       {
-        id: 'g11_pe_med_1',
-        question: 'What is the difference between fast-twitch and slow-twitch muscle fibers?',
-        options: ['No difference', 'Fast-twitch for power, slow-twitch for endurance', 'Only size difference', 'Only in animals'],
-        correct: 'Fast-twitch for power, slow-twitch for endurance',
-        explanation: 'Fast-twitch fibers provide power for short bursts, slow-twitch fibers provide endurance.',
+        id: 'g11_sport_med_1',
+        question: 'What is the difference between concentric and eccentric muscle contractions?',
+        options: ['No difference', 'Concentric shortens muscle; eccentric lengthens while contracting', 'Only intensity differs', 'Only applies to certain muscles'],
+        correct: 'Concentric shortens muscle; eccentric lengthens while contracting',
+        explanation: 'Concentric contractions shorten the muscle; eccentric contractions lengthen the muscle while it\'s contracting.',
         difficulty: 'medium'
       },
       {
-        id: 'g11_pe_med_2',
-        question: 'What is the role of proprioception in sports?',
-        options: ['Not important', 'Awareness of body position and movement', 'Only for beginners', 'Only in team sports'],
-        correct: 'Awareness of body position and movement',
-        explanation: 'Proprioception provides awareness of body position and movement in space.',
+        id: 'g11_sport_med_2',
+        question: 'What is the glycemic index?',
+        options: ['Protein measurement', 'Fat content', 'How quickly carbohydrates raise blood sugar', 'Vitamin content'],
+        correct: 'How quickly carbohydrates raise blood sugar',
+        explanation: 'The glycemic index measures how quickly carbohydrates raise blood sugar levels.',
         difficulty: 'medium'
       },
       {
-        id: 'g11_pe_med_3',
-        question: 'What is periodization in sports training?',
-        options: ['Random training', 'Systematic planning of training cycles', 'Training in specific periods only', 'Ancient training method'],
-        correct: 'Systematic planning of training cycles',
-        explanation: 'Periodization divides training into phases to optimize performance at specific times.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g11_pe_med_4',
-        question: 'What is the glycemic index and why is it important for athletes?',
-        options: ['Not relevant to athletes', 'Measure of how foods affect blood sugar levels, important for energy management', 'Vitamin measurement', 'Protein quality scale'],
-        correct: 'Measure of how foods affect blood sugar levels, important for energy management',
-        explanation: 'Glycemic index measures how foods affect blood sugar, helping athletes manage energy levels.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g11_pe_med_5',
-        question: 'What is hypertrophy in muscle training?',
-        options: ['Muscle weakness', 'Increase in muscle size', 'Decrease in muscle size', 'Muscle injury'],
-        correct: 'Increase in muscle size',
-        explanation: 'Hypertrophy refers to the increase in muscle size due to resistance training.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g11_pe_med_6',
-        question: 'What is the difference between dynamic and static stretching?',
-        options: ['No difference', 'Dynamic involves movement, static involves holding positions', 'Only intensity difference', 'Only duration difference'],
-        correct: 'Dynamic involves movement, static involves holding positions',
-        explanation: 'Dynamic stretching involves movement, while static stretching involves holding positions.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g11_pe_med_7',
-        question: 'What is the role of mental imagery in sports?',
-        options: ['No role', 'Enhance performance through visualization', 'Only for entertainment', 'Only for coaches'],
-        correct: 'Enhance performance through visualization',
-        explanation: 'Mental imagery helps athletes enhance performance through mental visualization of skills.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g11_pe_med_8',
-        question: 'What is the principle of specificity in training?',
-        options: ['General training for all sports', 'Training must match specific sport requirements', 'Only for professional athletes', 'Only for team sports'],
-        correct: 'Training must match specific sport requirements',
-        explanation: 'The specificity principle states that training should match the specific demands of the sport.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g11_pe_med_9',
-        question: 'What is the importance of electrolytes for athletes?',
-        options: ['Not important', 'Regulate fluid balance and muscle function', 'Only for appearance', 'Only for professional athletes'],
-        correct: 'Regulate fluid balance and muscle function',
-        explanation: 'Electrolytes regulate fluid balance and are essential for proper muscle function.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g11_pe_med_10',
-        question: 'What is sports biomechanical analysis?',
-        options: ['Financial analysis', 'Analysis of movement efficiency and technique', 'Team strategy', 'Equipment testing'],
-        correct: 'Analysis of movement efficiency and technique',
-        explanation: 'Biomechanical analysis examines movement efficiency and technique in sports.',
+        id: 'g11_sport_med_3',
+        question: 'What is plyometric training?',
+        options: ['Weight training', 'Exercises using rapid stretching and contracting', 'Endurance training', 'Flexibility training'],
+        correct: 'Exercises using rapid stretching and contracting',
+        explanation: 'Plyometric training involves exercises that use rapid stretching and contracting of muscles to increase power.',
         difficulty: 'medium'
       },
 
       // Hard Questions
       {
-        id: 'g11_pe_hard_1',
-        question: 'What is the relationship between heart rate variability and athletic performance?',
-        options: ['Unrelated', 'Higher variability often indicates better recovery and readiness', 'Lower variability is always better', 'Only relevant for older athletes'],
-        correct: 'Higher variability often indicates better recovery and readiness',
-        explanation: 'Higher heart rate variability often indicates better autonomic function and recovery readiness.',
+        id: 'g11_sport_hard_1',
+        question: 'How does the stretch-shortening cycle affect muscle performance?',
+        options: ['No effect', 'Enhances power output through elastic energy', 'Reduces power', 'Only affects flexibility'],
+        correct: 'Enhances power output through elastic energy',
+        explanation: 'The stretch-shortening cycle uses stored elastic energy from muscle stretching to enhance power in the subsequent contraction.',
         difficulty: 'hard'
       },
       {
-        id: 'g11_pe_hard_2',
-        question: 'What is the role of the phosphocreatine energy system in exercise?',
-        options: ['Long endurance activities', 'Immediate energy for short, intense bursts', 'Not used in exercise', 'Only for recovery'],
-        correct: 'Immediate energy for short, intense bursts',
-        explanation: 'The phosphocreatine system provides immediate energy for short, intense exercise bursts.',
+        id: 'g11_sport_hard_2',
+        question: 'What is the relationship between lactate threshold and endurance performance?',
+        options: ['No relationship', 'Higher threshold allows longer high-intensity exercise', 'Lower threshold is better', 'Only relevant for sprinters'],
+        correct: 'Higher threshold allows longer high-intensity exercise',
+        explanation: 'A higher lactate threshold allows athletes to perform at higher intensities before lactic acid accumulates.',
+        difficulty: 'hard'
+      }
+    ]
+  },
+  
+  {
+    id: 'grade12_health_wellness',
+    name: 'Grade 12: Health and Wellness',
+    description: 'Comprehensive approach to physical and mental well-being',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_health_easy_1',
+        question: 'What is health?',
+        options: ['Absence of illness', 'Physical, mental, and social well-being', 'Physical fitness only', 'Medical care'],
+        correct: 'Physical, mental, and social well-being',
+        explanation: 'Health is a state of complete physical, mental, and social well-being.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_health_easy_2',
+        question: 'What is wellness?',
+        options: ['Medical treatment', 'Active process of becoming aware and making choices', 'Absence of disease', 'Physical fitness'],
+        correct: 'Active process of becoming aware and making choices',
+        explanation: 'Wellness is an active process of becoming aware and making healthy choices.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_health_easy_3',
+        question: 'What is stress?',
+        options: ['Always harmful', 'Body\'s response to demands', 'Only mental', 'Only physical'],
+        correct: 'Body\'s response to demands',
+        explanation: 'Stress is the body\'s response to demands or pressures.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_health_easy_4',
+        question: 'What is a balanced diet?',
+        options: ['Eating only vegetables', 'Eating various nutrients in correct proportions', 'Skipping meals', 'No carbohydrates'],
+        correct: 'Eating various nutrients in correct proportions',
+        explanation: 'A balanced diet contains various nutrients in the correct proportions to maintain health.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_health_easy_5',
+        question: 'What is BMI?',
+        options: ['Blood measurement', 'Blood pressure', 'Body Mass Index', 'Body movement indicator'],
+        correct: 'Body Mass Index',
+        explanation: 'BMI is a measure that uses height and weight to estimate body fat.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions
+      {
+        id: 'g12_health_med_1',
+        question: 'What are the dimensions of wellness?',
+        options: ['Only physical', 'Physical, mental, emotional, social, spiritual, environmental', 'Only diet and exercise', 'Only mental and physical'],
+        correct: 'Physical, mental, emotional, social, spiritual, environmental',
+        explanation: 'Wellness has multiple dimensions including physical, mental, emotional, social, spiritual, and environmental aspects.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_health_med_2',
+        question: 'What is the difference between macronutrients and micronutrients?',
+        options: ['No difference', 'Macro needed in large amounts; micro needed in small amounts', 'Only source differs', 'Only importance differs'],
+        correct: 'Macro needed in large amounts; micro needed in small amounts',
+        explanation: 'Macronutrients (carbs, proteins, fats) are needed in large amounts; micronutrients (vitamins, minerals) in small amounts.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_health_med_3',
+        question: 'What is mindfulness?',
+        options: ['Forgetfulness', 'Being aware of the present moment', 'Multiple thoughts', 'Avoiding stress'],
+        correct: 'Being aware of the present moment',
+        explanation: 'Mindfulness is being fully aware and present in the moment without judgment.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions
+      {
+        id: 'g12_health_hard_1',
+        question: 'How does the biopsychosocial model relate to health?',
+        options: ['Only biological factors matter', 'Biological, psychological, social factors interact', 'Only applies to mental health', 'Only applies to physical health'],
+        correct: 'Biological, psychological, social factors interact',
+        explanation: 'The biopsychosocial model recognizes that biological, psychological, and social factors all interact to affect health.',
         difficulty: 'hard'
       },
       {
-        id: 'g11_pe_hard_3',
-        question: 'How does periodization affect hormonal response to training?',
-        options: ['No effect', 'Optimizes anabolic and catabolic hormone balance', 'Decreases all hormones', 'Only affects women'],
-        correct: 'Optimizes anabolic and catabolic hormone balance',
-        explanation: 'Proper periodization optimizes the balance between anabolic and catabolic hormonal responses.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g11_pe_hard_4',
-        question: 'What is the relationship between motor unit recruitment and force production?',
-        options: ['Unrelated', 'Greater recruitment leads to greater force', 'Less recruitment gives more force', 'Always constant'],
-        correct: 'Greater recruitment leads to greater force',
-        explanation: 'Greater motor unit recruitment leads to greater force production in muscles.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g11_pe_hard_5',
-        question: 'What is the difference between open and closed kinetic chain exercises?',
-        options: ['No difference', 'Distal segment free (open) vs fixed (closed)', 'Different equipment', 'Different muscles'],
-        correct: 'Distal segment free (open) vs fixed (closed)',
-        explanation: 'In open chain exercises, the distal segment is free; in closed chain, it\'s fixed.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g11_pe_hard_6',
-        question: 'How does the vestibular system affect athletic performance?',
-        options: ['No effect', 'Controls balance and spatial orientation', 'Only affects hearing', 'Only affects vision'],
-        correct: 'Controls balance and spatial orientation',
-        explanation: 'The vestibular system is crucial for balance and spatial orientation during movement.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g11_pe_hard_7',
-        question: 'What is the role of branched-chain amino acids (BCAAs) in sports nutrition?',
-        options: ['No role', 'Support muscle protein synthesis and reduce exercise fatigue', 'Only for weight gain', 'Only for weight loss'],
-        correct: 'Support muscle protein synthesis and reduce exercise fatigue',
-        explanation: 'BCAAs support muscle protein synthesis and may help reduce exercise-induced fatigue.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g11_pe_hard_8',
-        question: 'What is neural adaptation in strength training?',
-        options: ['Muscle size increase only', 'Improved neural efficiency without muscle growth', 'Weight gain', 'Only in beginners'],
-        correct: 'Improved neural efficiency without muscle growth',
-        explanation: 'Neural adaptation involves improved neural efficiency leading to strength gains without muscle growth.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g11_pe_hard_9',
-        question: 'What is the concept of rate of force development (RFD)?',
-        options: ['How fast you run', 'How quickly force can be produced', 'Only for power lifting', 'Only for endurance'],
-        correct: 'How quickly force can be produced',
-        explanation: 'RFD measures how quickly an athlete can develop force, critical for explosive movements.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g11_pe_hard_10',
-        question: 'What is the relationship between training impulse (TRIMP) and training load?',
-        options: ['Unrelated', 'TRIMP quantifies internal training load based on intensity and duration', 'Only for heart rate', 'Only for professional athletes'],
-        correct: 'TRIMP quantifies internal training load based on intensity and duration',
-        explanation: 'TRIMP is a method to quantify internal training load based on exercise intensity and duration.',
+        id: 'g12_health_hard_2',
+        question: 'What is the relationship between sleep quality and cognitive function?',
+        options: ['No relationship', 'Poor sleep impairs cognitive function', 'Only affects children', 'Only affects elderly'],
+        correct: 'Poor sleep impairs cognitive function',
+        explanation: 'Poor sleep quality negatively impacts various cognitive functions including memory, attention, and decision-making.',
         difficulty: 'hard'
       }
     ]

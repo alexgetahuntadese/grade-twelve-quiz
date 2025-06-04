@@ -62,8 +62,6 @@ export const englishChapters: Chapter[] = [
         explanation: 'Adverbs modify verbs, adjectives, or other adverbs. "Quickly" modifies "runs".',
         difficulty: 'easy'
       },
-
-      // Medium Questions
       {
         id: 'gram_8',
         question: 'Which sentence uses the correct past tense?',
@@ -112,8 +110,6 @@ export const englishChapters: Chapter[] = [
         explanation: 'For singular nouns ending in s, add \'s to form the possessive.',
         difficulty: 'medium'
       },
-
-      // Hard Questions
       {
         id: 'gram_14',
         question: 'Which sentence contains a dangling modifier?',
@@ -168,6 +164,180 @@ export const englishChapters: Chapter[] = [
         options: ['If I would have known, I would come', 'If I had known, I would have come', 'If I would know, I would have come', 'If I have known, I would come'],
         correct: 'If I had known, I would have come',
         explanation: 'Conditional perfect uses "had + past participle" in the if-clause and "would have + past participle" in the main clause.',
+        difficulty: 'hard'
+      }
+    ]
+  },
+  {
+    id: 'grade11_literature',
+    name: 'Grade 11: Advanced Literature',
+    description: 'Literary analysis, themes, and critical thinking',
+    questions: [
+      {
+        id: 'g11_lit_easy_1',
+        question: 'What is a theme in literature?',
+        options: ['The setting', 'The main message or idea', 'The characters', 'The plot'],
+        correct: 'The main message or idea',
+        explanation: 'A theme is the central message or underlying meaning in a literary work.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_lit_easy_2',
+        question: 'What is symbolism?',
+        options: ['Direct description', 'Using objects to represent ideas', 'Character dialogue', 'Plot summary'],
+        correct: 'Using objects to represent ideas',
+        explanation: 'Symbolism uses objects, colors, or actions to represent deeper meanings.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_lit_easy_3',
+        question: 'What is irony?',
+        options: ['Saying exactly what you mean', 'The opposite of what is expected', 'A type of poem', 'Character development'],
+        correct: 'The opposite of what is expected',
+        explanation: 'Irony occurs when the actual outcome differs from what is expected.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_lit_easy_4',
+        question: 'What is foreshadowing?',
+        options: ['Looking back at events', 'Hints about future events', 'Character descriptions', 'Setting details'],
+        correct: 'Hints about future events',
+        explanation: 'Foreshadowing gives clues about what will happen later in the story.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_lit_easy_5',
+        question: 'What is alliteration?',
+        options: ['Repetition of vowel sounds', 'Repetition of consonant sounds', 'Rhyming words', 'Similar meanings'],
+        correct: 'Repetition of consonant sounds',
+        explanation: 'Alliteration is the repetition of initial consonant sounds in successive words.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_lit_med_1',
+        question: 'What is dramatic irony?',
+        options: ['When characters know more than readers', 'When readers know more than characters', 'When nothing happens', 'When everything is predictable'],
+        correct: 'When readers know more than characters',
+        explanation: 'Dramatic irony occurs when the audience knows something characters don\'t.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_lit_med_2',
+        question: 'What is a dynamic character?',
+        options: ['A character who changes', 'A character who stays the same', 'A minor character', 'A narrator'],
+        correct: 'A character who changes',
+        explanation: 'Dynamic characters undergo significant change throughout the story.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_lit_med_3',
+        question: 'What is the climax of a story?',
+        options: ['The beginning', 'The turning point', 'The ending', 'The setting'],
+        correct: 'The turning point',
+        explanation: 'The climax is the turning point or moment of highest tension in a story.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_lit_hard_1',
+        question: 'What is an unreliable narrator?',
+        options: ['A narrator who tells the truth', 'A narrator whose credibility is compromised', 'A third-person narrator', 'An omniscient narrator'],
+        correct: 'A narrator whose credibility is compromised',
+        explanation: 'An unreliable narrator\'s account cannot be fully trusted due to bias or limitations.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_lit_hard_2',
+        question: 'What is stream of consciousness?',
+        options: ['Logical thought patterns', 'Unfiltered flow of thoughts', 'Dialogue between characters', 'Narrative structure'],
+        correct: 'Unfiltered flow of thoughts',
+        explanation: 'Stream of consciousness presents a character\'s unfiltered thoughts and feelings.',
+        difficulty: 'hard'
+      }
+    ]
+  },
+  {
+    id: 'grade12_composition',
+    name: 'Grade 12: Advanced Composition',
+    description: 'Advanced writing techniques, research, and critical analysis',
+    questions: [
+      {
+        id: 'g12_comp_easy_1',
+        question: 'What is a thesis statement?',
+        options: ['A question', 'The main argument', 'A summary', 'An introduction'],
+        correct: 'The main argument',
+        explanation: 'A thesis statement presents the main argument or claim of an essay.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_comp_easy_2',
+        question: 'What is MLA format?',
+        options: ['A type of essay', 'A citation style', 'A writing technique', 'A literary device'],
+        correct: 'A citation style',
+        explanation: 'MLA is a standardized format for citing sources in academic writing.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_comp_easy_3',
+        question: 'What is plagiarism?',
+        options: ['Original writing', 'Using others\' work without credit', 'Proper citation', 'Research method'],
+        correct: 'Using others\' work without credit',
+        explanation: 'Plagiarism is using someone else\'s work or ideas without proper attribution.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_comp_easy_4',
+        question: 'What is a primary source?',
+        options: ['A textbook', 'Original document or firsthand evidence', 'A summary', 'A review'],
+        correct: 'Original document or firsthand evidence',
+        explanation: 'Primary sources provide direct, firsthand evidence about a topic.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_comp_easy_5',
+        question: 'What is peer review?',
+        options: ['Self-editing', 'Having others review your work', 'Final draft', 'Publishing'],
+        correct: 'Having others review your work',
+        explanation: 'Peer review involves having others evaluate and provide feedback on your writing.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_comp_med_1',
+        question: 'What is the difference between summary and analysis?',
+        options: ['No difference', 'Summary retells, analysis interprets', 'Summary is longer', 'Analysis is easier'],
+        correct: 'Summary retells, analysis interprets',
+        explanation: 'Summary retells what happened; analysis examines meaning and significance.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_comp_med_2',
+        question: 'What is a counterargument?',
+        options: ['Supporting evidence', 'Opposing viewpoint', 'Conclusion', 'Introduction'],
+        correct: 'Opposing viewpoint',
+        explanation: 'A counterargument presents an opposing viewpoint to your thesis.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_comp_med_3',
+        question: 'What is rhetorical analysis?',
+        options: ['Grammar checking', 'Examining persuasive techniques', 'Plot summary', 'Character study'],
+        correct: 'Examining persuasive techniques',
+        explanation: 'Rhetorical analysis examines how authors use language to persuade audiences.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_comp_hard_1',
+        question: 'What is the difference between ethos, pathos, and logos?',
+        options: ['All are the same', 'Credibility, emotion, logic', 'Types of essays', 'Citation styles'],
+        correct: 'Credibility, emotion, logic',
+        explanation: 'Ethos appeals to credibility, pathos to emotion, and logos to logic.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_comp_hard_2',
+        question: 'What is synthesis writing?',
+        options: ['Copying sources', 'Combining multiple sources to create new insights', 'Summarizing one source', 'Personal reflection'],
+        correct: 'Combining multiple sources to create new insights',
+        explanation: 'Synthesis writing combines information from multiple sources to develop new insights.',
         difficulty: 'hard'
       }
     ]

@@ -1,501 +1,321 @@
+
 import { Chapter } from '../types';
 
 export const nationalLanguageChapters: Chapter[] = [
   {
-    id: 'amharic_basics',
-    name: 'Amharic Language Basics',
-    description: 'Introduction to Ethiopian national language - Amharic',
+    id: 'language_basics',
+    name: 'Language Fundamentals',
+    description: 'Basic grammar, vocabulary, and communication skills',
     questions: [
+      // Easy Questions
       {
-        id: 'amharic_easy_1',
-        question: 'What is the national language of Ethiopia?',
-        options: ['English', 'Amharic', 'Oromo', 'Tigrinya'],
-        correct: 'Amharic',
-        explanation: 'Amharic is the official working language of Ethiopia.',
+        id: 'lang_basic_1',
+        question: 'What is a noun?',
+        options: ['Action word', 'Describing word', 'Person, place, or thing', 'Connecting word'],
+        correct: 'Person, place, or thing',
+        explanation: 'A noun is a word that names a person, place, thing, or idea.',
         difficulty: 'easy'
       },
       {
-        id: 'amharic_easy_2',
-        question: 'How do you say "hello" in Amharic?',
-        options: ['Selam', 'Tadias', 'Dehna', 'Ishi'],
-        correct: 'Selam',
-        explanation: 'Selam is the common greeting for hello in Amharic.',
+        id: 'lang_basic_2',
+        question: 'What is a verb?',
+        options: ['Action or state word', 'Describing word', 'Naming word', 'Connecting word'],
+        correct: 'Action or state word',
+        explanation: 'A verb is a word that describes an action, state, or occurrence.',
         difficulty: 'easy'
       },
       {
-        id: 'amharic_easy_3',
-        question: 'What script is used to write Amharic?',
-        options: ['Latin', 'Ge\'ez', 'Arabic', 'Cyrillic'],
-        correct: 'Ge\'ez',
-        explanation: 'Amharic uses the Ge\'ez script, also known as Fidel.',
+        id: 'lang_basic_3',
+        question: 'What is an adjective?',
+        options: ['Action word', 'Word that describes a noun', 'Naming word', 'Connecting word'],
+        correct: 'Word that describes a noun',
+        explanation: 'An adjective is a word that describes or modifies a noun.',
         difficulty: 'easy'
       },
       {
-        id: 'amharic_easy_4',
-        question: 'How do you say "thank you" in Amharic?',
-        options: ['Ameseginalehu', 'Yikirta', 'Beka', 'Ishi'],
-        correct: 'Ameseginalehu',
-        explanation: 'Ameseginalehu means thank you in Amharic.',
+        id: 'lang_basic_4',
+        question: 'What is a sentence?',
+        options: ['Any group of words', 'Group of words expressing a complete thought', 'Single word', 'Paragraph'],
+        correct: 'Group of words expressing a complete thought',
+        explanation: 'A sentence is a group of words that expresses a complete thought, typically with a subject and verb.',
         difficulty: 'easy'
       },
       {
-        id: 'amharic_easy_5',
-        question: 'What does "Ethiopia" mean in Amharic?',
-        options: ['Ityopya', 'Habesha', 'Afrika', 'Addis'],
-        correct: 'Ityopya',
-        explanation: 'Ethiopia is called Ityopya in Amharic.',
+        id: 'lang_basic_5',
+        question: 'What is vocabulary?',
+        options: ['Grammar rules', 'Word meanings', 'Sentence structure', 'Reading skills'],
+        correct: 'Word meanings',
+        explanation: 'Vocabulary refers to the set of words and their meanings that a person knows.',
         difficulty: 'easy'
       },
       {
-        id: 'amharic_easy_6',
-        question: 'How do you say "yes" in Amharic?',
-        options: ['Awo', 'Yelem', 'Dehna', 'Ishi'],
-        correct: 'Awo',
-        explanation: 'Awo means yes in Amharic.',
+        id: 'lang_basic_6',
+        question: 'What is a pronoun?',
+        options: ['Action word', 'Word used instead of a noun', 'Describing word', 'Connecting word'],
+        correct: 'Word used instead of a noun',
+        explanation: 'A pronoun is a word used in place of a noun, such as he, she, it, they.',
         difficulty: 'easy'
       },
       {
-        id: 'amharic_easy_7',
-        question: 'How do you say "no" in Amharic?',
-        options: ['Awo', 'Yelem', 'Aydelem', 'Ishi'],
-        correct: 'Aydelem',
-        explanation: 'Aydelem means no in Amharic.',
+        id: 'lang_basic_7',
+        question: 'What is communication?',
+        options: ['Speaking only', 'Writing only', 'Exchange of information', 'Reading comprehension'],
+        correct: 'Exchange of information',
+        explanation: 'Communication is the exchange of information between individuals through a common system.',
         difficulty: 'easy'
       },
       {
-        id: 'amharic_easy_8',
-        question: 'What does "Addis Ababa" mean?',
-        options: ['Old flower', 'New flower', 'Big city', 'Capital city'],
-        correct: 'New flower',
-        explanation: 'Addis Ababa means "new flower" in Amharic.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'amharic_easy_9',
-        question: 'How do you say "water" in Amharic?',
-        options: ['Wuha', 'Teff', 'Injera', 'Buna'],
-        correct: 'Wuha',
-        explanation: 'Wuha means water in Amharic.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'amharic_easy_10',
-        question: 'How do you say "good" in Amharic?',
-        options: ['Tiru', 'Dehna', 'Melkam', 'Konjo'],
-        correct: 'Melkam',
-        explanation: 'Melkam means good in Amharic.',
+        id: 'lang_basic_8',
+        question: 'What is a preposition?',
+        options: ['Type of noun', 'Word showing relationship', 'Past tense verb', 'Type of sentence'],
+        correct: 'Word showing relationship',
+        explanation: 'A preposition shows the relationship between a noun and other words in a sentence.',
         difficulty: 'easy'
       },
 
+      // Medium Questions
       {
-        id: 'amharic_med_1',
-        question: 'How many letters are in the Amharic alphabet?',
-        options: ['26', '33', '231', '280'],
-        correct: '231',
-        explanation: 'The Amharic writing system has 231 basic characters.',
+        id: 'lang_basic_med_1',
+        question: 'What is the difference between active and passive voice?',
+        options: ['No difference', 'Active: subject does action; passive: subject receives action', 'Only tense difference', 'Only formal vs informal'],
+        correct: 'Active: subject does action; passive: subject receives action',
+        explanation: 'In active voice, the subject performs the action; in passive voice, the subject receives the action.',
         difficulty: 'medium'
       },
       {
-        id: 'amharic_med_2',
-        question: 'What is the traditional Ethiopian bread called in Amharic?',
-        options: ['Injera', 'Doro', 'Kitfo', 'Shiro'],
-        correct: 'Injera',
-        explanation: 'Injera is the traditional Ethiopian flatbread made from teff.',
+        id: 'lang_basic_med_2',
+        question: 'What is a complex sentence?',
+        options: ['Long sentence', 'Sentence with independent and dependent clauses', 'Any difficult sentence', 'Sentence with many words'],
+        correct: 'Sentence with independent and dependent clauses',
+        explanation: 'A complex sentence contains an independent clause and at least one dependent clause.',
         difficulty: 'medium'
       },
       {
-        id: 'amharic_med_3',
-        question: 'How do you say "I love you" in Amharic?',
-        options: ['Ewedishalehu', 'Ameseginalehu', 'Dehna neh', 'Melkam neh'],
-        correct: 'Ewedishalehu',
-        explanation: 'Ewedishalehu means "I love you" in Amharic.',
+        id: 'lang_basic_med_3',
+        question: 'What is context in language?',
+        options: ['Text formatting', 'Surrounding information that gives meaning', 'Grammar rules', 'Pronunciation guide'],
+        correct: 'Surrounding information that gives meaning',
+        explanation: 'Context refers to the surrounding information that helps determine the meaning of language.',
         difficulty: 'medium'
       },
       {
-        id: 'amharic_med_4',
-        question: 'What does "Habesha" refer to?',
-        options: ['A food', 'Ethiopian and Eritrean people', 'A city', 'A language'],
-        correct: 'Ethiopian and Eritrean people',
-        explanation: 'Habesha refers to Ethiopian and Eritrean people.',
+        id: 'lang_basic_med_4',
+        question: 'What is figurative language?',
+        options: ['Plain language', 'Language using figures of speech', 'Technical language', 'Foreign language'],
+        correct: 'Language using figures of speech',
+        explanation: 'Figurative language uses figures of speech to be more effective, persuasive, or creative.',
         difficulty: 'medium'
       },
       {
-        id: 'amharic_med_5',
-        question: 'How do you say "beautiful" in Amharic?',
-        options: ['Konjo', 'Tiru', 'Melkam', 'Dehna'],
-        correct: 'Konjo',
-        explanation: 'Konjo means beautiful in Amharic.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'amharic_med_6',
-        question: 'What is the Ethiopian coffee ceremony called?',
-        options: ['Buna ceremony', 'Coffee time', 'Teff ceremony', 'Injera time'],
-        correct: 'Buna ceremony',
-        explanation: 'The traditional Ethiopian coffee ceremony is called the buna ceremony.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'amharic_med_7',
-        question: 'How do you say "please" in Amharic?',
-        options: ['Ebakish', 'Ameseginalehu', 'Yikirta', 'Dehna'],
-        correct: 'Ebakish',
-        explanation: 'Ebakish means please in Amharic.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'amharic_med_8',
-        question: 'What does "teff" refer to?',
-        options: ['A city', 'A grain used to make injera', 'A greeting', 'A festival'],
-        correct: 'A grain used to make injera',
-        explanation: 'Teff is the tiny grain used to make injera, the traditional Ethiopian bread.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'amharic_med_9',
-        question: 'How do you say "goodbye" in Amharic?',
-        options: ['Selam', 'Dehna hun', 'Tadias', 'Awo'],
-        correct: 'Dehna hun',
-        explanation: 'Dehna hun means goodbye (be well) in Amharic.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'amharic_med_10',
-        question: 'What is the Amharic word for "family"?',
-        options: ['Bet', 'Beteseb', 'Seb', 'Hager'],
-        correct: 'Beteseb',
-        explanation: 'Beteseb means family in Amharic.',
+        id: 'lang_basic_med_5',
+        question: 'What is a conjunction?',
+        options: ['Type of verb', 'Word that joins clauses or sentences', 'Type of noun', 'Question word'],
+        correct: 'Word that joins clauses or sentences',
+        explanation: 'A conjunction connects words, phrases, clauses, or sentences.',
         difficulty: 'medium'
       },
 
+      // Hard Questions
       {
-        id: 'amharic_hard_1',
-        question: 'Which language family does Amharic belong to?',
-        options: ['Indo-European', 'Afro-Asiatic', 'Niger-Congo', 'Sino-Tibetan'],
-        correct: 'Afro-Asiatic',
-        explanation: 'Amharic belongs to the Semitic branch of the Afro-Asiatic language family.',
+        id: 'lang_basic_hard_1',
+        question: 'What is the subjunctive mood?',
+        options: ['Past tense', 'Expression of facts', 'Verb form for hypothetical situations', 'Future tense'],
+        correct: 'Verb form for hypothetical situations',
+        explanation: 'The subjunctive mood expresses hypothetical, wishful, imaginary, or factually contradictory thoughts.',
         difficulty: 'hard'
       },
       {
-        id: 'amharic_hard_2',
-        question: 'What is the complex verb conjugation system in Amharic based on?',
-        options: ['Tense only', 'Person, number, gender, and aspect', 'Location only', 'Time only'],
-        correct: 'Person, number, gender, and aspect',
-        explanation: 'Amharic verbs conjugate based on person, number, gender, and grammatical aspect.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'amharic_hard_3',
-        question: 'What is the word order in Amharic sentences?',
-        options: ['SVO (Subject-Verb-Object)', 'SOV (Subject-Object-Verb)', 'VSO (Verb-Subject-Object)', 'OVS (Object-Verb-Subject)'],
-        correct: 'SOV (Subject-Object-Verb)',
-        explanation: 'Amharic follows SOV word order, unlike English which is SVO.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'amharic_hard_4',
-        question: 'What is the historical significance of Ge\'ez script?',
-        options: ['Modern invention', 'Ancient script from Aksumite Kingdom', 'Colonial introduction', 'Recent development'],
-        correct: 'Ancient script from Aksumite Kingdom',
-        explanation: 'Ge\'ez script has ancient origins from the Aksumite Kingdom and was originally used for the Ge\'ez language.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'amharic_hard_5',
-        question: 'How does Amharic handle definiteness?',
-        options: ['No articles', 'Suffix -u/-wa for definite', 'Prefix system', 'Separate words'],
-        correct: 'Suffix -u/-wa for definite',
-        explanation: 'Amharic uses suffixes -u (masculine) and -wa (feminine) to indicate definiteness.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'amharic_hard_6',
-        question: 'What is the literary tradition of Amharic known for?',
-        options: ['Only modern works', 'Rich religious and secular literature', 'Only oral tradition', 'Recent development'],
-        correct: 'Rich religious and secular literature',
-        explanation: 'Amharic has a rich literary tradition including religious texts, poetry, and modern literature.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'amharic_hard_7',
-        question: 'What is the phonological characteristic of Amharic?',
-        options: ['Only 5 vowels', 'Seven vowel phonemes', 'No consonant clusters', 'Only soft sounds'],
-        correct: 'Seven vowel phonemes',
-        explanation: 'Amharic has seven vowel phonemes, which is reflected in its writing system.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'amharic_hard_8',
-        question: 'How does Amharic express possession?',
-        options: ['Only with verbs', 'Possessive pronouns and construct state', 'No possession', 'Only with adjectives'],
-        correct: 'Possessive pronouns and construct state',
-        explanation: 'Amharic uses possessive pronouns as suffixes and construct state for indicating possession.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'amharic_hard_9',
-        question: 'What is the role of gemination in Amharic?',
-        options: ['No importance', 'Phonemically distinctive', 'Only in borrowed words', 'Purely aesthetic'],
-        correct: 'Phonemically distinctive',
-        explanation: 'Gemination (consonant doubling) is phonemically distinctive in Amharic and can change word meaning.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'amharic_hard_10',
-        question: 'What is the influence of other languages on modern Amharic?',
-        options: ['No influence', 'Loanwords from Arabic, Italian, English', 'Only English influence', 'Only Arabic influence'],
-        correct: 'Loanwords from Arabic, Italian, English',
-        explanation: 'Modern Amharic contains loanwords from Arabic, Italian (colonial period), and English (modern times).',
+        id: 'lang_basic_hard_2',
+        question: 'What is a syntactic ambiguity?',
+        options: ['Clear meaning', 'Multiple grammatical interpretations', 'Word spelling', 'Pronunciation issue'],
+        correct: 'Multiple grammatical interpretations',
+        explanation: 'Syntactic ambiguity occurs when a sentence can be interpreted in multiple ways due to its structure.',
         difficulty: 'hard'
       }
     ]
   },
-
+  
   {
-    id: 'grade11_advanced_amharic',
-    name: 'Grade 11: Advanced Amharic Literature and Grammar',
-    description: 'Advanced Amharic language studies, literature analysis, and complex grammar',
+    id: 'grade11_literature_analysis',
+    name: 'Grade 11: Literature Analysis',
+    description: 'Critical analysis of literary works and authors',
     questions: [
+      // Easy Questions
       {
-        id: 'g11_amh_easy_1',
-        question: 'What is the main difference between classical and modern Amharic literature?',
-        options: ['No difference', 'Classical is religious, modern includes secular themes', 'Different alphabet', 'Different grammar'],
-        correct: 'Classical is religious, modern includes secular themes',
-        explanation: 'Classical Amharic literature was primarily religious, while modern literature includes diverse secular themes.',
+        id: 'g11_lit_easy_1',
+        question: 'What is a literary genre?',
+        options: ['Book size', 'Category of literary composition', 'Writing instrument', 'Page number'],
+        correct: 'Category of literary composition',
+        explanation: 'A literary genre is a category of literary composition, such as novel, poetry, or drama.',
         difficulty: 'easy'
       },
       {
-        id: 'g11_amh_easy_2',
-        question: 'Who is considered the father of modern Amharic literature?',
-        options: ['Haddis Alemayehu', 'Afework Gebre Yesus', 'Tsegaye Gebre Medhin', 'Yoftahe Negussie'],
-        correct: 'Afework Gebre Yesus',
-        explanation: 'Afework Gebre Yesus is considered the father of modern Amharic literature.',
+        id: 'g11_lit_easy_2',
+        question: 'What is a character in literature?',
+        options: ['Letter or symbol', 'Person in a story', 'Writing style', 'Book cover'],
+        correct: 'Person in a story',
+        explanation: 'A character is a person or other being in a narrative such as a novel, play, or film.',
         difficulty: 'easy'
       },
       {
-        id: 'g11_amh_easy_3',
-        question: 'What is "Libb Walled Tarik" about?',
-        options: ['Love story', 'Historical novel', 'Religious text', 'Poetry collection'],
-        correct: 'Love story',
-        explanation: 'Libb Walled Tarik by Haddis Alemayehu is a famous Amharic love story.',
+        id: 'g11_lit_easy_3',
+        question: 'What is a theme in literature?',
+        options: ['Book cover design', 'Central idea of a work', 'Page layout', 'Font style'],
+        correct: 'Central idea of a work',
+        explanation: 'A theme is the central idea, concern, or purpose of a literary work.',
         difficulty: 'easy'
       },
       {
-        id: 'g11_amh_easy_4',
-        question: 'What is the traditional Amharic poetry form called?',
-        options: ['Qene', 'Zema', 'Mezmur', 'Melke'],
-        correct: 'Qene',
-        explanation: 'Qene is the traditional form of Amharic poetry with hidden meanings.',
+        id: 'g11_lit_easy_4',
+        question: 'What is a plot?',
+        options: ['Book location', 'Main events of a story', 'Character name', 'Book size'],
+        correct: 'Main events of a story',
+        explanation: 'Plot is the sequence of events that make up a story.',
         difficulty: 'easy'
       },
       {
-        id: 'g11_amh_easy_5',
-        question: 'What does "sam enna work" mean in Qene?',
-        options: ['Wax and gold', 'Fire and water', 'Sun and moon', 'Love and hate'],
-        correct: 'Wax and gold',
-        explanation: 'Sam enna work (wax and gold) refers to the surface and hidden meanings in Qene poetry.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g11_amh_easy_6',
-        question: 'Who wrote "Yalanchinet Kokeb"?',
-        options: ['Tsegaye Gebre Medhin', 'Mengistu Lemma', 'Yoftahe Negussie', 'Haddis Alemayehu'],
-        correct: 'Yoftahe Negussie',
-        explanation: 'Yoftahe Negussie wrote the novel "Yalanchinet Kokeb".',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g11_amh_easy_7',
-        question: 'What is the Amharic word for "literature"?',
-        options: ['Metshaf', 'Sifru', 'Zema', 'Gubae'],
-        correct: 'Sifru',
-        explanation: 'Sifru means literature in Amharic.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g11_amh_easy_8',
-        question: 'What is a "Melke" in Amharic literature?',
-        options: ['Novel', 'Religious poem', 'Drama', 'Short story'],
-        correct: 'Religious poem',
-        explanation: 'Melke is a type of religious poem in Amharic literature.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g11_amh_easy_9',
-        question: 'Who is Tsegaye Gebre Medhin?',
-        options: ['Novelist', 'Playwright and poet', 'Historian', 'Musician'],
-        correct: 'Playwright and poet',
-        explanation: 'Tsegaye Gebre Medhin was a renowned Amharic playwright and poet.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g11_amh_easy_10',
-        question: 'What does "Tewahedo" mean in Ethiopian Orthodox context?',
-        options: ['Unity', 'Prayer', 'Fasting', 'Celebration'],
-        correct: 'Unity',
-        explanation: 'Tewahedo means unity, referring to the unified nature of Christ in Ethiopian Orthodox theology.',
+        id: 'g11_lit_easy_5',
+        question: 'What is a setting in literature?',
+        options: ['Book price', 'Time and place of events', 'Author\'s name', 'Book length'],
+        correct: 'Time and place of events',
+        explanation: 'Setting is the time, place, and circumstances in which a story occurs.',
         difficulty: 'easy'
       },
 
+      // Medium Questions
       {
-        id: 'g11_amh_med_1',
-        question: 'What is the significance of the novel "Adafris" by Haddis Alemayehu?',
-        options: ['First Amharic novel', 'Social critique of aristocracy', 'Religious text', 'Historical documentation'],
-        correct: 'Social critique of aristocracy',
-        explanation: 'Adafris provides a social critique of the Ethiopian aristocratic class.',
+        id: 'g11_lit_med_1',
+        question: 'What is symbolism in literature?',
+        options: ['Direct statement', 'Use of symbols to represent ideas', 'Character description', 'Sentence structure'],
+        correct: 'Use of symbols to represent ideas',
+        explanation: 'Symbolism is the use of symbols to represent ideas or qualities in literature.',
         difficulty: 'medium'
       },
       {
-        id: 'g11_amh_med_2',
-        question: 'What is the main theme of Tsegaye\'s play "Petros at the Hour of Twelve"?',
-        options: ['Love story', 'Political resistance and betrayal', 'Religious devotion', 'Historical events'],
-        correct: 'Political resistance and betrayal',
-        explanation: 'The play deals with themes of political resistance and betrayal.',
+        id: 'g11_lit_med_2',
+        question: 'What is foreshadowing?',
+        options: ['Background lighting', 'Hint of future events', 'Character introduction', 'Book conclusion'],
+        correct: 'Hint of future events',
+        explanation: 'Foreshadowing is a literary device where future events are hinted at or indicated in advance.',
         difficulty: 'medium'
       },
       {
-        id: 'g11_amh_med_3',
-        question: 'What is the function of "Sebeka gubae" in traditional Amharic poetry?',
-        options: ['Rhythm only', 'Complex wordplay and multiple meanings', 'Rhyme scheme', 'Meter pattern'],
-        correct: 'Complex wordplay and multiple meanings',
-        explanation: 'Sebeka gubae involves complex wordplay with multiple layers of meaning.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g11_amh_med_4',
-        question: 'How do gender markers work in Amharic verbs?',
-        options: ['No gender markers', 'Different verb forms for masculine and feminine subjects', 'Only in nouns', 'Only in adjectives'],
-        correct: 'Different verb forms for masculine and feminine subjects',
-        explanation: 'Amharic verbs change form based on the gender of the subject.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g11_amh_med_5',
-        question: 'What is the role of "Lalit" in Amharic prosody?',
-        options: ['Rhyme scheme', 'Syllable count and rhythm', 'Theme selection', 'Character development'],
-        correct: 'Syllable count and rhythm',
-        explanation: 'Lalit refers to the syllable count and rhythmic pattern in Amharic poetry.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g11_amh_med_6',
-        question: 'What is the significance of "Fikre Yesus" literature?',
-        options: ['Secular themes', 'Love of Christ religious literature', 'Political commentary', 'Historical records'],
-        correct: 'Love of Christ religious literature',
-        explanation: 'Fikre Yesus (Love of Jesus) is a genre of Ethiopian Orthodox religious literature.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g11_amh_med_7',
-        question: 'How does Amharic express aspectual distinctions?',
-        options: ['No aspectual system', 'Through verb conjugation patterns', 'Only through adverbs', 'Through word order'],
-        correct: 'Through verb conjugation patterns',
-        explanation: 'Amharic expresses aspectual distinctions through different verb conjugation patterns.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g11_amh_med_8',
-        question: 'What is the function of "Mircha" in Amharic dramatic literature?',
-        options: ['Character type', 'Plot structure', 'Stage direction', 'Dialogue style'],
-        correct: 'Character type',
-        explanation: 'Mircha refers to a specific character type in traditional Amharic drama.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g11_amh_med_9',
-        question: 'What is the literary significance of "Kebra Nagast"?',
-        options: ['Modern novel', 'Ancient text about Queen of Sheba and Solomon', 'Poetry collection', 'Drama script'],
-        correct: 'Ancient text about Queen of Sheba and Solomon',
-        explanation: 'Kebra Nagast is an ancient text about the Queen of Sheba and King Solomon.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g11_amh_med_10',
-        question: 'How does Amharic handle compound verb constructions?',
-        options: ['No compounds', 'Auxiliary verb + main verb patterns', 'Only simple verbs', 'Through prefixes only'],
-        correct: 'Auxiliary verb + main verb patterns',
-        explanation: 'Amharic uses auxiliary verb constructions to express complex meanings.',
+        id: 'g11_lit_med_3',
+        question: 'What is a metaphor?',
+        options: ['Direct comparison using like or as', 'Figurative comparison not using like or as', 'Character description', 'Book chapter'],
+        correct: 'Figurative comparison not using like or as',
+        explanation: 'A metaphor is a figure of speech that makes an implied comparison between unrelated things.',
         difficulty: 'medium'
       },
 
+      // Hard Questions
       {
-        id: 'g11_amh_hard_1',
-        question: 'What is the morphophonological process of "epenthesis" in Amharic?',
-        options: ['Sound deletion', 'Vowel insertion to break consonant clusters', 'Consonant doubling', 'Tone change'],
-        correct: 'Vowel insertion to break consonant clusters',
-        explanation: 'Epenthesis in Amharic involves inserting vowels to break up consonant clusters.',
+        id: 'g11_lit_hard_1',
+        question: 'What is an unreliable narrator?',
+        options: ['Storyteller who misses details', 'Narrator whose credibility is compromised', 'Character who lies', 'Author\'s pen name'],
+        correct: 'Narrator whose credibility is compromised',
+        explanation: 'An unreliable narrator is one whose credibility has been compromised, making their perspective questionable.',
         difficulty: 'hard'
       },
       {
-        id: 'g11_amh_hard_2',
-        question: 'What is the function of "Tawaḥədo" theology in Ethiopian literature?',
-        options: ['Secular philosophy', 'Monophysite Christological doctrine influencing literary themes', 'Political ideology', 'Educational theory'],
-        correct: 'Monophysite Christological doctrine influencing literary themes',
-        explanation: 'Tawaḥədo theology significantly influences themes and symbolism in Ethiopian literature.',
+        id: 'g11_lit_hard_2',
+        question: 'What is intertextuality in literature?',
+        options: ['Text formatting', 'Relationship between texts', 'Text translation', 'Text layout'],
+        correct: 'Relationship between texts',
+        explanation: 'Intertextuality refers to the relationship between texts, where one text references or shapes understanding of another.',
+        difficulty: 'hard'
+      }
+    ]
+  },
+  
+  {
+    id: 'grade12_advanced_composition',
+    name: 'Grade 12: Advanced Composition',
+    description: 'Advanced writing skills and rhetorical strategies',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_comp_easy_1',
+        question: 'What is an essay?',
+        options: ['Short poem', 'Short piece of writing on a subject', 'Novel chapter', 'Book title'],
+        correct: 'Short piece of writing on a subject',
+        explanation: 'An essay is a short piece of writing on a particular subject, typically expressing the author\'s views.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_comp_easy_2',
+        question: 'What is a thesis statement?',
+        options: ['Essay length', 'Main argument of an essay', 'Page number', 'Author\'s name'],
+        correct: 'Main argument of an essay',
+        explanation: 'A thesis statement expresses the main argument or claim of an essay.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_comp_easy_3',
+        question: 'What is a paragraph?',
+        options: ['Book chapter', 'Group of related sentences about one idea', 'Page number', 'Writing instrument'],
+        correct: 'Group of related sentences about one idea',
+        explanation: 'A paragraph is a distinct section of writing dealing with a single theme or idea.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_comp_easy_4',
+        question: 'What is a draft?',
+        options: ['Final paper', 'Preliminary version of writing', 'Published work', 'Book title'],
+        correct: 'Preliminary version of writing',
+        explanation: 'A draft is a preliminary version of a piece of writing that is not yet final.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_comp_easy_5',
+        question: 'What is editing?',
+        options: ['Writing quickly', 'Revising and correcting writing', 'Copying text', 'Publishing'],
+        correct: 'Revising and correcting writing',
+        explanation: 'Editing involves reviewing and making changes to text to improve clarity, accuracy, and quality.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions
+      {
+        id: 'g12_comp_med_1',
+        question: 'What is rhetoric?',
+        options: ['Fast writing', 'Art of effective communication', 'Text formatting', 'Typing skill'],
+        correct: 'Art of effective communication',
+        explanation: 'Rhetoric is the art of effective or persuasive speaking or writing.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_comp_med_2',
+        question: 'What is a counterargument?',
+        options: ['Supporting argument', 'Argument against your position', 'Conclusion', 'Introduction'],
+        correct: 'Argument against your position',
+        explanation: 'A counterargument is an argument opposed to your position but that you address in your writing.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_comp_med_3',
+        question: 'What is the purpose of a conclusion in an essay?',
+        options: ['Introduce topic', 'Summarize and provide closure', 'Present new ideas', 'List references'],
+        correct: 'Summarize and provide closure',
+        explanation: 'A conclusion summarizes the main points and provides closure to the writing.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions
+      {
+        id: 'g12_comp_hard_1',
+        question: 'What is the difference between inductive and deductive reasoning?',
+        options: ['No difference', 'Inductive: specific to general; deductive: general to specific', 'Only in application', 'Only in length'],
+        correct: 'Inductive: specific to general; deductive: general to specific',
+        explanation: 'Inductive reasoning moves from specific observations to broad generalizations; deductive reasoning moves from general principles to specific conclusions.',
         difficulty: 'hard'
       },
       {
-        id: 'g11_amh_hard_3',
-        question: 'How does the triconsonantal root system work in Amharic morphology?',
-        options: ['Random consonant combination', 'Three consonants form word roots with vowel patterns creating meanings', 'Only two consonants needed', 'Consonants are optional'],
-        correct: 'Three consonants form word roots with vowel patterns creating meanings',
-        explanation: 'Amharic uses triconsonantal roots where three consonants form the basic meaning, modified by vowel patterns.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g11_amh_hard_4',
-        question: 'What is the literary technique of "Semenna Werq" in advanced Qene?',
-        options: ['Simple metaphor', 'Complex double entendre with hidden political/social commentary', 'Rhyme scheme', 'Meter pattern'],
-        correct: 'Complex double entendre with hidden political/social commentary',
-        explanation: 'Semenna Werq is a sophisticated literary technique using hidden meanings for social/political commentary.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g11_amh_hard_5',
-        question: 'What is the significance of "Digua" in Ethiopian ecclesiastical literature?',
-        options: ['Secular poetry', 'Antiphonal religious chanting with complex theological content', 'Folk songs', 'Modern literature'],
-        correct: 'Antiphonal religious chanting with complex theological content',
-        explanation: 'Digua is a form of antiphonal religious chanting with sophisticated theological content.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g11_amh_hard_6',
-        question: 'How does Amharic handle ergative alignment in certain constructions?',
-        options: ['No ergative features', 'Subject marking varies based on transitivity', 'Only nominative case', 'Random case marking'],
-        correct: 'Subject marking varies based on transitivity',
-        explanation: 'Amharic shows some ergative features where subject marking varies based on verb transitivity.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g11_amh_hard_7',
-        question: 'What is the role of "Zema" notation in preserving literary tradition?',
-        options: ['Writing system', 'Musical notation for liturgical texts', 'Punctuation marks', 'Spelling rules'],
-        correct: 'Musical notation for liturgical texts',
-        explanation: 'Zema is the traditional musical notation system for Ethiopian Orthodox liturgical texts.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g11_amh_hard_8',
-        question: 'What is the function of "Converb" constructions in Amharic syntax?',
-        options: ['Main verb only', 'Non-finite verb forms expressing circumstantial relations', 'Auxiliary verbs', 'Modal verbs'],
-        correct: 'Non-finite verb forms expressing circumstantial relations',
-        explanation: 'Converbs are non-finite verb forms that express various circumstantial relations between clauses.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g11_amh_hard_9',
-        question: 'How does the "Accident vs. Essence" philosophical distinction appear in Ethiopian literature?',
-        options: ['Not present', 'Through theological discussions of divine nature vs. human nature', 'Only in modern works', 'Through political themes'],
-        correct: 'Through theological discussions of divine nature vs. human nature',
-        explanation: 'This philosophical distinction appears in discussions of divine and human nature in religious literature.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g11_amh_hard_10',
-        question: 'What is the significance of "Palatal harmony" in certain Amharic dialects?',
-        options: ['Not present', 'Vowel harmony affecting palatalization of consonants', 'Only tonal features', 'Random sound changes'],
-        correct: 'Vowel harmony affecting palatalization of consonants',
-        explanation: 'Some Amharic dialects show palatal harmony where vowels affect consonant palatalization.',
+        id: 'g12_comp_hard_2',
+        question: 'What is a syllogism?',
+        options: ['Type of poem', 'Form of deductive reasoning with premises and conclusion', 'Essay format', 'Writing style'],
+        correct: 'Form of deductive reasoning with premises and conclusion',
+        explanation: 'A syllogism is a form of deductive reasoning where a conclusion is drawn from two premises.',
         difficulty: 'hard'
       }
     ]

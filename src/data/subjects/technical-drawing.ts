@@ -1,507 +1,321 @@
+
 import { Chapter } from '../types';
 
 export const technicalDrawingChapters: Chapter[] = [
   {
     id: 'basic_drawing',
-    name: 'Basic Technical Drawing',
-    description: 'Fundamentals of technical drawing and drafting',
+    name: 'Basic Drawing Techniques',
+    description: 'Fundamental drawing concepts and tools',
     questions: [
+      // Easy Questions
       {
-        id: 'td_basic_easy_1',
-        question: 'What is the standard paper size for technical drawings?',
-        options: ['A4', 'A3', 'A2', 'A1'],
-        correct: 'A4',
-        explanation: 'A4 is the most commonly used paper size for technical drawings.',
+        id: 'draw_basic_1',
+        question: 'What tool is used for drawing straight lines?',
+        options: ['Compass', 'Ruler', 'Protractor', 'Divider'],
+        correct: 'Ruler',
+        explanation: 'A ruler or straightedge is the basic tool for drawing straight lines.',
         difficulty: 'easy'
       },
       {
-        id: 'td_basic_easy_2',
-        question: 'Which pencil grade is best for construction lines?',
-        options: ['2H', 'HB', '2B', '4B'],
-        correct: '2H',
-        explanation: '2H pencils create light lines suitable for construction work.',
+        id: 'draw_basic_2',
+        question: 'What is a scale in technical drawing?',
+        options: ['Weight of drawing', 'Ratio of drawing size to real size', 'Drawing texture', 'Paper type'],
+        correct: 'Ratio of drawing size to real size',
+        explanation: 'A scale represents the ratio between a measurement on a drawing and the real object.',
         difficulty: 'easy'
       },
       {
-        id: 'td_basic_easy_3',
-        question: 'What does the acronym CAD stand for?',
-        options: ['Computer Aided Design', 'Computer Automated Drawing', 'Creative Art Design', 'Computer Architecture Design'],
+        id: 'draw_basic_3',
+        question: 'What is the purpose of a compass in technical drawing?',
+        options: ['Finding direction', 'Drawing circles and arcs', 'Measuring angles', 'Drawing straight lines'],
+        correct: 'Drawing circles and arcs',
+        explanation: 'A compass is used to draw circles and arcs in technical drawing.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'draw_basic_4',
+        question: 'What is a blueprint?',
+        options: ['Any drawing', 'Blue-colored paper', 'Technical drawing reproduction', 'Artistic sketch'],
+        correct: 'Technical drawing reproduction',
+        explanation: 'A blueprint is a reproduction of a technical drawing, traditionally with white lines on blue background.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'draw_basic_5',
+        question: 'What is the purpose of drawing borders on technical drawings?',
+        options: ['Decoration', 'Define drawing area', 'Required by law', 'To use more ink'],
+        correct: 'Define drawing area',
+        explanation: 'Borders define the drawing area and provide space for information and titles.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'draw_basic_6',
+        question: 'What does CAD stand for?',
+        options: ['Computer Aided Design', 'Creative Art Drawing', 'Calculated Angular Dimension', 'Complex Art Diagram'],
         correct: 'Computer Aided Design',
-        explanation: 'CAD stands for Computer Aided Design.',
+        explanation: 'CAD stands for Computer Aided Design, using computers to create technical drawings.',
         difficulty: 'easy'
       },
       {
-        id: 'td_basic_easy_4',
-        question: 'What is an orthographic projection?',
-        options: ['3D view', 'Multiple 2D views', 'Perspective view', 'Isometric view'],
-        correct: 'Multiple 2D views',
-        explanation: 'Orthographic projection shows an object from multiple 2D viewpoints.',
+        id: 'draw_basic_7',
+        question: 'What are dimensions in technical drawing?',
+        options: ['Paper size', 'Measurements of the object', 'Drawing complexity', 'Line types'],
+        correct: 'Measurements of the object',
+        explanation: 'Dimensions show the sizes and measurements of the object being drawn.',
         difficulty: 'easy'
       },
       {
-        id: 'td_basic_easy_5',
-        question: 'Which line type is used for hidden edges?',
-        options: ['Continuous line', 'Dashed line', 'Dotted line', 'Chain line'],
-        correct: 'Dashed line',
-        explanation: 'Dashed lines represent hidden or invisible edges in technical drawings.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'td_basic_easy_6',
-        question: 'What is the purpose of a scale in technical drawing?',
-        options: ['To measure weight', 'To show size proportion', 'To indicate color', 'To show material'],
-        correct: 'To show size proportion',
-        explanation: 'Scale indicates the proportion between the drawing and the actual object.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'td_basic_easy_7',
-        question: 'Which tool is used to draw circles?',
-        options: ['Ruler', 'Compass', 'Protractor', 'Set square'],
-        correct: 'Compass',
-        explanation: 'A compass is used to draw perfect circles and arcs.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'td_basic_easy_8',
-        question: 'What does a dimension line show?',
-        options: ['Color', 'Size', 'Material', 'Weight'],
-        correct: 'Size',
-        explanation: 'Dimension lines indicate the measurements and sizes of objects.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'td_basic_easy_9',
-        question: 'Which view shows the front of an object?',
-        options: ['Top view', 'Side view', 'Front view', 'Bottom view'],
-        correct: 'Front view',
-        explanation: 'The front view shows the object as seen from the front.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'td_basic_easy_10',
-        question: 'What is a construction line?',
-        options: ['A thick outline', 'A light guideline', 'A colored line', 'A broken line'],
-        correct: 'A light guideline',
-        explanation: 'Construction lines are light guidelines used to help create the drawing.',
+        id: 'draw_basic_8',
+        question: 'What is a title block in technical drawing?',
+        options: ['Drawing title only', 'Area with project information', 'Block diagram', 'Decorative element'],
+        correct: 'Area with project information',
+        explanation: 'Title block contains information about the drawing including title, date, scale, and author.',
         difficulty: 'easy'
       },
 
       // Medium Questions
       {
-        id: 'td_basic_med_1',
-        question: 'What is the purpose of a title block in technical drawings?',
-        options: ['Decoration', 'Drawing information', 'Scale reference', 'Border design'],
-        correct: 'Drawing information',
-        explanation: 'Title blocks contain essential information about the drawing including title, scale, date, and designer.',
+        id: 'draw_basic_med_1',
+        question: 'What is isometric drawing?',
+        options: ['2D drawing', 'Pictorial drawing with equal angles', 'Drawing to scale', 'Section view'],
+        correct: 'Pictorial drawing with equal angles',
+        explanation: 'Isometric drawing is a method of pictorial representation with equal angles between the axes.',
         difficulty: 'medium'
       },
       {
-        id: 'td_basic_med_2',
+        id: 'draw_basic_med_2',
+        question: 'What is the purpose of section lines in technical drawing?',
+        options: ['Decorative pattern', 'Show cut surfaces', 'Indicate scale', 'Mark borders'],
+        correct: 'Show cut surfaces',
+        explanation: 'Section lines (hatching) indicate where an object has been theoretically cut to show interior details.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'draw_basic_med_3',
+        question: 'What is orthographic projection?',
+        options: ['3D view', 'Method showing multiple 2D views', 'Single view drawing', 'Artistic representation'],
+        correct: 'Method showing multiple 2D views',
+        explanation: 'Orthographic projection uses multiple 2D views (typically front, top, and side) to represent a 3D object.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'draw_basic_med_4',
+        question: 'What is a hidden line in technical drawing?',
+        options: ['Erased line', 'Line not visible in current view', 'Decorative element', 'Guide line'],
+        correct: 'Line not visible in current view',
+        explanation: 'Hidden lines (typically dashed) represent edges that exist but are not visible from the current viewpoint.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'draw_basic_med_5',
         question: 'What is the difference between first angle and third angle projection?',
-        options: ['Paper orientation', 'View arrangement', 'Scale used', 'Line weights'],
-        correct: 'View arrangement',
-        explanation: 'First and third angle projections differ in how views are arranged relative to each other.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'td_basic_med_3',
-        question: 'What is an isometric projection?',
-        options: ['2D front view', '3D representation', 'Side view only', 'Top view only'],
-        correct: '3D representation',
-        explanation: 'Isometric projection shows a 3D representation of an object.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'td_basic_med_4',
-        question: 'Which type of line indicates center lines?',
-        options: ['Thick continuous', 'Thin chain line', 'Dashed line', 'Dotted line'],
-        correct: 'Thin chain line',
-        explanation: 'Center lines are represented by thin chain lines (long dash-short dash).',
-        difficulty: 'medium'
-      },
-      {
-        id: 'td_basic_med_5',
-        question: 'What is a section view?',
-        options: ['External view', 'Internal view after cutting', 'Top view', 'Perspective view'],
-        correct: 'Internal view after cutting',
-        explanation: 'A section view shows the internal features of an object as if it were cut.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'td_basic_med_6',
-        question: 'What does hatching indicate in a drawing?',
-        options: ['Color', 'Material or cut surface', 'Texture', 'Temperature'],
-        correct: 'Material or cut surface',
-        explanation: 'Hatching patterns indicate different materials or show cut surfaces.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'td_basic_med_7',
-        question: 'What is the standard angle for isometric projection?',
-        options: ['30°', '45°', '60°', '90°'],
-        correct: '30°',
-        explanation: 'Isometric projection uses 30° angles from the horizontal.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'td_basic_med_8',
-        question: 'Which projection method shows true lengths?',
-        options: ['Isometric', 'Perspective', 'Orthographic', 'Oblique'],
-        correct: 'Orthographic',
-        explanation: 'Orthographic projection shows true lengths and shapes.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'td_basic_med_9',
-        question: 'What is an auxiliary view?',
-        options: ['Main view', 'Additional view for clarity', 'Decorative view', 'Simplified view'],
-        correct: 'Additional view for clarity',
-        explanation: 'Auxiliary views provide additional clarity for complex features.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'td_basic_med_10',
-        question: 'What does a break line indicate?',
-        options: ['Error', 'Shortened view', 'Hidden edge', 'Center line'],
-        correct: 'Shortened view',
-        explanation: 'Break lines indicate that part of the object has been removed to save space.',
+        options: ['No difference', 'View placement differs', 'Only used in different countries', 'One is obsolete'],
+        correct: 'View placement differs',
+        explanation: 'In first angle, views appear opposite to the surface they represent; in third angle, views are placed in line with surfaces.',
         difficulty: 'medium'
       },
 
       // Hard Questions
       {
-        id: 'td_basic_hard_1',
-        question: 'What is the standard thickness for object lines in technical drawing?',
-        options: ['0.3mm', '0.5mm', '0.7mm', '1.0mm'],
-        correct: '0.7mm',
-        explanation: 'Object lines are typically drawn with 0.7mm thickness according to ISO standards.',
+        id: 'draw_basic_hard_1',
+        question: 'What is the purpose of auxiliary views in technical drawing?',
+        options: ['Decorative elements', 'Show true shapes of inclined surfaces', 'Reduce drawing size', 'Add color'],
+        correct: 'Show true shapes of inclined surfaces',
+        explanation: 'Auxiliary views show the true shape and size of surfaces that are inclined to the principal projection planes.',
         difficulty: 'hard'
       },
       {
-        id: 'td_basic_hard_2',
-        question: 'In third angle projection, where is the side view placed relative to the front view?',
-        options: ['Left side', 'Right side', 'Above', 'Below'],
-        correct: 'Right side',
-        explanation: 'In third angle projection, the right side view is placed to the right of the front view.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'td_basic_hard_3',
-        question: 'What is the purpose of geometric tolerancing?',
-        options: ['Decoration', 'Control form and position', 'Show color', 'Indicate material'],
-        correct: 'Control form and position',
-        explanation: 'Geometric tolerancing controls the form, orientation, and position of features.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'td_basic_hard_4',
-        question: 'Which line weight is used for cutting plane lines?',
-        options: ['0.3mm', '0.5mm', '0.7mm', '1.4mm'],
-        correct: '1.4mm',
-        explanation: 'Cutting plane lines use the thickest line weight of 1.4mm.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'td_basic_hard_5',
-        question: 'What is the difference between a detail and a section?',
-        options: ['Scale only', 'Detail shows enlargement, section shows interior', 'Color coding', 'Paper size'],
-        correct: 'Detail shows enlargement, section shows interior',
-        explanation: 'Details show enlarged views while sections reveal interior features.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'td_basic_hard_6',
-        question: 'In dimensioning, what does the symbol ⌀ represent?',
-        options: ['Radius', 'Diameter', 'Square', 'Angle'],
-        correct: 'Diameter',
-        explanation: 'The symbol ⌀ indicates diameter in technical drawings.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'td_basic_hard_7',
-        question: 'What is a development in technical drawing?',
-        options: ['3D model', 'Unfolded surface', 'Cross-section', 'Perspective view'],
-        correct: 'Unfolded surface',
-        explanation: 'A development shows the unfolded or flattened surface of a 3D object.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'td_basic_hard_8',
-        question: 'Which tolerance zone shape is indicated by ⊕?',
-        options: ['Circular', 'Cylindrical', 'Spherical', 'Square'],
-        correct: 'Cylindrical',
-        explanation: 'The symbol ⊕ indicates a cylindrical tolerance zone.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'td_basic_hard_9',
-        question: 'What is the purpose of a datum in geometric tolerancing?',
-        options: ['Reference point', 'Measurement tool', 'Drawing scale', 'Line weight'],
-        correct: 'Reference point',
-        explanation: 'A datum provides a reference point or surface for geometric tolerancing.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'td_basic_hard_10',
-        question: 'In CAD, what does parametric modeling allow?',
-        options: ['Color changes', 'Dimension-driven design', 'File compression', 'Print settings'],
-        correct: 'Dimension-driven design',
-        explanation: 'Parametric modeling allows designs to be driven and modified by dimensions and constraints.',
+        id: 'draw_basic_hard_2',
+        question: 'What is the relationship between a developed surface and its 3D form?',
+        options: ['No relationship', '2D pattern that folds to create 3D form', 'Only for cylinders', 'Only theoretical'],
+        correct: '2D pattern that folds to create 3D form',
+        explanation: 'A developed surface is a 2D pattern that, when folded, forms the represented 3D object.',
         difficulty: 'hard'
       }
     ]
   },
-
-  // Grade 11 Chapter
+  
   {
-    id: 'grade11_advanced_drawing',
-    name: 'Grade 11: Advanced Technical Drawing',
-    description: 'Advanced technical drawing techniques and engineering drawing standards',
+    id: 'grade11_engineering_drawing',
+    name: 'Grade 11: Engineering Drawing',
+    description: 'Advanced technical drawing for engineering applications',
     questions: [
       // Easy Questions
       {
-        id: 'g11_td_easy_1',
-        question: 'What is the purpose of assembly drawings?',
-        options: ['Show individual parts', 'Show how parts fit together', 'Show materials only', 'Show dimensions only'],
-        correct: 'Show how parts fit together',
-        explanation: 'Assembly drawings show how multiple parts are assembled together.',
+        id: 'g11_eng_easy_1',
+        question: 'What is an engineering drawing?',
+        options: ['Artistic sketch', 'Technical representation of components', 'Only architectural drawings', 'Only hand-drawn work'],
+        correct: 'Technical representation of components',
+        explanation: 'Engineering drawings are precise technical representations of components or assemblies.',
         difficulty: 'easy'
       },
       {
-        id: 'g11_td_easy_2',
-        question: 'What is a working drawing?',
-        options: ['Sketch only', 'Detailed drawing for manufacturing', 'Assembly view', 'Perspective drawing'],
-        correct: 'Detailed drawing for manufacturing',
-        explanation: 'Working drawings provide all information needed for manufacturing.',
+        id: 'g11_eng_easy_2',
+        question: 'What are drawing standards?',
+        options: ['Personal preferences', 'Rules for consistent drawings', 'Optional guidelines', 'Art techniques'],
+        correct: 'Rules for consistent drawings',
+        explanation: 'Drawing standards are established rules for creating consistent, universally understood drawings.',
         difficulty: 'easy'
       },
       {
-        id: 'g11_td_easy_3',
-        question: 'What does GD&T stand for?',
-        options: ['General Design & Technology', 'Geometric Dimensioning & Tolerancing', 'Graphics Design & Tools', 'Global Drawing & Templates'],
-        correct: 'Geometric Dimensioning & Tolerancing',
-        explanation: 'GD&T is a system for defining and communicating engineering tolerances.',
+        id: 'g11_eng_easy_3',
+        question: 'What is a cross-section view?',
+        options: ['Top view', 'Side view', 'View showing internal features', 'External view'],
+        correct: 'View showing internal features',
+        explanation: 'Cross-section views show what the object would look like if cut along a plane.',
         difficulty: 'easy'
       },
       {
-        id: 'g11_td_easy_4',
-        question: 'What is a detail drawing?',
-        options: ['Small sketch', 'Enlarged view of specific feature', 'Assembly view', 'Exploded view'],
-        correct: 'Enlarged view of specific feature',
-        explanation: 'Detail drawings show enlarged views of specific features for clarity.',
+        id: 'g11_eng_easy_4',
+        question: 'What is the purpose of dimensioning in engineering drawings?',
+        options: ['Decoration', 'Specify exact measurements', 'Fill empty space', 'Only for scale'],
+        correct: 'Specify exact measurements',
+        explanation: 'Dimensioning specifies the exact measurements and tolerances required for manufacturing.',
         difficulty: 'easy'
       },
       {
-        id: 'g11_td_easy_5',
-        question: 'What is the purpose of revision control in drawings?',
-        options: ['Decoration', 'Track changes and updates', 'Show colors', 'Add complexity'],
-        correct: 'Track changes and updates',
-        explanation: 'Revision control tracks changes and updates to technical drawings.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g11_td_easy_6',
-        question: 'What is a parts list?',
-        options: ['Drawing scale', 'List of components in assembly', 'Tool list', 'Color scheme'],
-        correct: 'List of components in assembly',
-        explanation: 'Parts lists identify all components used in an assembly.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g11_td_easy_7',
-        question: 'What is thread representation in technical drawing?',
-        options: ['Color coding', 'Symbolic way to show threads', 'Material indication', 'Size reference'],
-        correct: 'Symbolic way to show threads',
-        explanation: 'Thread representation uses symbols to indicate threaded features.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g11_td_easy_8',
-        question: 'What is a schematic drawing?',
-        options: ['Detailed view', 'Simplified diagram showing function', 'Perspective view', 'Assembly drawing'],
-        correct: 'Simplified diagram showing function',
-        explanation: 'Schematic drawings show the functional relationships between components.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g11_td_easy_9',
-        question: 'What is the purpose of drawing standards?',
-        options: ['Make drawings look nice', 'Ensure consistency and communication', 'Save time', 'Reduce costs'],
-        correct: 'Ensure consistency and communication',
-        explanation: 'Drawing standards ensure consistent communication across organizations.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g11_td_easy_10',
-        question: 'What is a blueprint?',
-        options: ['Blue colored drawing', 'Copy of technical drawing', 'Original drawing', 'Sketch'],
-        correct: 'Copy of technical drawing',
-        explanation: 'Blueprint traditionally refers to a reproduction of a technical drawing.',
+        id: 'g11_eng_easy_5',
+        question: 'What is a tolerance in engineering drawings?',
+        options: ['Drawing error', 'Allowable variation in dimension', 'Measurement unit', 'Paper quality'],
+        correct: 'Allowable variation in dimension',
+        explanation: 'Tolerance is the acceptable amount of variation from a specified dimension.',
         difficulty: 'easy'
       },
 
       // Medium Questions
       {
-        id: 'g11_td_med_1',
-        question: 'What is the difference between bilateral and unilateral tolerances?',
-        options: ['No difference', 'Bilateral allows variation both ways, unilateral one way', 'Different units', 'Different scales'],
-        correct: 'Bilateral allows variation both ways, unilateral one way',
-        explanation: 'Bilateral tolerances vary in both directions, unilateral in one direction only.',
+        id: 'g11_eng_med_1',
+        question: 'What is GD&T in engineering drawing?',
+        options: ['General Drawing Techniques', 'Geometric Dimensioning and Tolerancing', 'Global Design Tools', 'Grand Design Theory'],
+        correct: 'Geometric Dimensioning and Tolerancing',
+        explanation: 'GD&T is a system for defining and communicating engineering tolerances on drawings.',
         difficulty: 'medium'
       },
       {
-        id: 'g11_td_med_2',
-        question: 'What is surface finish specification?',
-        options: ['Color specification', 'Roughness and texture requirements', 'Material type', 'Drawing scale'],
-        correct: 'Roughness and texture requirements',
-        explanation: 'Surface finish specifies the required roughness and texture of surfaces.',
+        id: 'g11_eng_med_2',
+        question: 'What is the difference between a detail drawing and an assembly drawing?',
+        options: ['No difference', 'Detail shows individual parts, assembly shows how parts fit together', 'Only scale differs', 'Only used in different industries'],
+        correct: 'Detail shows individual parts, assembly shows how parts fit together',
+        explanation: 'Detail drawings show individual parts, while assembly drawings show how multiple parts fit together.',
         difficulty: 'medium'
       },
       {
-        id: 'g11_td_med_3',
-        question: 'What is a section line in sectional views?',
-        options: ['Cutting plane indicator', 'Dimension line', 'Center line', 'Border line'],
-        correct: 'Cutting plane indicator',
-        explanation: 'Section lines indicate where the imaginary cutting plane passes through the object.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g11_td_med_4',
-        question: 'What is the purpose of phantom lines?',
-        options: ['Show hidden edges', 'Show alternate positions', 'Show dimensions', 'Show materials'],
-        correct: 'Show alternate positions',
-        explanation: 'Phantom lines show alternate positions or adjacent parts.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g11_td_med_5',
-        question: 'What is a weld symbol?',
-        options: ['Material indicator', 'Graphic representation of weld specifications', 'Size indicator', 'Color code'],
-        correct: 'Graphic representation of weld specifications',
-        explanation: 'Weld symbols graphically represent welding specifications and requirements.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g11_td_med_6',
-        question: 'What is the difference between a plan and elevation view?',
-        options: ['No difference', 'Plan is top view, elevation is side view', 'Different scales', 'Different materials'],
-        correct: 'Plan is top view, elevation is side view',
-        explanation: 'Plan views show the top, elevation views show the front or side.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g11_td_med_7',
-        question: 'What is a bill of materials (BOM)?',
-        options: ['Cost estimate', 'Detailed list of all parts and materials', 'Drawing schedule', 'Tool list'],
-        correct: 'Detailed list of all parts and materials',
-        explanation: 'BOM lists all parts, materials, and quantities needed for production.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g11_td_med_8',
-        question: 'What is the purpose of drawing layers in CAD?',
-        options: ['Add colors', 'Organize different elements', 'Save memory', 'Print faster'],
-        correct: 'Organize different elements',
-        explanation: 'Layers help organize different types of drawing elements for better management.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g11_td_med_9',
-        question: 'What is a coordinate dimensioning system?',
-        options: ['Random dimensions', 'Dimensions from common reference points', 'Circular dimensions', 'Angular dimensions'],
-        correct: 'Dimensions from common reference points',
-        explanation: 'Coordinate dimensioning uses common reference points for all dimensions.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g11_td_med_10',
-        question: 'What is the purpose of drawing templates?',
-        options: ['Decoration', 'Standardize drawing format and layout', 'Save paper', 'Add complexity'],
-        correct: 'Standardize drawing format and layout',
-        explanation: 'Templates ensure consistent format and layout across all drawings.',
+        id: 'g11_eng_med_3',
+        question: 'What is the purpose of an exploded view?',
+        options: ['Show broken parts', 'Demonstrate assembly relationships', 'Represent explosions', 'Only decorative'],
+        correct: 'Demonstrate assembly relationships',
+        explanation: 'Exploded views show separated but aligned components to clarify assembly relationships.',
         difficulty: 'medium'
       },
 
       // Hard Questions
       {
-        id: 'g11_td_hard_1',
-        question: 'What is the difference between limit dimensioning and plus-minus tolerancing?',
-        options: ['No difference', 'Limit shows max/min values, plus-minus shows deviation', 'Different units', 'Different applications'],
-        correct: 'Limit shows max/min values, plus-minus shows deviation',
-        explanation: 'Limit dimensioning shows maximum and minimum values, plus-minus shows nominal with deviation.',
+        id: 'g11_eng_hard_1',
+        question: 'How does a true position GD&T symbol differ from coordinate dimensioning?',
+        options: ['No difference', 'Defines position with respect to datum reference frame', 'Less precise', 'Only for certain industries'],
+        correct: 'Defines position with respect to datum reference frame',
+        explanation: 'True position GD&T defines location relative to a datum reference frame rather than using coordinates alone.',
         difficulty: 'hard'
       },
       {
-        id: 'g11_td_hard_2',
-        question: 'What is positional tolerance in GD&T?',
-        options: ['Size tolerance', 'Location tolerance for features', 'Surface finish', 'Material property'],
-        correct: 'Location tolerance for features',
-        explanation: 'Positional tolerance controls the location of features relative to datums.',
+        id: 'g11_eng_hard_2',
+        question: 'What is the relationship between surface finish and manufacturing methods?',
+        options: ['No relationship', 'Manufacturing methods determine achievable surface finish', 'Only relevant for certain materials', 'Only aesthetic consideration'],
+        correct: 'Manufacturing methods determine achievable surface finish',
+        explanation: 'Different manufacturing methods are capable of achieving different levels of surface finish quality.',
+        difficulty: 'hard'
+      }
+    ]
+  },
+  
+  {
+    id: 'grade12_architectural_drawing',
+    name: 'Grade 12: Architectural Drawing',
+    description: 'Specialized drawing techniques for architectural design',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_arch_easy_1',
+        question: 'What is a floor plan?',
+        options: ['Decoration pattern', 'View from above showing layout', 'Material specification', 'Cost estimate'],
+        correct: 'View from above showing layout',
+        explanation: 'A floor plan is a drawing showing the layout of a building as viewed from above.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_arch_easy_2',
+        question: 'What is the purpose of an elevation drawing?',
+        options: ['Show height only', 'Show the exterior view of a building', 'Interior layout', 'Foundation details'],
+        correct: 'Show the exterior view of a building',
+        explanation: 'Elevation drawings show the exterior view of a building from different sides.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_arch_easy_3',
+        question: 'What is a section drawing in architecture?',
+        options: ['Small part of building', 'Cut-through view', 'Exterior view', 'Landscape design'],
+        correct: 'Cut-through view',
+        explanation: 'Section drawings show what the building would look like if cut vertically or horizontally.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_arch_easy_4',
+        question: 'What scale is commonly used for residential floor plans?',
+        options: ['1:1', '1:10', '1:50 or 1:100', '1:1000'],
+        correct: '1:50 or 1:100',
+        explanation: 'Residential floor plans typically use scales of 1:50 or 1:100.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_arch_easy_5',
+        question: 'What are architectural symbols?',
+        options: ['Decorative elements', 'Standard representations of components', 'Only for commercial buildings', 'Artist signatures'],
+        correct: 'Standard representations of components',
+        explanation: 'Architectural symbols are standardized representations of components like doors, windows, and fixtures.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions
+      {
+        id: 'g12_arch_med_1',
+        question: 'What is the relationship between a site plan and a floor plan?',
+        options: ['They are the same', 'Site plan shows building in relation to property', 'Floor plan is more detailed', 'Site plan is only for large projects'],
+        correct: 'Site plan shows building in relation to property',
+        explanation: 'A site plan shows the building\'s location on the property, while a floor plan shows the internal layout.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_arch_med_2',
+        question: 'What is the purpose of a reflected ceiling plan?',
+        options: ['Shows floor reflections', 'Shows ceiling-mounted elements', 'Mirror image of floor plan', 'Only decorative'],
+        correct: 'Shows ceiling-mounted elements',
+        explanation: 'A reflected ceiling plan shows the view of the ceiling as if looking up, indicating lighting and other ceiling elements.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_arch_med_3',
+        question: 'How do architectural drawings differ from engineering drawings?',
+        options: ['No difference', 'Focus on different aspects and scales', 'Only in paper size', 'Engineering is more precise'],
+        correct: 'Focus on different aspects and scales',
+        explanation: 'Architectural drawings focus on spatial relationships and aesthetics, while engineering drawings focus on technical details and specifications.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions
+      {
+        id: 'g12_arch_hard_1',
+        question: 'What role does Building Information Modeling (BIM) play in modern architectural drawing?',
+        options: ['Simple 3D modeling only', '3D database integrating all building information', 'Only for very large projects', 'Automated drawing tool only'],
+        correct: '3D database integrating all building information',
+        explanation: 'BIM combines 3D models with comprehensive information about all building elements, specifications, and systems.',
         difficulty: 'hard'
       },
       {
-        id: 'g11_td_hard_3',
-        question: 'What is the maximum material condition (MMC)?',
-        options: ['Heaviest material', 'Condition when feature contains maximum material', 'Strongest material', 'Most expensive material'],
-        correct: 'Condition when feature contains maximum material',
-        explanation: 'MMC is when a feature contains the maximum amount of material within tolerance.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g11_td_hard_4',
-        question: 'What is datum shift in geometric tolerancing?',
-        options: ['Moving the drawing', 'Allowable movement of datum features', 'Changing scale', 'Rotating view'],
-        correct: 'Allowable movement of datum features',
-        explanation: 'Datum shift allows for movement of datum features within their tolerance zones.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g11_td_hard_5',
-        question: 'What is the purpose of form tolerances?',
-        options: ['Control shape only', 'Control individual feature geometry', 'Control assembly', 'Control material'],
-        correct: 'Control individual feature geometry',
-        explanation: 'Form tolerances control the geometry of individual features like flatness and roundness.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g11_td_hard_6',
-        question: 'What is virtual condition in GD&T?',
-        options: ['Imaginary state', 'Worst-case boundary of feature', 'Computer simulation', 'Theoretical dimension'],
-        correct: 'Worst-case boundary of feature',
-        explanation: 'Virtual condition is the worst-case boundary generated by a feature.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g11_td_hard_7',
-        question: 'What is the difference between runout and total runout?',
-        options: ['No difference', 'Runout is circular, total runout is entire surface', 'Different units', 'Different applications'],
-        correct: 'Runout is circular, total runout is entire surface',
-        explanation: 'Runout controls circular elements, total runout controls entire surfaces.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g11_td_hard_8',
-        question: 'What is feature control frame?',
-        options: ['Drawing border', 'Box containing geometric tolerance information', 'Title block', 'Dimension box'],
-        correct: 'Box containing geometric tolerance information',
-        explanation: 'Feature control frames contain geometric tolerance symbols and values.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g11_td_hard_9',
-        question: 'What is the principle of independence in GD&T?',
-        options: ['Features are independent', 'Size and geometric tolerances are separate', 'Drawings are independent', 'Views are independent'],
-        correct: 'Size and geometric tolerances are separate',
-        explanation: 'Size tolerances and geometric tolerances are controlled independently.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g11_td_hard_10',
-        question: 'What is composite tolerancing?',
-        options: ['Multiple materials', 'Combined pattern and individual feature control', 'Computer analysis', 'Statistical method'],
-        correct: 'Combined pattern and individual feature control',
-        explanation: 'Composite tolerancing combines pattern location control with individual feature control.',
+        id: 'g12_arch_hard_2',
+        question: 'How do passive solar design principles influence architectural drawings?',
+        options: ['No influence', 'Affect orientation, window placement, and material specifications', 'Only decoration', 'Only relevant in certain climates'],
+        correct: 'Affect orientation, window placement, and material specifications',
+        explanation: 'Passive solar design principles impact building orientation, window placement, thermal mass, and other elements represented in architectural drawings.',
         difficulty: 'hard'
       }
     ]

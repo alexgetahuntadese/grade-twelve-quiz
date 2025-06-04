@@ -48,46 +48,6 @@ export const civicsChapters: Chapter[] = [
         explanation: 'Voting is the process by which citizens choose their representatives.',
         difficulty: 'easy'
       },
-      {
-        id: 'civics_gov_easy_6',
-        question: 'What are human rights?',
-        options: ['Special privileges', 'Basic rights all people have', 'Government benefits', 'Legal documents'],
-        correct: 'Basic rights all people have',
-        explanation: 'Human rights are fundamental rights that belong to every person.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'civics_gov_easy_7',
-        question: 'What is a law?',
-        options: ['A suggestion', 'A rule that must be followed', 'A recommendation', 'A guideline'],
-        correct: 'A rule that must be followed',
-        explanation: 'A law is a rule established by authority that must be obeyed.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'civics_gov_easy_8',
-        question: 'What is a political party?',
-        options: ['A celebration', 'Group with similar political views', 'Government department', 'Legal organization'],
-        correct: 'Group with similar political views',
-        explanation: 'A political party is an organized group of people with similar political beliefs.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'civics_gov_easy_9',
-        question: 'What is civil service?',
-        options: ['Military service', 'Government employment', 'Community volunteering', 'Religious service'],
-        correct: 'Government employment',
-        explanation: 'Civil service refers to government employment and public administration.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'civics_gov_easy_10',
-        question: 'What is the rule of law?',
-        options: ['Government rules all', 'Law applies equally to everyone', 'Only some follow laws', 'Laws change daily'],
-        correct: 'Law applies equally to everyone',
-        explanation: 'Rule of law means that laws apply equally to all people, including leaders.',
-        difficulty: 'easy'
-      },
 
       // Medium Questions
       {
@@ -114,62 +74,6 @@ export const civicsChapters: Chapter[] = [
         explanation: 'Checks and balances prevent any one branch of government from becoming too powerful.',
         difficulty: 'medium'
       },
-      {
-        id: 'civics_gov_med_4',
-        question: 'What is civic responsibility?',
-        options: ['Government duties only', 'Citizens\' duties to their community', 'Military service', 'Paying taxes only'],
-        correct: 'Citizens\' duties to their community',
-        explanation: 'Civic responsibility refers to the duties and obligations of citizens to their community.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'civics_gov_med_5',
-        question: 'What is due process?',
-        options: ['Quick legal action', 'Fair legal procedures', 'Government efficiency', 'Court scheduling'],
-        correct: 'Fair legal procedures',
-        explanation: 'Due process ensures fair legal procedures and protection of individual rights.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'civics_gov_med_6',
-        question: 'What is the difference between civil rights and civil liberties?',
-        options: ['No difference', 'Rights are protections from discrimination, liberties are freedoms from government', 'Rights are for citizens only', 'Liberties are for government'],
-        correct: 'Rights are protections from discrimination, liberties are freedoms from government',
-        explanation: 'Civil rights protect from discrimination; civil liberties are freedoms from government interference.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'civics_gov_med_7',
-        question: 'What is representative democracy?',
-        options: ['Direct voting on all issues', 'Citizens elect representatives', 'Government chooses leaders', 'No voting system'],
-        correct: 'Citizens elect representatives',
-        explanation: 'Representative democracy is where citizens elect officials to represent them in government.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'civics_gov_med_8',
-        question: 'What is the social contract?',
-        options: ['Employment agreement', 'Agreement between citizens and government', 'Business contract', 'International treaty'],
-        correct: 'Agreement between citizens and government',
-        explanation: 'Social contract is the implicit agreement between citizens and government about rights and duties.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'civics_gov_med_9',
-        question: 'What is judicial review?',
-        options: ['Court efficiency review', 'Power to declare laws unconstitutional', 'Judge performance evaluation', 'Legal case review'],
-        correct: 'Power to declare laws unconstitutional',
-        explanation: 'Judicial review is the court\'s power to review and potentially overturn government actions.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'civics_gov_med_10',
-        question: 'What is popular sovereignty?',
-        options: ['King\'s power', 'Power comes from the people', 'Government control', 'Military authority'],
-        correct: 'Power comes from the people',
-        explanation: 'Popular sovereignty means that government authority comes from the consent of the people.',
-        difficulty: 'medium'
-      },
 
       // Hard Questions
       {
@@ -187,69 +91,191 @@ export const civicsChapters: Chapter[] = [
         correct: 'Constitution is the highest law',
         explanation: 'Constitutional supremacy means the constitution is the supreme law that overrides all other laws.',
         difficulty: 'hard'
+      }
+    ]
+  },
+
+  {
+    id: 'grade11_civil_rights',
+    name: 'Grade 11: Civil Rights and Liberties',
+    description: 'Rights, freedoms, and legal protections in society',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g11_rights_easy_1',
+        question: 'What are civil rights?',
+        options: ['Military rights', 'Legal protections against discrimination', 'Only voting rights', 'Government benefits'],
+        correct: 'Legal protections against discrimination',
+        explanation: 'Civil rights are legal protections that ensure equal treatment for all citizens.',
+        difficulty: 'easy'
       },
       {
-        id: 'civics_gov_hard_3',
-        question: 'What is the concept of limited government?',
-        options: ['Small government', 'Government power is restricted by law', 'Weak government', 'Local government only'],
-        correct: 'Government power is restricted by law',
-        explanation: 'Limited government means governmental power is restricted by law and constitution.',
+        id: 'g11_rights_easy_2',
+        question: 'What is freedom of speech?',
+        options: ['Saying anything without consequences', 'Right to express opinions without government censorship', 'Only for certain groups', 'Only in private'],
+        correct: 'Right to express opinions without government censorship',
+        explanation: 'Freedom of speech protects the right to express opinions without government censorship.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_rights_easy_3',
+        question: 'What is discrimination?',
+        options: ['Fair treatment', 'Unfair treatment based on characteristics', 'Legal protection', 'Government policy'],
+        correct: 'Unfair treatment based on characteristics',
+        explanation: 'Discrimination is unfair treatment based on characteristics like race, gender, or religion.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_rights_easy_4',
+        question: 'What is the purpose of the Bill of Rights?',
+        options: ['List government powers', 'Protect individual liberties', 'Establish taxes', 'Create courts'],
+        correct: 'Protect individual liberties',
+        explanation: 'The Bill of Rights protects individual liberties from government infringement.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_rights_easy_5',
+        question: 'What is due process?',
+        options: ['Court delay', 'Fair legal procedures', 'Jury selection', 'Legal fees'],
+        correct: 'Fair legal procedures',
+        explanation: 'Due process ensures fair legal procedures when the government acts against individuals.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions
+      {
+        id: 'g11_rights_med_1',
+        question: 'What is the difference between civil liberties and civil rights?',
+        options: ['No difference', 'Liberties limit government; rights ensure equal treatment', 'Only apply to certain groups', 'Based on age'],
+        correct: 'Liberties limit government; rights ensure equal treatment',
+        explanation: 'Civil liberties limit government action; civil rights ensure equal treatment under law.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_rights_med_2',
+        question: 'What is judicial review?',
+        options: ['Judge evaluation', 'Court power to declare laws unconstitutional', 'Lawyer inspection', 'Jury selection'],
+        correct: 'Court power to declare laws unconstitutional',
+        explanation: 'Judicial review is the court\'s power to declare laws unconstitutional.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_rights_med_3',
+        question: 'What is the equal protection clause?',
+        options: ['Military protection', 'Law enforcement', 'Constitutional guarantee of equal treatment', 'Executive order'],
+        correct: 'Constitutional guarantee of equal treatment',
+        explanation: 'The equal protection clause guarantees equal application of laws to all people.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions
+      {
+        id: 'g11_rights_hard_1',
+        question: 'How does the "strict scrutiny" standard apply to certain discrimination cases?',
+        options: ['Never applies', 'Highest standard of judicial review', 'Only for certain courts', 'Only for administrative cases'],
+        correct: 'Highest standard of judicial review',
+        explanation: 'Strict scrutiny is the highest standard of review used when fundamental rights or suspect classifications are involved.',
         difficulty: 'hard'
       },
       {
-        id: 'civics_gov_hard_4',
-        question: 'What is pluralism in democracy?',
-        options: ['Multiple political parties', 'Competition among interest groups', 'Many elections', 'Various laws'],
-        correct: 'Competition among interest groups',
-        explanation: 'Pluralism is the idea that democracy benefits from competition among diverse interest groups.',
+        id: 'g11_rights_hard_2',
+        question: 'What is the concept of "incorporation" regarding the Bill of Rights?',
+        options: ['Business formation', 'Making the Bill of Rights apply to states', 'International law', 'Tax classification'],
+        correct: 'Making the Bill of Rights apply to states',
+        explanation: 'Incorporation is the process of making the Bill of Rights apply to state governments through the 14th Amendment.',
+        difficulty: 'hard'
+      }
+    ]
+  },
+
+  {
+    id: 'grade12_international_relations',
+    name: 'Grade 12: International Relations',
+    description: 'Global governance, diplomacy, and international cooperation',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_intrel_easy_1',
+        question: 'What is diplomacy?',
+        options: ['Military action', 'Managing international relations', 'Economic policy', 'Local government'],
+        correct: 'Managing international relations',
+        explanation: 'Diplomacy is the art and practice of conducting negotiations between nations.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_intrel_easy_2',
+        question: 'What is the United Nations?',
+        options: ['Military alliance', 'International organization for peace and cooperation', 'Trade agreement', 'National government'],
+        correct: 'International organization for peace and cooperation',
+        explanation: 'The UN is an international organization promoting peace, security, and cooperation.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_intrel_easy_3',
+        question: 'What is a treaty?',
+        options: ['War declaration', 'Formal agreement between countries', 'Economic sanction', 'Military base'],
+        correct: 'Formal agreement between countries',
+        explanation: 'A treaty is a formal agreement between sovereign states.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_intrel_easy_4',
+        question: 'What is an embassy?',
+        options: ['International court', 'Diplomatic mission in another country', 'Military base', 'Trading post'],
+        correct: 'Diplomatic mission in another country',
+        explanation: 'An embassy is a diplomatic mission representing a country in another nation.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_intrel_easy_5',
+        question: 'What is foreign policy?',
+        options: ['Domestic laws', 'Strategy for dealing with other countries', 'Trade only', 'Military control'],
+        correct: 'Strategy for dealing with other countries',
+        explanation: 'Foreign policy is a government\'s strategy for dealing with other nations.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions
+      {
+        id: 'g12_intrel_med_1',
+        question: 'What is the difference between multilateralism and bilateralism?',
+        options: ['No difference', 'Multilateral involves many countries; bilateral involves two', 'Only applies to trade', 'Based on continent'],
+        correct: 'Multilateral involves many countries; bilateral involves two',
+        explanation: 'Multilateralism involves many countries; bilateralism involves just two countries.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_intrel_med_2',
+        question: 'What is sovereignty?',
+        options: ['Royal rule', 'Supreme authority within borders', 'International control', 'Religious authority'],
+        correct: 'Supreme authority within borders',
+        explanation: 'Sovereignty is a state\'s supreme authority within its territory.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_intrel_med_3',
+        question: 'What is a non-governmental organization (NGO)?',
+        options: ['Government department', 'Private organization addressing social issues', 'Military alliance', 'Political party'],
+        correct: 'Private organization addressing social issues',
+        explanation: 'NGOs are independent organizations addressing social or political issues.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions
+      {
+        id: 'g12_intrel_hard_1',
+        question: 'How does the concept of "soft power" differ from "hard power"?',
+        options: ['No difference', 'Soft uses attraction; hard uses coercion', 'Applies to different regions', 'Based on country size'],
+        correct: 'Soft uses attraction; hard uses coercion',
+        explanation: 'Soft power attracts and persuades; hard power coerces through military or economic means.',
         difficulty: 'hard'
       },
       {
-        id: 'civics_gov_hard_5',
-        question: 'What is the difference between substantive and procedural due process?',
-        options: ['No difference', 'Substantive protects rights content, procedural protects fair process', 'Both are the same', 'Only procedural matters'],
-        correct: 'Substantive protects rights content, procedural protects fair process',
-        explanation: 'Substantive due process protects fundamental rights; procedural ensures fair legal processes.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'civics_gov_hard_6',
-        question: 'What is administrative law?',
-        options: ['Criminal law', 'Rules governing government agencies', 'Civil law', 'Constitutional law'],
-        correct: 'Rules governing government agencies',
-        explanation: 'Administrative law governs the activities and decision-making of government agencies.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'civics_gov_hard_7',
-        question: 'What is the concept of political legitimacy?',
-        options: ['Legal authority', 'Rightful authority to govern', 'Military power', 'Economic control'],
-        correct: 'Rightful authority to govern',
-        explanation: 'Political legitimacy refers to the rightful authority of government to exercise power.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'civics_gov_hard_8',
-        question: 'What is the iron triangle in government?',
-        options: ['Three laws', 'Relationship between agencies, legislators, and interest groups', 'Government building', 'Three branches'],
-        correct: 'Relationship between agencies, legislators, and interest groups',
-        explanation: 'The iron triangle describes the close relationship between government agencies, legislative committees, and interest groups.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'civics_gov_hard_9',
-        question: 'What is the concept of civil disobedience?',
-        options: ['Following all laws', 'Deliberately breaking unjust laws nonviolently', 'Violent protest', 'Ignoring government'],
-        correct: 'Deliberately breaking unjust laws nonviolently',
-        explanation: 'Civil disobedience is the deliberate, nonviolent breaking of unjust laws to promote change.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'civics_gov_hard_10',
-        question: 'What is the concept of federalism in constitutional design?',
-        options: ['Central control only', 'Shared sovereignty between levels of government', 'Local control only', 'International governance'],
-        correct: 'Shared sovereignty between levels of government',
-        explanation: 'Federalism involves shared sovereignty and division of powers between national and subnational governments.',
+        id: 'g12_intrel_hard_2',
+        question: 'What does the "responsibility to protect" (R2P) doctrine address?',
+        options: ['Environmental protection', 'Military defense', 'International intervention to prevent atrocities', 'Economic assistance'],
+        correct: 'International intervention to prevent atrocities',
+        explanation: 'R2P asserts that states have a responsibility to protect populations from genocide and crimes against humanity.',
         difficulty: 'hard'
       }
     ]
