@@ -6,7 +6,6 @@ export const historyChapters: Chapter[] = [
     name: 'Ancient Ethiopia',
     description: 'Early Ethiopian civilizations and kingdoms',
     questions: [
-      // Easy Questions
       {
         id: 'anc_1',
         question: 'What was the ancient name for Ethiopia?',
@@ -285,6 +284,260 @@ export const historyChapters: Chapter[] = [
         correct: 'Leonardo da Vinci',
         explanation: 'Leonardo da Vinci painted the famous Mona Lisa.',
         difficulty: 'easy'
+      }
+    ]
+  },
+
+  // Grade 11 Chapter
+  {
+    id: 'grade11_ethiopian_modernization',
+    name: 'Grade 11: Ethiopian Modernization and Reform (1855-1974)',
+    description: 'Ethiopia\'s modernization efforts from Emperor Tewodros II to the end of Imperial rule',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g11_hist_easy_1',
+        question: 'Who is considered the founder of modern Ethiopia?',
+        options: ['Menelik II', 'Haile Selassie', 'Tewodros II', 'Yohannes IV'],
+        correct: 'Tewodros II',
+        explanation: 'Emperor Tewodros II is considered the founder of modern Ethiopia due to his unification and modernization efforts.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_hist_easy_2',
+        question: 'What was the significance of the Battle of Adwa (1896)?',
+        options: ['Ethiopian defeat', 'Ethiopian victory over Italy', 'Civil war battle', 'Religious conflict'],
+        correct: 'Ethiopian victory over Italy',
+        explanation: 'The Battle of Adwa was a decisive Ethiopian victory that maintained independence from European colonization.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_hist_easy_3',
+        question: 'Which emperor expanded Ethiopia to its largest territorial extent?',
+        options: ['Tewodros II', 'Yohannes IV', 'Menelik II', 'Haile Selassie'],
+        correct: 'Menelik II',
+        explanation: 'Emperor Menelik II expanded Ethiopia to roughly its current boundaries.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_hist_easy_4',
+        question: 'When was the first Italian invasion of Ethiopia?',
+        options: ['1889-1896', '1935-1941', '1920-1925', '1900-1905'],
+        correct: '1889-1896',
+        explanation: 'The first Italian invasion occurred from 1889-1896, ending with the Battle of Adwa.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_hist_easy_5',
+        question: 'What was the Wuchale Treaty?',
+        options: ['Peace treaty', 'Trade agreement', 'Disputed treaty with Italy', 'Religious agreement'],
+        correct: 'Disputed treaty with Italy',
+        explanation: 'The Treaty of Wuchale (1889) was disputed due to different interpretations in Amharic and Italian versions.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_hist_easy_6',
+        question: 'Who founded Addis Ababa?',
+        options: ['Tewodros II', 'Yohannes IV', 'Menelik II', 'Haile Selassie'],
+        correct: 'Menelik II',
+        explanation: 'Emperor Menelik II founded Addis Ababa in 1886.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_hist_easy_7',
+        question: 'What does "Addis Ababa" mean?',
+        options: ['Old flower', 'New flower', 'Great city', 'Royal palace'],
+        correct: 'New flower',
+        explanation: 'Addis Ababa means "new flower" in Amharic.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_hist_easy_8',
+        question: 'When did the Italian occupation of Ethiopia begin?',
+        options: ['1935', '1936', '1940', '1941'],
+        correct: '1935',
+        explanation: 'The second Italian invasion began in 1935.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_hist_easy_9',
+        question: 'When was Ethiopia liberated from Italian occupation?',
+        options: ['1940', '1941', '1942', '1943'],
+        correct: '1941',
+        explanation: 'Ethiopia was liberated from Italian occupation in 1941.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_hist_easy_10',
+        question: 'What was the Derg?',
+        options: ['Religious council', 'Military committee', 'Trade organization', 'Educational institution'],
+        correct: 'Military committee',
+        explanation: 'The Derg was the military committee that took power in 1974.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions
+      {
+        id: 'g11_hist_med_1',
+        question: 'What were the main modernization efforts of Emperor Tewodros II?',
+        options: ['Religious reforms only', 'Military modernization and centralization', 'Economic reforms only', 'Educational reforms only'],
+        correct: 'Military modernization and centralization',
+        explanation: 'Tewodros II focused on military modernization and political centralization.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_hist_med_2',
+        question: 'How did Emperor Yohannes IV die?',
+        options: ['Natural causes', 'Battle with Mahdist forces', 'Italian invasion', 'Palace coup'],
+        correct: 'Battle with Mahdist forces',
+        explanation: 'Emperor Yohannes IV died fighting Mahdist forces at the Battle of Gallabat in 1889.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_hist_med_3',
+        question: 'What was the significance of the railway line to Djibouti?',
+        options: ['Military transport', 'Economic modernization and trade access', 'Tourist attraction', 'Religious pilgrimage'],
+        correct: 'Economic modernization and trade access',
+        explanation: 'The railway to Djibouti was crucial for Ethiopia\'s economic modernization and access to international trade.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_hist_med_4',
+        question: 'What role did Empress Taitu play in Ethiopian history?',
+        options: ['No significant role', 'Advisor to Menelik II and founder of Addis Ababa', 'Military commander only', 'Religious leader only'],
+        correct: 'Advisor to Menelik II and founder of Addis Ababa',
+        explanation: 'Empress Taitu was influential in politics and is credited with founding Addis Ababa.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_hist_med_5',
+        question: 'What was the significance of the 1931 Constitution?',
+        options: ['Established republic', 'First written constitution of Ethiopia', 'Religious document', 'Military law'],
+        correct: 'First written constitution of Ethiopia',
+        explanation: 'The 1931 Constitution was Ethiopia\'s first written constitution.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_hist_med_6',
+        question: 'What was the Gojjam Rebellion?',
+        options: ['Religious uprising', 'Regional resistance to central authority', 'Foreign invasion', 'Student protest'],
+        correct: 'Regional resistance to central authority',
+        explanation: 'The Gojjam Rebellion was regional resistance to imperial centralization efforts.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_hist_med_7',
+        question: 'How did World War I affect Ethiopia?',
+        options: ['Direct involvement', 'Remained neutral but gained diplomatic recognition', 'Was invaded', 'Joined Central Powers'],
+        correct: 'Remained neutral but gained diplomatic recognition',
+        explanation: 'Ethiopia remained neutral in WWI but gained international diplomatic recognition.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_hist_med_8',
+        question: 'What was the role of Ras Tafari (later Haile Selassie) before becoming emperor?',
+        options: ['Military commander', 'Regent and modernizing force', 'Religious leader', 'Foreign diplomat'],
+        correct: 'Regent and modernizing force',
+        explanation: 'Ras Tafari served as regent and was a major modernizing force before becoming emperor.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_hist_med_9',
+        question: 'What was the significance of Ethiopia\'s admission to the League of Nations?',
+        options: ['Military alliance', 'International recognition and diplomatic status', 'Economic benefits only', 'Religious recognition'],
+        correct: 'International recognition and diplomatic status',
+        explanation: 'Ethiopia\'s admission to the League of Nations provided international recognition and diplomatic status.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_hist_med_10',
+        question: 'What caused the 1960 coup attempt?',
+        options: ['Foreign invasion', 'Desire for rapid modernization and reform', 'Religious conflicts', 'Economic crisis only'],
+        correct: 'Desire for rapid modernization and reform',
+        explanation: 'The 1960 coup attempt was motivated by desire for faster modernization and political reform.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions
+      {
+        id: 'g11_hist_hard_1',
+        question: 'What were the long-term consequences of the Treaty of Wuchale controversy?',
+        options: ['Peaceful relations', 'Led to Battle of Adwa and Ethiopian resistance strategy', 'Economic cooperation', 'Religious harmony'],
+        correct: 'Led to Battle of Adwa and Ethiopian resistance strategy',
+        explanation: 'The Treaty controversy led to the Battle of Adwa and shaped Ethiopia\'s resistance to colonialism.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_hist_hard_2',
+        question: 'How did the gabbar system function in Menelik\'s expanded empire?',
+        options: ['Democratic representation', 'Land tenure system with tributary relationships', 'Military organization', 'Religious hierarchy'],
+        correct: 'Land tenure system with tributary relationships',
+        explanation: 'The gabbar system was a land tenure system where conquered peoples paid tribute to Amhara settlers.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_hist_hard_3',
+        question: 'What was the impact of the rinderpest epidemic of the 1890s?',
+        options: ['Minor agricultural impact', 'Massive cattle death leading to famine and social disruption', 'Affected only wild animals', 'Improved agriculture'],
+        correct: 'Massive cattle death leading to famine and social disruption',
+        explanation: 'The rinderpest epidemic caused massive cattle deaths, leading to severe famine and social disruption.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_hist_hard_4',
+        question: 'How did Haile Selassie\'s speech to the League of Nations impact global opinion?',
+        options: ['No impact', 'Exposed weakness of collective security and warned of WWII', 'Strengthened League', 'Ended conflicts'],
+        correct: 'Exposed weakness of collective security and warned of WWII',
+        explanation: 'Haile Selassie\'s speech exposed the League\'s weakness and prophetically warned of the coming world war.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_hist_hard_5',
+        question: 'What was the significance of the Arbegnoch resistance movement?',
+        options: ['Religious movement', 'Patriotic resistance against Italian occupation', 'Political party', 'Economic organization'],
+        correct: 'Patriotic resistance against Italian occupation',
+        explanation: 'The Arbegnoch (patriots) led sustained resistance against Italian occupation throughout the country.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_hist_hard_6',
+        question: 'How did the Italian colonial administration attempt to divide Ethiopian society?',
+        options: ['No division attempts', 'Ethnic and religious divide-and-rule policies', 'Economic integration', 'Cultural unification'],
+        correct: 'Ethnic and religious divide-and-rule policies',
+        explanation: 'Italians attempted to use ethnic and religious divisions to weaken Ethiopian resistance.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_hist_hard_7',
+        question: 'What was the relationship between traditional Ethiopian education and modernization efforts?',
+        options: ['Complete replacement', 'Tension between traditional church education and modern secular education', 'Perfect harmony', 'No interaction'],
+        correct: 'Tension between traditional church education and modern secular education',
+        explanation: 'There was significant tension between traditional church-based education and new secular educational initiatives.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_hist_hard_8',
+        question: 'How did the land tenure systems vary across Ethiopia\'s expanded territories?',
+        options: ['Uniform system', 'Complex mix of rist, gult, and conquered land systems', 'Simple ownership', 'No land systems'],
+        correct: 'Complex mix of rist, gult, and conquered land systems',
+        explanation: 'Ethiopia had complex land tenure systems including traditional rist, gult grants, and systems in conquered territories.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_hist_hard_9',
+        question: 'What was the impact of the 1973-74 famine on imperial legitimacy?',
+        options: ['Strengthened support', 'Severely undermined imperial authority and triggered revolution', 'No political impact', 'Increased foreign aid'],
+        correct: 'Severely undermined imperial authority and triggered revolution',
+        explanation: 'The 1973-74 famine and the government\'s weak response severely undermined imperial legitimacy.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_hist_hard_10',
+        question: 'How did Ethiopia\'s relationship with Britain change after WWII?',
+        options: ['No relationship', 'From liberation alliance to tension over British control', 'Purely economic ties', 'Cultural exchange only'],
+        correct: 'From liberation alliance to tension over British control',
+        explanation: 'Ethiopia\'s relationship with Britain evolved from liberation alliance to tension over British influence post-WWII.',
+        difficulty: 'hard'
       }
     ]
   }

@@ -1,4 +1,3 @@
-
 import { Chapter } from '../types';
 
 export const nationalLanguageChapters: Chapter[] = [
@@ -7,7 +6,6 @@ export const nationalLanguageChapters: Chapter[] = [
     name: 'Amharic Language Basics',
     description: 'Introduction to Ethiopian national language - Amharic',
     questions: [
-      // Easy Questions
       {
         id: 'amharic_easy_1',
         question: 'What is the national language of Ethiopia?',
@@ -89,7 +87,6 @@ export const nationalLanguageChapters: Chapter[] = [
         difficulty: 'easy'
       },
 
-      // Medium Questions
       {
         id: 'amharic_med_1',
         question: 'How many letters are in the Amharic alphabet?',
@@ -171,7 +168,6 @@ export const nationalLanguageChapters: Chapter[] = [
         difficulty: 'medium'
       },
 
-      // Hard Questions
       {
         id: 'amharic_hard_1',
         question: 'Which language family does Amharic belong to?',
@@ -250,6 +246,256 @@ export const nationalLanguageChapters: Chapter[] = [
         options: ['No influence', 'Loanwords from Arabic, Italian, English', 'Only English influence', 'Only Arabic influence'],
         correct: 'Loanwords from Arabic, Italian, English',
         explanation: 'Modern Amharic contains loanwords from Arabic, Italian (colonial period), and English (modern times).',
+        difficulty: 'hard'
+      }
+    ]
+  },
+
+  {
+    id: 'grade11_advanced_amharic',
+    name: 'Grade 11: Advanced Amharic Literature and Grammar',
+    description: 'Advanced Amharic language studies, literature analysis, and complex grammar',
+    questions: [
+      {
+        id: 'g11_amh_easy_1',
+        question: 'What is the main difference between classical and modern Amharic literature?',
+        options: ['No difference', 'Classical is religious, modern includes secular themes', 'Different alphabet', 'Different grammar'],
+        correct: 'Classical is religious, modern includes secular themes',
+        explanation: 'Classical Amharic literature was primarily religious, while modern literature includes diverse secular themes.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_amh_easy_2',
+        question: 'Who is considered the father of modern Amharic literature?',
+        options: ['Haddis Alemayehu', 'Afework Gebre Yesus', 'Tsegaye Gebre Medhin', 'Yoftahe Negussie'],
+        correct: 'Afework Gebre Yesus',
+        explanation: 'Afework Gebre Yesus is considered the father of modern Amharic literature.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_amh_easy_3',
+        question: 'What is "Libb Walled Tarik" about?',
+        options: ['Love story', 'Historical novel', 'Religious text', 'Poetry collection'],
+        correct: 'Love story',
+        explanation: 'Libb Walled Tarik by Haddis Alemayehu is a famous Amharic love story.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_amh_easy_4',
+        question: 'What is the traditional Amharic poetry form called?',
+        options: ['Qene', 'Zema', 'Mezmur', 'Melke'],
+        correct: 'Qene',
+        explanation: 'Qene is the traditional form of Amharic poetry with hidden meanings.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_amh_easy_5',
+        question: 'What does "sam enna work" mean in Qene?',
+        options: ['Wax and gold', 'Fire and water', 'Sun and moon', 'Love and hate'],
+        correct: 'Wax and gold',
+        explanation: 'Sam enna work (wax and gold) refers to the surface and hidden meanings in Qene poetry.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_amh_easy_6',
+        question: 'Who wrote "Yalanchinet Kokeb"?',
+        options: ['Tsegaye Gebre Medhin', 'Mengistu Lemma', 'Yoftahe Negussie', 'Haddis Alemayehu'],
+        correct: 'Yoftahe Negussie',
+        explanation: 'Yoftahe Negussie wrote the novel "Yalanchinet Kokeb".',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_amh_easy_7',
+        question: 'What is the Amharic word for "literature"?',
+        options: ['Metshaf', 'Sifru', 'Zema', 'Gubae'],
+        correct: 'Sifru',
+        explanation: 'Sifru means literature in Amharic.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_amh_easy_8',
+        question: 'What is a "Melke" in Amharic literature?',
+        options: ['Novel', 'Religious poem', 'Drama', 'Short story'],
+        correct: 'Religious poem',
+        explanation: 'Melke is a type of religious poem in Amharic literature.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_amh_easy_9',
+        question: 'Who is Tsegaye Gebre Medhin?',
+        options: ['Novelist', 'Playwright and poet', 'Historian', 'Musician'],
+        correct: 'Playwright and poet',
+        explanation: 'Tsegaye Gebre Medhin was a renowned Amharic playwright and poet.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_amh_easy_10',
+        question: 'What does "Tewahedo" mean in Ethiopian Orthodox context?',
+        options: ['Unity', 'Prayer', 'Fasting', 'Celebration'],
+        correct: 'Unity',
+        explanation: 'Tewahedo means unity, referring to the unified nature of Christ in Ethiopian Orthodox theology.',
+        difficulty: 'easy'
+      },
+
+      {
+        id: 'g11_amh_med_1',
+        question: 'What is the significance of the novel "Adafris" by Haddis Alemayehu?',
+        options: ['First Amharic novel', 'Social critique of aristocracy', 'Religious text', 'Historical documentation'],
+        correct: 'Social critique of aristocracy',
+        explanation: 'Adafris provides a social critique of the Ethiopian aristocratic class.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_amh_med_2',
+        question: 'What is the main theme of Tsegaye\'s play "Petros at the Hour of Twelve"?',
+        options: ['Love story', 'Political resistance and betrayal', 'Religious devotion', 'Historical events'],
+        correct: 'Political resistance and betrayal',
+        explanation: 'The play deals with themes of political resistance and betrayal.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_amh_med_3',
+        question: 'What is the function of "Sebeka gubae" in traditional Amharic poetry?',
+        options: ['Rhythm only', 'Complex wordplay and multiple meanings', 'Rhyme scheme', 'Meter pattern'],
+        correct: 'Complex wordplay and multiple meanings',
+        explanation: 'Sebeka gubae involves complex wordplay with multiple layers of meaning.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_amh_med_4',
+        question: 'How do gender markers work in Amharic verbs?',
+        options: ['No gender markers', 'Different verb forms for masculine and feminine subjects', 'Only in nouns', 'Only in adjectives'],
+        correct: 'Different verb forms for masculine and feminine subjects',
+        explanation: 'Amharic verbs change form based on the gender of the subject.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_amh_med_5',
+        question: 'What is the role of "Lalit" in Amharic prosody?',
+        options: ['Rhyme scheme', 'Syllable count and rhythm', 'Theme selection', 'Character development'],
+        correct: 'Syllable count and rhythm',
+        explanation: 'Lalit refers to the syllable count and rhythmic pattern in Amharic poetry.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_amh_med_6',
+        question: 'What is the significance of "Fikre Yesus" literature?',
+        options: ['Secular themes', 'Love of Christ religious literature', 'Political commentary', 'Historical records'],
+        correct: 'Love of Christ religious literature',
+        explanation: 'Fikre Yesus (Love of Jesus) is a genre of Ethiopian Orthodox religious literature.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_amh_med_7',
+        question: 'How does Amharic express aspectual distinctions?',
+        options: ['No aspectual system', 'Through verb conjugation patterns', 'Only through adverbs', 'Through word order'],
+        correct: 'Through verb conjugation patterns',
+        explanation: 'Amharic expresses aspectual distinctions through different verb conjugation patterns.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_amh_med_8',
+        question: 'What is the function of "Mircha" in Amharic dramatic literature?',
+        options: ['Character type', 'Plot structure', 'Stage direction', 'Dialogue style'],
+        correct: 'Character type',
+        explanation: 'Mircha refers to a specific character type in traditional Amharic drama.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_amh_med_9',
+        question: 'What is the literary significance of "Kebra Nagast"?',
+        options: ['Modern novel', 'Ancient text about Queen of Sheba and Solomon', 'Poetry collection', 'Drama script'],
+        correct: 'Ancient text about Queen of Sheba and Solomon',
+        explanation: 'Kebra Nagast is an ancient text about the Queen of Sheba and King Solomon.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g11_amh_med_10',
+        question: 'How does Amharic handle compound verb constructions?',
+        options: ['No compounds', 'Auxiliary verb + main verb patterns', 'Only simple verbs', 'Through prefixes only'],
+        correct: 'Auxiliary verb + main verb patterns',
+        explanation: 'Amharic uses auxiliary verb constructions to express complex meanings.',
+        difficulty: 'medium'
+      },
+
+      {
+        id: 'g11_amh_hard_1',
+        question: 'What is the morphophonological process of "epenthesis" in Amharic?',
+        options: ['Sound deletion', 'Vowel insertion to break consonant clusters', 'Consonant doubling', 'Tone change'],
+        correct: 'Vowel insertion to break consonant clusters',
+        explanation: 'Epenthesis in Amharic involves inserting vowels to break up consonant clusters.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_amh_hard_2',
+        question: 'What is the function of "Tawaḥədo" theology in Ethiopian literature?',
+        options: ['Secular philosophy', 'Monophysite Christological doctrine influencing literary themes', 'Political ideology', 'Educational theory'],
+        correct: 'Monophysite Christological doctrine influencing literary themes',
+        explanation: 'Tawaḥədo theology significantly influences themes and symbolism in Ethiopian literature.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_amh_hard_3',
+        question: 'How does the triconsonantal root system work in Amharic morphology?',
+        options: ['Random consonant combination', 'Three consonants form word roots with vowel patterns creating meanings', 'Only two consonants needed', 'Consonants are optional'],
+        correct: 'Three consonants form word roots with vowel patterns creating meanings',
+        explanation: 'Amharic uses triconsonantal roots where three consonants form the basic meaning, modified by vowel patterns.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_amh_hard_4',
+        question: 'What is the literary technique of "Semenna Werq" in advanced Qene?',
+        options: ['Simple metaphor', 'Complex double entendre with hidden political/social commentary', 'Rhyme scheme', 'Meter pattern'],
+        correct: 'Complex double entendre with hidden political/social commentary',
+        explanation: 'Semenna Werq is a sophisticated literary technique using hidden meanings for social/political commentary.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_amh_hard_5',
+        question: 'What is the significance of "Digua" in Ethiopian ecclesiastical literature?',
+        options: ['Secular poetry', 'Antiphonal religious chanting with complex theological content', 'Folk songs', 'Modern literature'],
+        correct: 'Antiphonal religious chanting with complex theological content',
+        explanation: 'Digua is a form of antiphonal religious chanting with sophisticated theological content.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_amh_hard_6',
+        question: 'How does Amharic handle ergative alignment in certain constructions?',
+        options: ['No ergative features', 'Subject marking varies based on transitivity', 'Only nominative case', 'Random case marking'],
+        correct: 'Subject marking varies based on transitivity',
+        explanation: 'Amharic shows some ergative features where subject marking varies based on verb transitivity.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_amh_hard_7',
+        question: 'What is the role of "Zema" notation in preserving literary tradition?',
+        options: ['Writing system', 'Musical notation for liturgical texts', 'Punctuation marks', 'Spelling rules'],
+        correct: 'Musical notation for liturgical texts',
+        explanation: 'Zema is the traditional musical notation system for Ethiopian Orthodox liturgical texts.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_amh_hard_8',
+        question: 'What is the function of "Converb" constructions in Amharic syntax?',
+        options: ['Main verb only', 'Non-finite verb forms expressing circumstantial relations', 'Auxiliary verbs', 'Modal verbs'],
+        correct: 'Non-finite verb forms expressing circumstantial relations',
+        explanation: 'Converbs are non-finite verb forms that express various circumstantial relations between clauses.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_amh_hard_9',
+        question: 'How does the "Accident vs. Essence" philosophical distinction appear in Ethiopian literature?',
+        options: ['Not present', 'Through theological discussions of divine nature vs. human nature', 'Only in modern works', 'Through political themes'],
+        correct: 'Through theological discussions of divine nature vs. human nature',
+        explanation: 'This philosophical distinction appears in discussions of divine and human nature in religious literature.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g11_amh_hard_10',
+        question: 'What is the significance of "Palatal harmony" in certain Amharic dialects?',
+        options: ['Not present', 'Vowel harmony affecting palatalization of consonants', 'Only tonal features', 'Random sound changes'],
+        correct: 'Vowel harmony affecting palatalization of consonants',
+        explanation: 'Some Amharic dialects show palatal harmony where vowels affect consonant palatalization.',
         difficulty: 'hard'
       }
     ]
