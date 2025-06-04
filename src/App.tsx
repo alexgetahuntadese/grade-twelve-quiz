@@ -1,28 +1,23 @@
 
-import { Toaster } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { TranslationProvider } from "@/contexts/TranslationContext";
-import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Index from './pages/Index';
+import Subject from './pages/Subject';
+import Quiz from './pages/Quiz';
+import Grade11Subject from './pages/Grade11Subject';
+import Grade11Quiz from './pages/Grade11Quiz';
 
-const queryClient = new QueryClient();
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <TranslationProvider>
-        <Toaster />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </TranslationProvider>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/subject/:subject" element={<Subject />} />
+        <Route path="/quiz/:subject/:chapter/:difficulty" element={<Quiz />} />
+        <Route path="/grade11/:subject" element={<Grade11Subject />} />
+        <Route path="/grade11/:subject/:chapter/:difficulty" element={<Grade11Quiz />} />
+      </Routes>
+    </Router>
+  );
+}
 
 export default App;
