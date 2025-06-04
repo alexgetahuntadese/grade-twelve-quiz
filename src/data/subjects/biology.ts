@@ -13,13 +13,13 @@ export const biologyChapters: Chapter[] = [
         question: 'What is the basic unit of life?',
         options: ['Tissue', 'Organ', 'Cell', 'Organism'],
         correct: 'Cell',
-        explanation: 'The cell is the basic structural and functional unit of all living things.',
+        explanation: 'The cell is the smallest structural and functional unit of all living organisms.',
         difficulty: 'easy'
       },
       {
         id: 'cell_2',
         question: 'Which organelle controls the cell?',
-        options: ['Nucleus', 'Mitochondria', 'Ribosome', 'Vacuole'],
+        options: ['Mitochondria', 'Nucleus', 'Ribosome', 'Vacuole'],
         correct: 'Nucleus',
         explanation: 'The nucleus contains DNA and controls all cellular activities.',
         difficulty: 'easy'
@@ -29,47 +29,23 @@ export const biologyChapters: Chapter[] = [
         question: 'What is the powerhouse of the cell?',
         options: ['Nucleus', 'Mitochondria', 'Chloroplast', 'Ribosome'],
         correct: 'Mitochondria',
-        explanation: 'Mitochondria produce ATP energy for cellular processes.',
+        explanation: 'Mitochondria produce ATP, the energy currency of the cell.',
         difficulty: 'easy'
       },
       {
         id: 'cell_4',
-        question: 'What is photosynthesis?',
-        options: ['Making food using sunlight', 'Breathing process', 'Cell division', 'Protein synthesis'],
-        correct: 'Making food using sunlight',
-        explanation: 'Photosynthesis is the process by which plants make glucose using sunlight.',
+        question: 'What do ribosomes make?',
+        options: ['DNA', 'RNA', 'Proteins', 'Lipids'],
+        correct: 'Proteins',
+        explanation: 'Ribosomes are the sites of protein synthesis in cells.',
         difficulty: 'easy'
       },
       {
         id: 'cell_5',
-        question: 'Which organelle is found only in plant cells?',
-        options: ['Nucleus', 'Mitochondria', 'Chloroplast', 'Ribosome'],
-        correct: 'Chloroplast',
-        explanation: 'Chloroplasts contain chlorophyll and are responsible for photosynthesis.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'cell_6',
-        question: 'What is the cell membrane made of?',
-        options: ['Proteins only', 'Lipids only', 'Phospholipids and proteins', 'Carbohydrates only'],
-        correct: 'Phospholipids and proteins',
-        explanation: 'The cell membrane is composed of a phospholipid bilayer with embedded proteins.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'cell_7',
-        question: 'What is DNA?',
-        options: ['Genetic material', 'Energy molecule', 'Structural protein', 'Storage fat'],
-        correct: 'Genetic material',
-        explanation: 'DNA (deoxyribonucleic acid) carries genetic information.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'cell_8',
-        question: 'Where are ribosomes found?',
-        options: ['Only in nucleus', 'Only in cytoplasm', 'In cytoplasm and on ER', 'Only in mitochondria'],
-        correct: 'In cytoplasm and on ER',
-        explanation: 'Ribosomes can be free in cytoplasm or attached to the endoplasmic reticulum.',
+        question: 'What surrounds a plant cell but not an animal cell?',
+        options: ['Cell membrane', 'Cell wall', 'Nucleus', 'Cytoplasm'],
+        correct: 'Cell wall',
+        explanation: 'Plant cells have a rigid cell wall made of cellulose for structural support.',
         difficulty: 'easy'
       },
 
@@ -79,57 +55,41 @@ export const biologyChapters: Chapter[] = [
         question: 'What is the difference between prokaryotic and eukaryotic cells?',
         options: ['Size only', 'Nucleus presence', 'Shape only', 'Color only'],
         correct: 'Nucleus presence',
-        explanation: 'Eukaryotic cells have a membrane-bound nucleus, prokaryotic cells do not.',
+        explanation: 'Prokaryotic cells lack a membrane-bound nucleus; eukaryotic cells have one.',
         difficulty: 'medium'
       },
       {
         id: 'cell_med_2',
         question: 'What is osmosis?',
-        options: ['Movement of solutes', 'Movement of water across membrane', 'Active transport', 'Cell division'],
+        options: ['Movement of solutes', 'Movement of water across membrane', 'Cell division', 'Protein synthesis'],
         correct: 'Movement of water across membrane',
-        explanation: 'Osmosis is the passive movement of water across a selectively permeable membrane.',
+        explanation: 'Osmosis is the movement of water across a semi-permeable membrane.',
         difficulty: 'medium'
       },
       {
         id: 'cell_med_3',
-        question: 'What is the function of the Golgi apparatus?',
-        options: ['Protein synthesis', 'Packaging and shipping', 'Energy production', 'DNA replication'],
-        correct: 'Packaging and shipping',
-        explanation: 'The Golgi apparatus modifies, packages, and ships proteins from the ER.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'cell_med_4',
         question: 'What is cellular respiration?',
-        options: ['Making oxygen', 'Breaking down glucose for energy', 'Making proteins', 'Cell division'],
-        correct: 'Breaking down glucose for energy',
+        options: ['Breathing', 'Converting glucose to ATP', 'Photosynthesis', 'Cell division'],
+        correct: 'Converting glucose to ATP',
         explanation: 'Cellular respiration breaks down glucose to produce ATP energy.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'cell_med_5',
-        question: 'What is the equation for photosynthesis?',
-        options: ['6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂', 'C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O', 'CO₂ + H₂O → glucose', 'O₂ + glucose → CO₂'],
-        correct: '6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂',
-        explanation: 'Photosynthesis converts carbon dioxide and water into glucose and oxygen.',
         difficulty: 'medium'
       },
 
       // Hard Questions
       {
         id: 'cell_hard_1',
-        question: 'In which phase of mitosis do chromosomes align at the cell center?',
-        options: ['Prophase', 'Metaphase', 'Anaphase', 'Telophase'],
-        correct: 'Metaphase',
-        explanation: 'During metaphase, chromosomes align at the metaphase plate in the cell center.',
+        question: 'What are the phases of mitosis?',
+        options: ['Prophase, Metaphase, Anaphase, Telophase', 'G1, S, G2, M', 'Interphase only', 'Cytokinesis only'],
+        correct: 'Prophase, Metaphase, Anaphase, Telophase',
+        explanation: 'Mitosis consists of prophase, metaphase, anaphase, and telophase.',
         difficulty: 'hard'
       },
       {
         id: 'cell_hard_2',
-        question: 'What is the net gain of ATP in glycolysis?',
-        options: ['2 ATP', '4 ATP', '6 ATP', '8 ATP'],
-        correct: '2 ATP',
-        explanation: 'Glycolysis produces 4 ATP but uses 2 ATP, resulting in a net gain of 2 ATP.',
+        question: 'What is the role of the endoplasmic reticulum?',
+        options: ['Energy production', 'Protein and lipid synthesis', 'DNA storage', 'Waste removal'],
+        correct: 'Protein and lipid synthesis',
+        explanation: 'The ER synthesizes proteins (rough ER) and lipids (smooth ER).',
         difficulty: 'hard'
       }
     ]
@@ -138,19 +98,27 @@ export const biologyChapters: Chapter[] = [
   {
     id: 'grade11_genetics',
     name: 'Grade 11: Genetics and Heredity',
-    description: 'DNA, genes, inheritance patterns, and genetic variation',
+    description: 'DNA, genes, inheritance patterns, and genetic disorders',
     questions: [
       // Easy Questions
       {
-        id: 'g11_gen_easy_1',
-        question: 'What is a gene?',
-        options: ['Unit of heredity', 'Type of cell', 'Organ system', 'Chemical reaction'],
-        correct: 'Unit of heredity',
-        explanation: 'A gene is a specific sequence of DNA that codes for a trait.',
+        id: 'g11_genetics_easy_1',
+        question: 'What does DNA stand for?',
+        options: ['Deoxyribonucleic Acid', 'Dynamic Nuclear Acid', 'Double Nuclear Acid', 'Deoxyribose Nucleic Acid'],
+        correct: 'Deoxyribonucleic Acid',
+        explanation: 'DNA stands for Deoxyribonucleic Acid, the genetic material in cells.',
         difficulty: 'easy'
       },
       {
-        id: 'g11_gen_easy_2',
+        id: 'g11_genetics_easy_2',
+        question: 'What is a gene?',
+        options: ['A chromosome', 'A segment of DNA coding for a trait', 'A protein', 'A cell'],
+        correct: 'A segment of DNA coding for a trait',
+        explanation: 'A gene is a specific DNA sequence that codes for a particular trait or protein.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g11_genetics_easy_3',
         question: 'How many chromosomes do humans have?',
         options: ['23', '44', '46', '48'],
         correct: '46',
@@ -158,71 +126,63 @@ export const biologyChapters: Chapter[] = [
         difficulty: 'easy'
       },
       {
-        id: 'g11_gen_easy_3',
+        id: 'g11_genetics_easy_4',
         question: 'What determines biological sex in humans?',
-        options: ['X and Y chromosomes', 'Autosomes', 'Mitochondrial DNA', 'Environment'],
-        correct: 'X and Y chromosomes',
-        explanation: 'Sex is determined by X and Y chromosomes: XX = female, XY = male.',
+        options: ['XX and XY chromosomes', 'Height', 'Weight', 'Eye color'],
+        correct: 'XX and XY chromosomes',
+        explanation: 'Females have XX chromosomes, males have XY chromosomes.',
         difficulty: 'easy'
       },
       {
-        id: 'g11_gen_easy_4',
-        question: 'What is an allele?',
-        options: ['Different versions of a gene', 'Type of chromosome', 'Cell division', 'Protein structure'],
-        correct: 'Different versions of a gene',
-        explanation: 'Alleles are different versions or variants of the same gene.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g11_gen_easy_5',
-        question: 'What is the genotype?',
-        options: ['Physical appearance', 'Genetic makeup', 'Environment effect', 'Age factor'],
-        correct: 'Genetic makeup',
-        explanation: 'Genotype refers to the genetic constitution of an organism.',
+        id: 'g11_genetics_easy_5',
+        question: 'What is heredity?',
+        options: ['Cell division', 'Passing traits from parents to offspring', 'Metabolism', 'Reproduction'],
+        correct: 'Passing traits from parents to offspring',
+        explanation: 'Heredity is the transmission of genetic characteristics from parents to offspring.',
         difficulty: 'easy'
       },
 
       // Medium Questions
       {
-        id: 'g11_gen_med_1',
-        question: 'In a cross Aa × Aa, what ratio of phenotypes is expected?',
-        options: ['1:1', '2:1', '3:1', '1:2:1'],
-        correct: '3:1',
-        explanation: 'Monohybrid cross gives 3 dominant : 1 recessive phenotype ratio.',
+        id: 'g11_genetics_med_1',
+        question: 'What is the difference between genotype and phenotype?',
+        options: ['No difference', 'Genotype: genetic makeup, Phenotype: observable traits', 'Only in plants', 'Only in animals'],
+        correct: 'Genotype: genetic makeup, Phenotype: observable traits',
+        explanation: 'Genotype is the genetic composition; phenotype is the observable characteristics.',
         difficulty: 'medium'
       },
       {
-        id: 'g11_gen_med_2',
-        question: 'What is incomplete dominance?',
-        options: ['One allele masks another', 'Both alleles expressed', 'Blending of traits', 'No expression'],
-        correct: 'Blending of traits',
-        explanation: 'Incomplete dominance results in a blended phenotype between two alleles.',
+        id: 'g11_genetics_med_2',
+        question: 'What is a dominant allele?',
+        options: ['Always harmful', 'Expressed when present', 'Only in females', 'Recessive trait'],
+        correct: 'Expressed when present',
+        explanation: 'A dominant allele is expressed in the phenotype when present, even with one copy.',
         difficulty: 'medium'
       },
       {
-        id: 'g11_gen_med_3',
-        question: 'What is codominance?',
-        options: ['One allele dominant', 'Both alleles expressed simultaneously', 'Blended traits', 'Hidden traits'],
-        correct: 'Both alleles expressed simultaneously',
-        explanation: 'In codominance, both alleles are expressed without blending.',
+        id: 'g11_genetics_med_3',
+        question: 'What is Mendel\'s law of segregation?',
+        options: ['Traits blend together', 'Allele pairs separate during gamete formation', 'Mutations occur randomly', 'DNA replicates'],
+        correct: 'Allele pairs separate during gamete formation',
+        explanation: 'The law of segregation states that allele pairs separate during meiosis.',
         difficulty: 'medium'
       },
 
       // Hard Questions
       {
-        id: 'g11_gen_hard_1',
-        question: 'In a dihybrid cross AaBb × AaBb, what is the expected phenotypic ratio?',
-        options: ['3:1', '1:2:1', '9:3:3:1', '1:1:1:1'],
-        correct: '9:3:3:1',
-        explanation: 'Dihybrid cross produces 9:3:3:1 phenotypic ratio with independent assortment.',
+        id: 'g11_genetics_hard_1',
+        question: 'What is incomplete dominance?',
+        options: ['One allele dominant', 'Neither allele dominant, blended phenotype', 'Recessive expression', 'Lethal combination'],
+        correct: 'Neither allele dominant, blended phenotype',
+        explanation: 'In incomplete dominance, neither allele is dominant, resulting in a blended phenotype.',
         difficulty: 'hard'
       },
       {
-        id: 'g11_gen_hard_2',
-        question: 'What is linkage in genetics?',
-        options: ['Independent assortment', 'Genes on same chromosome', 'Chromosome pairing', 'Gene expression'],
-        correct: 'Genes on same chromosome',
-        explanation: 'Linkage occurs when genes are located close together on the same chromosome.',
+        id: 'g11_genetics_hard_2',
+        question: 'What is the probability of two heterozygous parents (Aa × Aa) having a homozygous recessive child?',
+        options: ['0%', '25%', '50%', '75%'],
+        correct: '25%',
+        explanation: 'Using a Punnett square: AA (25%), Aa (50%), aa (25%). Homozygous recessive = 25%.',
         difficulty: 'hard'
       }
     ]
@@ -231,91 +191,91 @@ export const biologyChapters: Chapter[] = [
   {
     id: 'grade12_evolution',
     name: 'Grade 12: Evolution and Biodiversity',
-    description: 'Natural selection, speciation, and evolutionary biology',
+    description: 'Natural selection, evolution theory, and species diversity',
     questions: [
       // Easy Questions
       {
-        id: 'g12_evo_easy_1',
+        id: 'g12_evolution_easy_1',
         question: 'Who proposed the theory of evolution by natural selection?',
-        options: ['Mendel', 'Darwin', 'Lamarck', 'Watson'],
+        options: ['Mendel', 'Darwin', 'Watson', 'Lamarck'],
         correct: 'Darwin',
         explanation: 'Charles Darwin proposed the theory of evolution by natural selection.',
         difficulty: 'easy'
       },
       {
-        id: 'g12_evo_easy_2',
+        id: 'g12_evolution_easy_2',
         question: 'What is natural selection?',
-        options: ['Random changes', 'Survival of the fittest', 'Artificial breeding', 'Genetic engineering'],
-        correct: 'Survival of the fittest',
-        explanation: 'Natural selection is the differential survival and reproduction of organisms.',
+        options: ['Random changes', 'Survival of organisms best adapted', 'Genetic engineering', 'Artificial breeding'],
+        correct: 'Survival of organisms best adapted',
+        explanation: 'Natural selection is the survival and reproduction of organisms best adapted to their environment.',
         difficulty: 'easy'
       },
       {
-        id: 'g12_evo_easy_3',
-        question: 'What is a species?',
-        options: ['Group of similar organisms', 'Organisms that can interbreed', 'Same habitat organisms', 'Same size organisms'],
-        correct: 'Organisms that can interbreed',
-        explanation: 'A species is a group of organisms that can interbreed and produce fertile offspring.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_evo_easy_4',
-        question: 'What is adaptation?',
-        options: ['Learning behavior', 'Inherited trait that aids survival', 'Temporary change', 'Random mutation'],
-        correct: 'Inherited trait that aids survival',
-        explanation: 'Adaptation is an inherited characteristic that increases survival and reproduction.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_evo_easy_5',
+        id: 'g12_evolution_easy_3',
         question: 'What is biodiversity?',
-        options: ['Number of individuals', 'Variety of life forms', 'Population size', 'Genetic similarity'],
+        options: ['Number of species only', 'Variety of life forms', 'Population size', 'Genetic mutations'],
         correct: 'Variety of life forms',
-        explanation: 'Biodiversity refers to the variety of life at all levels of organization.',
+        explanation: 'Biodiversity refers to the variety of life forms and ecosystems on Earth.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_evolution_easy_4',
+        question: 'What is adaptation?',
+        options: ['Learning behavior', 'Inherited trait helping survival', 'Random change', 'Artificial selection'],
+        correct: 'Inherited trait helping survival',
+        explanation: 'An adaptation is an inherited trait that helps an organism survive and reproduce.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_evolution_easy_5',
+        question: 'What is a species?',
+        options: ['Any animal', 'Group that can interbreed and produce fertile offspring', 'Similar-looking organisms', 'Same habitat organisms'],
+        correct: 'Group that can interbreed and produce fertile offspring',
+        explanation: 'A species is a group of organisms that can interbreed and produce fertile offspring.',
         difficulty: 'easy'
       },
 
       // Medium Questions
       {
-        id: 'g12_evo_med_1',
-        question: 'What is speciation?',
-        options: ['Death of species', 'Formation of new species', 'Migration of species', 'Hybridization'],
-        correct: 'Formation of new species',
-        explanation: 'Speciation is the evolutionary process by which new species arise.',
+        id: 'g12_evolution_med_1',
+        question: 'What is the difference between convergent and divergent evolution?',
+        options: ['No difference', 'Convergent: similar traits from different origins, Divergent: different traits from common origin', 'Only in plants', 'Only in animals'],
+        correct: 'Convergent: similar traits from different origins, Divergent: different traits from common origin',
+        explanation: 'Convergent evolution produces similar traits in unrelated species; divergent evolution produces different traits from a common ancestor.',
         difficulty: 'medium'
       },
       {
-        id: 'g12_evo_med_2',
+        id: 'g12_evolution_med_2',
         question: 'What is genetic drift?',
-        options: ['Gene flow between populations', 'Random changes in allele frequency', 'Natural selection', 'Mutation rate'],
-        correct: 'Random changes in allele frequency',
-        explanation: 'Genetic drift is random changes in allele frequencies in small populations.',
+        options: ['Directed change', 'Random change in allele frequencies', 'Natural selection only', 'Mutation rate'],
+        correct: 'Random change in allele frequencies',
+        explanation: 'Genetic drift is random change in allele frequencies, especially in small populations.',
         difficulty: 'medium'
       },
       {
-        id: 'g12_evo_med_3',
-        question: 'What is the Hardy-Weinberg principle?',
-        options: ['Evolution occurs', 'Allele frequencies remain constant', 'Mutations increase', 'Selection is strong'],
-        correct: 'Allele frequencies remain constant',
-        explanation: 'Hardy-Weinberg describes conditions where allele frequencies remain constant.',
+        id: 'g12_evolution_med_3',
+        question: 'What is speciation?',
+        options: ['Individual change', 'Formation of new species', 'Extinction', 'Migration'],
+        correct: 'Formation of new species',
+        explanation: 'Speciation is the evolutionary process by which new species are formed.',
         difficulty: 'medium'
       },
 
       // Hard Questions
       {
-        id: 'g12_evo_hard_1',
-        question: 'In a population where p = 0.6 for allele A, what is the frequency of genotype aa?',
-        options: ['0.16', '0.24', '0.36', '0.48'],
-        correct: '0.16',
-        explanation: 'q = 1 - p = 0.4, so frequency of aa = q² = 0.4² = 0.16',
+        id: 'g12_evolution_hard_1',
+        question: 'What is the Hardy-Weinberg principle?',
+        options: ['Evolution occurs', 'Allele frequencies remain constant under specific conditions', 'Mutations are harmful', 'Selection is random'],
+        correct: 'Allele frequencies remain constant under specific conditions',
+        explanation: 'Hardy-Weinberg principle states that allele frequencies remain constant in the absence of evolutionary forces.',
         difficulty: 'hard'
       },
       {
-        id: 'g12_evo_hard_2',
-        question: 'What is allopatric speciation?',
-        options: ['Same geographic area', 'Different geographic areas', 'Same habitat', 'Same time period'],
-        correct: 'Different geographic areas',
-        explanation: 'Allopatric speciation occurs when populations are geographically separated.',
+        id: 'g12_evolution_hard_2',
+        question: 'What is punctuated equilibrium?',
+        options: ['Gradual change only', 'Rapid evolutionary change followed by stasis', 'No evolution', 'Constant evolution'],
+        correct: 'Rapid evolutionary change followed by stasis',
+        explanation: 'Punctuated equilibrium suggests evolution occurs in rapid bursts followed by long periods of stability.',
         difficulty: 'hard'
       }
     ]

@@ -5,277 +5,277 @@ export const generalBusinessChapters: Chapter[] = [
   {
     id: 'business_fundamentals',
     name: 'Business Fundamentals',
-    description: 'Basic concepts of business and entrepreneurship',
+    description: 'Basic business concepts and principles',
     questions: [
       // Easy Questions
       {
-        id: 'bus_fund_easy_1',
+        id: 'business_1',
         question: 'What is a business?',
-        options: ['A hobby', 'An organization that provides goods or services', 'A government agency', 'A social club'],
-        correct: 'An organization that provides goods or services',
-        explanation: 'A business is an organization that provides goods or services to customers.',
+        options: ['Only profit-making organization', 'Organization providing goods or services', 'Government agency', 'Social club'],
+        correct: 'Organization providing goods or services',
+        explanation: 'A business is an organization that provides goods or services to meet customer needs.',
         difficulty: 'easy'
       },
       {
-        id: 'bus_fund_easy_2',
+        id: 'business_2',
         question: 'What is profit?',
         options: ['Total sales', 'Revenue minus expenses', 'Number of customers', 'Business size'],
         correct: 'Revenue minus expenses',
-        explanation: 'Profit is what remains after subtracting expenses from revenue.',
+        explanation: 'Profit is the amount left after subtracting expenses from revenue.',
         difficulty: 'easy'
       },
       {
-        id: 'bus_fund_easy_3',
+        id: 'business_3',
+        question: 'What is a customer?',
+        options: ['Employee', 'Person who buys goods or services', 'Manager', 'Supplier'],
+        correct: 'Person who buys goods or services',
+        explanation: 'A customer is someone who purchases goods or services from a business.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'business_4',
         question: 'What is marketing?',
-        options: ['Selling products', 'Promoting and selling products or services', 'Making products', 'Buying products'],
-        correct: 'Promoting and selling products or services',
-        explanation: 'Marketing involves promoting and selling products or services to customers.',
+        options: ['Only advertising', 'Activities to promote and sell products', 'Manufacturing process', 'Financial planning'],
+        correct: 'Activities to promote and sell products',
+        explanation: 'Marketing includes all activities involved in promoting and selling products or services.',
         difficulty: 'easy'
       },
       {
-        id: 'bus_fund_easy_4',
+        id: 'business_5',
         question: 'What is an entrepreneur?',
-        options: ['An employee', 'Someone who starts a business', 'A customer', 'A supplier'],
-        correct: 'Someone who starts a business',
-        explanation: 'An entrepreneur is someone who starts and operates a business.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'bus_fund_easy_5',
-        question: 'What is customer service?',
-        options: ['Making products', 'Helping customers', 'Counting money', 'Managing inventory'],
-        correct: 'Helping customers',
-        explanation: 'Customer service involves helping customers with their needs and questions.',
+        options: ['Employee', 'Person who starts and runs a business', 'Customer', 'Government official'],
+        correct: 'Person who starts and runs a business',
+        explanation: 'An entrepreneur is someone who starts and operates a new business venture.',
         difficulty: 'easy'
       },
 
       // Medium Questions
       {
-        id: 'bus_fund_med_1',
-        question: 'What is a business plan?',
-        options: ['Daily schedule', 'Document outlining business strategy', 'Employee handbook', 'Product catalog'],
-        correct: 'Document outlining business strategy',
-        explanation: 'A business plan is a document that outlines a business strategy and goals.',
+        id: 'business_med_1',
+        question: 'What are the four Ps of marketing?',
+        options: ['People, Process, Physical, Performance', 'Product, Price, Place, Promotion', 'Profit, Purpose, Plan, Performance', 'Production, Planning, Pricing, Purchasing'],
+        correct: 'Product, Price, Place, Promotion',
+        explanation: 'The marketing mix consists of Product, Price, Place (distribution), and Promotion.',
         difficulty: 'medium'
       },
       {
-        id: 'bus_fund_med_2',
+        id: 'business_med_2',
         question: 'What is market research?',
-        options: ['Selling products', 'Gathering information about customers and markets', 'Hiring employees', 'Building stores'],
+        options: ['Selling products', 'Gathering information about customers and markets', 'Manufacturing goods', 'Hiring employees'],
         correct: 'Gathering information about customers and markets',
-        explanation: 'Market research involves collecting data about target markets and customers.',
+        explanation: 'Market research involves collecting and analyzing information about customers, competitors, and market conditions.',
         difficulty: 'medium'
       },
       {
-        id: 'bus_fund_med_3',
-        question: 'What is cash flow?',
-        options: ['Total profit', 'Movement of money in and out of business', 'Number of sales', 'Employee salaries'],
-        correct: 'Movement of money in and out of business',
-        explanation: 'Cash flow is the movement of money into and out of a business over time.',
+        id: 'business_med_3',
+        question: 'What is a business plan?',
+        options: ['Daily schedule', 'Document outlining business goals and strategies', 'Employee handbook', 'Financial statement'],
+        correct: 'Document outlining business goals and strategies',
+        explanation: 'A business plan is a written document that describes business objectives and how to achieve them.',
         difficulty: 'medium'
       },
 
       // Hard Questions
       {
-        id: 'bus_fund_hard_1',
-        question: 'What is return on investment (ROI)?',
-        options: ['Total investment', 'Profit divided by investment cost', 'Number of customers', 'Business age'],
-        correct: 'Profit divided by investment cost',
-        explanation: 'ROI measures the efficiency of an investment by comparing profit to investment cost.',
+        id: 'business_hard_1',
+        question: 'What is a SWOT analysis?',
+        options: ['Financial analysis', 'Strengths, Weaknesses, Opportunities, Threats analysis', 'Employee evaluation', 'Production analysis'],
+        correct: 'Strengths, Weaknesses, Opportunities, Threats analysis',
+        explanation: 'SWOT analysis examines internal Strengths and Weaknesses, and external Opportunities and Threats.',
         difficulty: 'hard'
       },
       {
-        id: 'bus_fund_hard_2',
-        question: 'What is the concept of economies of scale?',
-        options: ['Small production benefits', 'Cost advantages from large-scale production', 'Equal costs always', 'Increasing costs with size'],
-        correct: 'Cost advantages from large-scale production',
-        explanation: 'Economies of scale refer to cost advantages achieved through large-scale production.',
+        id: 'business_hard_2',
+        question: 'What is the difference between B2B and B2C?',
+        options: ['No difference', 'B2B: business to business, B2C: business to consumer', 'Different industries only', 'Different sizes only'],
+        correct: 'B2B: business to business, B2C: business to consumer',
+        explanation: 'B2B involves selling to other businesses; B2C involves selling directly to individual consumers.',
         difficulty: 'hard'
       }
     ]
   },
 
   {
-    id: 'grade11_management',
-    name: 'Grade 11: Business Management',
-    description: 'Management principles, leadership, and organizational behavior',
+    id: 'grade11_business_management',
+    name: 'Grade 11: Business Management and Organization',
+    description: 'Management principles, organizational structure, and leadership',
     questions: [
       // Easy Questions
       {
         id: 'g11_mgmt_easy_1',
         question: 'What is management?',
-        options: ['Following orders', 'Controlling resources', 'Working alone', 'Only finance'],
-        correct: 'Controlling resources',
-        explanation: 'Management involves controlling resources to achieve organizational goals.',
+        options: ['Owning a business', 'Process of coordinating resources to achieve goals', 'Making products', 'Selling services'],
+        correct: 'Process of coordinating resources to achieve goals',
+        explanation: 'Management is the process of planning, organizing, leading, and controlling resources to achieve organizational goals.',
         difficulty: 'easy'
       },
       {
         id: 'g11_mgmt_easy_2',
-        question: 'What are the four main functions of management?',
-        options: ['Hiring, firing, training, paying', 'Planning, organizing, leading, controlling', 'Selling, buying, making, delivering', 'Marketing, finance, operations, HR'],
+        question: 'What are the four functions of management?',
+        options: ['Buy, sell, make, deliver', 'Planning, organizing, leading, controlling', 'Hire, train, pay, fire', 'Research, develop, produce, market'],
         correct: 'Planning, organizing, leading, controlling',
-        explanation: 'The four main functions of management are planning, organizing, leading, and controlling.',
+        explanation: 'The four basic management functions are planning, organizing, leading, and controlling.',
         difficulty: 'easy'
       },
       {
         id: 'g11_mgmt_easy_3',
         question: 'What is leadership?',
-        options: ['Bossing people around', 'Following rules', 'Influencing and guiding others', 'Working alone'],
-        correct: 'Influencing and guiding others',
-        explanation: 'Leadership involves influencing and guiding others toward achieving goals.',
+        options: ['Being the boss', 'Influencing others to achieve goals', 'Making all decisions', 'Having authority'],
+        correct: 'Influencing others to achieve goals',
+        explanation: 'Leadership is the ability to influence others to work toward achieving common goals.',
         difficulty: 'easy'
       },
       {
         id: 'g11_mgmt_easy_4',
         question: 'What is delegation?',
-        options: ['Avoiding work', 'Assigning tasks to others', 'Doing everything yourself', 'Firing employees'],
+        options: ['Doing everything yourself', 'Assigning tasks to others', 'Avoiding responsibility', 'Making decisions'],
         correct: 'Assigning tasks to others',
-        explanation: 'Delegation is assigning tasks and authority to others while maintaining responsibility.',
+        explanation: 'Delegation is the process of assigning tasks and authority to subordinates.',
         difficulty: 'easy'
       },
       {
         id: 'g11_mgmt_easy_5',
-        question: 'What is organizational structure?',
-        options: ['Office layout', 'Company building', 'How organization is arranged', 'Employee benefits'],
-        correct: 'How organization is arranged',
-        explanation: 'Organizational structure defines how activities and reporting relationships are arranged.',
+        question: 'What is teamwork?',
+        options: ['Individual effort', 'People working together toward common goal', 'Competition between workers', 'Management control'],
+        correct: 'People working together toward common goal',
+        explanation: 'Teamwork involves people collaborating effectively to achieve shared objectives.',
         difficulty: 'easy'
       },
 
       // Medium Questions
       {
         id: 'g11_mgmt_med_1',
-        question: 'What is the difference between leadership and management?',
-        options: ['No difference', 'Leadership inspires and guides; management controls and plans', 'Leaders make less money', 'Managers have more education'],
-        correct: 'Leadership inspires and guides; management controls and plans',
-        explanation: 'Leadership focuses on inspiring and guiding people, while management focuses on planning, organizing, and controlling resources.',
+        question: 'What is organizational structure?',
+        options: ['Building design', 'How authority and tasks are arranged', 'Company size', 'Number of employees'],
+        correct: 'How authority and tasks are arranged',
+        explanation: 'Organizational structure defines how authority, roles, and responsibilities are arranged within a company.',
         difficulty: 'medium'
       },
       {
         id: 'g11_mgmt_med_2',
-        question: 'What is organizational behavior?',
-        options: ['Company rules', 'Study of how people interact in organizations', 'Marketing strategy', 'Production method'],
-        correct: 'Study of how people interact in organizations',
-        explanation: 'Organizational behavior studies how individuals and groups interact within organizations.',
+        question: 'What is the difference between autocratic and democratic leadership?',
+        options: ['No difference', 'Autocratic: leader decides alone, Democratic: involves others in decisions', 'Only in government', 'Only in elections'],
+        correct: 'Autocratic: leader decides alone, Democratic: involves others in decisions',
+        explanation: 'Autocratic leaders make decisions independently; democratic leaders involve others in decision-making.',
         difficulty: 'medium'
       },
       {
         id: 'g11_mgmt_med_3',
-        question: 'What is a matrix organizational structure?',
-        options: ['Single chain of command', 'Employees report to multiple supervisors', 'Only used in manufacturing', 'Flat hierarchy'],
-        correct: 'Employees report to multiple supervisors',
-        explanation: 'In a matrix structure, employees report to both functional and project managers.',
+        question: 'What is motivation in management?',
+        options: ['Paying employees', 'Inspiring people to perform their best', 'Setting rules', 'Monitoring work'],
+        correct: 'Inspiring people to perform their best',
+        explanation: 'Motivation involves inspiring and encouraging employees to perform at their highest level.',
         difficulty: 'medium'
       },
 
       // Hard Questions
       {
         id: 'g11_mgmt_hard_1',
-        question: 'How does Herzberg\'s Two-Factor Theory relate to employee motivation?',
-        options: ['Not related', 'Distinguishes between hygiene factors and motivators', 'Only applies to executives', 'Based on financial rewards only'],
-        correct: 'Distinguishes between hygiene factors and motivators',
-        explanation: 'Herzberg\'s theory separates hygiene factors (preventing dissatisfaction) from motivators (creating satisfaction).',
+        question: 'What is Maslow\'s hierarchy of needs?',
+        options: ['Management theory', 'Theory about human motivation and needs', 'Organizational structure', 'Leadership style'],
+        correct: 'Theory about human motivation and needs',
+        explanation: 'Maslow\'s hierarchy suggests people are motivated by five levels of needs, from basic survival to self-actualization.',
         difficulty: 'hard'
       },
       {
         id: 'g11_mgmt_hard_2',
-        question: 'What is the difference between transformational and transactional leadership?',
-        options: ['No difference', 'Transformational inspires change; transactional focuses on rewards', 'Only applies to certain industries', 'Based on company size'],
-        correct: 'Transformational inspires change; transactional focuses on rewards',
-        explanation: 'Transformational leadership inspires change through vision, while transactional leadership uses rewards and punishments to motivate.',
+        question: 'What is span of control?',
+        options: ['Management authority', 'Number of subordinates a manager supervises', 'Company ownership', 'Decision-making power'],
+        correct: 'Number of subordinates a manager supervises',
+        explanation: 'Span of control refers to the number of subordinates that a manager directly supervises.',
         difficulty: 'hard'
       }
     ]
   },
 
   {
-    id: 'grade12_international_business',
-    name: 'Grade 12: International Business',
-    description: 'Global trade, international markets, and multinational operations',
+    id: 'grade12_business_finance',
+    name: 'Grade 12: Business Finance and Accounting',
+    description: 'Financial statements, budgeting, and business financing',
     questions: [
       // Easy Questions
       {
-        id: 'g12_intl_easy_1',
-        question: 'What is international business?',
-        options: ['Local business', 'Business across national borders', 'Only large corporations', 'Government control'],
-        correct: 'Business across national borders',
-        explanation: 'International business involves commercial transactions across national borders.',
+        id: 'g12_finance_easy_1',
+        question: 'What is accounting?',
+        options: ['Counting money', 'Recording and summarizing financial information', 'Banking services', 'Investment advice'],
+        correct: 'Recording and summarizing financial information',
+        explanation: 'Accounting is the systematic recording, measuring, and communication of financial information.',
         difficulty: 'easy'
       },
       {
-        id: 'g12_intl_easy_2',
-        question: 'What is globalization?',
-        options: ['Local focus', 'Increasing interconnection of world economies', 'Isolation of markets', 'Small business growth'],
-        correct: 'Increasing interconnection of world economies',
-        explanation: 'Globalization is the increasing interdependence and integration of world economies.',
+        id: 'g12_finance_easy_2',
+        question: 'What is revenue?',
+        options: ['Money spent', 'Money earned from sales', 'Profit', 'Expenses'],
+        correct: 'Money earned from sales',
+        explanation: 'Revenue is the total amount of money earned from selling goods or services.',
         difficulty: 'easy'
       },
       {
-        id: 'g12_intl_easy_3',
-        question: 'What is an import?',
-        options: ['Selling abroad', 'Buying from abroad', 'Local sales', 'Manufacturing'],
-        correct: 'Buying from abroad',
-        explanation: 'Imports are goods or services bought from other countries.',
+        id: 'g12_finance_easy_3',
+        question: 'What are expenses?',
+        options: ['Money earned', 'Costs of running business', 'Assets owned', 'Loans received'],
+        correct: 'Costs of running business',
+        explanation: 'Expenses are the costs incurred in the normal operation of a business.',
         difficulty: 'easy'
       },
       {
-        id: 'g12_intl_easy_4',
-        question: 'What is an export?',
-        options: ['Buying from abroad', 'Selling to other countries', 'Local trade', 'Manufacturing process'],
-        correct: 'Selling to other countries',
-        explanation: 'Exports are goods or services sold to other countries.',
+        id: 'g12_finance_easy_4',
+        question: 'What is a budget?',
+        options: ['Bank account', 'Plan for spending and earning money', 'Financial statement', 'Loan application'],
+        correct: 'Plan for spending and earning money',
+        explanation: 'A budget is a plan that estimates future income and expenses over a specific period.',
         difficulty: 'easy'
       },
       {
-        id: 'g12_intl_easy_5',
-        question: 'What is a multinational corporation?',
-        options: ['Small business', 'Local company', 'Company operating in multiple countries', 'Government agency'],
-        correct: 'Company operating in multiple countries',
-        explanation: 'A multinational corporation operates in multiple countries beyond its home country.',
+        id: 'g12_finance_easy_5',
+        question: 'What is cash flow?',
+        options: ['Total sales', 'Movement of money in and out of business', 'Profit margin', 'Asset value'],
+        correct: 'Movement of money in and out of business',
+        explanation: 'Cash flow refers to the movement of money into and out of a business over time.',
         difficulty: 'easy'
       },
 
       // Medium Questions
       {
-        id: 'g12_intl_med_1',
-        question: 'What is a trade barrier?',
-        options: ['Road block', 'Restriction on international trade', 'Trading strategy', 'Marketing technique'],
-        correct: 'Restriction on international trade',
-        explanation: 'Trade barriers are restrictions that limit free trade between countries, such as tariffs or quotas.',
+        id: 'g12_finance_med_1',
+        question: 'What are the three main financial statements?',
+        options: ['Budget, forecast, plan', 'Income statement, balance sheet, cash flow statement', 'Assets, liabilities, equity', 'Revenue, expenses, profit'],
+        correct: 'Income statement, balance sheet, cash flow statement',
+        explanation: 'The three main financial statements are the income statement, balance sheet, and cash flow statement.',
         difficulty: 'medium'
       },
       {
-        id: 'g12_intl_med_2',
-        question: 'What is exchange rate risk?',
-        options: ['Stock market risk', 'Potential loss from currency fluctuations', 'Interest rate change', 'Marketing failure'],
-        correct: 'Potential loss from currency fluctuations',
-        explanation: 'Exchange rate risk is the potential for loss due to changes in currency exchange rates.',
+        id: 'g12_finance_med_2',
+        question: 'What is the difference between assets and liabilities?',
+        options: ['No difference', 'Assets: what you own, Liabilities: what you owe', 'Only accounting terms', 'Only for large businesses'],
+        correct: 'Assets: what you own, Liabilities: what you owe',
+        explanation: 'Assets are resources owned by the business; liabilities are debts or obligations owed by the business.',
         difficulty: 'medium'
       },
       {
-        id: 'g12_intl_med_3',
-        question: 'What is a trade deficit?',
-        options: ['Trade advantage', 'When imports exceed exports', 'When exports exceed imports', 'Balanced trade'],
-        correct: 'When imports exceed exports',
-        explanation: 'A trade deficit occurs when a country imports more than it exports.',
+        id: 'g12_finance_med_3',
+        question: 'What is return on investment (ROI)?',
+        options: ['Investment amount', 'Measure of investment efficiency', 'Type of investment', 'Investment risk'],
+        correct: 'Measure of investment efficiency',
+        explanation: 'ROI measures the efficiency of an investment by comparing gain or loss relative to investment cost.',
         difficulty: 'medium'
       },
 
       // Hard Questions
       {
-        id: 'g12_intl_hard_1',
-        question: 'How does the theory of comparative advantage explain international trade?',
-        options: ['Countries should not trade', 'Countries benefit from trade by specializing in products with lowest opportunity cost', 'Only applies to developed nations', 'Based on military power'],
-        correct: 'Countries benefit from trade by specializing in products with lowest opportunity cost',
-        explanation: 'Comparative advantage theory states countries benefit by specializing in production with lower opportunity cost.',
+        id: 'g12_finance_hard_1',
+        question: 'What is the accounting equation?',
+        options: ['Revenue - Expenses = Profit', 'Assets = Liabilities + Equity', 'Income = Expenses + Savings', 'Sales = Costs + Margin'],
+        correct: 'Assets = Liabilities + Equity',
+        explanation: 'The fundamental accounting equation states that Assets = Liabilities + Owner\'s Equity.',
         difficulty: 'hard'
       },
       {
-        id: 'g12_intl_hard_2',
-        question: 'What is the difference between standardization and adaptation in international marketing?',
-        options: ['No difference', 'Standardization uses same approach; adaptation customizes for local markets', 'Only applies to certain products', 'Based on company size'],
-        correct: 'Standardization uses same approach; adaptation customizes for local markets',
-        explanation: 'Standardization uses the same marketing approach globally; adaptation customizes marketing for local markets.',
+        id: 'g12_finance_hard_2',
+        question: 'What is working capital?',
+        options: ['Total capital', 'Current assets minus current liabilities', 'Fixed assets', 'Long-term debt'],
+        correct: 'Current assets minus current liabilities',
+        explanation: 'Working capital is the difference between current assets and current liabilities, indicating short-term financial health.',
         difficulty: 'hard'
       }
     ]

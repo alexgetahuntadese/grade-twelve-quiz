@@ -10,175 +10,135 @@ export const nationalLanguageChapters: Chapter[] = [
       // Easy Questions
       {
         id: 'lang_basic_1',
+        question: 'What is a sentence?',
+        options: ['Single word', 'Group of words expressing complete thought', 'Paragraph', 'Page of text'],
+        correct: 'Group of words expressing complete thought',
+        explanation: 'A sentence is a group of words that expresses a complete thought or idea.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'lang_basic_2',
         question: 'What is a noun?',
-        options: ['Action word', 'Describing word', 'Person, place, or thing', 'Connecting word'],
+        options: ['Action word', 'Person, place, or thing', 'Describing word', 'Connecting word'],
         correct: 'Person, place, or thing',
         explanation: 'A noun is a word that names a person, place, thing, or idea.',
         difficulty: 'easy'
       },
       {
-        id: 'lang_basic_2',
-        question: 'What is a verb?',
-        options: ['Action or state word', 'Describing word', 'Naming word', 'Connecting word'],
-        correct: 'Action or state word',
-        explanation: 'A verb is a word that describes an action, state, or occurrence.',
-        difficulty: 'easy'
-      },
-      {
         id: 'lang_basic_3',
-        question: 'What is an adjective?',
-        options: ['Action word', 'Word that describes a noun', 'Naming word', 'Connecting word'],
-        correct: 'Word that describes a noun',
-        explanation: 'An adjective is a word that describes or modifies a noun.',
+        question: 'What is a verb?',
+        options: ['Naming word', 'Action or state word', 'Describing word', 'Connecting word'],
+        correct: 'Action or state word',
+        explanation: 'A verb is a word that describes an action, occurrence, or state of being.',
         difficulty: 'easy'
       },
       {
         id: 'lang_basic_4',
-        question: 'What is a sentence?',
-        options: ['Any group of words', 'Group of words expressing a complete thought', 'Single word', 'Paragraph'],
-        correct: 'Group of words expressing a complete thought',
-        explanation: 'A sentence is a group of words that expresses a complete thought, typically with a subject and verb.',
+        question: 'What is communication?',
+        options: ['Speaking only', 'Exchange of information and ideas', 'Writing only', 'Reading only'],
+        correct: 'Exchange of information and ideas',
+        explanation: 'Communication is the process of exchanging information, ideas, thoughts, and feelings.',
         difficulty: 'easy'
       },
       {
         id: 'lang_basic_5',
         question: 'What is vocabulary?',
-        options: ['Grammar rules', 'Word meanings', 'Sentence structure', 'Reading skills'],
-        correct: 'Word meanings',
-        explanation: 'Vocabulary refers to the set of words and their meanings that a person knows.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'lang_basic_6',
-        question: 'What is a pronoun?',
-        options: ['Action word', 'Word used instead of a noun', 'Describing word', 'Connecting word'],
-        correct: 'Word used instead of a noun',
-        explanation: 'A pronoun is a word used in place of a noun, such as he, she, it, they.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'lang_basic_7',
-        question: 'What is communication?',
-        options: ['Speaking only', 'Writing only', 'Exchange of information', 'Reading comprehension'],
-        correct: 'Exchange of information',
-        explanation: 'Communication is the exchange of information between individuals through a common system.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'lang_basic_8',
-        question: 'What is a preposition?',
-        options: ['Type of noun', 'Word showing relationship', 'Past tense verb', 'Type of sentence'],
-        correct: 'Word showing relationship',
-        explanation: 'A preposition shows the relationship between a noun and other words in a sentence.',
+        options: ['Grammar rules', 'Words known and used by person', 'Pronunciation guide', 'Writing style'],
+        correct: 'Words known and used by person',
+        explanation: 'Vocabulary refers to the body of words known and used by a person or in a language.',
         difficulty: 'easy'
       },
 
       // Medium Questions
       {
         id: 'lang_basic_med_1',
-        question: 'What is the difference between active and passive voice?',
-        options: ['No difference', 'Active: subject does action; passive: subject receives action', 'Only tense difference', 'Only formal vs informal'],
-        correct: 'Active: subject does action; passive: subject receives action',
-        explanation: 'In active voice, the subject performs the action; in passive voice, the subject receives the action.',
+        question: 'What is the difference between formal and informal language?',
+        options: ['No difference', 'Formal: official situations, Informal: casual situations', 'Only vocabulary differs', 'Only pronunciation differs'],
+        correct: 'Formal: official situations, Informal: casual situations',
+        explanation: 'Formal language is used in official or professional contexts; informal language in casual, everyday situations.',
         difficulty: 'medium'
       },
       {
         id: 'lang_basic_med_2',
-        question: 'What is a complex sentence?',
-        options: ['Long sentence', 'Sentence with independent and dependent clauses', 'Any difficult sentence', 'Sentence with many words'],
-        correct: 'Sentence with independent and dependent clauses',
-        explanation: 'A complex sentence contains an independent clause and at least one dependent clause.',
+        question: 'What is context in language?',
+        options: ['Dictionary meaning', 'Circumstances that form setting for understanding', 'Grammar rules', 'Spelling patterns'],
+        correct: 'Circumstances that form setting for understanding',
+        explanation: 'Context refers to the circumstances or setting that help determine the meaning of words or statements.',
         difficulty: 'medium'
       },
       {
         id: 'lang_basic_med_3',
-        question: 'What is context in language?',
-        options: ['Text formatting', 'Surrounding information that gives meaning', 'Grammar rules', 'Pronunciation guide'],
-        correct: 'Surrounding information that gives meaning',
-        explanation: 'Context refers to the surrounding information that helps determine the meaning of language.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'lang_basic_med_4',
-        question: 'What is figurative language?',
-        options: ['Plain language', 'Language using figures of speech', 'Technical language', 'Foreign language'],
-        correct: 'Language using figures of speech',
-        explanation: 'Figurative language uses figures of speech to be more effective, persuasive, or creative.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'lang_basic_med_5',
-        question: 'What is a conjunction?',
-        options: ['Type of verb', 'Word that joins clauses or sentences', 'Type of noun', 'Question word'],
-        correct: 'Word that joins clauses or sentences',
-        explanation: 'A conjunction connects words, phrases, clauses, or sentences.',
+        question: 'What is active listening?',
+        options: ['Hearing sounds', 'Fully concentrating and understanding speaker', 'Speaking loudly', 'Taking notes only'],
+        correct: 'Fully concentrating and understanding speaker',
+        explanation: 'Active listening involves fully concentrating, understanding, and responding thoughtfully to the speaker.',
         difficulty: 'medium'
       },
 
       // Hard Questions
       {
         id: 'lang_basic_hard_1',
-        question: 'What is the subjunctive mood?',
-        options: ['Past tense', 'Expression of facts', 'Verb form for hypothetical situations', 'Future tense'],
-        correct: 'Verb form for hypothetical situations',
-        explanation: 'The subjunctive mood expresses hypothetical, wishful, imaginary, or factually contradictory thoughts.',
+        question: 'What is discourse analysis?',
+        options: ['Grammar study', 'Study of language use in context', 'Vocabulary research', 'Pronunciation guide'],
+        correct: 'Study of language use in context',
+        explanation: 'Discourse analysis examines how language is used in real-world contexts and social situations.',
         difficulty: 'hard'
       },
       {
         id: 'lang_basic_hard_2',
-        question: 'What is a syntactic ambiguity?',
-        options: ['Clear meaning', 'Multiple grammatical interpretations', 'Word spelling', 'Pronunciation issue'],
-        correct: 'Multiple grammatical interpretations',
-        explanation: 'Syntactic ambiguity occurs when a sentence can be interpreted in multiple ways due to its structure.',
+        question: 'What is register in language?',
+        options: ['Dictionary entry', 'Level of formality in language use', 'Grammar book', 'Speaking volume'],
+        correct: 'Level of formality in language use',
+        explanation: 'Register refers to the level of formality and style of language appropriate for different situations.',
         difficulty: 'hard'
       }
     ]
   },
-  
+
   {
     id: 'grade11_literature_analysis',
-    name: 'Grade 11: Literature Analysis',
-    description: 'Critical analysis of literary works and authors',
+    name: 'Grade 11: Literature and Cultural Studies',
+    description: 'Literary analysis, cultural texts, and critical thinking',
     questions: [
       // Easy Questions
       {
         id: 'g11_lit_easy_1',
-        question: 'What is a literary genre?',
-        options: ['Book size', 'Category of literary composition', 'Writing instrument', 'Page number'],
-        correct: 'Category of literary composition',
-        explanation: 'A literary genre is a category of literary composition, such as novel, poetry, or drama.',
+        question: 'What is literature?',
+        options: ['Only novels', 'Written works of artistic value', 'Only poetry', 'Only plays'],
+        correct: 'Written works of artistic value',
+        explanation: 'Literature consists of written works that have artistic, cultural, or intellectual value.',
         difficulty: 'easy'
       },
       {
         id: 'g11_lit_easy_2',
-        question: 'What is a character in literature?',
-        options: ['Letter or symbol', 'Person in a story', 'Writing style', 'Book cover'],
-        correct: 'Person in a story',
-        explanation: 'A character is a person or other being in a narrative such as a novel, play, or film.',
+        question: 'What is a theme in literature?',
+        options: ['Title of work', 'Central message or meaning', 'Main character', 'Setting description'],
+        correct: 'Central message or meaning',
+        explanation: 'A theme is the central message, lesson, or meaning that runs through a literary work.',
         difficulty: 'easy'
       },
       {
         id: 'g11_lit_easy_3',
-        question: 'What is a theme in literature?',
-        options: ['Book cover design', 'Central idea of a work', 'Page layout', 'Font style'],
-        correct: 'Central idea of a work',
-        explanation: 'A theme is the central idea, concern, or purpose of a literary work.',
+        question: 'What is characterization?',
+        options: ['Plot summary', 'How author presents characters', 'Setting description', 'Book length'],
+        correct: 'How author presents characters',
+        explanation: 'Characterization is the method by which an author presents and develops characters.',
         difficulty: 'easy'
       },
       {
         id: 'g11_lit_easy_4',
-        question: 'What is a plot?',
-        options: ['Book location', 'Main events of a story', 'Character name', 'Book size'],
-        correct: 'Main events of a story',
-        explanation: 'Plot is the sequence of events that make up a story.',
+        question: 'What is setting in literature?',
+        options: ['Main character', 'Time and place of story', 'Central conflict', 'Author\'s style'],
+        correct: 'Time and place of story',
+        explanation: 'Setting refers to the time and place in which the events of a story occur.',
         difficulty: 'easy'
       },
       {
         id: 'g11_lit_easy_5',
-        question: 'What is a setting in literature?',
-        options: ['Book price', 'Time and place of events', 'Author\'s name', 'Book length'],
-        correct: 'Time and place of events',
-        explanation: 'Setting is the time, place, and circumstances in which a story occurs.',
+        question: 'What is conflict in a story?',
+        options: ['Happy ending', 'Struggle between opposing forces', 'Character description', 'Setting change'],
+        correct: 'Struggle between opposing forces',
+        explanation: 'Conflict is the struggle between opposing forces that drives the plot of a story.',
         difficulty: 'easy'
       },
 
@@ -186,136 +146,136 @@ export const nationalLanguageChapters: Chapter[] = [
       {
         id: 'g11_lit_med_1',
         question: 'What is symbolism in literature?',
-        options: ['Direct statement', 'Use of symbols to represent ideas', 'Character description', 'Sentence structure'],
-        correct: 'Use of symbols to represent ideas',
-        explanation: 'Symbolism is the use of symbols to represent ideas or qualities in literature.',
+        options: ['Direct statement', 'Using objects to represent ideas', 'Character names', 'Plot structure'],
+        correct: 'Using objects to represent ideas',
+        explanation: 'Symbolism uses objects, actions, or characters to represent deeper meanings or ideas.',
         difficulty: 'medium'
       },
       {
         id: 'g11_lit_med_2',
-        question: 'What is foreshadowing?',
-        options: ['Background lighting', 'Hint of future events', 'Character introduction', 'Book conclusion'],
-        correct: 'Hint of future events',
-        explanation: 'Foreshadowing is a literary device where future events are hinted at or indicated in advance.',
+        question: 'What is irony?',
+        options: ['Funny situation', 'Contrast between expectation and reality', 'Rhyming pattern', 'Character trait'],
+        correct: 'Contrast between expectation and reality',
+        explanation: 'Irony involves a contrast between what is expected and what actually occurs.',
         difficulty: 'medium'
       },
       {
         id: 'g11_lit_med_3',
-        question: 'What is a metaphor?',
-        options: ['Direct comparison using like or as', 'Figurative comparison not using like or as', 'Character description', 'Book chapter'],
-        correct: 'Figurative comparison not using like or as',
-        explanation: 'A metaphor is a figure of speech that makes an implied comparison between unrelated things.',
+        question: 'What is point of view in literature?',
+        options: ['Author\'s opinion', 'Perspective from which story is told', 'Character\'s age', 'Book genre'],
+        correct: 'Perspective from which story is told',
+        explanation: 'Point of view refers to the perspective or angle from which a story is narrated.',
         difficulty: 'medium'
       },
 
       // Hard Questions
       {
         id: 'g11_lit_hard_1',
-        question: 'What is an unreliable narrator?',
-        options: ['Storyteller who misses details', 'Narrator whose credibility is compromised', 'Character who lies', 'Author\'s pen name'],
-        correct: 'Narrator whose credibility is compromised',
-        explanation: 'An unreliable narrator is one whose credibility has been compromised, making their perspective questionable.',
+        question: 'What is intertextuality?',
+        options: ['Text length', 'Relationship between texts and references', 'Writing style', 'Character development'],
+        correct: 'Relationship between texts and references',
+        explanation: 'Intertextuality refers to the way texts relate to and reference other texts, creating layers of meaning.',
         difficulty: 'hard'
       },
       {
         id: 'g11_lit_hard_2',
-        question: 'What is intertextuality in literature?',
-        options: ['Text formatting', 'Relationship between texts', 'Text translation', 'Text layout'],
-        correct: 'Relationship between texts',
-        explanation: 'Intertextuality refers to the relationship between texts, where one text references or shapes understanding of another.',
+        question: 'What is postcolonial literature?',
+        options: ['Recent writing only', 'Literature responding to colonial experience', 'Historical fiction', 'Travel writing'],
+        correct: 'Literature responding to colonial experience',
+        explanation: 'Postcolonial literature examines the effects of colonialism and explores cultural identity and resistance.',
         difficulty: 'hard'
       }
     ]
   },
-  
+
   {
     id: 'grade12_advanced_composition',
-    name: 'Grade 12: Advanced Composition',
-    description: 'Advanced writing skills and rhetorical strategies',
+    name: 'Grade 12: Advanced Writing and Communication',
+    description: 'Academic writing, research skills, and presentation techniques',
     questions: [
       // Easy Questions
       {
         id: 'g12_comp_easy_1',
-        question: 'What is an essay?',
-        options: ['Short poem', 'Short piece of writing on a subject', 'Novel chapter', 'Book title'],
-        correct: 'Short piece of writing on a subject',
-        explanation: 'An essay is a short piece of writing on a particular subject, typically expressing the author\'s views.',
+        question: 'What is academic writing?',
+        options: ['Creative writing', 'Formal writing for educational purposes', 'Personal diary', 'Text messaging'],
+        correct: 'Formal writing for educational purposes',
+        explanation: 'Academic writing is formal writing used in educational and scholarly contexts.',
         difficulty: 'easy'
       },
       {
         id: 'g12_comp_easy_2',
         question: 'What is a thesis statement?',
-        options: ['Essay length', 'Main argument of an essay', 'Page number', 'Author\'s name'],
-        correct: 'Main argument of an essay',
-        explanation: 'A thesis statement expresses the main argument or claim of an essay.',
+        options: ['Topic sentence', 'Main argument of paper', 'Conclusion', 'Bibliography'],
+        correct: 'Main argument of paper',
+        explanation: 'A thesis statement presents the main argument or central claim of an academic paper.',
         difficulty: 'easy'
       },
       {
         id: 'g12_comp_easy_3',
-        question: 'What is a paragraph?',
-        options: ['Book chapter', 'Group of related sentences about one idea', 'Page number', 'Writing instrument'],
-        correct: 'Group of related sentences about one idea',
-        explanation: 'A paragraph is a distinct section of writing dealing with a single theme or idea.',
+        question: 'What is research?',
+        options: ['Guessing answers', 'Systematic investigation to find information', 'Reading randomly', 'Personal opinion'],
+        correct: 'Systematic investigation to find information',
+        explanation: 'Research is a systematic investigation designed to discover new information or verify existing knowledge.',
         difficulty: 'easy'
       },
       {
         id: 'g12_comp_easy_4',
-        question: 'What is a draft?',
-        options: ['Final paper', 'Preliminary version of writing', 'Published work', 'Book title'],
-        correct: 'Preliminary version of writing',
-        explanation: 'A draft is a preliminary version of a piece of writing that is not yet final.',
+        question: 'What is citation?',
+        options: ['Writing style', 'Giving credit to sources', 'Page numbering', 'Font choice'],
+        correct: 'Giving credit to sources',
+        explanation: 'Citation is the practice of giving credit to sources used in research and writing.',
         difficulty: 'easy'
       },
       {
         id: 'g12_comp_easy_5',
-        question: 'What is editing?',
-        options: ['Writing quickly', 'Revising and correcting writing', 'Copying text', 'Publishing'],
-        correct: 'Revising and correcting writing',
-        explanation: 'Editing involves reviewing and making changes to text to improve clarity, accuracy, and quality.',
+        question: 'What is a presentation?',
+        options: ['Written report', 'Oral delivery of information', 'Reading silently', 'Taking notes'],
+        correct: 'Oral delivery of information',
+        explanation: 'A presentation is the oral delivery of information to an audience.',
         difficulty: 'easy'
       },
 
       // Medium Questions
       {
         id: 'g12_comp_med_1',
-        question: 'What is rhetoric?',
-        options: ['Fast writing', 'Art of effective communication', 'Text formatting', 'Typing skill'],
-        correct: 'Art of effective communication',
-        explanation: 'Rhetoric is the art of effective or persuasive speaking or writing.',
+        question: 'What is the difference between primary and secondary sources?',
+        options: ['No difference', 'Primary: original, Secondary: analysis of primary', 'Only importance differs', 'Only age differs'],
+        correct: 'Primary: original, Secondary: analysis of primary',
+        explanation: 'Primary sources are original materials; secondary sources analyze or interpret primary sources.',
         difficulty: 'medium'
       },
       {
         id: 'g12_comp_med_2',
-        question: 'What is a counterargument?',
-        options: ['Supporting argument', 'Argument against your position', 'Conclusion', 'Introduction'],
-        correct: 'Argument against your position',
-        explanation: 'A counterargument is an argument opposed to your position but that you address in your writing.',
+        question: 'What is plagiarism?',
+        options: ['Original writing', 'Using others\' work without credit', 'Proper citation', 'Research method'],
+        correct: 'Using others\' work without credit',
+        explanation: 'Plagiarism is using someone else\'s work, ideas, or words without proper attribution.',
         difficulty: 'medium'
       },
       {
         id: 'g12_comp_med_3',
-        question: 'What is the purpose of a conclusion in an essay?',
-        options: ['Introduce topic', 'Summarize and provide closure', 'Present new ideas', 'List references'],
-        correct: 'Summarize and provide closure',
-        explanation: 'A conclusion summarizes the main points and provides closure to the writing.',
+        question: 'What is rhetorical analysis?',
+        options: ['Grammar check', 'Examining how texts persuade', 'Spell checking', 'Word counting'],
+        correct: 'Examining how texts persuade',
+        explanation: 'Rhetorical analysis examines how authors use language and techniques to persuade their audience.',
         difficulty: 'medium'
       },
 
       // Hard Questions
       {
         id: 'g12_comp_hard_1',
-        question: 'What is the difference between inductive and deductive reasoning?',
-        options: ['No difference', 'Inductive: specific to general; deductive: general to specific', 'Only in application', 'Only in length'],
-        correct: 'Inductive: specific to general; deductive: general to specific',
-        explanation: 'Inductive reasoning moves from specific observations to broad generalizations; deductive reasoning moves from general principles to specific conclusions.',
+        question: 'What is the rhetorical triangle?',
+        options: ['Three paragraphs', 'Ethos, pathos, logos', 'Introduction, body, conclusion', 'Past, present, future'],
+        correct: 'Ethos, pathos, logos',
+        explanation: 'The rhetorical triangle consists of ethos (credibility), pathos (emotion), and logos (logic).',
         difficulty: 'hard'
       },
       {
         id: 'g12_comp_hard_2',
-        question: 'What is a syllogism?',
-        options: ['Type of poem', 'Form of deductive reasoning with premises and conclusion', 'Essay format', 'Writing style'],
-        correct: 'Form of deductive reasoning with premises and conclusion',
-        explanation: 'A syllogism is a form of deductive reasoning where a conclusion is drawn from two premises.',
+        question: 'What is discourse community?',
+        options: ['Online forum', 'Group sharing communication practices', 'School club', 'Language class'],
+        correct: 'Group sharing communication practices',
+        explanation: 'A discourse community is a group of people who share common communication practices, values, and goals.',
         difficulty: 'hard'
       }
     ]
