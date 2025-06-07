@@ -228,94 +228,281 @@ export const physicsChapters: Chapter[] = [
     ]
   },
 
+  // Grade 12 New Curriculum Units
   {
-    id: 'grade12_modern_physics',
-    name: 'Grade 12: Modern Physics',
-    description: 'Quantum mechanics, relativity, and atomic physics',
+    id: 'grade12_application_physics',
+    name: 'Grade 12: Application of Physics in Other Fields',
+    description: 'Physics applications in engineering, medicine, technology, and daily life',
     questions: [
       // Easy Questions
       {
-        id: 'g12_modern_easy_1',
-        question: 'What is the photoelectric effect?',
-        options: ['Emission of electrons by light', 'Emission of light by electrons', 'Bending of light', 'Reflection of light'],
-        correct: 'Emission of electrons by light',
-        explanation: 'The photoelectric effect is the emission of electrons when light hits a material.',
+        id: 'g12_app_easy_1',
+        question: 'What is medical physics?',
+        options: ['Physics in hospitals', 'Application of physics principles in medicine', 'Study of doctors', 'Medical equipment'],
+        correct: 'Application of physics principles in medicine',
+        explanation: 'Medical physics applies physics principles and methods to medicine and healthcare.',
         difficulty: 'easy'
       },
       {
-        id: 'g12_modern_easy_2',
-        question: 'Who proposed the theory of relativity?',
-        options: ['Newton', 'Einstein', 'Planck', 'Bohr'],
-        correct: 'Einstein',
-        explanation: 'Albert Einstein proposed both special and general theories of relativity.',
+        id: 'g12_app_easy_2',
+        question: 'Which imaging technique uses X-rays?',
+        options: ['MRI', 'Ultrasound', 'CT scan', 'PET scan'],
+        correct: 'CT scan',
+        explanation: 'CT (Computed Tomography) scans use X-rays to create detailed images.',
         difficulty: 'easy'
       },
       {
-        id: 'g12_modern_easy_3',
-        question: 'What is a photon?',
-        options: ['A particle of light', 'A particle of sound', 'A type of electron', 'A type of proton'],
-        correct: 'A particle of light',
-        explanation: 'A photon is a quantum of electromagnetic radiation or a particle of light.',
+        id: 'g12_app_easy_3',
+        question: 'What principle do solar panels use?',
+        options: ['Thermoelectric effect', 'Photoelectric effect', 'Magnetic induction', 'Nuclear fusion'],
+        correct: 'Photoelectric effect',
+        explanation: 'Solar panels convert light into electricity using the photoelectric effect.',
         difficulty: 'easy'
       },
       {
-        id: 'g12_modern_easy_4',
-        question: 'What is Planck\'s constant approximately?',
-        options: ['6.63 × 10⁻³⁴ J⋅s', '6.63 × 10⁻²⁷ J⋅s', '3 × 10⁸ m/s', '9.8 m/s²'],
-        correct: '6.63 × 10⁻³⁴ J⋅s',
-        explanation: 'Planck\'s constant h ≈ 6.63 × 10⁻³⁴ J⋅s',
+        id: 'g12_app_easy_4',
+        question: 'Which technology uses laser physics?',
+        options: ['Radio waves', 'Fiber optic communication', 'Sound waves', 'Magnetic fields'],
+        correct: 'Fiber optic communication',
+        explanation: 'Fiber optic communication uses laser light to transmit data.',
         difficulty: 'easy'
       },
       {
-        id: 'g12_modern_easy_5',
-        question: 'What does E = mc² represent?',
-        options: ['Mass-energy equivalence', 'Kinetic energy', 'Potential energy', 'Wave energy'],
-        correct: 'Mass-energy equivalence',
-        explanation: 'Einstein\'s equation shows the equivalence between mass and energy.',
+        id: 'g12_app_easy_5',
+        question: 'What is biophysics?',
+        options: ['Study of life', 'Physics of living systems', 'Medical treatment', 'Biology only'],
+        correct: 'Physics of living systems',
+        explanation: 'Biophysics applies physics principles to understand biological systems.',
         difficulty: 'easy'
       },
 
       // Medium Questions
       {
-        id: 'g12_modern_med_1',
-        question: 'What is the energy of a photon with frequency 5 × 10¹⁴ Hz?',
-        options: ['3.3 × 10⁻¹⁹ J', '6.6 × 10⁻¹⁹ J', '1.0 × 10⁻¹⁸ J', '3.3 × 10⁻²⁰ J'],
-        correct: '3.3 × 10⁻¹⁹ J',
-        explanation: 'E = hf = (6.63 × 10⁻³⁴)(5 × 10¹⁴) = 3.3 × 10⁻¹⁹ J',
+        id: 'g12_app_med_1',
+        question: 'How does MRI work?',
+        options: ['X-rays', 'Sound waves', 'Magnetic fields and radio waves', 'Light rays'],
+        correct: 'Magnetic fields and radio waves',
+        explanation: 'MRI uses strong magnetic fields and radio waves to create detailed body images.',
         difficulty: 'medium'
       },
       {
-        id: 'g12_modern_med_2',
-        question: 'What is the de Broglie wavelength formula?',
-        options: ['λ = h/p', 'λ = h/mv', 'λ = hf', 'λ = c/f'],
-        correct: 'λ = h/p',
-        explanation: 'de Broglie wavelength is λ = h/p where p is momentum',
+        id: 'g12_app_med_2',
+        question: 'What is the Doppler effect used for in medicine?',
+        options: ['Blood flow measurement', 'Bone density', 'Temperature', 'Blood pressure'],
+        correct: 'Blood flow measurement',
+        explanation: 'Doppler ultrasound uses the Doppler effect to measure blood flow velocity.',
         difficulty: 'medium'
       },
       {
-        id: 'g12_modern_med_3',
-        question: 'What is wave-particle duality?',
-        options: ['Only wave behavior', 'Only particle behavior', 'Both wave and particle properties', 'Neither wave nor particle'],
-        correct: 'Both wave and particle properties',
-        explanation: 'Wave-particle duality means matter and light exhibit both wave and particle properties.',
+        id: 'g12_app_med_3',
+        question: 'What physics principle explains GPS functionality?',
+        options: ['Quantum mechanics', 'Relativity', 'Classical mechanics only', 'Thermodynamics'],
+        correct: 'Relativity',
+        explanation: 'GPS requires relativistic corrections for accurate positioning.',
         difficulty: 'medium'
       },
 
       // Hard Questions
       {
-        id: 'g12_modern_hard_1',
-        question: 'If an electron moves at 10⁶ m/s, what is its de Broglie wavelength?',
-        options: ['7.3 × 10⁻¹⁰ m', '7.3 × 10⁻¹¹ m', '6.6 × 10⁻¹⁰ m', '6.6 × 10⁻¹¹ m'],
-        correct: '7.3 × 10⁻¹⁰ m',
-        explanation: 'λ = h/(mv) = (6.63×10⁻³⁴)/((9.1×10⁻³¹)(10⁶)) ≈ 7.3×10⁻¹⁰ m',
+        id: 'g12_app_hard_1',
+        question: 'Why do GPS satellites need relativistic corrections?',
+        options: ['Time dilation effects', 'Distance errors', 'Signal interference', 'Weather effects'],
+        correct: 'Time dilation effects',
+        explanation: 'GPS satellites experience time dilation due to their speed and gravitational field differences.',
         difficulty: 'hard'
       },
       {
-        id: 'g12_modern_hard_2',
-        question: 'What is the binding energy if mass defect is 0.03 u?',
-        options: ['27.9 MeV', '28.5 MeV', '30.0 MeV', '31.5 MeV'],
-        correct: '27.9 MeV',
-        explanation: 'BE = Δm × c² = 0.03 × 931.5 MeV/u = 27.9 MeV',
+        id: 'g12_app_hard_2',
+        question: 'What is the half-life concept used for in medical imaging?',
+        options: ['Radiation safety and tracer decay', 'Image quality', 'Patient comfort', 'Cost reduction'],
+        correct: 'Radiation safety and tracer decay',
+        explanation: 'Half-life determines how long radioactive tracers remain active in the body.',
+        difficulty: 'hard'
+      }
+    ]
+  },
+
+  {
+    id: 'grade12_two_dimensional_motion',
+    name: 'Grade 12: Two-Dimensional Motion',
+    description: 'Projectile motion, circular motion, and motion in two dimensions',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_2d_easy_1',
+        question: 'What is projectile motion?',
+        options: ['Motion in a straight line', 'Motion under gravity influence', 'Circular motion', 'Random motion'],
+        correct: 'Motion under gravity influence',
+        explanation: 'Projectile motion is the motion of objects under the influence of gravity alone.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_2d_easy_2',
+        question: 'What are the two components of projectile motion?',
+        options: ['Up and down', 'Left and right', 'Horizontal and vertical', 'Fast and slow'],
+        correct: 'Horizontal and vertical',
+        explanation: 'Projectile motion can be analyzed in horizontal and vertical components.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_2d_easy_3',
+        question: 'What is the horizontal acceleration of a projectile?',
+        options: ['9.8 m/s²', '0 m/s²', 'Variable', 'Negative'],
+        correct: '0 m/s²',
+        explanation: 'Horizontal acceleration is zero (no horizontal forces acting).',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_2d_easy_4',
+        question: 'What is circular motion?',
+        options: ['Motion in a circle', 'Motion in a line', 'Random motion', 'Oscillatory motion'],
+        correct: 'Motion in a circle',
+        explanation: 'Circular motion is movement along a circular path.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_2d_easy_5',
+        question: 'What force keeps objects in circular motion?',
+        options: ['Gravitational force', 'Centripetal force', 'Magnetic force', 'Electric force'],
+        correct: 'Centripetal force',
+        explanation: 'Centripetal force is required to keep objects moving in a circular path.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions
+      {
+        id: 'g12_2d_med_1',
+        question: 'A projectile is launched at 45°. What is special about this angle?',
+        options: ['Minimum range', 'Maximum range', 'Maximum height', 'Minimum time'],
+        correct: 'Maximum range',
+        explanation: 'A 45° launch angle gives maximum range for projectile motion.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_2d_med_2',
+        question: 'What is the centripetal acceleration formula?',
+        options: ['a = v²/r', 'a = vr', 'a = v/r', 'a = r/v'],
+        correct: 'a = v²/r',
+        explanation: 'Centripetal acceleration equals velocity squared divided by radius.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_2d_med_3',
+        question: 'In uniform circular motion, what changes?',
+        options: ['Speed', 'Direction of velocity', 'Both speed and direction', 'Neither'],
+        correct: 'Direction of velocity',
+        explanation: 'In uniform circular motion, speed is constant but direction changes continuously.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions
+      {
+        id: 'g12_2d_hard_1',
+        question: 'A ball is thrown horizontally from 20m height with 15 m/s speed. What is the range?',
+        options: ['30.3 m', '28.5 m', '32.1 m', '25.7 m'],
+        correct: '30.3 m',
+        explanation: 'Time = √(2h/g) = √(40/9.8) ≈ 2.02s, Range = vt = 15 × 2.02 ≈ 30.3m',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_2d_hard_2',
+        question: 'A car turns a 50m radius curve at 20 m/s. What is the centripetal acceleration?',
+        options: ['8 m/s²', '6 m/s²', '10 m/s²', '12 m/s²'],
+        correct: '8 m/s²',
+        explanation: 'a = v²/r = (20)²/50 = 400/50 = 8 m/s²',
+        difficulty: 'hard'
+      }
+    ]
+  },
+
+  {
+    id: 'grade12_fluid_mechanics',
+    name: 'Grade 12: Fluid Mechanics',
+    description: 'Properties of fluids, pressure, buoyancy, and fluid flow',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_fluid_easy_1',
+        question: 'What is a fluid?',
+        options: ['Only liquids', 'Only gases', 'Liquids and gases', 'Only water'],
+        correct: 'Liquids and gases',
+        explanation: 'Fluids include both liquids and gases as they can flow.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_fluid_easy_2',
+        question: 'What is pressure?',
+        options: ['Force per unit area', 'Force times area', 'Area per force', 'Force plus area'],
+        correct: 'Force per unit area',
+        explanation: 'Pressure is defined as force per unit area: P = F/A.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_fluid_easy_3',
+        question: 'What is the SI unit of pressure?',
+        options: ['Newton', 'Pascal', 'Joule', 'Watt'],
+        correct: 'Pascal',
+        explanation: 'The SI unit of pressure is Pascal (Pa), which equals N/m².',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_fluid_easy_4',
+        question: 'What is buoyancy?',
+        options: ['Sinking force', 'Upward force on submerged objects', 'Sideways force', 'Rotational force'],
+        correct: 'Upward force on submerged objects',
+        explanation: 'Buoyancy is the upward force exerted by fluids on submerged objects.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_fluid_easy_5',
+        question: 'Who discovered the principle of buoyancy?',
+        options: ['Newton', 'Archimedes', 'Pascal', 'Bernoulli'],
+        correct: 'Archimedes',
+        explanation: 'Archimedes discovered the principle of buoyancy, known as Archimedes\' principle.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions
+      {
+        id: 'g12_fluid_med_1',
+        question: 'What is Archimedes\' principle?',
+        options: ['Buoyant force equals weight of displaced fluid', 'Pressure increases with depth', 'Fluids flow faster in narrow tubes', 'All of the above'],
+        correct: 'Buoyant force equals weight of displaced fluid',
+        explanation: 'Archimedes\' principle states that buoyant force equals the weight of displaced fluid.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_fluid_med_2',
+        question: 'What is Pascal\'s law?',
+        options: ['Pressure transmitted equally in all directions', 'Pressure varies with height', 'Pressure depends on velocity', 'Pressure is constant'],
+        correct: 'Pressure transmitted equally in all directions',
+        explanation: 'Pascal\'s law states that pressure applied to confined fluid is transmitted equally in all directions.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_fluid_med_3',
+        question: 'What is Bernoulli\'s principle?',
+        options: ['Pressure decreases as velocity increases', 'Pressure increases with depth', 'Pressure is constant in moving fluids', 'Pressure equals density'],
+        correct: 'Pressure decreases as velocity increases',
+        explanation: 'Bernoulli\'s principle states that as fluid velocity increases, pressure decreases.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions
+      {
+        id: 'g12_fluid_hard_1',
+        question: 'A 2 kg object displaces 0.5 L of water. What is the buoyant force?',
+        options: ['4.9 N', '9.8 N', '19.6 N', '2.45 N'],
+        correct: '4.9 N',
+        explanation: 'Buoyant force = ρ_water × V_displaced × g = 1000 × 0.0005 × 9.8 = 4.9 N',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_fluid_hard_2',
+        question: 'What is the pressure at 10m depth in water?',
+        options: ['98 kPa', '198 kPa', '98 Pa', '1960 Pa'],
+        correct: '198 kPa',
+        explanation: 'P = P_atm + ρgh = 101.3 + (1000)(9.8)(10) = 101.3 + 98 = 199.3 ≈ 198 kPa',
         difficulty: 'hard'
       }
     ]
@@ -323,8 +510,8 @@ export const physicsChapters: Chapter[] = [
 
   {
     id: 'grade12_electromagnetism',
-    name: 'Grade 12: Electromagnetism and Circuits',
-    description: 'Electric and magnetic fields, electromagnetic induction, and advanced circuits',
+    name: 'Grade 12: Electromagnetism',
+    description: 'Electric and magnetic fields, electromagnetic induction, and Maxwell\'s equations',
     questions: [
       // Easy Questions
       {
@@ -387,10 +574,10 @@ export const physicsChapters: Chapter[] = [
       },
       {
         id: 'g12_em_med_3',
-        question: 'In a series circuit, what is constant?',
-        options: ['Voltage', 'Current', 'Resistance', 'Power'],
-        correct: 'Current',
-        explanation: 'In a series circuit, current is the same through all components.',
+        question: 'What is Maxwell\'s contribution to electromagnetism?',
+        options: ['Discovered electricity', 'Unified electricity and magnetism', 'Invented the motor', 'Found Ohm\'s law'],
+        correct: 'Unified electricity and magnetism',
+        explanation: 'Maxwell unified electricity and magnetism into electromagnetic theory.',
         difficulty: 'medium'
       },
 
@@ -409,6 +596,99 @@ export const physicsChapters: Chapter[] = [
         options: ['Same as applied field', 'Opposes the change causing it', 'Random direction', 'Always clockwise'],
         correct: 'Opposes the change causing it',
         explanation: 'Lenz\'s law states that induced current flows in a direction to oppose the change that produced it.',
+        difficulty: 'hard'
+      }
+    ]
+  },
+
+  {
+    id: 'grade12_basics_electronics',
+    name: 'Grade 12: Basics of Electronics',
+    description: 'Electronic components, circuits, semiconductors, and digital electronics',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_elec_easy_1',
+        question: 'What is electronics?',
+        options: ['Study of electricity only', 'Control of electric current flow', 'Building generators', 'Magnetic fields'],
+        correct: 'Control of electric current flow',
+        explanation: 'Electronics deals with the control and flow of electric current through devices.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_elec_easy_2',
+        question: 'What is a semiconductor?',
+        options: ['Perfect conductor', 'Perfect insulator', 'Material between conductor and insulator', 'Magnetic material'],
+        correct: 'Material between conductor and insulator',
+        explanation: 'Semiconductors have electrical conductivity between conductors and insulators.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_elec_easy_3',
+        question: 'What is a diode?',
+        options: ['Two terminal device allowing current in one direction', 'Three terminal device', 'Resistor', 'Capacitor'],
+        correct: 'Two terminal device allowing current in one direction',
+        explanation: 'A diode allows current to flow in only one direction.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_elec_easy_4',
+        question: 'What is a transistor?',
+        options: ['Two terminal device', 'Three terminal amplifying device', 'One terminal device', 'Four terminal device'],
+        correct: 'Three terminal amplifying device',
+        explanation: 'A transistor is a three-terminal device used for amplification and switching.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_elec_easy_5',
+        question: 'What are the two main types of semiconductors?',
+        options: ['P-type and N-type', 'Positive and negative', 'Big and small', 'Hot and cold'],
+        correct: 'P-type and N-type',
+        explanation: 'Semiconductors are doped to create P-type (positive) and N-type (negative) materials.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions
+      {
+        id: 'g12_elec_med_1',
+        question: 'What is the function of a capacitor?',
+        options: ['Stores electric charge', 'Amplifies signals', 'Converts AC to DC', 'Creates magnetic fields'],
+        correct: 'Stores electric charge',
+        explanation: 'Capacitors store electric charge and energy in an electric field.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_elec_med_2',
+        question: 'What is digital electronics?',
+        options: ['Analog signals only', 'Discrete signal levels (0 and 1)', 'Continuous signals', 'AC circuits only'],
+        correct: 'Discrete signal levels (0 and 1)',
+        explanation: 'Digital electronics uses discrete signal levels, typically 0 and 1 (binary).',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_elec_med_3',
+        question: 'What is the purpose of doping in semiconductors?',
+        options: ['Change color', 'Alter electrical properties', 'Increase size', 'Reduce weight'],
+        correct: 'Alter electrical properties',
+        explanation: 'Doping adds impurities to pure semiconductors to change their electrical properties.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions
+      {
+        id: 'g12_elec_hard_1',
+        question: 'In a P-N junction, what creates the depletion zone?',
+        options: ['External voltage', 'Diffusion of charge carriers', 'Temperature', 'Light'],
+        correct: 'Diffusion of charge carriers',
+        explanation: 'The depletion zone forms due to diffusion of electrons and holes across the P-N junction.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_elec_hard_2',
+        question: 'What is the main advantage of digital over analog systems?',
+        options: ['Lower cost', 'Noise immunity and precise processing', 'Smaller size', 'Faster speed'],
+        correct: 'Noise immunity and precise processing',
+        explanation: 'Digital systems have better noise immunity and can process signals with high precision.',
         difficulty: 'hard'
       }
     ]
