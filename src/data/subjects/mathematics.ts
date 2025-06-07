@@ -1,3 +1,4 @@
+
 import { Chapter } from '../types';
 
 export const mathematicsChapters: Chapter[] = [
@@ -71,8 +72,6 @@ export const mathematicsChapters: Chapter[] = [
         explanation: 'Subtract 2 from both sides: 3a = 6. Divide by 3: a = 2',
         difficulty: 'easy'
       },
-
-      // Medium Questions
       {
         id: 'alg_med_1',
         question: 'Solve for x: 2x + 3 = 5x - 6',
@@ -113,8 +112,6 @@ export const mathematicsChapters: Chapter[] = [
         explanation: 'Square both sides: a = 5² = 25',
         difficulty: 'medium'
       },
-
-      // Hard Questions
       {
         id: 'alg_hard_1',
         question: 'Solve for x: |2x - 1| = 5',
@@ -204,8 +201,6 @@ export const mathematicsChapters: Chapter[] = [
         explanation: 'The cosine of 0 degrees is 1.',
         difficulty: 'easy'
       },
-
-      // Medium Questions
       {
         id: 'g11_func_med_1',
         question: 'If f(x) = x² + 1, what is f(2)?',
@@ -246,8 +241,6 @@ export const mathematicsChapters: Chapter[] = [
         explanation: 'Let y = 2x, then x = y/2. So f⁻¹(x) = x/2',
         difficulty: 'medium'
       },
-
-      // Hard Questions
       {
         id: 'g11_func_hard_1',
         question: 'What is the domain of f(x) = √(x - 2)?',
@@ -291,10 +284,144 @@ export const mathematicsChapters: Chapter[] = [
     ]
   },
 
+  // Grade 12 Units according to New Curriculum
+  {
+    id: 'grade12_sequences_series',
+    name: 'Grade 12 Unit 1: Sequences and Series',
+    description: 'Arithmetic and geometric sequences, series, mathematical induction',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_seq_easy_1',
+        question: 'What is an arithmetic sequence?',
+        options: ['Sequence with constant ratio', 'Sequence with constant difference', 'Random sequence', 'Geometric pattern'],
+        correct: 'Sequence with constant difference',
+        explanation: 'An arithmetic sequence has a constant difference between consecutive terms.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_seq_easy_2',
+        question: 'In the sequence 2, 5, 8, 11, ..., what is the common difference?',
+        options: ['2', '3', '5', '8'],
+        correct: '3',
+        explanation: 'The common difference is 5 - 2 = 3.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_seq_easy_3',
+        question: 'What is the general term of an arithmetic sequence?',
+        options: ['an = a₁ + (n-1)d', 'an = a₁ × r^(n-1)', 'an = n²', 'an = 2n'],
+        correct: 'an = a₁ + (n-1)d',
+        explanation: 'The nth term of an arithmetic sequence is an = a₁ + (n-1)d.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_seq_easy_4',
+        question: 'What is a geometric sequence?',
+        options: ['Sequence with constant difference', 'Sequence with constant ratio', 'Linear sequence', 'Quadratic sequence'],
+        correct: 'Sequence with constant ratio',
+        explanation: 'A geometric sequence has a constant ratio between consecutive terms.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_seq_easy_5',
+        question: 'In the sequence 2, 6, 18, 54, ..., what is the common ratio?',
+        options: ['2', '3', '4', '6'],
+        correct: '3',
+        explanation: 'The common ratio is 6/2 = 3.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions
+      {
+        id: 'g12_seq_med_1',
+        question: 'Find the 10th term of the arithmetic sequence: 3, 7, 11, 15, ...',
+        options: ['35', '37', '39', '41'],
+        correct: '39',
+        explanation: 'a₁ = 3, d = 4. a₁₀ = 3 + (10-1)×4 = 3 + 36 = 39.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_seq_med_2',
+        question: 'Find the sum of the first 5 terms of: 2, 4, 6, 8, ...',
+        options: ['20', '25', '30', '35'],
+        correct: '30',
+        explanation: 'S₅ = 5/2 × (2×2 + (5-1)×2) = 5/2 × 12 = 30.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_seq_med_3',
+        question: 'Find the 6th term of the geometric sequence: 2, 6, 18, ...',
+        options: ['162', '486', '1458', '4374'],
+        correct: '486',
+        explanation: 'a₁ = 2, r = 3. a₆ = 2 × 3⁵ = 2 × 243 = 486.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_seq_med_4',
+        question: 'What is the sum formula for an arithmetic series?',
+        options: ['Sn = n/2[2a + (n-1)d]', 'Sn = a(1-rⁿ)/(1-r)', 'Sn = n²', 'Sn = nd'],
+        correct: 'Sn = n/2[2a + (n-1)d]',
+        explanation: 'This is the formula for the sum of n terms of an arithmetic series.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_seq_med_5',
+        question: 'What is the sum formula for a geometric series?',
+        options: ['Sn = n/2[2a + (n-1)d]', 'Sn = a(1-rⁿ)/(1-r)', 'Sn = n²', 'Sn = ar'],
+        correct: 'Sn = a(1-rⁿ)/(1-r)',
+        explanation: 'This is the formula for the sum of n terms of a geometric series where r ≠ 1.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions
+      {
+        id: 'g12_seq_hard_1',
+        question: 'What is mathematical induction?',
+        options: ['Guessing method', 'Proof technique for natural numbers', 'Statistical method', 'Algebraic operation'],
+        correct: 'Proof technique for natural numbers',
+        explanation: 'Mathematical induction is a proof technique used to prove statements about natural numbers.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_seq_hard_2',
+        question: 'Find the sum to infinity of 1 + 1/2 + 1/4 + 1/8 + ...',
+        options: ['1', '2', '3', 'Diverges'],
+        correct: '2',
+        explanation: 'This is a geometric series with a = 1, r = 1/2. S∞ = 1/(1-1/2) = 2.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_seq_hard_3',
+        question: 'For what values of r does a geometric series converge?',
+        options: ['r > 1', 'r < 1', '|r| < 1', '|r| > 1'],
+        correct: '|r| < 1',
+        explanation: 'A geometric series converges when the absolute value of the common ratio is less than 1.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_seq_hard_4',
+        question: 'Prove by induction: 1 + 2 + 3 + ... + n = n(n+1)/2. What is the base case?',
+        options: ['n = 0', 'n = 1', 'n = 2', 'n = -1'],
+        correct: 'n = 1',
+        explanation: 'The base case is typically n = 1, where LHS = 1 and RHS = 1(2)/2 = 1.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_seq_hard_5',
+        question: 'What is the sum of the first n odd numbers?',
+        options: ['n', 'n²', '2n-1', 'n(n+1)/2'],
+        correct: 'n²',
+        explanation: 'The sum of the first n odd numbers is n². This can be proven by induction.',
+        difficulty: 'hard'
+      }
+    ]
+  },
+
   {
     id: 'grade12_calculus_intro',
-    name: 'Grade 12: Introduction to Calculus',
-    description: 'Limits, derivatives, and basic integration',
+    name: 'Grade 12 Unit 2: Introduction to Calculus',
+    description: 'Limits, derivatives, basic integration, and applications',
     questions: [
       // Easy Questions
       {
@@ -363,6 +490,22 @@ export const mathematicsChapters: Chapter[] = [
         explanation: 'The antiderivative of 2x is x² + C.',
         difficulty: 'medium'
       },
+      {
+        id: 'g12_calc_med_4',
+        question: 'What is the power rule for derivatives?',
+        options: ['d/dx(xⁿ) = nxⁿ', 'd/dx(xⁿ) = nxⁿ⁻¹', 'd/dx(xⁿ) = xⁿ⁻¹', 'd/dx(xⁿ) = nx'],
+        correct: 'd/dx(xⁿ) = nxⁿ⁻¹',
+        explanation: 'The power rule states that the derivative of xⁿ is nxⁿ⁻¹.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_calc_med_5',
+        question: 'Find the derivative of f(x) = x³ - 2x + 5',
+        options: ['3x² - 2', '3x² - 2x + 5', 'x² - 2', '3x - 2'],
+        correct: '3x² - 2',
+        explanation: 'Using power rule and constant rule: f\'(x) = 3x² - 2 + 0 = 3x² - 2.',
+        difficulty: 'medium'
+      },
 
       // Hard Questions
       {
@@ -380,14 +523,38 @@ export const mathematicsChapters: Chapter[] = [
         correct: '1/3',
         explanation: '∫x² dx = x³/3. Evaluating from 0 to 1: (1³/3) - (0³/3) = 1/3.',
         difficulty: 'hard'
+      },
+      {
+        id: 'g12_calc_hard_3',
+        question: 'What is the chain rule?',
+        options: ['d/dx[f(g(x))] = f\'(x)g\'(x)', 'd/dx[f(g(x))] = f\'(g(x))g\'(x)', 'd/dx[f(g(x))] = f(g\'(x))', 'd/dx[f(g(x))] = f\'(x) + g\'(x)'],
+        correct: 'd/dx[f(g(x))] = f\'(g(x))g\'(x)',
+        explanation: 'The chain rule for composite functions.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_calc_hard_4',
+        question: 'Find the critical points of f(x) = x³ - 3x² + 2',
+        options: ['x = 0, 2', 'x = 1, 2', 'x = 0, 1', 'x = 2, 3'],
+        correct: 'x = 0, 2',
+        explanation: 'f\'(x) = 3x² - 6x = 3x(x - 2) = 0, so x = 0 or x = 2.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_calc_hard_5',
+        question: 'What does the Fundamental Theorem of Calculus state?',
+        options: ['Integration and differentiation are inverses', 'All functions are continuous', 'Derivatives always exist', 'Integrals are always positive'],
+        correct: 'Integration and differentiation are inverses',
+        explanation: 'The Fundamental Theorem connects differentiation and integration as inverse operations.',
+        difficulty: 'hard'
       }
     ]
   },
 
   {
     id: 'grade12_statistics',
-    name: 'Grade 12: Statistics and Probability',
-    description: 'Advanced statistics, probability distributions, and data analysis',
+    name: 'Grade 12 Unit 3: Statistics',
+    description: 'Descriptive statistics, probability distributions, and data analysis',
     questions: [
       // Easy Questions
       {
@@ -456,6 +623,22 @@ export const mathematicsChapters: Chapter[] = [
         explanation: 'Correlation measures the strength and direction of a linear relationship between two variables.',
         difficulty: 'medium'
       },
+      {
+        id: 'g12_stats_med_4',
+        question: 'What is the median?',
+        options: ['Average value', 'Middle value when ordered', 'Most frequent value', 'Highest value'],
+        correct: 'Middle value when ordered',
+        explanation: 'The median is the middle value when data is arranged in ascending order.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_stats_med_5',
+        question: 'What is the mode?',
+        options: ['Average value', 'Middle value', 'Most frequent value', 'Range of values'],
+        correct: 'Most frequent value',
+        explanation: 'The mode is the value that appears most frequently in a dataset.',
+        difficulty: 'medium'
+      },
 
       // Hard Questions
       {
@@ -473,273 +656,295 @@ export const mathematicsChapters: Chapter[] = [
         correct: 'Rejecting true hypothesis',
         explanation: 'A Type I error occurs when we reject a true null hypothesis.',
         difficulty: 'hard'
-      }
-    ]
-  },
-
-  {
-    id: 'grade12_advanced_algebra',
-    name: 'Grade 12: Advanced Algebra and Sequences',
-    description: 'Complex algebraic operations, sequences, series, and mathematical induction',
-    questions: [
-      // Easy Questions
-      {
-        id: 'g12_adv_alg_easy_1',
-        question: 'What is an arithmetic sequence?',
-        options: ['Sequence with constant ratio', 'Sequence with constant difference', 'Random sequence', 'Geometric pattern'],
-        correct: 'Sequence with constant difference',
-        explanation: 'An arithmetic sequence has a constant difference between consecutive terms.',
-        difficulty: 'easy'
       },
       {
-        id: 'g12_adv_alg_easy_2',
-        question: 'In the sequence 2, 5, 8, 11, ..., what is the common difference?',
-        options: ['2', '3', '5', '8'],
-        correct: '3',
-        explanation: 'The common difference is 5 - 2 = 3.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_adv_alg_easy_3',
-        question: 'What is the general term of an arithmetic sequence?',
-        options: ['an = a₁ + (n-1)d', 'an = a₁ × r^(n-1)', 'an = n²', 'an = 2n'],
-        correct: 'an = a₁ + (n-1)d',
-        explanation: 'The nth term of an arithmetic sequence is an = a₁ + (n-1)d.',
-        difficulty: 'easy'
-      },
-
-      // Medium Questions
-      {
-        id: 'g12_adv_alg_med_1',
-        question: 'Find the 10th term of the arithmetic sequence: 3, 7, 11, 15, ...',
-        options: ['35', '37', '39', '41'],
-        correct: '39',
-        explanation: 'a₁ = 3, d = 4. a₁₀ = 3 + (10-1)×4 = 3 + 36 = 39.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g12_adv_alg_med_2',
-        question: 'What is a geometric sequence?',
-        options: ['Sequence with constant difference', 'Sequence with constant ratio', 'Linear sequence', 'Quadratic sequence'],
-        correct: 'Sequence with constant ratio',
-        explanation: 'A geometric sequence has a constant ratio between consecutive terms.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g12_adv_alg_med_3',
-        question: 'Find the sum of the first 5 terms of: 2, 4, 6, 8, ...',
-        options: ['20', '25', '30', '35'],
-        correct: '30',
-        explanation: 'S₅ = 5/2 × (2×2 + (5-1)×2) = 5/2 × 12 = 30.',
-        difficulty: 'medium'
-      },
-
-      // Hard Questions
-      {
-        id: 'g12_adv_alg_hard_1',
-        question: 'What is mathematical induction?',
-        options: ['Guessing method', 'Proof technique for natural numbers', 'Statistical method', 'Algebraic operation'],
-        correct: 'Proof technique for natural numbers',
-        explanation: 'Mathematical induction is a proof technique used to prove statements about natural numbers.',
+        id: 'g12_stats_hard_3',
+        question: 'What is the formula for variance?',
+        options: ['σ² = Σ(x - μ)²/n', 'σ = Σ(x - μ)/n', 'σ² = Σx²/n', 'σ² = (Σx)²/n'],
+        correct: 'σ² = Σ(x - μ)²/n',
+        explanation: 'Variance is the average of squared deviations from the mean.',
         difficulty: 'hard'
       },
       {
-        id: 'g12_adv_alg_hard_2',
-        question: 'Find the sum to infinity of 1 + 1/2 + 1/4 + 1/8 + ...',
-        options: ['1', '2', '3', 'Diverges'],
-        correct: '2',
-        explanation: 'This is a geometric series with a = 1, r = 1/2. S∞ = 1/(1-1/2) = 2.',
+        id: 'g12_stats_hard_4',
+        question: 'What is a confidence interval?',
+        options: ['Range of sample values', 'Range likely to contain population parameter', 'Sample size', 'Test statistic'],
+        correct: 'Range likely to contain population parameter',
+        explanation: 'A confidence interval is a range of values likely to contain the true population parameter.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_stats_hard_5',
+        question: 'What is the null hypothesis?',
+        options: ['Alternative claim', 'Status quo assumption', 'Research hypothesis', 'Final conclusion'],
+        correct: 'Status quo assumption',
+        explanation: 'The null hypothesis represents the status quo or no effect assumption in hypothesis testing.',
         difficulty: 'hard'
       }
     ]
   },
 
   {
-    id: 'grade12_analytical_geometry',
-    name: 'Grade 12: Analytical Geometry',
-    description: 'Coordinate geometry, conic sections, and transformations',
+    id: 'grade12_linear_programming',
+    name: 'Grade 12 Unit 4: Introduction to Linear Programming',
+    description: 'Linear inequalities, feasible regions, optimization problems',
     questions: [
       // Easy Questions
       {
-        id: 'g12_geom_easy_1',
-        question: 'What is the distance formula between two points?',
-        options: ['d = √[(x₂-x₁)² + (y₂-y₁)²]', 'd = (x₂-x₁) + (y₂-y₁)', 'd = x₂ + y₂', 'd = √(x₂ + y₂)'],
-        correct: 'd = √[(x₂-x₁)² + (y₂-y₁)²]',
-        explanation: 'The distance formula is derived from the Pythagorean theorem.',
+        id: 'g12_lp_easy_1',
+        question: 'What is linear programming?',
+        options: ['Programming computers', 'Optimization with linear constraints', 'Drawing lines', 'Solving equations'],
+        correct: 'Optimization with linear constraints',
+        explanation: 'Linear programming is a method for optimizing a linear objective function subject to linear constraints.',
         difficulty: 'easy'
       },
       {
-        id: 'g12_geom_easy_2',
-        question: 'What is the slope of a vertical line?',
-        options: ['0', '1', '-1', 'Undefined'],
-        correct: 'Undefined',
-        explanation: 'A vertical line has undefined slope because the denominator in the slope formula is zero.',
+        id: 'g12_lp_easy_2',
+        question: 'What is an objective function?',
+        options: ['A constraint', 'Function to be optimized', 'Variable definition', 'Graph line'],
+        correct: 'Function to be optimized',
+        explanation: 'The objective function is what we want to maximize or minimize in linear programming.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_lp_easy_3',
+        question: 'What is a constraint in linear programming?',
+        options: ['Objective function', 'Limitation or restriction', 'Variable', 'Solution'],
+        correct: 'Limitation or restriction',
+        explanation: 'Constraints are limitations or restrictions that must be satisfied in the optimization problem.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_lp_easy_4',
+        question: 'What is a feasible region?',
+        options: ['Area of invalid solutions', 'Region where all constraints are satisfied', 'Objective function graph', 'Variable space'],
+        correct: 'Region where all constraints are satisfied',
+        explanation: 'The feasible region contains all points that satisfy all constraints.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_lp_easy_5',
+        question: 'Where does the optimal solution typically occur?',
+        options: ['Center of feasible region', 'Corner points of feasible region', 'Outside feasible region', 'On constraint lines only'],
+        correct: 'Corner points of feasible region',
+        explanation: 'In linear programming, the optimal solution occurs at corner points (vertices) of the feasible region.',
         difficulty: 'easy'
       },
 
       // Medium Questions
       {
-        id: 'g12_geom_med_1',
-        question: 'Find the equation of a line passing through (2,3) with slope 2',
-        options: ['y = 2x - 1', 'y = 2x + 3', 'y = 2x + 1', 'y = x + 2'],
-        correct: 'y = 2x - 1',
-        explanation: 'Using point-slope form: y - 3 = 2(x - 2), which gives y = 2x - 1.',
+        id: 'g12_lp_med_1',
+        question: 'Graph the inequality x + y ≤ 4. Which side of the line x + y = 4 is shaded?',
+        options: ['Above the line', 'Below the line', 'On the line only', 'Both sides'],
+        correct: 'Below the line',
+        explanation: 'For x + y ≤ 4, we shade below and including the line x + y = 4.',
         difficulty: 'medium'
       },
       {
-        id: 'g12_geom_med_2',
-        question: 'What is the standard form of a circle equation?',
-        options: ['(x-h)² + (y-k)² = r²', 'x² + y² = r', 'x + y = r²', '(x+h)² + (y+k)² = r'],
-        correct: '(x-h)² + (y-k)² = r²',
-        explanation: 'The standard form of a circle with center (h,k) and radius r.',
+        id: 'g12_lp_med_2',
+        question: 'What method is used to solve linear programming graphically?',
+        options: ['Substitution method', 'Corner point method', 'Elimination method', 'Factoring method'],
+        correct: 'Corner point method',
+        explanation: 'The corner point method evaluates the objective function at each vertex of the feasible region.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_lp_med_3',
+        question: 'If we want to maximize z = 3x + 2y, and we have corner points (0,0), (0,5), (4,0), (2,3), which gives the maximum?',
+        options: ['(0,0)', '(0,5)', '(4,0)', '(2,3)'],
+        correct: '(4,0)',
+        explanation: 'Evaluating: (0,0)→0, (0,5)→10, (4,0)→12, (2,3)→12. Both (4,0) and (2,3) give maximum value 12.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_lp_med_4',
+        question: 'What are the standard form constraints for linear programming?',
+        options: ['All ≥', 'All ≤', 'All =', 'Variables ≥ 0 and constraints ≤'],
+        correct: 'Variables ≥ 0 and constraints ≤',
+        explanation: 'Standard form requires non-negative variables and constraints in ≤ form.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_lp_med_5',
+        question: 'What happens if the feasible region is unbounded?',
+        options: ['No solution exists', 'Infinite solutions exist', 'Solution may be unbounded', 'Always bounded solution'],
+        correct: 'Solution may be unbounded',
+        explanation: 'With an unbounded feasible region, the optimal value might be infinite (unbounded).',
         difficulty: 'medium'
       },
 
       // Hard Questions
       {
-        id: 'g12_geom_hard_1',
-        question: 'What type of conic section is represented by x²/4 + y²/9 = 1?',
-        options: ['Circle', 'Ellipse', 'Parabola', 'Hyperbola'],
-        correct: 'Ellipse',
-        explanation: 'This is the standard form of an ellipse with semi-major axis 3 and semi-minor axis 2.',
+        id: 'g12_lp_hard_1',
+        question: 'What is the simplex method?',
+        options: ['Graphical method', 'Algebraic method for solving LP problems', 'Guess and check', 'Trial and error'],
+        correct: 'Algebraic method for solving LP problems',
+        explanation: 'The simplex method is an algebraic procedure for solving linear programming problems with many variables.',
         difficulty: 'hard'
       },
       {
-        id: 'g12_geom_hard_2',
-        question: 'Find the focus of the parabola y² = 4px where p = 2',
-        options: ['(0,2)', '(2,0)', '(1,0)', '(0,1)'],
-        correct: '(2,0)',
-        explanation: 'For a parabola y² = 4px, the focus is at (p,0). With p = 2, focus is at (2,0).',
+        id: 'g12_lp_hard_2',
+        question: 'What is degeneracy in linear programming?',
+        options: ['No feasible solution', 'Multiple optimal solutions', 'Basic variable equals zero', 'Unbounded solution'],
+        correct: 'Basic variable equals zero',
+        explanation: 'Degeneracy occurs when a basic variable in the simplex method equals zero.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_lp_hard_3',
+        question: 'What is duality in linear programming?',
+        options: ['Two-variable problems', 'Every LP has an associated dual problem', 'Double checking solutions', 'Binary variables'],
+        correct: 'Every LP has an associated dual problem',
+        explanation: 'Every linear programming problem has an associated dual problem with specific relationships.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_lp_hard_4',
+        question: 'What is sensitivity analysis?',
+        options: ['Finding errors', 'Studying how changes in parameters affect the solution', 'Emotional analysis', 'Variable sensitivity'],
+        correct: 'Studying how changes in parameters affect the solution',
+        explanation: 'Sensitivity analysis examines how changes in coefficients affect the optimal solution.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_lp_hard_5',
+        question: 'What conditions must be met for a linear programming problem to have a solution?',
+        options: ['Feasible and bounded', 'At least two variables', 'Non-negative objective', 'Integer variables'],
+        correct: 'Feasible and bounded',
+        explanation: 'A LP problem needs a feasible region that exists and is bounded to guarantee an optimal solution.',
         difficulty: 'hard'
       }
     ]
   },
 
   {
-    id: 'grade12_exponential_logarithmic',
-    name: 'Grade 12: Exponential and Logarithmic Functions',
-    description: 'Properties of exponential and logarithmic functions, solving equations',
+    id: 'grade12_mathematical_applications_business',
+    name: 'Grade 12 Unit 5: Mathematical Applications in Business',
+    description: 'Business mathematics, financial calculations, and economic applications',
     questions: [
       // Easy Questions
       {
-        id: 'g12_exp_easy_1',
-        question: 'What is log₁₀(100)?',
-        options: ['1', '2', '10', '100'],
-        correct: '2',
-        explanation: 'log₁₀(100) = 2 because 10² = 100.',
+        id: 'g12_biz_easy_1',
+        question: 'What is simple interest?',
+        options: ['Interest on principal only', 'Interest on interest', 'Complex calculation', 'Banking fee'],
+        correct: 'Interest on principal only',
+        explanation: 'Simple interest is calculated only on the original principal amount.',
         difficulty: 'easy'
       },
       {
-        id: 'g12_exp_easy_2',
-        question: 'What is e^(ln(5))?',
-        options: ['1', '5', 'e', 'ln(5)'],
-        correct: '5',
-        explanation: 'The exponential and natural logarithm are inverse functions.',
+        id: 'g12_biz_easy_2',
+        question: 'What is the formula for simple interest?',
+        options: ['I = Prt', 'I = P(1+r)^t', 'I = P + rt', 'I = Pr/t'],
+        correct: 'I = Prt',
+        explanation: 'Simple interest formula: I = Principal × rate × time.',
         difficulty: 'easy'
       },
       {
-        id: 'g12_exp_easy_3',
-        question: 'What is the value of e (approximately)?',
-        options: ['2.718', '3.142', '1.414', '2.236'],
-        correct: '2.718',
-        explanation: 'e ≈ 2.718 is the base of natural logarithms.',
+        id: 'g12_biz_easy_3',
+        question: 'What is compound interest?',
+        options: ['Interest on principal only', 'Interest on principal and accumulated interest', 'Banking service', 'Loan penalty'],
+        correct: 'Interest on principal and accumulated interest',
+        explanation: 'Compound interest is calculated on both principal and previously earned interest.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_biz_easy_4',
+        question: 'What is profit?',
+        options: ['Total revenue', 'Revenue minus costs', 'Total costs', 'Revenue plus costs'],
+        correct: 'Revenue minus costs',
+        explanation: 'Profit is the difference between total revenue and total costs.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_biz_easy_5',
+        question: 'What is percentage?',
+        options: ['Parts per thousand', 'Parts per hundred', 'Parts per ten', 'Parts per million'],
+        correct: 'Parts per hundred',
+        explanation: 'Percentage means parts per hundred (per cent).',
         difficulty: 'easy'
       },
 
       // Medium Questions
       {
-        id: 'g12_exp_med_1',
-        question: 'Solve for x: 2^x = 16',
-        options: ['x = 2', 'x = 3', 'x = 4', 'x = 8'],
-        correct: 'x = 4',
-        explanation: '2^4 = 16, so x = 4.',
+        id: 'g12_biz_med_1',
+        question: 'Calculate simple interest: P = $1000, r = 5%, t = 3 years',
+        options: ['$150', '$200', '$250', '$300'],
+        correct: '$150',
+        explanation: 'I = 1000 × 0.05 × 3 = $150.',
         difficulty: 'medium'
       },
       {
-        id: 'g12_exp_med_2',
-        question: 'What is log₂(8) + log₂(4)?',
-        options: ['3', '4', '5', '6'],
-        correct: '5',
-        explanation: 'log₂(8) = 3, log₂(4) = 2. Using log properties: log₂(8×4) = log₂(32) = 5.',
-        difficulty: 'medium'
-      },
-
-      // Hard Questions
-      {
-        id: 'g12_exp_hard_1',
-        question: 'Solve for x: e^(2x) = 7',
-        options: ['x = ln(7)/2', 'x = 2ln(7)', 'x = ln(14)', 'x = 7/2'],
-        correct: 'x = ln(7)/2',
-        explanation: 'Taking ln of both sides: 2x = ln(7), so x = ln(7)/2.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g12_exp_hard_2',
-        question: 'What is the domain of f(x) = ln(x - 3)?',
-        options: ['x > 0', 'x > 3', 'x ≥ 3', 'All real numbers'],
-        correct: 'x > 3',
-        explanation: 'The argument of ln must be positive: x - 3 > 0, so x > 3.',
-        difficulty: 'hard'
-      }
-    ]
-  },
-
-  {
-    id: 'grade12_matrix_algebra',
-    name: 'Grade 12: Matrix Algebra',
-    description: 'Matrix operations, determinants, and systems of equations',
-    questions: [
-      // Easy Questions
-      {
-        id: 'g12_matrix_easy_1',
-        question: 'What is a matrix?',
-        options: ['A number', 'A rectangular array of numbers', 'A function', 'A graph'],
-        correct: 'A rectangular array of numbers',
-        explanation: 'A matrix is a rectangular arrangement of numbers in rows and columns.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_matrix_easy_2',
-        question: 'What is the size of a 3×2 matrix?',
-        options: ['6 elements', '5 elements', '3 rows, 2 columns', '2 rows, 3 columns'],
-        correct: '3 rows, 2 columns',
-        explanation: 'A 3×2 matrix has 3 rows and 2 columns.',
-        difficulty: 'easy'
-      },
-
-      // Medium Questions
-      {
-        id: 'g12_matrix_med_1',
-        question: 'When can two matrices be multiplied?',
-        options: ['Always', 'When they have same dimensions', 'When columns of first = rows of second', 'Never'],
-        correct: 'When columns of first = rows of second',
-        explanation: 'Matrix multiplication requires the number of columns in the first matrix to equal the number of rows in the second.',
+        id: 'g12_biz_med_2',
+        question: 'What is the compound interest formula?',
+        options: ['A = P(1 + r)^t', 'A = P + rt', 'A = Prt', 'A = P/rt'],
+        correct: 'A = P(1 + r)^t',
+        explanation: 'Compound amount formula: A = P(1 + r)^t.',
         difficulty: 'medium'
       },
       {
-        id: 'g12_matrix_med_2',
-        question: 'What is the identity matrix?',
-        options: ['Matrix of all zeros', 'Matrix of all ones', 'Square matrix with 1s on diagonal, 0s elsewhere', 'Any square matrix'],
-        correct: 'Square matrix with 1s on diagonal, 0s elsewhere',
-        explanation: 'The identity matrix has 1s on the main diagonal and 0s elsewhere.',
+        id: 'g12_biz_med_3',
+        question: 'If cost price is $80 and selling price is $100, what is the profit percentage?',
+        options: ['20%', '25%', '30%', '35%'],
+        correct: '25%',
+        explanation: 'Profit = 100 - 80 = $20. Profit% = (20/80) × 100% = 25%.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_biz_med_4',
+        question: 'What is depreciation?',
+        options: ['Increase in value', 'Decrease in value over time', 'Interest earned', 'Tax payment'],
+        correct: 'Decrease in value over time',
+        explanation: 'Depreciation is the decrease in value of an asset over time.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_biz_med_5',
+        question: 'Calculate compound amount: P = $1000, r = 10%, t = 2 years',
+        options: ['$1200', '$1210', '$1220', '$1100'],
+        correct: '$1210',
+        explanation: 'A = 1000(1 + 0.10)² = 1000 × 1.21 = $1210.',
         difficulty: 'medium'
       },
 
       // Hard Questions
       {
-        id: 'g12_matrix_hard_1',
-        question: 'What is the determinant of a 2×2 matrix [[a,b],[c,d]]?',
-        options: ['a+d-b-c', 'ad-bc', 'ac-bd', 'a+b+c+d'],
-        correct: 'ad-bc',
-        explanation: 'The determinant of a 2×2 matrix is ad - bc.',
+        id: 'g12_biz_hard_1',
+        question: 'What is present value?',
+        options: ['Future amount', 'Current worth of future amount', 'Interest rate', 'Time period'],
+        correct: 'Current worth of future amount',
+        explanation: 'Present value is the current worth of a future amount of money.',
         difficulty: 'hard'
       },
       {
-        id: 'g12_matrix_hard_2',
-        question: 'When does a matrix have an inverse?',
-        options: ['Always', 'When it is square', 'When determinant ≠ 0', 'When it is symmetric'],
-        correct: 'When determinant ≠ 0',
-        explanation: 'A square matrix has an inverse if and only if its determinant is non-zero.',
+        id: 'g12_biz_hard_2',
+        question: 'What is an annuity?',
+        options: ['Single payment', 'Series of equal payments', 'Interest calculation', 'Loan amount'],
+        correct: 'Series of equal payments',
+        explanation: 'An annuity is a series of equal payments made at regular intervals.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_biz_hard_3',
+        question: 'What is NPV (Net Present Value)?',
+        options: ['Total future value', 'Present value of cash flows minus initial investment', 'Interest rate', 'Annual payment'],
+        correct: 'Present value of cash flows minus initial investment',
+        explanation: 'NPV is the present value of future cash flows minus the initial investment.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_biz_hard_4',
+        question: 'What is break-even analysis?',
+        options: ['Profit calculation', 'Point where revenue equals costs', 'Loss calculation', 'Interest analysis'],
+        correct: 'Point where revenue equals costs',
+        explanation: 'Break-even analysis finds the point where total revenue equals total costs.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_biz_hard_5',
+        question: 'What is the effective interest rate?',
+        options: ['Nominal rate', 'Actual rate considering compounding', 'Simple interest rate', 'Discount rate'],
+        correct: 'Actual rate considering compounding',
+        explanation: 'Effective interest rate is the actual rate earned or paid considering the effect of compounding.',
         difficulty: 'hard'
       }
     ]
