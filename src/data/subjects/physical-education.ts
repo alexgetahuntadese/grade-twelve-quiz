@@ -1,4 +1,3 @@
-
 import { Chapter } from '../types';
 
 export const physicalEducationChapters: Chapter[] = [
@@ -316,6 +315,99 @@ export const physicalEducationChapters: Chapter[] = [
         options: ['No relationship', 'Poor sleep impairs cognitive function', 'Only affects children', 'Only affects elderly'],
         correct: 'Poor sleep impairs cognitive function',
         explanation: 'Poor sleep quality negatively impacts various cognitive functions including memory, attention, and decision-making.',
+        difficulty: 'hard'
+      }
+    ]
+  },
+  
+  {
+    id: 'grade12_exercise_science',
+    name: 'Grade 12: Exercise Science and Sports Psychology',
+    description: 'Advanced fitness concepts, biomechanics, and mental aspects of performance',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_exercise_easy_1',
+        question: 'What is exercise physiology?',
+        options: ['Psychology of exercise', 'Study of body responses to exercise', 'Exercise equipment study', 'Sports rules study'],
+        correct: 'Study of body responses to exercise',
+        explanation: 'Exercise physiology studies how the body responds and adapts to physical activity.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_exercise_easy_2',
+        question: 'What is biomechanics?',
+        options: ['Equipment mechanics', 'Study of movement and forces in body', 'Exercise psychology', 'Nutrition science'],
+        correct: 'Study of movement and forces in body',
+        explanation: 'Biomechanics studies the mechanical aspects of human movement.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_exercise_easy_3',
+        question: 'What is sports psychology?',
+        options: ['General psychology', 'Mental aspects of athletic performance', 'Physical training only', 'Equipment psychology'],
+        correct: 'Mental aspects of athletic performance',
+        explanation: 'Sports psychology focuses on the mental and emotional aspects of athletic performance.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_exercise_easy_4',
+        question: 'What is muscle hypertrophy?',
+        options: ['Muscle shrinkage', 'Muscle growth', 'Muscle injury', 'Muscle flexibility'],
+        correct: 'Muscle growth',
+        explanation: 'Hypertrophy is the increase in muscle size through exercise and training.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_exercise_easy_5',
+        question: 'What is visualization in sports?',
+        options: ['Watching games', 'Mental rehearsal of performance', 'Video analysis', 'Equipment inspection'],
+        correct: 'Mental rehearsal of performance',
+        explanation: 'Visualization is mentally rehearsing skills and performances to improve actual performance.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions
+      {
+        id: 'g12_exercise_med_1',
+        question: 'What is the difference between fast-twitch and slow-twitch muscle fibers?',
+        options: ['No difference', 'Fast-twitch: power/speed, Slow-twitch: endurance', 'Only size differs', 'Only location differs'],
+        correct: 'Fast-twitch: power/speed, Slow-twitch: endurance',
+        explanation: 'Fast-twitch fibers are for power and speed; slow-twitch fibers are for endurance activities.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_exercise_med_2',
+        question: 'What is periodization in training?',
+        options: ['Daily workouts', 'Systematic planning of training cycles', 'Random exercise', 'Equipment rotation'],
+        correct: 'Systematic planning of training cycles',
+        explanation: 'Periodization is the systematic planning of athletic training to peak at specific times.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_exercise_med_3',
+        question: 'What is the lactate threshold?',
+        options: ['Maximum heart rate', 'Point where lactate accumulates faster than removal', 'Muscle fatigue point', 'Breathing rate limit'],
+        correct: 'Point where lactate accumulates faster than removal',
+        explanation: 'Lactate threshold is when lactate production exceeds the body\'s ability to clear it.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions
+      {
+        id: 'g12_exercise_hard_1',
+        question: 'What is the stretch-shortening cycle?',
+        options: ['Flexibility routine', 'Eccentric-concentric muscle action for power', 'Warm-up protocol', 'Recovery method'],
+        correct: 'Eccentric-concentric muscle action for power',
+        explanation: 'The stretch-shortening cycle uses eccentric loading followed by concentric contraction for explosive power.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_exercise_hard_2',
+        question: 'What is flow state in sports psychology?',
+        options: ['Blood flow', 'Optimal performance state with complete focus', 'Movement pattern', 'Training progression'],
+        correct: 'Optimal performance state with complete focus',
+        explanation: 'Flow state is the optimal psychological state where athletes perform with complete focus and confidence.',
         difficulty: 'hard'
       }
     ]

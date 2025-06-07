@@ -292,6 +292,14 @@ export const physicsChapters: Chapter[] = [
         explanation: 'de Broglie wavelength is λ = h/p where p is momentum',
         difficulty: 'medium'
       },
+      {
+        id: 'g12_modern_med_3',
+        question: 'What is wave-particle duality?',
+        options: ['Only wave behavior', 'Only particle behavior', 'Both wave and particle properties', 'Neither wave nor particle'],
+        correct: 'Both wave and particle properties',
+        explanation: 'Wave-particle duality means matter and light exhibit both wave and particle properties.',
+        difficulty: 'medium'
+      },
 
       // Hard Questions
       {
@@ -308,6 +316,99 @@ export const physicsChapters: Chapter[] = [
         options: ['27.9 MeV', '28.5 MeV', '30.0 MeV', '31.5 MeV'],
         correct: '27.9 MeV',
         explanation: 'BE = Δm × c² = 0.03 × 931.5 MeV/u = 27.9 MeV',
+        difficulty: 'hard'
+      }
+    ]
+  },
+
+  {
+    id: 'grade12_electromagnetism',
+    name: 'Grade 12: Electromagnetism and Circuits',
+    description: 'Electric and magnetic fields, electromagnetic induction, and advanced circuits',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_em_easy_1',
+        question: 'What is electric current?',
+        options: ['Stationary charges', 'Flow of electric charge', 'Electric potential', 'Magnetic field'],
+        correct: 'Flow of electric charge',
+        explanation: 'Electric current is the flow of electric charge through a conductor.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_em_easy_2',
+        question: 'What is the unit of electric current?',
+        options: ['Volt', 'Ampere', 'Ohm', 'Watt'],
+        correct: 'Ampere',
+        explanation: 'The SI unit of electric current is the Ampere (A).',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_em_easy_3',
+        question: 'What is Ohm\'s law?',
+        options: ['V = I/R', 'V = IR', 'V = I + R', 'V = I - R'],
+        correct: 'V = IR',
+        explanation: 'Ohm\'s law states that voltage equals current times resistance: V = IR.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_em_easy_4',
+        question: 'What creates a magnetic field?',
+        options: ['Stationary charges', 'Moving charges', 'Neutral particles', 'Photons'],
+        correct: 'Moving charges',
+        explanation: 'Moving electric charges (current) create magnetic fields.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_em_easy_5',
+        question: 'What is electromagnetic induction?',
+        options: ['Static electricity', 'Generating voltage from changing magnetic field', 'Constant current', 'Fixed magnetic field'],
+        correct: 'Generating voltage from changing magnetic field',
+        explanation: 'Electromagnetic induction generates voltage when magnetic field through a conductor changes.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions
+      {
+        id: 'g12_em_med_1',
+        question: 'What is the power dissipated in a 10Ω resistor with 2A current?',
+        options: ['20W', '40W', '5W', '10W'],
+        correct: '40W',
+        explanation: 'P = I²R = (2)²(10) = 40W',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_em_med_2',
+        question: 'What is Faraday\'s law?',
+        options: ['F = ma', 'Induced EMF = -rate of change of magnetic flux', 'V = IR', 'E = mc²'],
+        correct: 'Induced EMF = -rate of change of magnetic flux',
+        explanation: 'Faraday\'s law states that induced EMF equals the negative rate of change of magnetic flux.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_em_med_3',
+        question: 'In a series circuit, what is constant?',
+        options: ['Voltage', 'Current', 'Resistance', 'Power'],
+        correct: 'Current',
+        explanation: 'In a series circuit, current is the same through all components.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions
+      {
+        id: 'g12_em_hard_1',
+        question: 'What is the equivalent resistance of 6Ω and 3Ω resistors in parallel?',
+        options: ['9Ω', '2Ω', '4.5Ω', '1.5Ω'],
+        correct: '2Ω',
+        explanation: '1/R_eq = 1/6 + 1/3 = 1/6 + 2/6 = 3/6 = 1/2, so R_eq = 2Ω',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_em_hard_2',
+        question: 'What is the direction of induced current according to Lenz\'s law?',
+        options: ['Same as applied field', 'Opposes the change causing it', 'Random direction', 'Always clockwise'],
+        correct: 'Opposes the change causing it',
+        explanation: 'Lenz\'s law states that induced current flows in a direction to oppose the change that produced it.',
         difficulty: 'hard'
       }
     ]

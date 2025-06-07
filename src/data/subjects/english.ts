@@ -2,458 +2,373 @@ import { Chapter } from '../types';
 
 export const englishChapters: Chapter[] = [
   {
-    id: 'grammar',
-    name: 'Grammar',
-    description: 'Parts of speech, sentence structure, and grammar rules',
+    id: 'grammar_basics',
+    name: 'Grammar Basics',
+    description: 'Fundamental English grammar rules and usage',
     questions: [
+      // Easy Questions
       {
-        id: 'gram_1',
-        question: 'What is a noun?',
-        options: ['An action word', 'A describing word', 'A person, place, or thing', 'A connecting word'],
-        correct: 'A person, place, or thing',
-        explanation: 'A noun is a word that names a person, place, thing, or idea.',
+        id: 'grammar_1',
+        question: 'Which of these is a noun?',
+        options: ['Run', 'Cat', 'Quickly', 'And'],
+        correct: 'Cat',
+        explanation: 'A noun is a word that represents a person, place, thing, or idea.',
         difficulty: 'easy'
       },
       {
-        id: 'gram_2',
-        question: 'Which word is a verb in this sentence: "The dog runs quickly"?',
-        options: ['dog', 'runs', 'quickly', 'the'],
-        correct: 'runs',
-        explanation: 'A verb expresses action or state of being. "Runs" shows action.',
+        id: 'grammar_2',
+        question: 'Which of these is a verb?',
+        options: ['House', 'Jump', 'Blue', 'The'],
+        correct: 'Jump',
+        explanation: 'A verb is a word that represents an action or state of being.',
         difficulty: 'easy'
       },
       {
-        id: 'gram_3',
-        question: 'What is an adjective?',
-        options: ['A word that describes a noun', 'A word that shows action', 'A word that connects ideas', 'A word that replaces a noun'],
-        correct: 'A word that describes a noun',
-        explanation: 'An adjective modifies or describes a noun or pronoun.',
+        id: 'grammar_3',
+        question: 'Which of these is an adjective?',
+        options: ['Slowly', 'Car', 'Happy', 'But'],
+        correct: 'Happy',
+        explanation: 'An adjective is a word that describes a noun.',
         difficulty: 'easy'
       },
       {
-        id: 'gram_4',
+        id: 'grammar_4',
         question: 'Which sentence is grammatically correct?',
-        options: ['She don\'t like apples', 'She doesn\'t like apples', 'She not like apples', 'She no like apples'],
-        correct: 'She doesn\'t like apples',
-        explanation: 'In third person singular, we use "doesn\'t" not "don\'t".',
+        options: ['I is going to the store.', 'Me going to the store.', 'I am going to the store.', 'Going to the store I am.'],
+        correct: 'I am going to the store.',
+        explanation: 'The correct sentence follows subject-verb agreement and proper word order.',
         difficulty: 'easy'
       },
       {
-        id: 'gram_5',
+        id: 'grammar_5',
         question: 'What is the plural of "child"?',
-        options: ['childs', 'childes', 'children', 'childern'],
-        correct: 'children',
-        explanation: 'Child has an irregular plural form: children.',
+        options: ['Childs', 'Childes', 'Children', 'Childre'],
+        correct: 'Children',
+        explanation: 'The plural of "child" is an irregular form, which is "children."',
         difficulty: 'easy'
       },
+
+      // Medium Questions
       {
-        id: 'gram_6',
-        question: 'Which is a proper noun?',
-        options: ['city', 'dog', 'London', 'book'],
-        correct: 'London',
-        explanation: 'Proper nouns name specific people, places, or things and are capitalized.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'gram_7',
-        question: 'What type of word is "quickly" in "She runs quickly"?',
-        options: ['Noun', 'Verb', 'Adjective', 'Adverb'],
-        correct: 'Adverb',
-        explanation: 'Adverbs modify verbs, adjectives, or other adverbs. "Quickly" modifies "runs".',
-        difficulty: 'easy'
-      },
-      {
-        id: 'gram_8',
-        question: 'Which sentence uses the correct past tense?',
-        options: ['I goed to the store', 'I went to the store', 'I go to the store', 'I going to the store'],
-        correct: 'I went to the store',
-        explanation: 'The past tense of "go" is "went", not "goed".',
+        id: 'grammar_med_1',
+        question: 'Identify the preposition in the sentence: "The book is on the table."',
+        options: ['The', 'Book', 'Is', 'On'],
+        correct: 'On',
+        explanation: 'A preposition shows the relationship between a noun or pronoun and other words in the sentence.',
         difficulty: 'medium'
       },
       {
-        id: 'gram_9',
-        question: 'What is the subject in this sentence: "The tall building downtown collapsed"?',
-        options: ['tall', 'building', 'downtown', 'collapsed'],
-        correct: 'building',
-        explanation: 'The subject is what the sentence is about. "Building" is the main noun performing the action.',
+        id: 'grammar_med_2',
+        question: 'Which sentence uses the correct form of "there," "their," or "they\'re"?',
+        options: ['There going to the park.', 'Their going to the park.', 'They\'re going to the park.', 'Theyre going to the park.'],
+        correct: 'They\'re going to the park.',
+        explanation: '"They\'re" is a contraction of "they are."',
         difficulty: 'medium'
       },
       {
-        id: 'gram_10',
-        question: 'Which sentence shows correct subject-verb agreement?',
-        options: ['The students is ready', 'The student are ready', 'The students are ready', 'The student were ready'],
-        correct: 'The students are ready',
-        explanation: 'Plural subjects require plural verbs. "Students" (plural) takes "are".',
+        id: 'grammar_med_3',
+        question: 'Which sentence uses the correct tense?',
+        options: ['I will went to the store.', 'I goed to the store.', 'I gone to the store.', 'I went to the store.'],
+        correct: 'I went to the store.',
+        explanation: '"Went" is the past tense form of "go."',
         difficulty: 'medium'
       },
+
+      // Hard Questions
       {
-        id: 'gram_11',
-        question: 'What is a compound sentence?',
-        options: ['A sentence with one subject', 'A sentence with two independent clauses', 'A sentence with one verb', 'A sentence with adjectives'],
-        correct: 'A sentence with two independent clauses',
-        explanation: 'A compound sentence contains two or more independent clauses joined by a conjunction.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'gram_12',
-        question: 'Which word is a preposition?',
-        options: ['run', 'beautiful', 'under', 'happy'],
-        correct: 'under',
-        explanation: 'Prepositions show relationships between nouns/pronouns and other words.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'gram_13',
-        question: 'What is the correct possessive form of "James"?',
-        options: ['James\'', 'James\'s', 'Jame\'s', 'James\'es'],
-        correct: 'James\'s',
-        explanation: 'For singular nouns ending in s, add \'s to form the possessive.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'gram_14',
-        question: 'Which sentence contains a dangling modifier?',
-        options: ['Running quickly, John caught the bus', 'Running quickly, the bus was caught by John', 'John, running quickly, caught the bus', 'John caught the bus while running quickly'],
-        correct: 'Running quickly, the bus was caught by John',
-        explanation: 'A dangling modifier occurs when the modifying phrase doesn\'t clearly relate to the subject.',
+        id: 'grammar_hard_1',
+        question: 'Identify the type of clause: "Because it was raining, we stayed inside."',
+        options: ['Independent clause', 'Dependent clause', 'Noun clause', 'Adjective clause'],
+        correct: 'Dependent clause',
+        explanation: 'A dependent clause cannot stand alone as a sentence and begins with a subordinating conjunction.',
         difficulty: 'hard'
       },
       {
-        id: 'gram_15',
-        question: 'What is the mood of this sentence: "If I were rich, I would travel"?',
-        options: ['Indicative', 'Imperative', 'Subjunctive', 'Interrogative'],
-        correct: 'Subjunctive',
-        explanation: 'The subjunctive mood expresses hypothetical or contrary-to-fact situations.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'gram_16',
-        question: 'Which sentence uses correct parallel structure?',
-        options: ['I like swimming, running, and to bike', 'I like swimming, running, and biking', 'I like to swim, running, and biking', 'I like swim, run, and bike'],
-        correct: 'I like swimming, running, and biking',
-        explanation: 'Parallel structure requires similar grammatical forms in a series.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'gram_17',
-        question: 'What type of clause is "that she forgot" in "The fact that she forgot surprised me"?',
-        options: ['Independent clause', 'Adjective clause', 'Adverb clause', 'Noun clause'],
-        correct: 'Noun clause',
-        explanation: 'The clause functions as a noun, serving as an appositive to "fact".',
-        difficulty: 'hard'
-      },
-      {
-        id: 'gram_18',
-        question: 'Which sentence correctly uses the semicolon?',
-        options: ['I went to the store; and bought milk', 'I went to the store; I bought milk', 'I went; to the store and bought milk', 'I went to the store and; bought milk'],
-        correct: 'I went to the store; I bought milk',
-        explanation: 'Semicolons connect two independent clauses that are closely related.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'gram_19',
-        question: 'What is the function of "whom" in "The person whom I met was kind"?',
-        options: ['Subject', 'Direct object', 'Indirect object', 'Predicate nominative'],
-        correct: 'Direct object',
-        explanation: '"Whom" is the object of the verb "met" in the relative clause.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'gram_20',
-        question: 'Which sentence demonstrates correct use of the conditional perfect?',
-        options: ['If I would have known, I would come', 'If I had known, I would have come', 'If I would know, I would have come', 'If I have known, I would come'],
-        correct: 'If I had known, I would have come',
-        explanation: 'Conditional perfect uses "had + past participle" in the if-clause and "would have + past participle" in the main clause.',
+        id: 'grammar_hard_2',
+        question: 'Which sentence uses the subjunctive mood correctly?',
+        options: ['If I was you, I would go.', 'If I were you, I would go.', 'If I am you, I will go.', 'If I be you, I shall go.'],
+        correct: 'If I were you, I would go.',
+        explanation: 'The subjunctive mood is used to express hypothetical or unreal conditions.',
         difficulty: 'hard'
       }
     ]
   },
+
   {
-    id: 'grade11_literature',
-    name: 'Grade 11: Advanced Literature',
-    description: 'Literary analysis, themes, and critical thinking',
+    id: 'grade11_poetry_analysis',
+    name: 'Grade 11: Poetry and Literary Devices',
+    description: 'Understanding poetic forms, devices, and interpretation',
     questions: [
+      // Easy Questions
       {
-        id: 'g11_lit_easy_1',
-        question: 'What is a theme in literature?',
-        options: ['The setting', 'The main message or idea', 'The characters', 'The plot'],
-        correct: 'The main message or idea',
-        explanation: 'A theme is the central message or underlying meaning in a literary work.',
+        id: 'poetry_1',
+        question: 'What is a stanza in poetry?',
+        options: ['A line', 'A group of lines', 'The title', 'The author'],
+        correct: 'A group of lines',
+        explanation: 'A stanza is a group of lines forming a unit in a poem, similar to a paragraph in prose.',
         difficulty: 'easy'
       },
       {
-        id: 'g11_lit_easy_2',
-        question: 'What is symbolism?',
-        options: ['Direct description', 'Using objects to represent ideas', 'Character dialogue', 'Plot summary'],
-        correct: 'Using objects to represent ideas',
-        explanation: 'Symbolism uses objects, colors, or actions to represent deeper meanings.',
+        id: 'poetry_2',
+        question: 'What is rhyme?',
+        options: ['Repetition of sounds', 'Similarity of word endings', 'Length of a line', 'Type of poem'],
+        correct: 'Similarity of word endings',
+        explanation: 'Rhyme is the similarity of sounds between words, especially at the end of lines in poetry.',
         difficulty: 'easy'
       },
       {
-        id: 'g11_lit_easy_3',
-        question: 'What is irony?',
-        options: ['Saying exactly what you mean', 'The opposite of what is expected', 'A type of poem', 'Character development'],
-        correct: 'The opposite of what is expected',
-        explanation: 'Irony occurs when the actual outcome differs from what is expected.',
+        id: 'poetry_3',
+        question: 'What is a metaphor?',
+        options: ['Direct comparison', 'Implied comparison', 'Exaggeration', 'Understatement'],
+        correct: 'Implied comparison',
+        explanation: 'A metaphor is an implied comparison between two unlike things without using "like" or "as."',
         difficulty: 'easy'
       },
       {
-        id: 'g11_lit_easy_4',
-        question: 'What is foreshadowing?',
-        options: ['Looking back at events', 'Hints about future events', 'Character descriptions', 'Setting details'],
-        correct: 'Hints about future events',
-        explanation: 'Foreshadowing gives clues about what will happen later in the story.',
+        id: 'poetry_4',
+        question: 'What is a simile?',
+        options: ['Direct comparison using like or as', 'Indirect comparison', 'Repetition of words', 'Sound device'],
+        correct: 'Direct comparison using like or as',
+        explanation: 'A simile is a direct comparison between two unlike things using "like" or "as."',
         difficulty: 'easy'
       },
       {
-        id: 'g11_lit_easy_5',
+        id: 'poetry_5',
         question: 'What is alliteration?',
-        options: ['Repetition of vowel sounds', 'Repetition of consonant sounds', 'Rhyming words', 'Similar meanings'],
+        options: ['Repetition of vowel sounds', 'Repetition of consonant sounds', 'Rhyme scheme', 'Poem structure'],
         correct: 'Repetition of consonant sounds',
-        explanation: 'Alliteration is the repetition of initial consonant sounds in successive words.',
+        explanation: 'Alliteration is the repetition of consonant sounds at the beginning of words in a line.',
         difficulty: 'easy'
       },
+
+      // Medium Questions
       {
-        id: 'g11_lit_med_1',
-        question: 'What is dramatic irony?',
-        options: ['When characters know more than readers', 'When readers know more than characters', 'When nothing happens', 'When everything is predictable'],
-        correct: 'When readers know more than characters',
-        explanation: 'Dramatic irony occurs when the audience knows something characters don\'t.',
+        id: 'poetry_med_1',
+        question: 'What is personification?',
+        options: ['Giving human traits to animals', 'Giving human traits to inanimate objects', 'Describing a person', 'Comparing people'],
+        correct: 'Giving human traits to inanimate objects',
+        explanation: 'Personification is giving human qualities to non-human things.',
         difficulty: 'medium'
       },
       {
-        id: 'g11_lit_med_2',
-        question: 'What is a dynamic character?',
-        options: ['A character who changes', 'A character who stays the same', 'A minor character', 'A narrator'],
-        correct: 'A character who changes',
-        explanation: 'Dynamic characters undergo significant change throughout the story.',
+        id: 'poetry_med_2',
+        question: 'What is imagery?',
+        options: ['Visual description', 'Language appealing to senses', 'Rhyme pattern', 'Poem theme'],
+        correct: 'Language appealing to senses',
+        explanation: 'Imagery is language that appeals to the five senses to create a vivid picture.',
         difficulty: 'medium'
       },
       {
-        id: 'g11_lit_med_3',
-        question: 'What is the climax of a story?',
-        options: ['The beginning', 'The turning point', 'The ending', 'The setting'],
-        correct: 'The turning point',
-        explanation: 'The climax is the turning point or moment of highest tension in a story.',
+        id: 'poetry_med_3',
+        question: 'What is the difference between a sonnet and a haiku?',
+        options: ['No difference', 'Sonnet: 14 lines, Haiku: 3 lines', 'Only rhyme differs', 'Only topic differs'],
+        correct: 'Sonnet: 14 lines, Haiku: 3 lines',
+        explanation: 'A sonnet has 14 lines with a specific rhyme scheme; a haiku has 3 lines with a 5-7-5 syllable structure.',
         difficulty: 'medium'
       },
+
+      // Hard Questions
       {
-        id: 'g11_lit_hard_1',
-        question: 'What is an unreliable narrator?',
-        options: ['A narrator who tells the truth', 'A narrator whose credibility is compromised', 'A third-person narrator', 'An omniscient narrator'],
-        correct: 'A narrator whose credibility is compromised',
-        explanation: 'An unreliable narrator\'s account cannot be fully trusted due to bias or limitations.',
+        id: 'poetry_hard_1',
+        question: 'What is enjambment?',
+        options: ['End of a line', 'Continuation of sentence without pause beyond line', 'Rhyme scheme type', 'Stanza length'],
+        correct: 'Continuation of sentence without pause beyond line',
+        explanation: 'Enjambment is the continuation of a sentence or phrase from one line of poetry to the next without a pause.',
         difficulty: 'hard'
       },
       {
-        id: 'g11_lit_hard_2',
-        question: 'What is stream of consciousness?',
-        options: ['Logical thought patterns', 'Unfiltered flow of thoughts', 'Dialogue between characters', 'Narrative structure'],
-        correct: 'Unfiltered flow of thoughts',
-        explanation: 'Stream of consciousness presents a character\'s unfiltered thoughts and feelings.',
+        id: 'poetry_hard_2',
+        question: 'What is the difference between denotation and connotation?',
+        options: ['No difference', 'Denotation: literal meaning, Connotation: implied meaning', 'Only sound differs', 'Only length differs'],
+        correct: 'Denotation: literal meaning, Connotation: implied meaning',
+        explanation: 'Denotation is the literal or dictionary meaning; connotation is the emotional or cultural association.',
         difficulty: 'hard'
       }
     ]
   },
+
   {
-    id: 'grade12_composition',
-    name: 'Grade 12: Advanced Composition',
-    description: 'Advanced writing techniques, research, and critical analysis',
+    id: 'grade12_advanced_writing',
+    name: 'Grade 12: Advanced Writing and Rhetoric',
+    description: 'Argumentative writing, research skills, and rhetorical analysis',
     questions: [
+      // Easy Questions
       {
-        id: 'g12_comp_easy_1',
+        id: 'g12_writing_easy_1',
         question: 'What is a thesis statement?',
-        options: ['A question', 'The main argument', 'A summary', 'An introduction'],
-        correct: 'The main argument',
+        options: ['Topic sentence', 'Main argument of essay', 'Conclusion', 'Supporting detail'],
+        correct: 'Main argument of essay',
         explanation: 'A thesis statement presents the main argument or claim of an essay.',
         difficulty: 'easy'
       },
       {
-        id: 'g12_comp_easy_2',
-        question: 'What is MLA format?',
-        options: ['A type of essay', 'A citation style', 'A writing technique', 'A literary device'],
-        correct: 'A citation style',
-        explanation: 'MLA is a standardized format for citing sources in academic writing.',
+        id: 'g12_writing_easy_2',
+        question: 'What is the purpose of a topic sentence?',
+        options: ['End paragraph', 'Introduce paragraph\'s main idea', 'Provide evidence', 'Conclude essay'],
+        correct: 'Introduce paragraph\'s main idea',
+        explanation: 'A topic sentence introduces the main idea of a paragraph.',
         difficulty: 'easy'
       },
       {
-        id: 'g12_comp_easy_3',
+        id: 'g12_writing_easy_3',
+        question: 'What is a primary source?',
+        options: ['Encyclopedia entry', 'Firsthand account', 'Summary article', 'Opinion piece'],
+        correct: 'Firsthand account',
+        explanation: 'A primary source provides direct, firsthand evidence about an event or topic.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_writing_easy_4',
         question: 'What is plagiarism?',
-        options: ['Original writing', 'Using others\' work without credit', 'Proper citation', 'Research method'],
+        options: ['Using your own ideas', 'Using others\' work without credit', 'Citing sources', 'Original writing'],
         correct: 'Using others\' work without credit',
         explanation: 'Plagiarism is using someone else\'s work or ideas without proper attribution.',
         difficulty: 'easy'
       },
       {
-        id: 'g12_comp_easy_4',
-        question: 'What is a primary source?',
-        options: ['A textbook', 'Original document or firsthand evidence', 'A summary', 'A review'],
-        correct: 'Original document or firsthand evidence',
-        explanation: 'Primary sources provide direct, firsthand evidence about a topic.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_comp_easy_5',
-        question: 'What is peer review?',
-        options: ['Self-editing', 'Having others review your work', 'Final draft', 'Publishing'],
-        correct: 'Having others review your work',
-        explanation: 'Peer review involves having others evaluate and provide feedback on your writing.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_comp_med_1',
-        question: 'What is the difference between summary and analysis?',
-        options: ['No difference', 'Summary retells, analysis interprets', 'Summary is longer', 'Analysis is easier'],
-        correct: 'Summary retells, analysis interprets',
-        explanation: 'Summary retells what happened; analysis examines meaning and significance.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g12_comp_med_2',
+        id: 'g12_writing_easy_5',
         question: 'What is a counterargument?',
-        options: ['Supporting evidence', 'Opposing viewpoint', 'Conclusion', 'Introduction'],
+        options: ['Supporting evidence', 'Opposing viewpoint', 'Main thesis', 'Conclusion'],
         correct: 'Opposing viewpoint',
-        explanation: 'A counterargument presents an opposing viewpoint to your thesis.',
+        explanation: 'A counterargument presents an opposing viewpoint to your main argument.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions
+      {
+        id: 'g12_writing_med_1',
+        question: 'What is ethos in rhetoric?',
+        options: ['Emotional appeal', 'Logical appeal', 'Credibility appeal', 'Time appeal'],
+        correct: 'Credibility appeal',
+        explanation: 'Ethos is a rhetorical appeal based on the credibility or character of the speaker.',
         difficulty: 'medium'
       },
       {
-        id: 'g12_comp_med_3',
-        question: 'What is rhetorical analysis?',
-        options: ['Grammar checking', 'Examining persuasive techniques', 'Plot summary', 'Character study'],
-        correct: 'Examining persuasive techniques',
-        explanation: 'Rhetorical analysis examines how authors use language to persuade audiences.',
+        id: 'g12_writing_med_2',
+        question: 'What is the difference between deductive and inductive reasoning?',
+        options: ['No difference', 'Deductive: general to specific; Inductive: specific to general', 'Only in science', 'Only in math'],
+        correct: 'Deductive: general to specific; Inductive: specific to general',
+        explanation: 'Deductive reasoning moves from general principles to specific conclusions; inductive moves from specific to general.',
         difficulty: 'medium'
       },
       {
-        id: 'g12_comp_hard_1',
-        question: 'What is the difference between ethos, pathos, and logos?',
-        options: ['All are the same', 'Credibility, emotion, logic', 'Types of essays', 'Citation styles'],
-        correct: 'Credibility, emotion, logic',
-        explanation: 'Ethos appeals to credibility, pathos to emotion, and logos to logic.',
+        id: 'g12_writing_med_3',
+        question: 'What is a synthesis essay?',
+        options: ['Summary only', 'Combines multiple sources to support thesis', 'Personal narrative', 'Fiction writing'],
+        correct: 'Combines multiple sources to support thesis',
+        explanation: 'A synthesis essay combines information from multiple sources to support a thesis.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions
+      {
+        id: 'g12_writing_hard_1',
+        question: 'What is a logical fallacy?',
+        options: ['Strong argument', 'Error in reasoning', 'Supporting evidence', 'Clear thesis'],
+        correct: 'Error in reasoning',
+        explanation: 'A logical fallacy is an error in reasoning that undermines an argument\'s validity.',
         difficulty: 'hard'
       },
       {
-        id: 'g12_comp_hard_2',
-        question: 'What is synthesis writing?',
-        options: ['Copying sources', 'Combining multiple sources to create new insights', 'Summarizing one source', 'Personal reflection'],
-        correct: 'Combining multiple sources to create new insights',
-        explanation: 'Synthesis writing combines information from multiple sources to develop new insights.',
+        id: 'g12_writing_hard_2',
+        question: 'What is the rhetorical triangle?',
+        options: ['Three paragraphs', 'Ethos, pathos, logos', 'Introduction, body, conclusion', 'Thesis, evidence, analysis'],
+        correct: 'Ethos, pathos, logos',
+        explanation: 'The rhetorical triangle consists of ethos (credibility), pathos (emotion), and logos (logic).',
         difficulty: 'hard'
       }
     ]
   },
+
   {
-    id: 'literature',
-    name: 'Literature',
-    description: 'Reading comprehension and literary analysis',
+    id: 'grade12_world_literature',
+    name: 'Grade 12: World Literature and Critical Theory',
+    description: 'Global literary traditions, comparative analysis, and literary criticism',
     questions: [
+      // Easy Questions
       {
-        id: 'lit_1',
-        question: 'What is a metaphor?',
-        options: ['A direct comparison using like or as', 'A comparison without using like or as', 'An exaggeration', 'A repetition of sounds'],
-        correct: 'A comparison without using like or as',
-        explanation: 'A metaphor is a figure of speech that makes an implicit comparison without using "like" or "as".',
+        id: 'g12_lit_easy_1',
+        question: 'What is world literature?',
+        options: ['Only English literature', 'Literature from various cultures and countries', 'Only modern works', 'Only poetry'],
+        correct: 'Literature from various cultures and countries',
+        explanation: 'World literature encompasses literary works from diverse cultures and nations.',
         difficulty: 'easy'
       },
       {
-        id: 'lit_2',
-        question: 'What is the main character in a story called?',
-        options: ['Antagonist', 'Protagonist', 'Narrator', 'Author'],
-        correct: 'Protagonist',
-        explanation: 'The protagonist is the main character around whom the story revolves.',
-        difficulty: 'easy'
-      }
-    ]
-  },
-  {
-    id: 'writing',
-    name: 'Writing Skills',
-    description: 'Essay writing, composition, and creative writing',
-    questions: [
-      {
-        id: 'writ_1',
-        question: 'What is the first paragraph of an essay called?',
-        options: ['Conclusion', 'Introduction', 'Body', 'Summary'],
-        correct: 'Introduction',
-        explanation: 'The introduction is the opening paragraph that introduces the topic.',
+        id: 'g12_lit_easy_2',
+        question: 'What is comparative literature?',
+        options: ['Comparing lengths', 'Studying literature across cultures and languages', 'Only comparing themes', 'Ranking literature'],
+        correct: 'Studying literature across cultures and languages',
+        explanation: 'Comparative literature studies works from different cultures, languages, and traditions.',
         difficulty: 'easy'
       },
       {
-        id: 'writ_2',
-        question: 'What should a thesis statement do?',
-        options: ['Summarize the essay', 'State the main argument', 'List sources', 'Ask questions'],
-        correct: 'State the main argument',
-        explanation: 'A thesis statement presents the main argument or claim of the essay.',
-        difficulty: 'easy'
-      }
-    ]
-  },
-  {
-    id: 'reading_comprehension',
-    name: 'Reading Comprehension',
-    description: 'Understanding and analyzing written texts',
-    questions: [
-      {
-        id: 'read_1',
-        question: 'What is the main idea of a passage?',
-        options: ['The first sentence', 'The most important point', 'The longest paragraph', 'The conclusion'],
-        correct: 'The most important point',
-        explanation: 'The main idea is the central or most important point the author is making.',
+        id: 'g12_lit_easy_3',
+        question: 'What is literary criticism?',
+        options: ['Finding faults only', 'Analysis and interpretation of literature', 'Rejecting literature', 'Writing summaries'],
+        correct: 'Analysis and interpretation of literature',
+        explanation: 'Literary criticism involves analyzing and interpreting literary works.',
         difficulty: 'easy'
       },
       {
-        id: 'read_2',
-        question: 'What are supporting details?',
-        options: ['Random facts', 'Information that supports the main idea', 'The title', 'The author\'s name'],
-        correct: 'Information that supports the main idea',
-        explanation: 'Supporting details provide evidence or examples that support the main idea.',
-        difficulty: 'easy'
-      }
-    ]
-  },
-  {
-    id: 'vocabulary',
-    name: 'Vocabulary',
-    description: 'Word meanings, synonyms, and antonyms',
-    questions: [
-      {
-        id: 'vocab_1',
-        question: 'What is a synonym for "happy"?',
-        options: ['Sad', 'Joyful', 'Angry', 'Tired'],
-        correct: 'Joyful',
-        explanation: 'A synonym is a word with the same or similar meaning. "Joyful" means the same as "happy".',
+        id: 'g12_lit_easy_4',
+        question: 'What is an archetype?',
+        options: ['New invention', 'Universal pattern or character type', 'Specific author', 'Book format'],
+        correct: 'Universal pattern or character type',
+        explanation: 'An archetype is a universal pattern, character type, or situation that recurs across cultures.',
         difficulty: 'easy'
       },
       {
-        id: 'vocab_2',
-        question: 'What is an antonym for "hot"?',
-        options: ['Warm', 'Cold', 'Cool', 'Freezing'],
-        correct: 'Cold',
-        explanation: 'An antonym is a word with the opposite meaning. "Cold" is the opposite of "hot".',
-        difficulty: 'easy'
-      }
-    ]
-  },
-  {
-    id: 'poetry',
-    name: 'Poetry',
-    description: 'Poetic devices, forms, and analysis',
-    questions: [
-      {
-        id: 'poet_1',
-        question: 'What is rhyme?',
-        options: ['Words that sound the same', 'Long sentences', 'Short lines', 'Difficult words'],
-        correct: 'Words that sound the same',
-        explanation: 'Rhyme occurs when words have similar ending sounds.',
+        id: 'g12_lit_easy_5',
+        question: 'What is cultural context in literature?',
+        options: ['Author\'s biography only', 'Social and cultural background of work', 'Publication date only', 'Book sales'],
+        correct: 'Social and cultural background of work',
+        explanation: 'Cultural context refers to the social, historical, and cultural circumstances surrounding a work.',
         difficulty: 'easy'
       },
+
+      // Medium Questions
       {
-        id: 'poet_2',
-        question: 'What is a stanza?',
-        options: ['A single word', 'A group of lines', 'A punctuation mark', 'A type of poem'],
-        correct: 'A group of lines',
-        explanation: 'A stanza is a group of lines in a poem, similar to a paragraph in prose.',
-        difficulty: 'easy'
+        id: 'g12_lit_med_1',
+        question: 'What is postcolonial literature?',
+        options: ['Literature after colonies', 'Literature responding to colonial experience', 'Only African literature', 'Historical fiction'],
+        correct: 'Literature responding to colonial experience',
+        explanation: 'Postcolonial literature examines the effects of colonialism and explores cultural identity.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_lit_med_2',
+        question: 'What is magical realism?',
+        options: ['Fantasy only', 'Realistic narrative with magical elements', 'Historical fiction', 'Science fiction'],
+        correct: 'Realistic narrative with magical elements',
+        explanation: 'Magical realism blends realistic narrative with fantastical or magical elements.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_lit_med_3',
+        question: 'What is feminist literary criticism?',
+        options: ['Only female authors', 'Analysis of gender roles and women\'s experiences', 'Rejecting male authors', 'Romance novels only'],
+        correct: 'Analysis of gender roles and women\'s experiences',
+        explanation: 'Feminist criticism examines how literature portrays gender roles and women\'s experiences.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions
+      {
+        id: 'g12_lit_hard_1',
+        question: 'What is deconstruction in literary theory?',
+        options: ['Destroying books', 'Questioning fixed meanings and interpretations', 'Building plots', 'Writing summaries'],
+        correct: 'Questioning fixed meanings and interpretations',
+        explanation: 'Deconstruction challenges the idea of fixed, stable meanings in texts.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_lit_hard_2',
+        question: 'What is the concept of "the Other" in literature?',
+        options: ['Second character', 'Representation of outsiders or marginalized groups', 'Author\'s alter ego', 'Secondary plot'],
+        correct: 'Representation of outsiders or marginalized groups',
+        explanation: 'The Other refers to how literature represents those outside the dominant culture or norm.',
+        difficulty: 'hard'
       }
     ]
   }

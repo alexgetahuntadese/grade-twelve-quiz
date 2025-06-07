@@ -1,4 +1,3 @@
-
 import { Chapter } from '../types';
 
 export const civicsChapters: Chapter[] = [
@@ -96,49 +95,49 @@ export const civicsChapters: Chapter[] = [
   },
 
   {
-    id: 'grade11_rights_freedoms',
-    name: 'Grade 11: Rights and Freedoms',
-    description: 'Civil rights, human rights, and constitutional protections',
+    id: 'grade11_rights_responsibilities',
+    name: 'Grade 11: Rights and Responsibilities',
+    description: 'Constitutional rights, civil liberties, and civic duties',
     questions: [
       // Easy Questions
       {
         id: 'g11_rights_easy_1',
-        question: 'What are human rights?',
-        options: ['Rights only for citizens', 'Basic rights all humans have', 'Government privileges', 'Legal procedures'],
-        correct: 'Basic rights all humans have',
-        explanation: 'Human rights are fundamental rights and freedoms that belong to every person simply because they are human.',
+        question: 'What are civil rights?',
+        options: ['Military rights', 'Rights to participate in civil society', 'Property rights only', 'Voting rights only'],
+        correct: 'Rights to participate in civil society',
+        explanation: 'Civil rights are the rights of citizens to participate in civil and political life.',
         difficulty: 'easy'
       },
       {
         id: 'g11_rights_easy_2',
         question: 'What is freedom of speech?',
-        options: ['Right to speak loudly', 'Right to express opinions', 'Right to interrupt others', 'Right to speak any language'],
+        options: ['Unlimited speech', 'Right to express opinions', 'Only written expression', 'Government speech only'],
         correct: 'Right to express opinions',
-        explanation: 'Freedom of speech is the right to express opinions and ideas without government censorship.',
+        explanation: 'Freedom of speech is the right to express opinions and ideas without government restriction.',
         difficulty: 'easy'
       },
       {
         id: 'g11_rights_easy_3',
         question: 'What is due process?',
-        options: ['Fast legal procedure', 'Fair legal procedure', 'Government immunity', 'Police power'],
-        correct: 'Fair legal procedure',
+        options: ['Quick trials', 'Fair legal procedures', 'Government immunity', 'Automatic conviction'],
+        correct: 'Fair legal procedures',
         explanation: 'Due process ensures fair treatment through the normal judicial system.',
         difficulty: 'easy'
       },
       {
         id: 'g11_rights_easy_4',
-        question: 'What is equality before the law?',
-        options: ['Only rich people get justice', 'All people treated equally by law', 'Lawyers are equal', 'Laws are the same everywhere'],
-        correct: 'All people treated equally by law',
-        explanation: 'Equality before the law means all people should be treated equally by the legal system regardless of status.',
+        question: 'What is a civic duty?',
+        options: ['Optional activity', 'Required responsibility of citizens', 'Government job', 'Political party membership'],
+        correct: 'Required responsibility of citizens',
+        explanation: 'Civic duties are responsibilities required of citizens, like paying taxes and jury service.',
         difficulty: 'easy'
       },
       {
         id: 'g11_rights_easy_5',
-        question: 'What is religious freedom?',
-        options: ['Right to build churches', 'Right to practice any religion or none', 'Right to convert others', 'Right to religious education only'],
-        correct: 'Right to practice any religion or none',
-        explanation: 'Religious freedom includes the right to practice any religion or no religion at all.',
+        question: 'What is equal protection?',
+        options: ['Police protection', 'Same treatment under law', 'Military defense', 'Property security'],
+        correct: 'Same treatment under law',
+        explanation: 'Equal protection means all people receive the same treatment under the law.',
         difficulty: 'easy'
       },
 
@@ -146,136 +145,136 @@ export const civicsChapters: Chapter[] = [
       {
         id: 'g11_rights_med_1',
         question: 'What is the difference between civil rights and civil liberties?',
-        options: ['No difference', 'Civil rights: equal treatment, Civil liberties: freedoms from government', 'Only terminology differs', 'Only legal source differs'],
-        correct: 'Civil rights: equal treatment, Civil liberties: freedoms from government',
-        explanation: 'Civil rights ensure equal treatment; civil liberties protect freedoms from government interference.',
+        options: ['No difference', 'Rights: participation, Liberties: freedom from government', 'Only legal terminology', 'Only historical context'],
+        correct: 'Rights: participation, Liberties: freedom from government',
+        explanation: 'Civil rights ensure participation in society; civil liberties protect from government interference.',
         difficulty: 'medium'
       },
       {
         id: 'g11_rights_med_2',
-        question: 'What are positive and negative rights?',
-        options: ['Good and bad rights', 'Positive: government must provide, Negative: government must not interfere', 'Constitutional vs legal', 'Federal vs state'],
-        correct: 'Positive: government must provide, Negative: government must not interfere',
-        explanation: 'Positive rights require government action; negative rights require government restraint.',
+        question: 'What are checks and balances?',
+        options: ['Bank procedures', 'System preventing abuse of power', 'Accounting methods', 'Election processes'],
+        correct: 'System preventing abuse of power',
+        explanation: 'Checks and balances prevent any branch of government from becoming too powerful.',
         difficulty: 'medium'
       },
       {
         id: 'g11_rights_med_3',
-        question: 'What is the purpose of a bill of rights?',
-        options: ['List government powers', 'Protect individual freedoms', 'Establish procedures', 'Create institutions'],
+        question: 'What is the purpose of the Bill of Rights?',
+        options: ['List government powers', 'Protect individual freedoms', 'Establish taxes', 'Create courts'],
         correct: 'Protect individual freedoms',
-        explanation: 'A bill of rights formally protects individual freedoms and limits government power.',
+        explanation: 'The Bill of Rights protects individual freedoms from government interference.',
         difficulty: 'medium'
       },
 
       // Hard Questions
       {
         id: 'g11_rights_hard_1',
-        question: 'What is the tension between security and liberty?',
-        options: ['No relationship', 'Balance between protecting safety and preserving freedoms', 'Only affects government', 'Only in wartime'],
-        correct: 'Balance between protecting safety and preserving freedoms',
-        explanation: 'Democratic societies must balance protecting public safety with preserving individual freedoms.',
+        question: 'What is the incorporation doctrine?',
+        options: ['Business law', 'Applying Bill of Rights to state governments', 'Federal supremacy', 'International law'],
+        correct: 'Applying Bill of Rights to state governments',
+        explanation: 'The incorporation doctrine applies Bill of Rights protections to state and local governments.',
         difficulty: 'hard'
       },
       {
         id: 'g11_rights_hard_2',
-        question: 'What is the doctrine of incorporation?',
-        options: ['Business law', 'Applying Bill of Rights to state governments', 'International law', 'Constitutional amendment process'],
-        correct: 'Applying Bill of Rights to state governments',
-        explanation: 'The doctrine of incorporation applies Bill of Rights protections to state and local governments.',
+        question: 'What is the clear and present danger test?',
+        options: ['Emergency procedures', 'Standard for limiting free speech', 'Military protocol', 'Safety regulation'],
+        correct: 'Standard for limiting free speech',
+        explanation: 'The clear and present danger test determines when speech can be limited by government.',
         difficulty: 'hard'
       }
     ]
   },
 
   {
-    id: 'grade12_political_participation',
-    name: 'Grade 12: Political Participation and Global Citizenship',
-    description: 'Elections, political parties, and international relations',
+    id: 'grade12_global_citizenship',
+    name: 'Grade 12: Global Citizenship and International Relations',
+    description: 'International law, global governance, and global citizenship responsibilities',
     questions: [
       // Easy Questions
       {
-        id: 'g12_politics_easy_1',
-        question: 'What is voting?',
-        options: ['Expressing opinions', 'Formal process of choosing leaders', 'Attending meetings', 'Joining parties'],
-        correct: 'Formal process of choosing leaders',
-        explanation: 'Voting is the formal process by which citizens choose their representatives and leaders.',
+        id: 'g12_global_easy_1',
+        question: 'What is global citizenship?',
+        options: ['World passport', 'Awareness of global interconnectedness and responsibilities', 'International travel', 'Foreign residence'],
+        correct: 'Awareness of global interconnectedness and responsibilities',
+        explanation: 'Global citizenship involves understanding global interconnectedness and taking responsibility for global issues.',
         difficulty: 'easy'
       },
       {
-        id: 'g12_politics_easy_2',
-        question: 'What is a political party?',
-        options: ['Social gathering', 'Group organized to win elections and govern', 'Government department', 'Voter registration group'],
-        correct: 'Group organized to win elections and govern',
-        explanation: 'A political party is an organized group that seeks to win elections and control government.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_politics_easy_3',
-        question: 'What is an election?',
-        options: ['Government meeting', 'Process of choosing representatives by voting', 'Legal procedure', 'Public debate'],
-        correct: 'Process of choosing representatives by voting',
-        explanation: 'An election is a formal process in which citizens vote to choose their representatives.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_politics_easy_4',
-        question: 'What is citizenship participation?',
-        options: ['Paying taxes only', 'Active involvement in civic life', 'Following laws only', 'Living in a country'],
-        correct: 'Active involvement in civic life',
-        explanation: 'Citizenship participation involves actively engaging in the civic and political life of one\'s community.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_politics_easy_5',
+        id: 'g12_global_easy_2',
         question: 'What is the United Nations?',
-        options: ['Trade organization', 'International organization for peace and cooperation', 'Military alliance', 'Economic union'],
+        options: ['Regional organization', 'International organization for peace and cooperation', 'Military alliance', 'Trade organization'],
         correct: 'International organization for peace and cooperation',
-        explanation: 'The UN is an international organization founded to promote peace, security, and cooperation among nations.',
+        explanation: 'The UN is an international organization working for global peace, security, and cooperation.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_global_easy_3',
+        question: 'What are human rights?',
+        options: ['National rights only', 'Universal rights of all people', 'Government privileges', 'Economic benefits'],
+        correct: 'Universal rights of all people',
+        explanation: 'Human rights are fundamental rights that belong to all people regardless of nationality.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_global_easy_4',
+        question: 'What is diplomacy?',
+        options: ['Military action', 'Peaceful negotiation between nations', 'Trade competition', 'Cultural exchange only'],
+        correct: 'Peaceful negotiation between nations',
+        explanation: 'Diplomacy is the practice of conducting negotiations and maintaining relations between nations.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_global_easy_5',
+        question: 'What is sovereignty?',
+        options: ['Royal power', 'Supreme authority within territory', 'International cooperation', 'Economic independence'],
+        correct: 'Supreme authority within territory',
+        explanation: 'Sovereignty is the supreme authority of a state within its territory.',
         difficulty: 'easy'
       },
 
       // Medium Questions
       {
-        id: 'g12_politics_med_1',
-        question: 'What is the difference between majority and plurality?',
-        options: ['No difference', 'Majority: over 50%, Plurality: most votes but not necessarily majority', 'Only in presidential elections', 'Only terminology'],
-        correct: 'Majority: over 50%, Plurality: most votes but not necessarily majority',
-        explanation: 'A majority is over 50% of votes; a plurality is the most votes even if under 50%.',
+        id: 'g12_global_med_1',
+        question: 'What is international law?',
+        options: ['National law only', 'Rules governing relations between states', 'Local regulations', 'Corporate law'],
+        correct: 'Rules governing relations between states',
+        explanation: 'International law consists of rules and principles governing relations between sovereign states.',
         difficulty: 'medium'
       },
       {
-        id: 'g12_politics_med_2',
-        question: 'What is proportional representation?',
-        options: ['Winner-take-all system', 'Seats allocated based on vote percentage', 'Geographic representation', 'Population-based system'],
-        correct: 'Seats allocated based on vote percentage',
-        explanation: 'Proportional representation allocates legislative seats based on the percentage of votes each party receives.',
+        id: 'g12_global_med_2',
+        question: 'What is the difference between unilateral and multilateral action?',
+        options: ['No difference', 'Unilateral: one nation, Multilateral: multiple nations', 'Only timing differs', 'Only scope differs'],
+        correct: 'Unilateral: one nation, Multilateral: multiple nations',
+        explanation: 'Unilateral action involves one nation; multilateral involves multiple nations working together.',
         difficulty: 'medium'
       },
       {
-        id: 'g12_politics_med_3',
+        id: 'g12_global_med_3',
         question: 'What is globalization?',
-        options: ['National isolation', 'Increasing interconnectedness of world', 'Local governance', 'Regional trade only'],
-        correct: 'Increasing interconnectedness of world',
-        explanation: 'Globalization is the increasing interconnectedness and interdependence of countries worldwide.',
+        options: ['Local development', 'Increasing interconnectedness worldwide', 'National isolation', 'Regional cooperation only'],
+        correct: 'Increasing interconnectedness worldwide',
+        explanation: 'Globalization is the increasing interconnectedness of economies, cultures, and societies worldwide.',
         difficulty: 'medium'
       },
 
       // Hard Questions
       {
-        id: 'g12_politics_hard_1',
-        question: 'What is the role of interest groups in democracy?',
-        options: ['Replace political parties', 'Represent specific interests and influence policy', 'Control elections', 'Make laws directly'],
-        correct: 'Represent specific interests and influence policy',
-        explanation: 'Interest groups represent specific interests and attempt to influence government policy and decisions.',
+        id: 'g12_global_hard_1',
+        question: 'What is the principle of non-interference?',
+        options: ['Active intervention', 'Respecting state sovereignty in domestic affairs', 'Military cooperation', 'Economic sanctions'],
+        correct: 'Respecting state sovereignty in domestic affairs',
+        explanation: 'Non-interference means respecting other states\' sovereignty and not intervening in their domestic affairs.',
         difficulty: 'hard'
       },
       {
-        id: 'g12_politics_hard_2',
-        question: 'What is sovereignty in international relations?',
-        options: ['Economic independence', 'Supreme authority within territory', 'Military power', 'Cultural identity'],
-        correct: 'Supreme authority within territory',
-        explanation: 'Sovereignty is the principle that states have supreme authority within their territory and independence in international affairs.',
+        id: 'g12_global_hard_2',
+        question: 'What is the responsibility to protect (R2P)?',
+        options: ['National defense only', 'International duty to prevent mass atrocities', 'Trade protection', 'Environmental protection'],
+        correct: 'International duty to prevent mass atrocities',
+        explanation: 'R2P is the international community\'s responsibility to protect populations from genocide and mass atrocities.',
         difficulty: 'hard'
       }
     ]
