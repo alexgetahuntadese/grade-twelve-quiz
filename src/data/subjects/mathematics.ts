@@ -475,5 +475,273 @@ export const mathematicsChapters: Chapter[] = [
         difficulty: 'hard'
       }
     ]
+  },
+
+  {
+    id: 'grade12_advanced_algebra',
+    name: 'Grade 12: Advanced Algebra and Sequences',
+    description: 'Complex algebraic operations, sequences, series, and mathematical induction',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_adv_alg_easy_1',
+        question: 'What is an arithmetic sequence?',
+        options: ['Sequence with constant ratio', 'Sequence with constant difference', 'Random sequence', 'Geometric pattern'],
+        correct: 'Sequence with constant difference',
+        explanation: 'An arithmetic sequence has a constant difference between consecutive terms.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_adv_alg_easy_2',
+        question: 'In the sequence 2, 5, 8, 11, ..., what is the common difference?',
+        options: ['2', '3', '5', '8'],
+        correct: '3',
+        explanation: 'The common difference is 5 - 2 = 3.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_adv_alg_easy_3',
+        question: 'What is the general term of an arithmetic sequence?',
+        options: ['an = a₁ + (n-1)d', 'an = a₁ × r^(n-1)', 'an = n²', 'an = 2n'],
+        correct: 'an = a₁ + (n-1)d',
+        explanation: 'The nth term of an arithmetic sequence is an = a₁ + (n-1)d.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions
+      {
+        id: 'g12_adv_alg_med_1',
+        question: 'Find the 10th term of the arithmetic sequence: 3, 7, 11, 15, ...',
+        options: ['35', '37', '39', '41'],
+        correct: '39',
+        explanation: 'a₁ = 3, d = 4. a₁₀ = 3 + (10-1)×4 = 3 + 36 = 39.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_adv_alg_med_2',
+        question: 'What is a geometric sequence?',
+        options: ['Sequence with constant difference', 'Sequence with constant ratio', 'Linear sequence', 'Quadratic sequence'],
+        correct: 'Sequence with constant ratio',
+        explanation: 'A geometric sequence has a constant ratio between consecutive terms.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_adv_alg_med_3',
+        question: 'Find the sum of the first 5 terms of: 2, 4, 6, 8, ...',
+        options: ['20', '25', '30', '35'],
+        correct: '30',
+        explanation: 'S₅ = 5/2 × (2×2 + (5-1)×2) = 5/2 × 12 = 30.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions
+      {
+        id: 'g12_adv_alg_hard_1',
+        question: 'What is mathematical induction?',
+        options: ['Guessing method', 'Proof technique for natural numbers', 'Statistical method', 'Algebraic operation'],
+        correct: 'Proof technique for natural numbers',
+        explanation: 'Mathematical induction is a proof technique used to prove statements about natural numbers.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_adv_alg_hard_2',
+        question: 'Find the sum to infinity of 1 + 1/2 + 1/4 + 1/8 + ...',
+        options: ['1', '2', '3', 'Diverges'],
+        correct: '2',
+        explanation: 'This is a geometric series with a = 1, r = 1/2. S∞ = 1/(1-1/2) = 2.',
+        difficulty: 'hard'
+      }
+    ]
+  },
+
+  {
+    id: 'grade12_analytical_geometry',
+    name: 'Grade 12: Analytical Geometry',
+    description: 'Coordinate geometry, conic sections, and transformations',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_geom_easy_1',
+        question: 'What is the distance formula between two points?',
+        options: ['d = √[(x₂-x₁)² + (y₂-y₁)²]', 'd = (x₂-x₁) + (y₂-y₁)', 'd = x₂ + y₂', 'd = √(x₂ + y₂)'],
+        correct: 'd = √[(x₂-x₁)² + (y₂-y₁)²]',
+        explanation: 'The distance formula is derived from the Pythagorean theorem.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_geom_easy_2',
+        question: 'What is the slope of a vertical line?',
+        options: ['0', '1', '-1', 'Undefined'],
+        correct: 'Undefined',
+        explanation: 'A vertical line has undefined slope because the denominator in the slope formula is zero.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions
+      {
+        id: 'g12_geom_med_1',
+        question: 'Find the equation of a line passing through (2,3) with slope 2',
+        options: ['y = 2x - 1', 'y = 2x + 3', 'y = 2x + 1', 'y = x + 2'],
+        correct: 'y = 2x - 1',
+        explanation: 'Using point-slope form: y - 3 = 2(x - 2), which gives y = 2x - 1.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_geom_med_2',
+        question: 'What is the standard form of a circle equation?',
+        options: ['(x-h)² + (y-k)² = r²', 'x² + y² = r', 'x + y = r²', '(x+h)² + (y+k)² = r'],
+        correct: '(x-h)² + (y-k)² = r²',
+        explanation: 'The standard form of a circle with center (h,k) and radius r.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions
+      {
+        id: 'g12_geom_hard_1',
+        question: 'What type of conic section is represented by x²/4 + y²/9 = 1?',
+        options: ['Circle', 'Ellipse', 'Parabola', 'Hyperbola'],
+        correct: 'Ellipse',
+        explanation: 'This is the standard form of an ellipse with semi-major axis 3 and semi-minor axis 2.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_geom_hard_2',
+        question: 'Find the focus of the parabola y² = 4px where p = 2',
+        options: ['(0,2)', '(2,0)', '(1,0)', '(0,1)'],
+        correct: '(2,0)',
+        explanation: 'For a parabola y² = 4px, the focus is at (p,0). With p = 2, focus is at (2,0).',
+        difficulty: 'hard'
+      }
+    ]
+  },
+
+  {
+    id: 'grade12_exponential_logarithmic',
+    name: 'Grade 12: Exponential and Logarithmic Functions',
+    description: 'Properties of exponential and logarithmic functions, solving equations',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_exp_easy_1',
+        question: 'What is log₁₀(100)?',
+        options: ['1', '2', '10', '100'],
+        correct: '2',
+        explanation: 'log₁₀(100) = 2 because 10² = 100.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_exp_easy_2',
+        question: 'What is e^(ln(5))?',
+        options: ['1', '5', 'e', 'ln(5)'],
+        correct: '5',
+        explanation: 'The exponential and natural logarithm are inverse functions.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_exp_easy_3',
+        question: 'What is the value of e (approximately)?',
+        options: ['2.718', '3.142', '1.414', '2.236'],
+        correct: '2.718',
+        explanation: 'e ≈ 2.718 is the base of natural logarithms.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions
+      {
+        id: 'g12_exp_med_1',
+        question: 'Solve for x: 2^x = 16',
+        options: ['x = 2', 'x = 3', 'x = 4', 'x = 8'],
+        correct: 'x = 4',
+        explanation: '2^4 = 16, so x = 4.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_exp_med_2',
+        question: 'What is log₂(8) + log₂(4)?',
+        options: ['3', '4', '5', '6'],
+        correct: '5',
+        explanation: 'log₂(8) = 3, log₂(4) = 2. Using log properties: log₂(8×4) = log₂(32) = 5.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions
+      {
+        id: 'g12_exp_hard_1',
+        question: 'Solve for x: e^(2x) = 7',
+        options: ['x = ln(7)/2', 'x = 2ln(7)', 'x = ln(14)', 'x = 7/2'],
+        correct: 'x = ln(7)/2',
+        explanation: 'Taking ln of both sides: 2x = ln(7), so x = ln(7)/2.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_exp_hard_2',
+        question: 'What is the domain of f(x) = ln(x - 3)?',
+        options: ['x > 0', 'x > 3', 'x ≥ 3', 'All real numbers'],
+        correct: 'x > 3',
+        explanation: 'The argument of ln must be positive: x - 3 > 0, so x > 3.',
+        difficulty: 'hard'
+      }
+    ]
+  },
+
+  {
+    id: 'grade12_matrix_algebra',
+    name: 'Grade 12: Matrix Algebra',
+    description: 'Matrix operations, determinants, and systems of equations',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_matrix_easy_1',
+        question: 'What is a matrix?',
+        options: ['A number', 'A rectangular array of numbers', 'A function', 'A graph'],
+        correct: 'A rectangular array of numbers',
+        explanation: 'A matrix is a rectangular arrangement of numbers in rows and columns.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_matrix_easy_2',
+        question: 'What is the size of a 3×2 matrix?',
+        options: ['6 elements', '5 elements', '3 rows, 2 columns', '2 rows, 3 columns'],
+        correct: '3 rows, 2 columns',
+        explanation: 'A 3×2 matrix has 3 rows and 2 columns.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions
+      {
+        id: 'g12_matrix_med_1',
+        question: 'When can two matrices be multiplied?',
+        options: ['Always', 'When they have same dimensions', 'When columns of first = rows of second', 'Never'],
+        correct: 'When columns of first = rows of second',
+        explanation: 'Matrix multiplication requires the number of columns in the first matrix to equal the number of rows in the second.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_matrix_med_2',
+        question: 'What is the identity matrix?',
+        options: ['Matrix of all zeros', 'Matrix of all ones', 'Square matrix with 1s on diagonal, 0s elsewhere', 'Any square matrix'],
+        correct: 'Square matrix with 1s on diagonal, 0s elsewhere',
+        explanation: 'The identity matrix has 1s on the main diagonal and 0s elsewhere.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions
+      {
+        id: 'g12_matrix_hard_1',
+        question: 'What is the determinant of a 2×2 matrix [[a,b],[c,d]]?',
+        options: ['a+d-b-c', 'ad-bc', 'ac-bd', 'a+b+c+d'],
+        correct: 'ad-bc',
+        explanation: 'The determinant of a 2×2 matrix is ad - bc.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_matrix_hard_2',
+        question: 'When does a matrix have an inverse?',
+        options: ['Always', 'When it is square', 'When determinant ≠ 0', 'When it is symmetric'],
+        correct: 'When determinant ≠ 0',
+        explanation: 'A square matrix has an inverse if and only if its determinant is non-zero.',
+        difficulty: 'hard'
+      }
+    ]
   }
 ];
