@@ -13,6 +13,7 @@ import { civicsChapters } from './subjects/civics';
 import { physicalEducationChapters } from './subjects/physical-education';
 import { informationTechnologyChapters } from './subjects/information-technology';
 import { nationalLanguageChapters } from './subjects/national-language';
+import { agricultureChapters } from './subjects/agriculture';
 
 export interface QuestionsBySubject {
   mathematics: Chapter[];
@@ -29,6 +30,7 @@ export interface QuestionsBySubject {
   'physical-education': Chapter[];
   'information-technology': Chapter[];
   'national-language': Chapter[];
+  agriculture: Chapter[];
 }
 
 export const questionsBySubject: QuestionsBySubject = {
@@ -45,7 +47,8 @@ export const questionsBySubject: QuestionsBySubject = {
   civics: civicsChapters,
   'physical-education': physicalEducationChapters,
   'information-technology': informationTechnologyChapters,
-  'national-language': nationalLanguageChapters
+  'national-language': nationalLanguageChapters,
+  agriculture: agricultureChapters
 };
 
 export const getTotalQuestionsBySubject = (subject: string): number => {
