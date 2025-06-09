@@ -375,5 +375,461 @@ export const chemistryChapters: Chapter[] = [
         difficulty: 'hard'
       }
     ]
+  },
+
+  // New Grade 12 Chemistry Units
+  {
+    id: 'grade12_acid_base_equilibrium',
+    name: 'Grade 12: Unit 1 - Acid-Base Equilibrium',
+    description: 'Acids, bases, pH, buffers, and equilibrium calculations',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_acid_easy_1',
+        question: 'What is an acid according to Arrhenius theory?',
+        options: ['Proton donor', 'Substance that produces H⁺ ions in water', 'Electron acceptor', 'OH⁻ producer'],
+        correct: 'Substance that produces H⁺ ions in water',
+        explanation: 'Arrhenius acids are substances that produce hydrogen ions (H⁺) when dissolved in water.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_acid_easy_2',
+        question: 'What is the pH of pure water at 25°C?',
+        options: ['0', '7', '14', '1'],
+        correct: '7',
+        explanation: 'Pure water has a pH of 7, which is neutral.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_acid_easy_3',
+        question: 'What is a buffer solution?',
+        options: ['Strong acid solution', 'Solution that resists pH change', 'Very dilute solution', 'Concentrated base'],
+        correct: 'Solution that resists pH change',
+        explanation: 'Buffer solutions resist changes in pH when small amounts of acid or base are added.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_acid_easy_4',
+        question: 'What is the conjugate base of HCl?',
+        options: ['H⁺', 'Cl⁻', 'HCl⁻', 'OH⁻'],
+        correct: 'Cl⁻',
+        explanation: 'When HCl donates a proton, it becomes Cl⁻, which is its conjugate base.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_acid_easy_5',
+        question: 'A solution with pH 3 is:',
+        options: ['Neutral', 'Basic', 'Acidic', 'Alkaline'],
+        correct: 'Acidic',
+        explanation: 'Solutions with pH less than 7 are acidic.',
+        difficulty: 'easy'
+      },
+      // Medium Questions
+      {
+        id: 'g12_acid_med_1',
+        question: 'What is the relationship between Ka and Kb for a conjugate acid-base pair?',
+        options: ['Ka × Kb = Kw', 'Ka + Kb = Kw', 'Ka - Kb = Kw', 'Ka / Kb = Kw'],
+        correct: 'Ka × Kb = Kw',
+        explanation: 'For any conjugate acid-base pair, Ka × Kb = Kw (the ion product of water).',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_acid_med_2',
+        question: 'What is the Henderson-Hasselbalch equation used for?',
+        options: ['Calculating reaction rates', 'Calculating buffer pH', 'Calculating equilibrium constants', 'Calculating solubility'],
+        correct: 'Calculating buffer pH',
+        explanation: 'The Henderson-Hasselbalch equation: pH = pKa + log([A⁻]/[HA]) is used to calculate buffer pH.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_acid_med_3',
+        question: 'What happens at the equivalence point of a titration?',
+        options: ['pH = 7 always', 'Moles of acid = moles of base', 'Reaction stops', 'Color change occurs'],
+        correct: 'Moles of acid = moles of base',
+        explanation: 'At the equivalence point, the moles of acid equal the moles of base added.',
+        difficulty: 'medium'
+      },
+      // Hard Questions
+      {
+        id: 'g12_acid_hard_1',
+        question: 'Calculate the pH of 0.1 M acetic acid (Ka = 1.8 × 10⁻⁵)',
+        options: ['1', '2.87', '4.76', '5.13'],
+        correct: '2.87',
+        explanation: 'For weak acid: [H⁺] = √(Ka × C) = √(1.8×10⁻⁵ × 0.1) = 1.34×10⁻³, pH = 2.87',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_acid_hard_2',
+        question: 'What is the pH of a buffer containing 0.1 M CH₃COOH and 0.1 M CH₃COONa? (Ka = 1.8 × 10⁻⁵)',
+        options: ['4.76', '7.00', '9.24', '1.00'],
+        correct: '4.76',
+        explanation: 'pH = pKa + log([A⁻]/[HA]) = -log(1.8×10⁻⁵) + log(0.1/0.1) = 4.76 + 0 = 4.76',
+        difficulty: 'hard'
+      }
+    ]
+  },
+
+  {
+    id: 'grade12_electrochemistry',
+    name: 'Grade 12: Unit 2 - Electrochemistry',
+    description: 'Galvanic cells, electrolysis, and electrochemical reactions',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_electro_easy_1',
+        question: 'What is electrochemistry?',
+        options: ['Study of chemical reactions involving electricity', 'Study of electrons only', 'Study of metals', 'Study of acids'],
+        correct: 'Study of chemical reactions involving electricity',
+        explanation: 'Electrochemistry studies chemical reactions that involve the transfer of electrons.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_electro_easy_2',
+        question: 'In a galvanic cell, which electrode is positive?',
+        options: ['Anode', 'Cathode', 'Both', 'Neither'],
+        correct: 'Cathode',
+        explanation: 'In a galvanic cell, the cathode is the positive electrode where reduction occurs.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_electro_easy_3',
+        question: 'What happens at the anode?',
+        options: ['Reduction', 'Oxidation', 'No reaction', 'Precipitation'],
+        correct: 'Oxidation',
+        explanation: 'Oxidation (loss of electrons) always occurs at the anode.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_electro_easy_4',
+        question: 'What is electrolysis?',
+        options: ['Spontaneous reaction', 'Non-spontaneous reaction driven by electricity', 'Acid-base reaction', 'Combustion'],
+        correct: 'Non-spontaneous reaction driven by electricity',
+        explanation: 'Electrolysis uses electrical energy to drive non-spontaneous chemical reactions.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_electro_easy_5',
+        question: 'What connects the two half-cells in a galvanic cell?',
+        options: ['Wire only', 'Salt bridge only', 'Wire and salt bridge', 'Nothing'],
+        correct: 'Wire and salt bridge',
+        explanation: 'A galvanic cell needs both a wire (for electron flow) and salt bridge (for ion flow).',
+        difficulty: 'easy'
+      },
+      // Medium Questions
+      {
+        id: 'g12_electro_med_1',
+        question: 'What is the purpose of a salt bridge?',
+        options: ['Conduct electrons', 'Maintain electrical neutrality', 'Store energy', 'Increase voltage'],
+        correct: 'Maintain electrical neutrality',
+        explanation: 'The salt bridge allows ion flow to maintain electrical neutrality in both half-cells.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_electro_med_2',
+        question: 'What is the standard hydrogen electrode (SHE)?',
+        options: ['Reference electrode with E° = 0V', 'Strongest reducing agent', 'Strongest oxidizing agent', 'Most stable electrode'],
+        correct: 'Reference electrode with E° = 0V',
+        explanation: 'SHE is the reference electrode assigned a standard potential of 0.00 V.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_electro_med_3',
+        question: 'What does the Nernst equation calculate?',
+        options: ['Standard potential', 'Cell potential under non-standard conditions', 'Current', 'Resistance'],
+        correct: 'Cell potential under non-standard conditions',
+        explanation: 'The Nernst equation: E = E° - (RT/nF)ln(Q) calculates potential at non-standard conditions.',
+        difficulty: 'medium'
+      },
+      // Hard Questions
+      {
+        id: 'g12_electro_hard_1',
+        question: 'Calculate E°cell for Zn|Zn²⁺||Cu²⁺|Cu if E°(Zn²⁺/Zn) = -0.76V and E°(Cu²⁺/Cu) = +0.34V',
+        options: ['+1.10V', '-1.10V', '+0.42V', '-0.42V'],
+        correct: '+1.10V',
+        explanation: 'E°cell = E°cathode - E°anode = 0.34 - (-0.76) = +1.10V',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_electro_hard_2',
+        question: 'How many grams of copper are deposited when 2 A current passes through CuSO₄ solution for 1 hour?',
+        options: ['1.18 g', '2.37 g', '4.74 g', '0.59 g'],
+        correct: '2.37 g',
+        explanation: 'Using Faraday\'s law: m = (I×t×M)/(n×F) = (2×3600×63.5)/(2×96500) = 2.37 g',
+        difficulty: 'hard'
+      }
+    ]
+  },
+
+  {
+    id: 'grade12_industrial_chemistry',
+    name: 'Grade 12: Unit 3 - Industrial Chemistry',
+    description: 'Large-scale chemical processes and industrial applications',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_industrial_easy_1',
+        question: 'What is industrial chemistry?',
+        options: ['Small lab reactions', 'Large-scale chemical manufacturing', 'Academic research', 'Environmental cleanup'],
+        correct: 'Large-scale chemical manufacturing',
+        explanation: 'Industrial chemistry involves large-scale production of chemicals for commercial use.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_industrial_easy_2',
+        question: 'What is the main product of the Haber process?',
+        options: ['Hydrogen', 'Nitrogen', 'Ammonia', 'Water'],
+        correct: 'Ammonia',
+        explanation: 'The Haber process produces ammonia (NH₃) from nitrogen and hydrogen.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_industrial_easy_3',
+        question: 'What is the Contact process used to manufacture?',
+        options: ['Ammonia', 'Sulfuric acid', 'Nitric acid', 'Hydrochloric acid'],
+        correct: 'Sulfuric acid',
+        explanation: 'The Contact process is used to manufacture sulfuric acid (H₂SO₄).',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_industrial_easy_4',
+        question: 'What is a catalyst?',
+        options: ['Reactant', 'Product', 'Substance that speeds up reactions', 'Solvent'],
+        correct: 'Substance that speeds up reactions',
+        explanation: 'Catalysts speed up chemical reactions without being consumed.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_industrial_easy_5',
+        question: 'What is fractional distillation used for?',
+        options: ['Mixing chemicals', 'Separating mixtures by boiling point', 'Crystallization', 'Precipitation'],
+        correct: 'Separating mixtures by boiling point',
+        explanation: 'Fractional distillation separates components based on different boiling points.',
+        difficulty: 'easy'
+      },
+      // Medium Questions
+      {
+        id: 'g12_industrial_med_1',
+        question: 'What are the raw materials for the Haber process?',
+        options: ['N₂ and H₂', 'NH₃ and H₂O', 'N₂ and O₂', 'NH₃ and O₂'],
+        correct: 'N₂ and H₂',
+        explanation: 'The Haber process uses nitrogen and hydrogen: N₂ + 3H₂ ⇌ 2NH₃',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_industrial_med_2',
+        question: 'Why is high pressure used in the Haber process?',
+        options: ['Increases temperature', 'Favors forward reaction', 'Reduces cost', 'Improves catalyst'],
+        correct: 'Favors forward reaction',
+        explanation: 'High pressure favors the forward reaction as it reduces the number of gas molecules (4→2).',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_industrial_med_3',
+        question: 'What is cracking in petroleum refining?',
+        options: ['Breaking large molecules into smaller ones', 'Mixing different oils', 'Removing impurities', 'Adding chemicals'],
+        correct: 'Breaking large molecules into smaller ones',
+        explanation: 'Cracking breaks large hydrocarbon molecules into smaller, more useful ones.',
+        difficulty: 'medium'
+      },
+      // Hard Questions
+      {
+        id: 'g12_industrial_hard_1',
+        question: 'What are the optimal conditions for the Haber process?',
+        options: ['High T, High P', 'Low T, High P', 'Moderate T, High P, catalyst', 'High T, Low P'],
+        correct: 'Moderate T, High P, catalyst',
+        explanation: 'Optimal conditions: ~450°C (compromise), 200-300 atm pressure, iron catalyst.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_industrial_hard_2',
+        question: 'In the Contact process, what happens in the converter?',
+        options: ['SO₂ → SO₃', 'S → SO₂', 'SO₃ → H₂SO₄', 'H₂SO₄ → SO₃'],
+        correct: 'SO₂ → SO₃',
+        explanation: 'In the converter: 2SO₂ + O₂ ⇌ 2SO₃ using V₂O₅ catalyst at ~450°C.',
+        difficulty: 'hard'
+      }
+    ]
+  },
+
+  {
+    id: 'grade12_polymers',
+    name: 'Grade 12: Unit 4 - Polymers',
+    description: 'Macromolecules, polymerization, and synthetic materials',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_polymer_easy_1',
+        question: 'What is a polymer?',
+        options: ['Small molecule', 'Large molecule made of repeating units', 'Metal compound', 'Gas molecule'],
+        correct: 'Large molecule made of repeating units',
+        explanation: 'Polymers are large molecules composed of many repeating monomer units.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_polymer_easy_2',
+        question: 'What is a monomer?',
+        options: ['Large molecule', 'Small repeating unit', 'Catalyst', 'Solvent'],
+        correct: 'Small repeating unit',
+        explanation: 'Monomers are small molecules that link together to form polymers.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_polymer_easy_3',
+        question: 'What is polyethylene made from?',
+        options: ['Ethane', 'Ethene', 'Ethanol', 'Ethanoic acid'],
+        correct: 'Ethene',
+        explanation: 'Polyethylene is made by polymerizing ethene (C₂H₄) monomers.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_polymer_easy_4',
+        question: 'What type of polymerization produces water as a byproduct?',
+        options: ['Addition', 'Condensation', 'Free radical', 'Ionic'],
+        correct: 'Condensation',
+        explanation: 'Condensation polymerization involves elimination of small molecules like water.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_polymer_easy_5',
+        question: 'Which polymer is used to make plastic bags?',
+        options: ['PVC', 'Polyethylene', 'Polystyrene', 'Nylon'],
+        correct: 'Polyethylene',
+        explanation: 'Polyethylene (PE) is commonly used to make plastic bags.',
+        difficulty: 'easy'
+      },
+      // Medium Questions
+      {
+        id: 'g12_polymer_med_1',
+        question: 'What is the difference between thermoplastics and thermosetting plastics?',
+        options: ['No difference', 'Thermoplastics can be remelted', 'Thermosetting can be remelted', 'Different colors'],
+        correct: 'Thermoplastics can be remelted',
+        explanation: 'Thermoplastics can be remelted and reshaped, while thermosetting plastics cannot.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_polymer_med_2',
+        question: 'What is cross-linking in polymers?',
+        options: ['Breaking chains', 'Connecting polymer chains', 'Monomer addition', 'Color change'],
+        correct: 'Connecting polymer chains',
+        explanation: 'Cross-linking creates bonds between polymer chains, affecting properties.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_polymer_med_3',
+        question: 'What makes nylon a condensation polymer?',
+        options: ['Uses addition reactions', 'Eliminates water during formation', 'Contains only C-C bonds', 'Is thermoplastic'],
+        correct: 'Eliminates water during formation',
+        explanation: 'Nylon forms through condensation reactions that eliminate water molecules.',
+        difficulty: 'medium'
+      },
+      // Hard Questions
+      {
+        id: 'g12_polymer_hard_1',
+        question: 'What is the repeating unit in PET (polyethylene terephthalate)?',
+        options: ['Ethene only', 'Terephthalic acid only', 'Ethylene glycol + terephthalic acid', 'Ethanol + acid'],
+        correct: 'Ethylene glycol + terephthalic acid',
+        explanation: 'PET is formed from ethylene glycol and terephthalic acid through condensation.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_polymer_hard_2',
+        question: 'Why does vulcanized rubber have different properties than natural rubber?',
+        options: ['Different monomers', 'Cross-linking with sulfur', 'Different temperature', 'Added colors'],
+        correct: 'Cross-linking with sulfur',
+        explanation: 'Vulcanization creates sulfur cross-links between rubber chains, improving properties.',
+        difficulty: 'hard'
+      }
+    ]
+  },
+
+  {
+    id: 'grade12_environmental_chemistry',
+    name: 'Grade 12: Unit 5 - Introduction to Environmental Chemistry',
+    description: 'Chemical processes in the environment and pollution',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_env_easy_1',
+        question: 'What is environmental chemistry?',
+        options: ['Chemistry in labs only', 'Chemical processes in air, water, and soil', 'Only organic chemistry', 'Only inorganic chemistry'],
+        correct: 'Chemical processes in air, water, and soil',
+        explanation: 'Environmental chemistry studies chemical processes in the natural environment.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_env_easy_2',
+        question: 'What is the main cause of acid rain?',
+        options: ['CO₂', 'SO₂ and NOₓ', 'O₂', 'H₂O'],
+        correct: 'SO₂ and NOₓ',
+        explanation: 'Sulfur dioxide and nitrogen oxides in the atmosphere cause acid rain.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_env_easy_3',
+        question: 'What is the ozone layer?',
+        options: ['Layer of oxygen', 'Protective layer of O₃', 'Layer of nitrogen', 'Layer of CO₂'],
+        correct: 'Protective layer of O₃',
+        explanation: 'The ozone layer is made of O₃ and protects Earth from UV radiation.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_env_easy_4',
+        question: 'What is a greenhouse gas?',
+        options: ['Gas that cools Earth', 'Gas that traps heat', 'Gas from plants only', 'Oxygen'],
+        correct: 'Gas that traps heat',
+        explanation: 'Greenhouse gases trap heat in the atmosphere, causing global warming.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_env_easy_5',
+        question: 'What is BOD?',
+        options: ['Biological Oxygen Demand', 'Basic Organic Density', 'Bacterial Oil Decomposition', 'Biogas Output Data'],
+        correct: 'Biological Oxygen Demand',
+        explanation: 'BOD measures the amount of oxygen needed by bacteria to decompose organic matter.',
+        difficulty: 'easy'
+      },
+      // Medium Questions
+      {
+        id: 'g12_env_med_1',
+        question: 'How do CFCs damage the ozone layer?',
+        options: ['React directly with O₃', 'Release Cl atoms that catalyze O₃ destruction', 'Block sunlight', 'Absorb O₃'],
+        correct: 'Release Cl atoms that catalyze O₃ destruction',
+        explanation: 'CFCs release chlorine atoms that catalytically destroy ozone molecules.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_env_med_2',
+        question: 'What is eutrophication?',
+        options: ['Water purification', 'Excessive nutrient enrichment', 'Water cooling', 'pH increase'],
+        correct: 'Excessive nutrient enrichment',
+        explanation: 'Eutrophication is excessive nutrient enrichment leading to algal blooms and oxygen depletion.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_env_med_3',
+        question: 'What is photochemical smog?',
+        options: ['Fog with photos', 'Smog formed by light reactions', 'Industrial smoke', 'Natural mist'],
+        correct: 'Smog formed by light reactions',
+        explanation: 'Photochemical smog forms when sunlight reacts with NOₓ and hydrocarbons.',
+        difficulty: 'medium'
+      },
+      // Hard Questions
+      {
+        id: 'g12_env_hard_1',
+        question: 'What is the role of hydroxyl radicals (OH•) in the atmosphere?',
+        options: ['Cause pollution', 'Atmospheric detergent - remove pollutants', 'Form ozone', 'Block sunlight'],
+        correct: 'Atmospheric detergent - remove pollutants',
+        explanation: 'OH• radicals act as atmospheric detergents, removing many pollutants through oxidation.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_env_hard_2',
+        question: 'What is the carbon cycle\'s role in climate regulation?',
+        options: ['No role', 'Regulates atmospheric CO₂ levels', 'Only affects plants', 'Controls oxygen levels'],
+        correct: 'Regulates atmospheric CO₂ levels',
+        explanation: 'The carbon cycle regulates atmospheric CO₂, affecting global climate through the greenhouse effect.',
+        difficulty: 'hard'
+      }
+    ]
   }
 ];
