@@ -1,5 +1,6 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
 import Index from './pages/Index';
 import Subject from './pages/Subject';
 import Quiz from './pages/Quiz';
@@ -7,10 +8,17 @@ import Grade11Subject from './pages/Grade11Subject';
 import Grade11Quiz from './pages/Grade11Quiz';
 import Grade12Subject from './pages/Grade12Subject';
 import Grade12Quiz from './pages/Grade12Quiz';
+import OfflineIndicator from './components/OfflineIndicator';
+import { register as registerSW } from './utils/serviceWorker';
 
 function App() {
+  useEffect(() => {
+    registerSW();
+  }, []);
+
   return (
     <Router>
+      <OfflineIndicator />
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/subject/:subject" element={<Subject />} />
