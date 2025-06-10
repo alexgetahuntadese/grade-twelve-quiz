@@ -1,4 +1,3 @@
-
 import { Chapter } from '../types';
 
 export const chemistryChapters: Chapter[] = [
@@ -103,7 +102,6 @@ export const chemistryChapters: Chapter[] = [
     name: 'Grade 11: Organic Chemistry',
     description: 'Carbon compounds, hydrocarbons, and functional groups',
     questions: [
-      // Easy Questions
       {
         id: 'g11_org_easy_1',
         question: 'What is organic chemistry?',
@@ -144,8 +142,6 @@ export const chemistryChapters: Chapter[] = [
         explanation: 'The general formula for alkanes is CₙH₂ₙ₊₂',
         difficulty: 'easy'
       },
-
-      // Medium Questions
       {
         id: 'g11_org_med_1',
         question: 'What is an isomer?',
@@ -170,8 +166,6 @@ export const chemistryChapters: Chapter[] = [
         explanation: 'CH₃CH₂CH₃ has 3 carbon atoms, so it is propane.',
         difficulty: 'medium'
       },
-
-      // Hard Questions
       {
         id: 'g11_org_hard_1',
         question: 'How many structural isomers does butane (C₄H₁₀) have?',
@@ -192,104 +186,10 @@ export const chemistryChapters: Chapter[] = [
   },
 
   {
-    id: 'grade12_physical_chemistry',
-    name: 'Grade 12: Physical Chemistry',
-    description: 'Thermodynamics, kinetics, and equilibrium',
-    questions: [
-      // Easy Questions
-      {
-        id: 'g12_phys_easy_1',
-        question: 'What is enthalpy?',
-        options: ['Heat content', 'Temperature', 'Pressure', 'Volume'],
-        correct: 'Heat content',
-        explanation: 'Enthalpy is the heat content of a system.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_phys_easy_2',
-        question: 'What is an exothermic reaction?',
-        options: ['Releases heat', 'Absorbs heat', 'No heat change', 'Increases temperature'],
-        correct: 'Releases heat',
-        explanation: 'Exothermic reactions release heat to the surroundings.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_phys_easy_3',
-        question: 'What is the unit of energy?',
-        options: ['Joule', 'Watt', 'Newton', 'Pascal'],
-        correct: 'Joule',
-        explanation: 'The SI unit of energy is the Joule (J).',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_phys_easy_4',
-        question: 'What does a catalyst do?',
-        options: ['Increases reaction rate', 'Decreases reaction rate', 'Changes products', 'Provides energy'],
-        correct: 'Increases reaction rate',
-        explanation: 'A catalyst increases the rate of reaction without being consumed.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_phys_easy_5',
-        question: 'What is chemical equilibrium?',
-        options: ['Forward rate equals reverse rate', 'No reaction occurs', 'Complete reaction', 'One-way reaction'],
-        correct: 'Forward rate equals reverse rate',
-        explanation: 'At equilibrium, the rates of forward and reverse reactions are equal.',
-        difficulty: 'easy'
-      },
-
-      // Medium Questions
-      {
-        id: 'g12_phys_med_1',
-        question: 'What is the first law of thermodynamics?',
-        options: ['Energy cannot be created or destroyed', 'Entropy increases', 'Heat flows from hot to cold', 'PV = nRT'],
-        correct: 'Energy cannot be created or destroyed',
-        explanation: 'The first law states that energy is conserved.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g12_phys_med_2',
-        question: 'What is activation energy?',
-        options: ['Energy needed to start reaction', 'Energy released', 'Final energy', 'Total energy'],
-        correct: 'Energy needed to start reaction',
-        explanation: 'Activation energy is the minimum energy required to initiate a reaction.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g12_phys_med_3',
-        question: 'What is Le Chatelier\'s principle?',
-        options: ['System responds to oppose changes', 'Energy is conserved', 'Matter is conserved', 'Temperature is constant'],
-        correct: 'System responds to oppose changes',
-        explanation: 'Le Chatelier\'s principle states that systems respond to oppose applied changes.',
-        difficulty: 'medium'
-      },
-
-      // Hard Questions
-      {
-        id: 'g12_phys_hard_1',
-        question: 'If Kc = 4 for A + B ⇌ C + D, what is Kc for C + D ⇌ A + B?',
-        options: ['4', '1/4', '16', '1/16'],
-        correct: '1/4',
-        explanation: 'For the reverse reaction, Kc(reverse) = 1/Kc(forward) = 1/4',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g12_phys_hard_2',
-        question: 'Calculate ΔG° if ΔH° = -100 kJ/mol and ΔS° = -50 J/mol⋅K at 298 K',
-        options: ['-85.1 kJ/mol', '-114.9 kJ/mol', '-100 kJ/mol', '-150 kJ/mol'],
-        correct: '-85.1 kJ/mol',
-        explanation: 'ΔG° = ΔH° - TΔS° = -100 - 298(-0.05) = -100 + 14.9 = -85.1 kJ/mol',
-        difficulty: 'hard'
-      }
-    ]
-  },
-
-  {
     id: 'grade12_biochemistry',
     name: 'Grade 12: Biochemistry and Environmental Chemistry',
     description: 'Biomolecules, metabolism, and environmental chemical processes',
     questions: [
-      // Easy Questions
       {
         id: 'g12_biochem_easy_1',
         question: 'What are the four major biomolecules?',
@@ -330,8 +230,6 @@ export const chemistryChapters: Chapter[] = [
         explanation: 'Acid rain is caused by sulfur dioxide and nitrogen oxides reacting with water.',
         difficulty: 'easy'
       },
-
-      // Medium Questions
       {
         id: 'g12_biochem_med_1',
         question: 'What is the difference between DNA and RNA?',
@@ -356,8 +254,6 @@ export const chemistryChapters: Chapter[] = [
         explanation: 'CFCs break down ozone in the stratosphere.',
         difficulty: 'medium'
       },
-
-      // Hard Questions
       {
         id: 'g12_biochem_hard_1',
         question: 'What is the overall equation for photosynthesis?',
@@ -383,7 +279,6 @@ export const chemistryChapters: Chapter[] = [
     name: 'Grade 12: Unit 1 - Acid-Base Equilibrium',
     description: 'Acids, bases, pH, buffers, and equilibrium calculations',
     questions: [
-      // Easy Questions
       {
         id: 'g12_acid_easy_1',
         question: 'What is an acid according to Arrhenius theory?',
@@ -424,7 +319,6 @@ export const chemistryChapters: Chapter[] = [
         explanation: 'Solutions with pH less than 7 are acidic.',
         difficulty: 'easy'
       },
-      // Medium Questions
       {
         id: 'g12_acid_med_1',
         question: 'What is the relationship between Ka and Kb for a conjugate acid-base pair?',
@@ -449,7 +343,6 @@ export const chemistryChapters: Chapter[] = [
         explanation: 'At the equivalence point, the moles of acid equal the moles of base added.',
         difficulty: 'medium'
       },
-      // Hard Questions
       {
         id: 'g12_acid_hard_1',
         question: 'Calculate the pH of 0.1 M acetic acid (Ka = 1.8 × 10⁻⁵)',
@@ -474,7 +367,6 @@ export const chemistryChapters: Chapter[] = [
     name: 'Grade 12: Unit 2 - Electrochemistry',
     description: 'Galvanic cells, electrolysis, and electrochemical reactions',
     questions: [
-      // Easy Questions
       {
         id: 'g12_electro_easy_1',
         question: 'What is electrochemistry?',
@@ -515,7 +407,6 @@ export const chemistryChapters: Chapter[] = [
         explanation: 'A galvanic cell needs both a wire (for electron flow) and salt bridge (for ion flow).',
         difficulty: 'easy'
       },
-      // Medium Questions
       {
         id: 'g12_electro_med_1',
         question: 'What is the purpose of a salt bridge?',
@@ -540,7 +431,6 @@ export const chemistryChapters: Chapter[] = [
         explanation: 'The Nernst equation: E = E° - (RT/nF)ln(Q) calculates potential at non-standard conditions.',
         difficulty: 'medium'
       },
-      // Hard Questions
       {
         id: 'g12_electro_hard_1',
         question: 'Calculate E°cell for Zn|Zn²⁺||Cu²⁺|Cu if E°(Zn²⁺/Zn) = -0.76V and E°(Cu²⁺/Cu) = +0.34V',
@@ -565,7 +455,6 @@ export const chemistryChapters: Chapter[] = [
     name: 'Grade 12: Unit 3 - Industrial Chemistry',
     description: 'Large-scale chemical processes and industrial applications',
     questions: [
-      // Easy Questions
       {
         id: 'g12_industrial_easy_1',
         question: 'What is industrial chemistry?',
@@ -606,7 +495,6 @@ export const chemistryChapters: Chapter[] = [
         explanation: 'Fractional distillation separates components based on different boiling points.',
         difficulty: 'easy'
       },
-      // Medium Questions
       {
         id: 'g12_industrial_med_1',
         question: 'What are the raw materials for the Haber process?',
@@ -631,7 +519,6 @@ export const chemistryChapters: Chapter[] = [
         explanation: 'Cracking breaks large hydrocarbon molecules into smaller, more useful ones.',
         difficulty: 'medium'
       },
-      // Hard Questions
       {
         id: 'g12_industrial_hard_1',
         question: 'What are the optimal conditions for the Haber process?',
@@ -656,7 +543,6 @@ export const chemistryChapters: Chapter[] = [
     name: 'Grade 12: Unit 4 - Polymers',
     description: 'Macromolecules, polymerization, and synthetic materials',
     questions: [
-      // Easy Questions
       {
         id: 'g12_polymer_easy_1',
         question: 'What is a polymer?',
@@ -697,7 +583,6 @@ export const chemistryChapters: Chapter[] = [
         explanation: 'Polyethylene (PE) is commonly used to make plastic bags.',
         difficulty: 'easy'
       },
-      // Medium Questions
       {
         id: 'g12_polymer_med_1',
         question: 'What is the difference between thermoplastics and thermosetting plastics?',
@@ -722,7 +607,6 @@ export const chemistryChapters: Chapter[] = [
         explanation: 'Nylon forms through condensation reactions that eliminate water molecules.',
         difficulty: 'medium'
       },
-      // Hard Questions
       {
         id: 'g12_polymer_hard_1',
         question: 'What is the repeating unit in PET (polyethylene terephthalate)?',
@@ -747,7 +631,6 @@ export const chemistryChapters: Chapter[] = [
     name: 'Grade 12: Unit 5 - Introduction to Environmental Chemistry',
     description: 'Chemical processes in the environment and pollution',
     questions: [
-      // Easy Questions
       {
         id: 'g12_env_easy_1',
         question: 'What is environmental chemistry?',
@@ -788,7 +671,6 @@ export const chemistryChapters: Chapter[] = [
         explanation: 'BOD measures the amount of oxygen needed by bacteria to decompose organic matter.',
         difficulty: 'easy'
       },
-      // Medium Questions
       {
         id: 'g12_env_med_1',
         question: 'How do CFCs damage the ozone layer?',
@@ -813,7 +695,6 @@ export const chemistryChapters: Chapter[] = [
         explanation: 'Photochemical smog forms when sunlight reacts with NOₓ and hydrocarbons.',
         difficulty: 'medium'
       },
-      // Hard Questions
       {
         id: 'g12_env_hard_1',
         question: 'What is the role of hydroxyl radicals (OH•) in the atmosphere?',
