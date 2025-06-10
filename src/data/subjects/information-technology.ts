@@ -3,319 +3,354 @@ import { Chapter } from '../types';
 
 export const informationTechnologyChapters: Chapter[] = [
   {
-    id: 'computer_basics',
-    name: 'Computer Fundamentals',
-    description: 'Basic computer concepts and operation',
+    id: 'grade12_unit1_information_systems',
+    name: 'Grade 12 Unit 1: Information Systems and Their Applications',
+    description: 'Understanding information systems, their components, and real-world applications',
     questions: [
       // Easy Questions
       {
-        id: 'comp_basic_1',
-        question: 'What is hardware?',
-        options: ['Computer programs', 'Physical components of a computer', 'Internet', 'Files'],
-        correct: 'Physical components of a computer',
-        explanation: 'Hardware refers to the physical components that make up a computer system.',
+        id: 'g12_unit1_easy_1',
+        question: 'What is an information system?',
+        options: ['Computer hardware only', 'Software only', 'Combination of hardware, software, data, networks, and people', 'Internet connection'],
+        correct: 'Combination of hardware, software, data, networks, and people',
+        explanation: 'An information system combines technology components with people and processes to collect, filter, process, create, and distribute data.',
         difficulty: 'easy'
       },
       {
-        id: 'comp_basic_2',
-        question: 'What is software?',
-        options: ['Computer programs', 'Physical components', 'Internet', 'Keyboard and mouse'],
-        correct: 'Computer programs',
-        explanation: 'Software refers to programs and other operating information used by a computer.',
+        id: 'g12_unit1_easy_2',
+        question: 'What are the main components of an information system?',
+        options: ['Hardware and software only', 'Hardware, software, data, networks, and people', 'Computer and internet', 'Programs and files'],
+        correct: 'Hardware, software, data, networks, and people',
+        explanation: 'Information systems consist of five key components: hardware, software, data, networks, and people.',
         difficulty: 'easy'
       },
       {
-        id: 'comp_basic_3',
-        question: 'What is the CPU?',
-        options: ['Central Processing Unit', 'Computer Personal Unit', 'Central Program Utility', 'Computer Processor Upgrade'],
-        correct: 'Central Processing Unit',
-        explanation: 'The CPU (Central Processing Unit) is the main processor of a computer.',
+        id: 'g12_unit1_easy_3',
+        question: 'What is data in an information system?',
+        options: ['Programs', 'Raw facts and figures', 'Computer hardware', 'Network connections'],
+        correct: 'Raw facts and figures',
+        explanation: 'Data consists of raw facts and figures that can be processed into meaningful information.',
         difficulty: 'easy'
       },
-      {
-        id: 'comp_basic_4',
-        question: 'What is RAM?',
-        options: ['Random Access Memory', 'Read Always Memory', 'Remote Access Module', 'Running Application Memory'],
-        correct: 'Random Access Memory',
-        explanation: 'RAM (Random Access Memory) is temporary memory used by the computer while it\'s running.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'comp_basic_5',
-        question: 'What is an operating system?',
-        options: ['Word processor', 'System that manages computer hardware and software', 'Anti-virus program', 'Web browser'],
-        correct: 'System that manages computer hardware and software',
-        explanation: 'An operating system manages computer hardware and software resources.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'comp_basic_6',
-        question: 'What is a file?',
-        options: ['Physical folder', 'Collection of data stored as a unit', 'Program', 'Website'],
-        correct: 'Collection of data stored as a unit',
-        explanation: 'A file is a collection of data stored as a single unit with a name.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'comp_basic_7',
-        question: 'What is a folder or directory?',
-        options: ['Type of file', 'Location for organizing files', 'Program', 'Hardware'],
-        correct: 'Location for organizing files',
-        explanation: 'A folder or directory is a location that organizes and stores files.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'comp_basic_8',
-        question: 'What is the Internet?',
-        options: ['Web browser', 'Global network of computers', 'Operating system', 'Software package'],
-        correct: 'Global network of computers',
-        explanation: 'The Internet is a global network of interconnected computers.',
-        difficulty: 'easy'
-      },
-
       // Medium Questions
       {
-        id: 'comp_basic_med_1',
-        question: 'What is the difference between RAM and ROM?',
-        options: ['No difference', 'RAM is temporary; ROM is permanent', 'RAM is larger', 'ROM is faster'],
-        correct: 'RAM is temporary; ROM is permanent',
-        explanation: 'RAM is volatile memory that loses data when powered off; ROM retains data permanently.',
+        id: 'g12_unit1_med_1',
+        question: 'What is the difference between data and information?',
+        options: ['No difference', 'Data is processed, information is raw', 'Data is raw facts, information is processed data', 'They are the same thing'],
+        correct: 'Data is raw facts, information is processed data',
+        explanation: 'Data consists of raw facts, while information is data that has been processed and organized to be meaningful.',
         difficulty: 'medium'
       },
       {
-        id: 'comp_basic_med_2',
-        question: 'What is a network?',
-        options: ['Single computer', 'Connected computers sharing resources', 'Software program', 'Internet only'],
-        correct: 'Connected computers sharing resources',
-        explanation: 'A network is a group of connected computers and devices that can share resources.',
+        id: 'g12_unit1_med_2',
+        question: 'What is a Management Information System (MIS)?',
+        options: ['Hardware system', 'System providing information for management decisions', 'Software program', 'Database only'],
+        correct: 'System providing information for management decisions',
+        explanation: 'MIS provides managers with information needed for effective decision-making and organizational control.',
         difficulty: 'medium'
       },
+      // Hard Questions
       {
-        id: 'comp_basic_med_3',
+        id: 'g12_unit1_hard_1',
+        question: 'What is Enterprise Resource Planning (ERP)?',
+        options: ['Simple database', 'Integrated system managing all business processes', 'Word processor', 'Web browser'],
+        correct: 'Integrated system managing all business processes',
+        explanation: 'ERP integrates core business processes like finance, HR, manufacturing, and supply chain into a unified system.',
+        difficulty: 'hard'
+      }
+    ]
+  },
+
+  {
+    id: 'grade12_unit2_emerging_technologies',
+    name: 'Grade 12 Unit 2: Emerging Technologies',
+    description: 'Exploration of cutting-edge technologies and their impact on society',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_unit2_easy_1',
+        question: 'What is artificial intelligence (AI)?',
+        options: ['Computer graphics', 'Machines performing tasks requiring human intelligence', 'Internet technology', 'Database system'],
+        correct: 'Machines performing tasks requiring human intelligence',
+        explanation: 'AI refers to computer systems that can perform tasks typically requiring human intelligence.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_unit2_easy_2',
+        question: 'What is the Internet of Things (IoT)?',
+        options: ['Social media', 'Network of connected devices', 'Web browser', 'Computer virus'],
+        correct: 'Network of connected devices',
+        explanation: 'IoT refers to the network of physical devices connected to the internet, collecting and sharing data.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_unit2_easy_3',
         question: 'What is cloud computing?',
-        options: ['Weather forecasting', 'Using services over the internet', 'Local storage', 'Software installation'],
-        correct: 'Using services over the internet',
-        explanation: 'Cloud computing delivers computing services over the internet rather than local resources.',
+        options: ['Weather prediction', 'Delivering computing services over the internet', 'Local storage', 'Computer hardware'],
+        correct: 'Delivering computing services over the internet',
+        explanation: 'Cloud computing delivers computing services like storage, processing, and software over the internet.',
+        difficulty: 'easy'
+      },
+      // Medium Questions
+      {
+        id: 'g12_unit2_med_1',
+        question: 'What is machine learning?',
+        options: ['Manual programming', 'Systems that learn from data without explicit programming', 'Hardware repair', 'Internet browsing'],
+        correct: 'Systems that learn from data without explicit programming',
+        explanation: 'Machine learning enables computers to learn and improve from experience without being explicitly programmed.',
         difficulty: 'medium'
       },
       {
-        id: 'comp_basic_med_4',
-        question: 'What is a firewall?',
-        options: ['Antivirus software', 'Security system controlling network traffic', 'Hardware only', 'Internet browser'],
-        correct: 'Security system controlling network traffic',
-        explanation: 'A firewall is a security system that monitors and controls incoming and outgoing network traffic.',
+        id: 'g12_unit2_med_2',
+        question: 'What is blockchain technology?',
+        options: ['Social network', 'Distributed ledger technology', 'Video game', 'Email system'],
+        correct: 'Distributed ledger technology',
+        explanation: 'Blockchain is a distributed ledger technology that maintains a secure, transparent record of transactions.',
         difficulty: 'medium'
       },
-      {
-        id: 'comp_basic_med_5',
-        question: 'What is an IP address?',
-        options: ['Email address', 'Unique identifier for network devices', 'Software license', 'Internet provider'],
-        correct: 'Unique identifier for network devices',
-        explanation: 'An IP address is a unique numerical label assigned to devices on a network.',
-        difficulty: 'medium'
-      },
-
       // Hard Questions
       {
-        id: 'comp_basic_hard_1',
-        question: 'What is virtualization in computing?',
-        options: ['Virtual reality', 'Creating virtual versions of resources', '3D graphics', 'Video streaming'],
-        correct: 'Creating virtual versions of resources',
-        explanation: 'Virtualization creates virtual versions of physical resources like servers, storage, and networks.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'comp_basic_hard_2',
-        question: 'How does public key cryptography work?',
-        options: ['Single key for all', 'Uses key pairs for encryption/decryption', 'No encryption', 'Only for government'],
-        correct: 'Uses key pairs for encryption/decryption',
-        explanation: 'Public key cryptography uses a pair of keys (public and private) for secure communication.',
+        id: 'g12_unit2_hard_1',
+        question: 'What is quantum computing?',
+        options: ['Regular computing', 'Computing using quantum mechanical phenomena', 'Internet technology', 'Mobile computing'],
+        correct: 'Computing using quantum mechanical phenomena',
+        explanation: 'Quantum computing uses quantum mechanical phenomena like superposition and entanglement to process information.',
         difficulty: 'hard'
       }
     ]
   },
-  
+
   {
-    id: 'grade11_programming',
-    name: 'Grade 11: Programming Fundamentals',
-    description: 'Introduction to coding and software development',
+    id: 'grade12_unit3_database_management',
+    name: 'Grade 12 Unit 3: Database Management System',
+    description: 'Understanding database concepts, design, and management principles',
     questions: [
       // Easy Questions
       {
-        id: 'g11_prog_easy_1',
+        id: 'g12_unit3_easy_1',
+        question: 'What is a database?',
+        options: ['Single file', 'Organized collection of data', 'Computer program', 'Hardware device'],
+        correct: 'Organized collection of data',
+        explanation: 'A database is an organized collection of structured information stored electronically.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_unit3_easy_2',
+        question: 'What is a table in a database?',
+        options: ['Furniture', 'Collection of related records', 'Computer screen', 'Network connection'],
+        correct: 'Collection of related records',
+        explanation: 'A table is a collection of related data entries consisting of rows and columns.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_unit3_easy_3',
+        question: 'What is a primary key?',
+        options: ['Password', 'Unique identifier for records', 'Database name', 'Table color'],
+        correct: 'Unique identifier for records',
+        explanation: 'A primary key is a unique identifier that ensures each record in a table can be uniquely identified.',
+        difficulty: 'easy'
+      },
+      // Medium Questions
+      {
+        id: 'g12_unit3_med_1',
+        question: 'What is SQL?',
+        options: ['Programming language', 'Structured Query Language for databases', 'Hardware component', 'Operating system'],
+        correct: 'Structured Query Language for databases',
+        explanation: 'SQL (Structured Query Language) is used to communicate with and manipulate databases.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_unit3_med_2',
+        question: 'What is normalization in databases?',
+        options: ['Making databases normal', 'Organizing data to reduce redundancy', 'Copying data', 'Deleting data'],
+        correct: 'Organizing data to reduce redundancy',
+        explanation: 'Normalization is the process of organizing data to reduce redundancy and improve data integrity.',
+        difficulty: 'medium'
+      },
+      // Hard Questions
+      {
+        id: 'g12_unit3_hard_1',
+        question: 'What is ACID in database transactions?',
+        options: ['Chemical property', 'Atomicity, Consistency, Isolation, Durability', 'Database software', 'Network protocol'],
+        correct: 'Atomicity, Consistency, Isolation, Durability',
+        explanation: 'ACID properties ensure reliable database transactions: Atomicity, Consistency, Isolation, and Durability.',
+        difficulty: 'hard'
+      }
+    ]
+  },
+
+  {
+    id: 'grade12_unit4_web_authoring',
+    name: 'Grade 12 Unit 4: Web Authoring',
+    description: 'Creating and designing web pages using HTML, CSS, and JavaScript',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_unit4_easy_1',
+        question: 'What is HTML?',
+        options: ['Programming language', 'HyperText Markup Language', 'Database system', 'Operating system'],
+        correct: 'HyperText Markup Language',
+        explanation: 'HTML (HyperText Markup Language) is the standard markup language for creating web pages.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_unit4_easy_2',
+        question: 'What is CSS?',
+        options: ['Programming language', 'Cascading Style Sheets', 'Database query', 'Hardware component'],
+        correct: 'Cascading Style Sheets',
+        explanation: 'CSS (Cascading Style Sheets) is used to style and layout web pages.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_unit4_easy_3',
+        question: 'What is the purpose of HTML tags?',
+        options: ['Style web pages', 'Structure web content', 'Store data', 'Connect to internet'],
+        correct: 'Structure web content',
+        explanation: 'HTML tags are used to structure and organize content on web pages.',
+        difficulty: 'easy'
+      },
+      // Medium Questions
+      {
+        id: 'g12_unit4_med_1',
+        question: 'What is JavaScript?',
+        options: ['Markup language', 'Programming language for web interactivity', 'Style sheet language', 'Database language'],
+        correct: 'Programming language for web interactivity',
+        explanation: 'JavaScript is a programming language that adds interactivity and dynamic behavior to web pages.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_unit4_med_2',
+        question: 'What is responsive web design?',
+        options: ['Fast websites', 'Design that adapts to different screen sizes', 'Colorful websites', 'Animated websites'],
+        correct: 'Design that adapts to different screen sizes',
+        explanation: 'Responsive web design ensures websites work well on various devices and screen sizes.',
+        difficulty: 'medium'
+      },
+      // Hard Questions
+      {
+        id: 'g12_unit4_hard_1',
+        question: 'What is the DOM in web development?',
+        options: ['Database', 'Document Object Model', 'Design software', 'Network protocol'],
+        correct: 'Document Object Model',
+        explanation: 'The DOM (Document Object Model) is a programming interface that represents HTML documents as objects.',
+        difficulty: 'hard'
+      }
+    ]
+  },
+
+  {
+    id: 'grade12_unit5_maintenance_troubleshooting',
+    name: 'Grade 12 Unit 5: Maintenance and Troubleshooting',
+    description: 'Computer system maintenance, problem diagnosis, and troubleshooting techniques',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_unit5_easy_1',
+        question: 'What is computer maintenance?',
+        options: ['Buying new computers', 'Regular care to keep systems running properly', 'Playing games', 'Using internet'],
+        correct: 'Regular care to keep systems running properly',
+        explanation: 'Computer maintenance involves regular activities to keep computer systems running efficiently and prevent problems.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_unit5_easy_2',
+        question: 'What is troubleshooting?',
+        options: ['Creating problems', 'Process of diagnosing and solving problems', 'Installing software', 'Connecting to internet'],
+        correct: 'Process of diagnosing and solving problems',
+        explanation: 'Troubleshooting is the systematic process of diagnosing and resolving problems in computer systems.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_unit5_easy_3',
+        question: 'What is preventive maintenance?',
+        options: ['Fixing broken computers', 'Regular maintenance to prevent problems', 'Buying insurance', 'Training users'],
+        correct: 'Regular maintenance to prevent problems',
+        explanation: 'Preventive maintenance involves regular activities performed to prevent system failures and extend equipment life.',
+        difficulty: 'easy'
+      },
+      // Medium Questions
+      {
+        id: 'g12_unit5_med_1',
+        question: 'What is system backup?',
+        options: ['Deleting files', 'Creating copies of data for recovery', 'Installing updates', 'Cleaning hardware'],
+        correct: 'Creating copies of data for recovery',
+        explanation: 'System backup involves creating copies of data and system configurations for recovery in case of failure.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_unit5_med_2',
+        question: 'What is disk defragmentation?',
+        options: ['Breaking the disk', 'Reorganizing data for better performance', 'Cleaning the disk', 'Formatting the disk'],
+        correct: 'Reorganizing data for better performance',
+        explanation: 'Disk defragmentation reorganizes scattered data on hard drives to improve system performance.',
+        difficulty: 'medium'
+      },
+      // Hard Questions
+      {
+        id: 'g12_unit5_hard_1',
+        question: 'What is system imaging?',
+        options: ['Taking photos', 'Creating exact copy of entire system', 'Image editing', 'Graphic design'],
+        correct: 'Creating exact copy of entire system',
+        explanation: 'System imaging creates an exact copy of an entire computer system, including OS, applications, and data.',
+        difficulty: 'hard'
+      }
+    ]
+  },
+
+  {
+    id: 'grade12_unit6_programming_fundamentals',
+    name: 'Grade 12 Unit 6: Fundamentals of Programming',
+    description: 'Basic programming concepts, algorithms, and programming language principles',
+    questions: [
+      // Easy Questions
+      {
+        id: 'g12_unit6_easy_1',
         question: 'What is programming?',
-        options: ['Using a computer', 'Writing instructions for computers', 'Installing software', 'Creating hardware'],
-        correct: 'Writing instructions for computers',
-        explanation: 'Programming is the process of creating a set of instructions for computers to follow.',
+        options: ['Using computer software', 'Creating instructions for computers', 'Browsing the internet', 'Playing computer games'],
+        correct: 'Creating instructions for computers',
+        explanation: 'Programming is the process of creating instructions that tell a computer how to perform specific tasks.',
         difficulty: 'easy'
       },
       {
-        id: 'g11_prog_easy_2',
-        question: 'What is a variable in programming?',
-        options: ['Mathematical equation', 'Storage location with a name', 'Computer brand', 'Program name'],
-        correct: 'Storage location with a name',
-        explanation: 'A variable is a named storage location for data in a program.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g11_prog_easy_3',
+        id: 'g12_unit6_easy_2',
         question: 'What is an algorithm?',
-        options: ['Computer part', 'Step-by-step procedure', 'Programming language', 'Software package'],
-        correct: 'Step-by-step procedure',
-        explanation: 'An algorithm is a step-by-step procedure for solving a problem or accomplishing a task.',
+        options: ['Computer hardware', 'Step-by-step procedure for solving problems', 'Software application', 'Internet protocol'],
+        correct: 'Step-by-step procedure for solving problems',
+        explanation: 'An algorithm is a step-by-step procedure or formula for solving a problem or completing a task.',
         difficulty: 'easy'
       },
       {
-        id: 'g11_prog_easy_4',
-        question: 'What is a loop in programming?',
-        options: ['Error message', 'Code that repeats', 'Variable type', 'Programming language'],
-        correct: 'Code that repeats',
-        explanation: 'A loop is a structure that repeats a sequence of instructions until a condition is met.',
+        id: 'g12_unit6_easy_3',
+        question: 'What is a variable in programming?',
+        options: ['Constant value', 'Named storage location for data', 'Computer component', 'Network address'],
+        correct: 'Named storage location for data',
+        explanation: 'A variable is a named storage location that can hold different values during program execution.',
         difficulty: 'easy'
       },
-      {
-        id: 'g11_prog_easy_5',
-        question: 'What is a conditional statement?',
-        options: ['Variable declaration', 'Code that runs based on a condition', 'Loop type', 'Function name'],
-        correct: 'Code that runs based on a condition',
-        explanation: 'A conditional statement executes different code based on whether a condition is true or false.',
-        difficulty: 'easy'
-      },
-
       // Medium Questions
       {
-        id: 'g11_prog_med_1',
-        question: 'What is the difference between a compiler and an interpreter?',
-        options: ['No difference', 'Compiler translates before execution; interpreter during execution', 'Only naming difference', 'Different languages'],
-        correct: 'Compiler translates before execution; interpreter during execution',
-        explanation: 'A compiler translates code to machine language before execution; an interpreter translates line by line during execution.',
+        id: 'g12_unit6_med_1',
+        question: 'What is pseudocode?',
+        options: ['Fake programming', 'Informal description of algorithm logic', 'Programming language', 'Error message'],
+        correct: 'Informal description of algorithm logic',
+        explanation: 'Pseudocode is an informal way to describe algorithm logic using natural language and programming structures.',
         difficulty: 'medium'
       },
       {
-        id: 'g11_prog_med_2',
-        question: 'What is object-oriented programming?',
-        options: ['Any programming', 'Programming with objects that contain data and methods', 'Web design', 'Database only'],
-        correct: 'Programming with objects that contain data and methods',
-        explanation: 'Object-oriented programming organizes code into objects containing data and methods that act on that data.',
+        id: 'g12_unit6_med_2',
+        question: 'What is a flowchart?',
+        options: ['Water diagram', 'Visual representation of algorithm steps', 'Organization chart', 'Network diagram'],
+        correct: 'Visual representation of algorithm steps',
+        explanation: 'A flowchart is a visual diagram that represents the steps and decision points in an algorithm or process.',
         difficulty: 'medium'
       },
-      {
-        id: 'g11_prog_med_3',
-        question: 'What is a function in programming?',
-        options: ['Mathematical equation', 'Reusable block of code', 'Variable type', 'File type'],
-        correct: 'Reusable block of code',
-        explanation: 'A function is a reusable block of code that performs a specific task.',
-        difficulty: 'medium'
-      },
-
       // Hard Questions
       {
-        id: 'g11_prog_hard_1',
-        question: 'What is recursion in programming?',
-        options: ['Loop type', 'Function calling itself', 'Error handling', 'Data structure'],
-        correct: 'Function calling itself',
-        explanation: 'Recursion occurs when a function calls itself as part of its execution.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g11_prog_hard_2',
-        question: 'What is the difference between stack and heap memory?',
-        options: ['No difference', 'Stack is structured and temporary; heap is dynamic', 'Only naming difference', 'Only in certain languages'],
-        correct: 'Stack is structured and temporary; heap is dynamic',
-        explanation: 'Stack memory is used for static memory allocation; heap is used for dynamic memory allocation.',
-        difficulty: 'hard'
-      }
-    ]
-  },
-  
-  {
-    id: 'grade12_cybersecurity',
-    name: 'Grade 12: Cybersecurity',
-    description: 'Principles of digital safety and information security',
-    questions: [
-      // Easy Questions
-      {
-        id: 'g12_cyber_easy_1',
-        question: 'What is cybersecurity?',
-        options: ['Internet usage', 'Protecting systems from digital attacks', 'Computer brand', 'Software type'],
-        correct: 'Protecting systems from digital attacks',
-        explanation: 'Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_cyber_easy_2',
-        question: 'What is malware?',
-        options: ['Computer hardware', 'Software designed to harm', 'Internet browser', 'Operating system'],
-        correct: 'Software designed to harm',
-        explanation: 'Malware is software specifically designed to damage, disrupt, or gain unauthorized access.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_cyber_easy_3',
-        question: 'What is a strong password?',
-        options: ['Any password', 'Complex combination of characters', 'Simple and memorable', 'Your name'],
-        correct: 'Complex combination of characters',
-        explanation: 'A strong password uses a complex combination of letters, numbers, and symbols.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_cyber_easy_4',
-        question: 'What is phishing?',
-        options: ['Computer game', 'Fraudulent attempt to obtain sensitive information', 'Software type', 'Hardware component'],
-        correct: 'Fraudulent attempt to obtain sensitive information',
-        explanation: 'Phishing is a fraudulent attempt to obtain sensitive information by disguising as a trustworthy entity.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_cyber_easy_5',
-        question: 'What is encryption?',
-        options: ['Computer language', 'Converting information into a code', 'Hardware protection', 'Internet connection'],
-        correct: 'Converting information into a code',
-        explanation: 'Encryption is the process of converting information into a code to prevent unauthorized access.',
-        difficulty: 'easy'
-      },
-
-      // Medium Questions
-      {
-        id: 'g12_cyber_med_1',
-        question: 'What is multi-factor authentication?',
-        options: ['Multiple passwords', 'Security requiring multiple verification methods', 'Login technique', 'Password manager'],
-        correct: 'Security requiring multiple verification methods',
-        explanation: 'Multi-factor authentication requires two or more verification methods to grant access.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g12_cyber_med_2',
-        question: 'What is a DDoS attack?',
-        options: ['Computer virus', 'Attempt to make a service unavailable by overwhelming it', 'Password theft', 'Software bug'],
-        correct: 'Attempt to make a service unavailable by overwhelming it',
-        explanation: 'A DDoS (Distributed Denial of Service) attack attempts to disrupt normal traffic by overwhelming the target.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g12_cyber_med_3',
-        question: 'What is a VPN?',
-        options: ['Video player', 'Virtual Private Network', 'Visual Processing Node', 'Virus Protection Nexus'],
-        correct: 'Virtual Private Network',
-        explanation: 'A VPN (Virtual Private Network) extends a private network across a public network, enabling secure connections.',
-        difficulty: 'medium'
-      },
-
-      // Hard Questions
-      {
-        id: 'g12_cyber_hard_1',
-        question: 'What is the difference between symmetric and asymmetric encryption?',
-        options: ['No difference', 'Symmetric uses one key; asymmetric uses key pairs', 'Only in application', 'Only in strength'],
-        correct: 'Symmetric uses one key; asymmetric uses key pairs',
-        explanation: 'Symmetric encryption uses one key for encryption and decryption; asymmetric uses different keys for each.',
-        difficulty: 'hard'
-      },
-      {
-        id: 'g12_cyber_hard_2',
-        question: 'What is a zero-day vulnerability?',
-        options: ['Known issue', 'Software flaw unknown to those who should fix it', 'Hardware problem', 'Internet outage'],
-        correct: 'Software flaw unknown to those who should fix it',
-        explanation: 'A zero-day vulnerability is a software flaw unknown to the vendor that hackers can exploit before it\'s fixed.',
+        id: 'g12_unit6_hard_1',
+        question: 'What is computational thinking?',
+        options: ['Using computers', 'Problem-solving process using computer science principles', 'Fast thinking', 'Mathematical calculation'],
+        correct: 'Problem-solving process using computer science principles',
+        explanation: 'Computational thinking is a problem-solving process that includes decomposition, pattern recognition, abstraction, and algorithms.',
         difficulty: 'hard'
       }
     ]
