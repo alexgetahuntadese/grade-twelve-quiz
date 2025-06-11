@@ -7,23 +7,6 @@ import { BookOpen, Calculator, Atom, Dna, Wrench, History, Globe, DollarSign, Us
 const Index = () => {
   const navigate = useNavigate();
 
-  const regularSubjects = [
-    { id: 'mathematics', name: 'Mathematics', icon: Calculator, color: 'bg-blue-500' },
-    { id: 'physics', name: 'Physics', icon: Atom, color: 'bg-purple-500' },
-    { id: 'chemistry', name: 'Chemistry', icon: Atom, color: 'bg-green-500' },
-    { id: 'biology', name: 'Biology', icon: Dna, color: 'bg-emerald-500' },
-    { id: 'english', name: 'English', icon: BookOpen, color: 'bg-red-500' },
-    { id: 'history', name: 'History', icon: History, color: 'bg-amber-500' },
-    { id: 'geography', name: 'Geography', icon: Globe, color: 'bg-cyan-500' },
-    { id: 'technical-drawing', name: 'Technical Drawing', icon: Wrench, color: 'bg-gray-500' },
-    { id: 'economics', name: 'Economics', icon: DollarSign, color: 'bg-yellow-500' },
-    { id: 'general-business', name: 'General Business', icon: Users, color: 'bg-indigo-500' },
-    { id: 'civics', name: 'Civics', icon: Scale, color: 'bg-rose-500' },
-    { id: 'physical-education', name: 'Physical Education', icon: Heart, color: 'bg-pink-500' },
-    { id: 'information-technology', name: 'Information Technology', icon: Monitor, color: 'bg-slate-500' },
-    { id: 'national-language', name: 'National Language', icon: Languages, color: 'bg-orange-500' }
-  ];
-
   const grade11Subjects = [
     { id: 'mathematics', name: 'Advanced Mathematics', icon: Calculator, color: 'bg-blue-600' },
     { id: 'physics', name: 'Advanced Physics', icon: Atom, color: 'bg-purple-600' },
@@ -67,10 +50,6 @@ const Index = () => {
           </h1>
           <p className="text-xl text-gray-600 mb-6">Master your knowledge across all academic levels</p>
           <div className="flex justify-center space-x-4">
-            <div className="flex items-center space-x-2 bg-white rounded-full px-4 py-2 shadow-md">
-              <BookOpen className="w-5 h-5 text-blue-500" />
-              <span className="text-sm font-medium">Regular Level</span>
-            </div>
             <div className="flex items-center space-x-2 bg-gradient-to-r from-amber-100 to-orange-100 rounded-full px-4 py-2 shadow-md">
               <Star className="w-5 h-5 text-amber-600" />
               <span className="text-sm font-medium">Grade 11 Advanced</span>
@@ -79,41 +58,6 @@ const Index = () => {
               <Award className="w-5 h-5 text-purple-600" />
               <span className="text-sm font-medium">Grade 12 Expert</span>
             </div>
-          </div>
-        </div>
-
-        {/* Regular Subjects Section */}
-        <div className="mb-16">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4 flex items-center justify-center gap-3">
-              <BookOpen className="w-8 h-8 text-blue-500" />
-              Regular Level Subjects
-            </h2>
-            <p className="text-gray-600">Foundation knowledge for all students</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {regularSubjects.map((subject) => {
-              const IconComponent = subject.icon;
-              return (
-                <Card key={subject.id} className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-l-4 border-l-blue-400">
-                  <CardHeader className="pb-3">
-                    <div className={`w-14 h-14 ${subject.color} rounded-xl flex items-center justify-center mb-3 shadow-lg`}>
-                      <IconComponent className="w-7 h-7 text-white" />
-                    </div>
-                    <CardTitle className="text-lg">{subject.name}</CardTitle>
-                    <CardDescription className="text-blue-600 font-medium">Foundation Level</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <Button 
-                      onClick={() => navigate(`/subject/${subject.id}`)}
-                      className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
-                    >
-                      Start Learning
-                    </Button>
-                  </CardContent>
-                </Card>
-              );
-            })}
           </div>
         </div>
 
