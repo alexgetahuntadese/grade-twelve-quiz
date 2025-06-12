@@ -1,5 +1,4 @@
-
-import { Chapter } from '../types';
+import { Chapter } from '../../types';
 
 export const foundationGeographyChapters: Chapter[] = [
   {
