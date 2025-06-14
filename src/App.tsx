@@ -11,8 +11,6 @@ import Grade11Subject from './pages/Grade11Subject';
 import Grade11Quiz from './pages/Grade11Quiz';
 import Grade12Subject from './pages/Grade12Subject';
 import Grade12Quiz from './pages/Grade12Quiz';
-import Register from './pages/Register';
-import Login from './pages/Login';
 import OfflineIndicator from './components/OfflineIndicator';
 import { register as registerSW } from './utils/serviceWorker';
 
@@ -26,8 +24,6 @@ function App() {
       <OfflineIndicator />
       <Routes>
         <Route path="/" element={<Index />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
         <Route path="/grade-10" element={<Grade10 />} />
         <Route path="/grade-11" element={<Grade11 />} />
         <Route path="/grade-12" element={<Grade12 />} />

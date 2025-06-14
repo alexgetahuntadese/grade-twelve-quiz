@@ -1,8 +1,9 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { useNavigate, Link } from 'react-router-dom';
-import { MessageCircle, Send, Star, Award, BookOpen, Users, TrendingUp, UserPlus } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { MessageCircle, Send, Star, Award, BookOpen, Users, TrendingUp } from 'lucide-react';
 import ChatButton from '@/components/ChatButton';
 import { useState } from 'react';
 import ChatInterface from '@/components/ChatInterface';
@@ -55,26 +56,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="max-w-7xl mx-auto">
-        {/* Header Section with Auth Links */}
-        <div className="flex justify-between items-center p-6">
-          <div></div>
-          <div className="flex items-center space-x-4">
-            <Link to="/register">
-              <Button variant="outline" className="flex items-center gap-2">
-                <UserPlus className="w-4 h-4" />
-                Sign Up
-              </Button>
-            </Link>
-            <Link to="/login">
-              <Button variant="ghost" className="text-gray-600 hover:text-gray-800">
-                Sign In
-              </Button>
-            </Link>
-          </div>
-        </div>
-
         {/* Header Section */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 pt-6">
           <h1 className="text-5xl font-bold text-gray-800 mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             Educational Quiz Platform
           </h1>
