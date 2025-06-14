@@ -1,8 +1,8 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
 import { BookOpen, Calculator, Atom, Dna, Wrench, History, Globe, DollarSign, Users, Scale, Heart, Monitor, Languages, GraduationCap, Star, Award } from 'lucide-react';
+import ChatButton from '@/components/ChatButton';
 
 const Index = () => {
   const navigate = useNavigate();
@@ -136,6 +136,8 @@ const Index = () => {
           <p className="text-gray-500">Choose your level and start your learning journey today!</p>
         </div>
       </div>
+      
+      <ChatButton />
     </div>
   );
 };
