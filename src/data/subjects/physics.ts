@@ -1,7 +1,8 @@
-
 import { Chapter } from '../types';
+import { grade12PhysicsChapters } from './physics/grade12';
 
 export const physicsChapters: Chapter[] = [
+  // General Physics Chapters
   {
     id: 'mechanics',
     name: 'Mechanics',
@@ -170,6 +171,7 @@ export const physicsChapters: Chapter[] = [
       }
     ]
   },
+  // ... keep existing code (grade12_thermodynamics chapter)
   {
     id: 'grade12_thermodynamics',
     name: 'Grade 12: Thermodynamics',
@@ -253,5 +255,8 @@ export const physicsChapters: Chapter[] = [
         difficulty: 'hard'
       }
     ]
-  }
+  },
+
+  // Add Grade 12 Physics Chapters
+  ...grade12PhysicsChapters
 ];
