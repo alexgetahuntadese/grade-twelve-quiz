@@ -1,4 +1,5 @@
 
+
 export interface Question {
   id: string;
   question: string;
@@ -6,6 +7,7 @@ export interface Question {
   correct: string;
   explanation?: string;
   difficulty: 'easy' | 'medium' | 'hard';
+  topic?: string;
 }
 
 export interface Chapter {

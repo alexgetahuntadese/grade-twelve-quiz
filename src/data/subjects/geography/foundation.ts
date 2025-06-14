@@ -1,4 +1,5 @@
-import { Chapter } from '../types';
+
+import { Chapter } from '../../types';
 
 // Foundation geography chapters (placeholder)
 export const foundationChapters: Chapter[] = [
