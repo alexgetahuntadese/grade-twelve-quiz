@@ -1,5 +1,5 @@
-
 import { Chapter } from '../types';
+import { grade12BiologyChapters } from './biology/grade12';
 
 export const biologyChapters: Chapter[] = [
   {
@@ -279,5 +279,8 @@ export const biologyChapters: Chapter[] = [
         difficulty: 'hard'
       }
     ]
-  }
+  },
+
+  // Add Grade 12 Biology Chapters
+  ...grade12BiologyChapters
 ];
