@@ -1,7 +1,11 @@
-
 import { Chapter } from '../types';
+import { grade12CivicsChapters } from './civics/grade12/index';
 
+// Civics & Ethical Education subject chapters organized by grade
 export const civicsChapters: Chapter[] = [
+  // Grade 12 chapters (11 units following Ethiopian Ministry of Education curriculum)
+  ...grade12CivicsChapters,
+
   {
     id: 'government_systems',
     name: 'Government Systems and Democracy',
