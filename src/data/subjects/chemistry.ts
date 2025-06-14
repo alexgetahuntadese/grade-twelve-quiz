@@ -1,625 +1,761 @@
+
 import { Chapter } from '../types';
 
 export const chemistryChapters: Chapter[] = [
   {
     id: 'atomic_structure',
     name: 'Atomic Structure',
-    description: 'Atoms, electrons, and periodic trends',
+    description: 'Atoms, electrons, protons, neutrons, and periodic table',
     questions: [
+      // Easy Questions (10)
       {
-        id: 'atom_1',
+        id: 'atom_easy_1',
+        question: 'What is an atom?',
+        options: ['Smallest unit of matter', 'A molecule', 'A compound', 'An element'],
+        correct: 'Smallest unit of matter',
+        explanation: 'An atom is the smallest unit of matter that retains the properties of an element.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'atom_easy_2',
         question: 'What is the charge of a proton?',
-        options: ['+1', '-1', '0', '+2'],
-        correct: '+1',
-        explanation: 'Protons carry a positive charge of +1 elementary charge.',
+        options: ['Positive', 'Negative', 'Neutral', 'Variable'],
+        correct: 'Positive',
+        explanation: 'Protons carry a positive electrical charge.',
         difficulty: 'easy'
       },
       {
-        id: 'atom_2',
+        id: 'atom_easy_3',
+        question: 'What is the charge of an electron?',
+        options: ['Positive', 'Negative', 'Neutral', 'Variable'],
+        correct: 'Negative',
+        explanation: 'Electrons carry a negative electrical charge.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'atom_easy_4',
+        question: 'What is the charge of a neutron?',
+        options: ['Positive', 'Negative', 'Neutral', 'Variable'],
+        correct: 'Neutral',
+        explanation: 'Neutrons have no electrical charge; they are neutral.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'atom_easy_5',
+        question: 'Where are protons located in an atom?',
+        options: ['Nucleus', 'Electron shell', 'Outside atom', 'Moving freely'],
+        correct: 'Nucleus',
+        explanation: 'Protons are located in the nucleus at the center of the atom.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'atom_easy_6',
         question: 'Where are electrons located in an atom?',
-        options: ['Nucleus', 'Electron shells', 'Proton shells', 'Neutron cloud'],
-        correct: 'Electron shells',
-        explanation: 'Electrons occupy electron shells or orbitals around the nucleus.',
+        options: ['Nucleus', 'Electron shells around nucleus', 'Center', 'Outside atom'],
+        correct: 'Electron shells around nucleus',
+        explanation: 'Electrons orbit the nucleus in electron shells or energy levels.',
         difficulty: 'easy'
       },
       {
-        id: 'atom_3',
-        question: 'What determines the atomic number of an element?',
+        id: 'atom_easy_7',
+        question: 'What determines the atomic number?',
         options: ['Number of neutrons', 'Number of protons', 'Number of electrons', 'Atomic mass'],
         correct: 'Number of protons',
-        explanation: 'The atomic number is defined by the number of protons in the nucleus.',
+        explanation: 'The atomic number is equal to the number of protons in the nucleus.',
         difficulty: 'easy'
       },
       {
-        id: 'atom_4',
-        question: 'How many electrons can the first electron shell hold?',
-        options: ['2', '4', '8', '18'],
-        correct: '2',
-        explanation: 'The first electron shell (1s orbital) can hold a maximum of 2 electrons.',
+        id: 'atom_easy_8',
+        question: 'What is the periodic table?',
+        options: ['List of compounds', 'Arrangement of elements by atomic number', 'Chemical reactions', 'Molecular structures'],
+        correct: 'Arrangement of elements by atomic number',
+        explanation: 'The periodic table organizes elements by increasing atomic number.',
         difficulty: 'easy'
       },
       {
-        id: 'atom_5',
+        id: 'atom_easy_9',
+        question: 'What is an element?',
+        options: ['Mixture of atoms', 'Pure substance with same atomic number', 'Chemical compound', 'Molecular formula'],
+        correct: 'Pure substance with same atomic number',
+        explanation: 'An element is a pure substance consisting of atoms with the same atomic number.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'atom_easy_10',
+        question: 'What is atomic mass?',
+        options: ['Number of protons', 'Number of electrons', 'Mass of protons and neutrons', 'Number of neutrons'],
+        correct: 'Mass of protons and neutrons',
+        explanation: 'Atomic mass is primarily the combined mass of protons and neutrons in the nucleus.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions (10)
+      {
+        id: 'atom_med_1',
         question: 'What are isotopes?',
-        options: ['Atoms with same number of protons but different neutrons', 'Atoms with same mass', 'Atoms with same electrons', 'Different elements'],
-        correct: 'Atoms with same number of protons but different neutrons',
+        options: ['Different elements', 'Atoms with same protons, different neutrons', 'Charged atoms', 'Molecular compounds'],
+        correct: 'Atoms with same protons, different neutrons',
         explanation: 'Isotopes are atoms of the same element with different numbers of neutrons.',
-        difficulty: 'easy'
+        difficulty: 'medium'
       },
       {
-        id: 'atom_6',
-        question: 'Which subatomic particle has no charge?',
-        options: ['Proton', 'Electron', 'Neutron', 'Ion'],
-        correct: 'Neutron',
-        explanation: 'Neutrons are electrically neutral particles.',
-        difficulty: 'easy'
+        id: 'atom_med_2',
+        question: 'What is an ion?',
+        options: ['Neutral atom', 'Atom with unequal protons and electrons', 'Type of molecule', 'Chemical bond'],
+        correct: 'Atom with unequal protons and electrons',
+        explanation: 'An ion is an atom that has gained or lost electrons, giving it a net charge.',
+        difficulty: 'medium'
       },
       {
-        id: 'atom_7',
+        id: 'atom_med_3',
+        question: 'What is electron configuration?',
+        options: ['Number of electrons', 'Arrangement of electrons in shells', 'Electron charge', 'Electron mass'],
+        correct: 'Arrangement of electrons in shells',
+        explanation: 'Electron configuration describes how electrons are distributed in atomic orbitals.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'atom_med_4',
+        question: 'What is the maximum number of electrons in the first shell?',
+        options: ['2', '8', '18', '32'],
+        correct: '2',
+        explanation: 'The first electron shell (K shell) can hold a maximum of 2 electrons.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'atom_med_5',
         question: 'What is the maximum number of electrons in the second shell?',
-        options: ['2', '6', '8', '10'],
+        options: ['2', '8', '18', '32'],
         correct: '8',
-        explanation: 'The second shell can hold up to 8 electrons (2 in 2s + 6 in 2p).',
-        difficulty: 'easy'
-      },
-      {
-        id: 'atom_8',
-        question: 'What is the electron configuration of carbon (Z=6)?',
-        options: ['1s² 2s² 2p²', '1s² 2s⁴', '1s² 2p⁴', '2s² 2p⁴'],
-        correct: '1s² 2s² 2p²',
-        explanation: 'Carbon has 6 electrons: 2 in 1s, 2 in 2s, and 2 in 2p orbitals.',
+        explanation: 'The second electron shell (L shell) can hold a maximum of 8 electrons.',
         difficulty: 'medium'
       },
       {
-        id: 'atom_9',
-        question: 'Which principle states that electrons fill orbitals of lowest energy first?',
-        options: ['Pauli exclusion principle', 'Hund\'s rule', 'Aufbau principle', 'Heisenberg principle'],
-        correct: 'Aufbau principle',
-        explanation: 'The Aufbau principle states that electrons occupy the lowest energy orbitals first.',
+        id: 'atom_med_6',
+        question: 'What is a cation?',
+        options: ['Negative ion', 'Positive ion', 'Neutral atom', 'Electron'],
+        correct: 'Positive ion',
+        explanation: 'A cation is a positively charged ion, formed when an atom loses electrons.',
         difficulty: 'medium'
       },
       {
-        id: 'atom_10',
-        question: 'How many orbitals are in the p subshell?',
-        options: ['1', '3', '5', '7'],
-        correct: '3',
-        explanation: 'The p subshell contains 3 orbitals (px, py, pz), each holding up to 2 electrons.',
+        id: 'atom_med_7',
+        question: 'What is an anion?',
+        options: ['Positive ion', 'Negative ion', 'Neutral atom', 'Proton'],
+        correct: 'Negative ion',
+        explanation: 'An anion is a negatively charged ion, formed when an atom gains electrons.',
         difficulty: 'medium'
       },
+      {
+        id: 'atom_med_8',
+        question: 'What are valence electrons?',
+        options: ['All electrons', 'Electrons in nucleus', 'Electrons in outermost shell', 'Core electrons'],
+        correct: 'Electrons in outermost shell',
+        explanation: 'Valence electrons are the electrons in the outermost shell of an atom.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'atom_med_9',
+        question: 'What determines chemical properties of an element?',
+        options: ['Atomic mass', 'Number of neutrons', 'Number of valence electrons', 'Nuclear charge'],
+        correct: 'Number of valence electrons',
+        explanation: 'The number of valence electrons primarily determines an element\'s chemical properties.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'atom_med_10',
+        question: 'What is atomic radius?',
+        options: ['Size of nucleus', 'Distance from nucleus to outermost electrons', 'Number of shells', 'Atomic mass'],
+        correct: 'Distance from nucleus to outermost electrons',
+        explanation: 'Atomic radius is the distance from the nucleus to the outermost electrons.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions (10)
       {
         id: 'atom_hard_1',
-        question: 'What is the ground state electron configuration of chromium (Z=24)?',
-        options: ['[Ar] 4s² 3d⁴', '[Ar] 4s¹ 3d⁵', '[Ar] 4s⁰ 3d⁶', '[Ar] 3d⁶'],
-        correct: '[Ar] 4s¹ 3d⁵',
-        explanation: 'Chromium is an exception - it has one electron in 4s and five in 3d for stability.',
+        question: 'What is the Aufbau principle?',
+        options: ['Electrons fill orbitals randomly', 'Electrons fill lowest energy orbitals first', 'All orbitals fill equally', 'Electrons avoid pairing'],
+        correct: 'Electrons fill lowest energy orbitals first',
+        explanation: 'The Aufbau principle states that electrons fill atomic orbitals starting with the lowest energy levels.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'atom_hard_2',
+        question: 'What is Hund\'s rule?',
+        options: ['Fill orbitals completely first', 'Put one electron in each orbital before pairing', 'Electrons have opposite spins', 'Energy levels are equal'],
+        correct: 'Put one electron in each orbital before pairing',
+        explanation: 'Hund\'s rule states that electrons occupy orbitals singly before pairing up.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'atom_hard_3',
+        question: 'What is the Pauli exclusion principle?',
+        options: ['Electrons have same spin', 'No two electrons can have identical quantum numbers', 'Electrons fill randomly', 'All orbitals are equivalent'],
+        correct: 'No two electrons can have identical quantum numbers',
+        explanation: 'The Pauli exclusion principle states that no two electrons in an atom can have the same set of quantum numbers.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'atom_hard_4',
+        question: 'What is ionization energy?',
+        options: ['Energy to add electron', 'Energy to remove electron', 'Energy to move electron', 'Energy in nucleus'],
+        correct: 'Energy to remove electron',
+        explanation: 'Ionization energy is the energy required to remove an electron from an atom.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'atom_hard_5',
+        question: 'What is electron affinity?',
+        options: ['Energy to remove electron', 'Energy released when adding electron', 'Binding energy', 'Orbital energy'],
+        correct: 'Energy released when adding electron',
+        explanation: 'Electron affinity is the energy change when an electron is added to a neutral atom.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'atom_hard_6',
+        question: 'What is electronegativity?',
+        options: ['Atomic size', 'Ability to attract electrons in bonds', 'Number of electrons', 'Charge of atom'],
+        correct: 'Ability to attract electrons in bonds',
+        explanation: 'Electronegativity is the ability of an atom to attract electrons in a chemical bond.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'atom_hard_7',
+        question: 'What is the effective nuclear charge?',
+        options: ['Total nuclear charge', 'Net charge felt by valence electrons', 'Charge of ion', 'Electron charge'],
+        correct: 'Net charge felt by valence electrons',
+        explanation: 'Effective nuclear charge is the net charge experienced by an electron in an atom.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'atom_hard_8',
+        question: 'What are quantum numbers?',
+        options: ['Atomic masses', 'Mathematical descriptions of electron properties', 'Periodic table positions', 'Chemical formulas'],
+        correct: 'Mathematical descriptions of electron properties',
+        explanation: 'Quantum numbers describe the quantum state and properties of electrons in atoms.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'atom_hard_9',
+        question: 'What is orbital hybridization?',
+        options: ['Mixing of atomic orbitals', 'Electron pairing', 'Nuclear fusion', 'Ionization process'],
+        correct: 'Mixing of atomic orbitals',
+        explanation: 'Hybridization is the mixing of atomic orbitals to form new hybrid orbitals.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'atom_hard_10',
+        question: 'What is the Heisenberg uncertainty principle?',
+        options: ['Electrons have fixed positions', 'Cannot know exact position and momentum simultaneously', 'All particles are uncertain', 'Energy is quantized'],
+        correct: 'Cannot know exact position and momentum simultaneously',
+        explanation: 'The uncertainty principle states that position and momentum of a particle cannot both be precisely determined.',
         difficulty: 'hard'
       }
     ]
   },
 
   {
-    id: 'grade11_organic_chemistry',
-    name: 'Grade 11: Organic Chemistry',
-    description: 'Carbon compounds, hydrocarbons, and functional groups',
+    id: 'chemical_bonding',
+    name: 'Chemical Bonding',
+    description: 'Ionic, covalent, and metallic bonds',
     questions: [
+      // Easy Questions (10)
       {
-        id: 'g11_org_easy_1',
-        question: 'What is organic chemistry?',
-        options: ['Study of carbon compounds', 'Study of metals', 'Study of gases', 'Study of crystals'],
-        correct: 'Study of carbon compounds',
-        explanation: 'Organic chemistry is the study of carbon-containing compounds.',
+        id: 'bond_easy_1',
+        question: 'What is a chemical bond?',
+        options: ['Physical attraction', 'Force holding atoms together', 'Electron movement', 'Nuclear reaction'],
+        correct: 'Force holding atoms together',
+        explanation: 'A chemical bond is the force that holds atoms together in molecules and compounds.',
         difficulty: 'easy'
       },
       {
-        id: 'g11_org_easy_2',
-        question: 'What is the simplest hydrocarbon?',
-        options: ['Ethane', 'Methane', 'Propane', 'Butane'],
-        correct: 'Methane',
-        explanation: 'Methane (CH₄) is the simplest hydrocarbon with one carbon atom.',
+        id: 'bond_easy_2',
+        question: 'What is an ionic bond?',
+        options: ['Sharing electrons', 'Transfer of electrons', 'Nuclear attraction', 'Metallic bonding'],
+        correct: 'Transfer of electrons',
+        explanation: 'An ionic bond forms when electrons are transferred from one atom to another.',
         difficulty: 'easy'
       },
       {
-        id: 'g11_org_easy_3',
-        question: 'What is the molecular formula of ethane?',
-        options: ['CH₄', 'C₂H₆', 'C₃H₈', 'C₂H₄'],
-        correct: 'C₂H₆',
-        explanation: 'Ethane has 2 carbon atoms and 6 hydrogen atoms: C₂H₆',
+        id: 'bond_easy_3',
+        question: 'What is a covalent bond?',
+        options: ['Transfer of electrons', 'Sharing of electrons', 'Nuclear fusion', 'Metallic bonding'],
+        correct: 'Sharing of electrons',
+        explanation: 'A covalent bond forms when atoms share electrons.',
         difficulty: 'easy'
       },
       {
-        id: 'g11_org_easy_4',
-        question: 'What type of bond is present in alkanes?',
-        options: ['Single bonds only', 'Double bonds only', 'Triple bonds only', 'Mixed bonds'],
-        correct: 'Single bonds only',
-        explanation: 'Alkanes contain only single C-C bonds.',
+        id: 'bond_easy_4',
+        question: 'Which type of bond forms between metals and nonmetals?',
+        options: ['Covalent', 'Ionic', 'Metallic', 'Hydrogen'],
+        correct: 'Ionic',
+        explanation: 'Ionic bonds typically form between metals (which lose electrons) and nonmetals (which gain electrons).',
         difficulty: 'easy'
       },
       {
-        id: 'g11_org_easy_5',
-        question: 'What is the general formula for alkanes?',
-        options: ['CₙH₂ₙ', 'CₙH₂ₙ₊₂', 'CₙH₂ₙ₋₂', 'CₙHₙ'],
-        correct: 'CₙH₂ₙ₊₂',
-        explanation: 'The general formula for alkanes is CₙH₂ₙ₊₂',
+        id: 'bond_easy_5',
+        question: 'Which type of bond forms between nonmetals?',
+        options: ['Ionic', 'Covalent', 'Metallic', 'Nuclear'],
+        correct: 'Covalent',
+        explanation: 'Covalent bonds typically form between nonmetals that share electrons.',
         difficulty: 'easy'
       },
       {
-        id: 'g11_org_med_1',
-        question: 'What is an isomer?',
-        options: ['Same formula, different structure', 'Different formula, same structure', 'Same everything', 'Different everything'],
-        correct: 'Same formula, different structure',
-        explanation: 'Isomers have the same molecular formula but different structural arrangements.',
+        id: 'bond_easy_6',
+        question: 'What is a molecule?',
+        options: ['Single atom', 'Group of atoms bonded together', 'Ion', 'Element'],
+        correct: 'Group of atoms bonded together',
+        explanation: 'A molecule is a group of atoms bonded together by chemical bonds.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'bond_easy_7',
+        question: 'What is a compound?',
+        options: ['Single element', 'Substance with two or more different elements', 'Mixture', 'Solution'],
+        correct: 'Substance with two or more different elements',
+        explanation: 'A compound is a substance composed of two or more different elements chemically bonded.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'bond_easy_8',
+        question: 'What is the formula for water?',
+        options: ['H2O', 'CO2', 'NaCl', 'CH4'],
+        correct: 'H2O',
+        explanation: 'Water has the chemical formula H2O, with two hydrogen atoms and one oxygen atom.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'bond_easy_9',
+        question: 'What is the formula for carbon dioxide?',
+        options: ['H2O', 'CO2', 'NaCl', 'CH4'],
+        correct: 'CO2',
+        explanation: 'Carbon dioxide has the formula CO2, with one carbon and two oxygen atoms.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'bond_easy_10',
+        question: 'What is the formula for table salt?',
+        options: ['H2O', 'CO2', 'NaCl', 'CH4'],
+        correct: 'NaCl',
+        explanation: 'Table salt (sodium chloride) has the formula NaCl.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions (10)
+      {
+        id: 'bond_med_1',
+        question: 'What is a polar covalent bond?',
+        options: ['Equal sharing of electrons', 'Unequal sharing of electrons', 'Complete transfer', 'No bonding'],
+        correct: 'Unequal sharing of electrons',
+        explanation: 'A polar covalent bond involves unequal sharing of electrons due to different electronegativities.',
         difficulty: 'medium'
       },
       {
-        id: 'g11_org_med_2',
-        question: 'What functional group is present in alcohols?',
-        options: ['-OH', '-COOH', '-CHO', '-NH₂'],
-        correct: '-OH',
-        explanation: 'Alcohols contain the hydroxyl (-OH) functional group.',
+        id: 'bond_med_2',
+        question: 'What is a nonpolar covalent bond?',
+        options: ['Unequal sharing', 'Equal sharing of electrons', 'Electron transfer', 'No electrons'],
+        correct: 'Equal sharing of electrons',
+        explanation: 'A nonpolar covalent bond involves equal sharing of electrons between atoms.',
         difficulty: 'medium'
       },
       {
-        id: 'g11_org_med_3',
-        question: 'What is the IUPAC name of CH₃CH₂CH₃?',
-        options: ['Methane', 'Ethane', 'Propane', 'Butane'],
-        correct: 'Propane',
-        explanation: 'CH₃CH₂CH₃ has 3 carbon atoms, so it is propane.',
+        id: 'bond_med_3',
+        question: 'What determines bond polarity?',
+        options: ['Atomic size', 'Electronegativity difference', 'Number of electrons', 'Atomic mass'],
+        correct: 'Electronegativity difference',
+        explanation: 'Bond polarity is determined by the difference in electronegativity between bonded atoms.',
         difficulty: 'medium'
       },
       {
-        id: 'g11_org_hard_1',
-        question: 'How many structural isomers does butane (C₄H₁₀) have?',
+        id: 'bond_med_4',
+        question: 'What is a double bond?',
+        options: ['One pair of shared electrons', 'Two pairs of shared electrons', 'Three pairs shared', 'No sharing'],
+        correct: 'Two pairs of shared electrons',
+        explanation: 'A double bond consists of two pairs (four electrons) of shared electrons.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'bond_med_5',
+        question: 'What is a triple bond?',
+        options: ['One pair shared', 'Two pairs shared', 'Three pairs of shared electrons', 'No sharing'],
+        correct: 'Three pairs of shared electrons',
+        explanation: 'A triple bond consists of three pairs (six electrons) of shared electrons.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'bond_med_6',
+        question: 'What is metallic bonding?',
+        options: ['Electron sharing', 'Electron transfer', 'Sea of delocalized electrons', 'Nuclear bonding'],
+        correct: 'Sea of delocalized electrons',
+        explanation: 'Metallic bonding involves a sea of delocalized electrons surrounding metal cations.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'bond_med_7',
+        question: 'What is bond length?',
+        options: ['Bond strength', 'Distance between bonded nuclei', 'Number of bonds', 'Bond energy'],
+        correct: 'Distance between bonded nuclei',
+        explanation: 'Bond length is the average distance between the nuclei of two bonded atoms.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'bond_med_8',
+        question: 'What is bond energy?',
+        options: ['Bond length', 'Energy to break bond', 'Number of electrons', 'Atomic energy'],
+        correct: 'Energy to break bond',
+        explanation: 'Bond energy is the energy required to break a chemical bond.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'bond_med_9',
+        question: 'How does bond length relate to bond strength?',
+        options: ['Longer bonds are stronger', 'Shorter bonds are stronger', 'No relationship', 'Same strength always'],
+        correct: 'Shorter bonds are stronger',
+        explanation: 'Generally, shorter bonds are stronger because atoms are held more tightly together.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'bond_med_10',
+        question: 'What is resonance in bonding?',
+        options: ['Single structure', 'Multiple possible structures', 'No bonding', 'Ionic only'],
+        correct: 'Multiple possible structures',
+        explanation: 'Resonance occurs when a molecule can be represented by multiple valid Lewis structures.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions (10)
+      {
+        id: 'bond_hard_1',
+        question: 'What is VSEPR theory?',
+        options: ['Bonding theory', 'Theory predicting molecular geometry', 'Energy theory', 'Atomic theory'],
+        correct: 'Theory predicting molecular geometry',
+        explanation: 'VSEPR (Valence Shell Electron Pair Repulsion) theory predicts molecular geometry based on electron pair repulsion.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'bond_hard_2',
+        question: 'What is the molecular geometry of methane (CH4)?',
+        options: ['Linear', 'Trigonal planar', 'Tetrahedral', 'Octahedral'],
+        correct: 'Tetrahedral',
+        explanation: 'Methane has a tetrahedral geometry with bond angles of approximately 109.5°.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'bond_hard_3',
+        question: 'What is the molecular geometry of water (H2O)?',
+        options: ['Linear', 'Bent', 'Trigonal planar', 'Tetrahedral'],
+        correct: 'Bent',
+        explanation: 'Water has a bent molecular geometry due to two lone pairs on the oxygen atom.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'bond_hard_4',
+        question: 'What is hybridization?',
+        options: ['Bond breaking', 'Mixing of atomic orbitals', 'Electron transfer', 'Nuclear reaction'],
+        correct: 'Mixing of atomic orbitals',
+        explanation: 'Hybridization is the mixing of atomic orbitals to form new hybrid orbitals for bonding.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'bond_hard_5',
+        question: 'What is sp3 hybridization?',
+        options: ['One s and two p orbitals', 'One s and three p orbitals', 'Two s and one p orbital', 'Three s orbitals'],
+        correct: 'One s and three p orbitals',
+        explanation: 'sp3 hybridization involves mixing one s orbital with three p orbitals.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'bond_hard_6',
+        question: 'What is a sigma bond?',
+        options: ['Side-to-side overlap', 'End-to-end overlap of orbitals', 'No overlap', 'Ionic attraction'],
+        correct: 'End-to-end overlap of orbitals',
+        explanation: 'A sigma bond forms from the end-to-end overlap of atomic orbitals.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'bond_hard_7',
+        question: 'What is a pi bond?',
+        options: ['End-to-end overlap', 'Side-to-side overlap of orbitals', 'No overlap', 'Ionic attraction'],
+        correct: 'Side-to-side overlap of orbitals',
+        explanation: 'A pi bond forms from the side-to-side overlap of p orbitals.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'bond_hard_8',
+        question: 'What is the bond order in nitrogen gas (N2)?',
         options: ['1', '2', '3', '4'],
-        correct: '2',
-        explanation: 'Butane has 2 structural isomers: n-butane and isobutane (methylpropane).',
+        correct: '3',
+        explanation: 'Nitrogen gas has a triple bond, so the bond order is 3.',
         difficulty: 'hard'
       },
       {
-        id: 'g11_org_hard_2',
-        question: 'What is the product when ethene reacts with hydrogen?',
-        options: ['Methane', 'Ethane', 'Propane', 'Butane'],
-        correct: 'Ethane',
-        explanation: 'C₂H₄ + H₂ → C₂H₆ (addition reaction)',
+        id: 'bond_hard_9',
+        question: 'What is lattice energy?',
+        options: ['Bond energy', 'Energy to form ionic solid from gaseous ions', 'Electron energy', 'Nuclear energy'],
+        correct: 'Energy to form ionic solid from gaseous ions',
+        explanation: 'Lattice energy is the energy required to form an ionic solid from gaseous ions.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'bond_hard_10',
+        question: 'What is the coordinate covalent bond?',
+        options: ['Normal covalent bond', 'Bond where one atom provides both electrons', 'Ionic bond', 'Metallic bond'],
+        correct: 'Bond where one atom provides both electrons',
+        explanation: 'A coordinate covalent bond forms when one atom provides both electrons for the shared pair.',
         difficulty: 'hard'
       }
     ]
   },
 
   {
-    id: 'grade12_acid_base_equilibrium',
-    name: 'Grade 12: Unit 1 - Acid-Base Equilibrium',
-    description: 'Acids, bases, pH, buffers, and equilibrium calculations',
+    id: 'grade12_acid_base',
+    name: 'Grade 12: Acid-Base Equilibrium',
+    description: 'Acids, bases, pH, and equilibrium concepts',
     questions: [
+      // Easy Questions (10)
       {
         id: 'g12_acid_easy_1',
         question: 'What is an acid according to Arrhenius theory?',
-        options: ['Proton donor', 'Substance that produces H⁺ ions in water', 'Electron acceptor', 'OH⁻ producer'],
-        correct: 'Substance that produces H⁺ ions in water',
-        explanation: 'Arrhenius acids are substances that produce hydrogen ions (H⁺) when dissolved in water.',
+        options: ['Proton acceptor', 'Substance that releases H+ ions', 'Electron donor', 'Base neutralizer'],
+        correct: 'Substance that releases H+ ions',
+        explanation: 'According to Arrhenius, an acid is a substance that releases hydrogen ions (H+) in aqueous solution.',
         difficulty: 'easy'
       },
       {
         id: 'g12_acid_easy_2',
-        question: 'What is the pH of pure water at 25°C?',
-        options: ['0', '7', '14', '1'],
-        correct: '7',
-        explanation: 'Pure water has a pH of 7, which is neutral.',
+        question: 'What is a base according to Arrhenius theory?',
+        options: ['Proton donor', 'Substance that releases OH- ions', 'Electron acceptor', 'Acid neutralizer'],
+        correct: 'Substance that releases OH- ions',
+        explanation: 'According to Arrhenius, a base is a substance that releases hydroxide ions (OH-) in aqueous solution.',
         difficulty: 'easy'
       },
       {
         id: 'g12_acid_easy_3',
-        question: 'What is a buffer solution?',
-        options: ['Strong acid solution', 'Solution that resists pH change', 'Very dilute solution', 'Concentrated base'],
-        correct: 'Solution that resists pH change',
-        explanation: 'Buffer solutions resist changes in pH when small amounts of acid or base are added.',
+        question: 'What is the pH of pure water at 25°C?',
+        options: ['0', '7', '14', '1'],
+        correct: '7',
+        explanation: 'Pure water has a pH of 7 at 25°C, which is considered neutral.',
         difficulty: 'easy'
       },
       {
         id: 'g12_acid_easy_4',
-        question: 'What is the conjugate base of HCl?',
-        options: ['H⁺', 'Cl⁻', 'HCl⁻', 'OH⁻'],
-        correct: 'Cl⁻',
-        explanation: 'When HCl donates a proton, it becomes Cl⁻, which is its conjugate base.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_acid_easy_5',
-        question: 'A solution with pH 3 is:',
-        options: ['Neutral', 'Basic', 'Acidic', 'Alkaline'],
-        correct: 'Acidic',
+        question: 'What pH range indicates an acidic solution?',
+        options: ['0-7', '7-14', 'Below 0', 'Above 14'],
+        correct: '0-7',
         explanation: 'Solutions with pH less than 7 are acidic.',
         difficulty: 'easy'
       },
       {
+        id: 'g12_acid_easy_5',
+        question: 'What pH range indicates a basic solution?',
+        options: ['0-7', '7-14', 'Below 0', 'Above 14'],
+        correct: '7-14',
+        explanation: 'Solutions with pH greater than 7 are basic (alkaline).',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_acid_easy_6',
+        question: 'What happens when an acid reacts with a base?',
+        options: ['Explosion', 'Neutralization', 'No reaction', 'Decomposition'],
+        correct: 'Neutralization',
+        explanation: 'When an acid reacts with a base, neutralization occurs, forming salt and water.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_acid_easy_7',
+        question: 'What is the formula for hydrochloric acid?',
+        options: ['H2SO4', 'HCl', 'HNO3', 'CH3COOH'],
+        correct: 'HCl',
+        explanation: 'Hydrochloric acid has the chemical formula HCl.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_acid_easy_8',
+        question: 'What is the formula for sulfuric acid?',
+        options: ['H2SO4', 'HCl', 'HNO3', 'CH3COOH'],
+        correct: 'H2SO4',
+        explanation: 'Sulfuric acid has the chemical formula H2SO4.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_acid_easy_9',
+        question: 'What is the formula for sodium hydroxide?',
+        options: ['NaCl', 'NaOH', 'Na2CO3', 'NaHCO3'],
+        correct: 'NaOH',
+        explanation: 'Sodium hydroxide has the chemical formula NaOH.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_acid_easy_10',
+        question: 'What color does litmus paper turn in acidic solution?',
+        options: ['Blue', 'Red', 'Green', 'Yellow'],
+        correct: 'Red',
+        explanation: 'Litmus paper turns red in acidic solutions.',
+        difficulty: 'easy'
+      },
+
+      // Medium Questions (10)
+      {
         id: 'g12_acid_med_1',
-        question: 'What is the relationship between Ka and Kb for a conjugate acid-base pair?',
-        options: ['Ka × Kb = Kw', 'Ka + Kb = Kw', 'Ka - Kb = Kw', 'Ka / Kb = Kw'],
-        correct: 'Ka × Kb = Kw',
-        explanation: 'For any conjugate acid-base pair, Ka × Kb = Kw (the ion product of water).',
+        question: 'What is a Brønsted-Lowry acid?',
+        options: ['Electron donor', 'Proton donor', 'OH- donor', 'Electron acceptor'],
+        correct: 'Proton donor',
+        explanation: 'According to Brønsted-Lowry theory, an acid is a proton (H+) donor.',
         difficulty: 'medium'
       },
       {
         id: 'g12_acid_med_2',
-        question: 'What is the Henderson-Hasselbalch equation used for?',
-        options: ['Calculating reaction rates', 'Calculating buffer pH', 'Calculating equilibrium constants', 'Calculating solubility'],
-        correct: 'Calculating buffer pH',
-        explanation: 'The Henderson-Hasselbalch equation: pH = pKa + log([A⁻]/[HA]) is used to calculate buffer pH.',
+        question: 'What is a Brønsted-Lowry base?',
+        options: ['Electron donor', 'Proton acceptor', 'OH- donor', 'Electron acceptor'],
+        correct: 'Proton acceptor',
+        explanation: 'According to Brønsted-Lowry theory, a base is a proton (H+) acceptor.',
         difficulty: 'medium'
       },
       {
         id: 'g12_acid_med_3',
-        question: 'What happens at the equivalence point of a titration?',
-        options: ['pH = 7 always', 'Moles of acid = moles of base', 'Reaction stops', 'Color change occurs'],
-        correct: 'Moles of acid = moles of base',
-        explanation: 'At the equivalence point, the moles of acid equal the moles of base added.',
+        question: 'What is the relationship between pH and pOH?',
+        options: ['pH + pOH = 7', 'pH + pOH = 14', 'pH - pOH = 14', 'pH × pOH = 14'],
+        correct: 'pH + pOH = 14',
+        explanation: 'At 25°C, pH + pOH = 14 for any aqueous solution.',
         difficulty: 'medium'
       },
       {
+        id: 'g12_acid_med_4',
+        question: 'What is a strong acid?',
+        options: ['Partially ionizes', 'Completely ionizes in solution', 'Never ionizes', 'Weak ionization'],
+        correct: 'Completely ionizes in solution',
+        explanation: 'A strong acid completely ionizes in aqueous solution.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_acid_med_5',
+        question: 'What is a weak acid?',
+        options: ['Completely ionizes', 'Partially ionizes in solution', 'Never ionizes', 'No H+ ions'],
+        correct: 'Partially ionizes in solution',
+        explanation: 'A weak acid only partially ionizes in aqueous solution.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_acid_med_6',
+        question: 'What is the conjugate base of HCl?',
+        options: ['H+', 'Cl-', 'OH-', 'H2O'],
+        correct: 'Cl-',
+        explanation: 'When HCl donates a proton, it forms its conjugate base Cl-.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_acid_med_7',
+        question: 'What is the conjugate acid of NH3?',
+        options: ['NH2-', 'NH4+', 'N3-', 'NH4OH'],
+        correct: 'NH4+',
+        explanation: 'When NH3 accepts a proton, it forms its conjugate acid NH4+.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_acid_med_8',
+        question: 'What is Ka?',
+        options: ['Base constant', 'Acid dissociation constant', 'Equilibrium constant', 'Rate constant'],
+        correct: 'Acid dissociation constant',
+        explanation: 'Ka is the acid dissociation constant, measuring the strength of an acid.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_acid_med_9',
+        question: 'What does a larger Ka value indicate?',
+        options: ['Weaker acid', 'Stronger acid', 'Neutral solution', 'Basic solution'],
+        correct: 'Stronger acid',
+        explanation: 'A larger Ka value indicates a stronger acid (greater ionization).',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_acid_med_10',
+        question: 'What is a buffer solution?',
+        options: ['Pure water', 'Solution resisting pH change', 'Strong acid', 'Strong base'],
+        correct: 'Solution resisting pH change',
+        explanation: 'A buffer solution resists changes in pH when small amounts of acid or base are added.',
+        difficulty: 'medium'
+      },
+
+      // Hard Questions (10)
+      {
         id: 'g12_acid_hard_1',
-        question: 'Calculate the pH of 0.1 M acetic acid (Ka = 1.8 × 10⁻⁵)',
-        options: ['1', '2.87', '4.76', '5.13'],
-        correct: '2.87',
-        explanation: 'For weak acid: [H⁺] = √(Ka × C) = √(1.8×10⁻⁵ × 0.1) = 1.34×10⁻³, pH = 2.87',
+        question: 'What is the Henderson-Hasselbalch equation?',
+        options: ['pH = pKa + log([A-]/[HA])', 'pH = -log[H+]', 'pH + pOH = 14', 'Ka × Kb = Kw'],
+        correct: 'pH = pKa + log([A-]/[HA])',
+        explanation: 'The Henderson-Hasselbalch equation relates pH to the ratio of conjugate base to acid.',
         difficulty: 'hard'
       },
       {
         id: 'g12_acid_hard_2',
-        question: 'What is the pH of a buffer containing 0.1 M CH₃COOH and 0.1 M CH₃COONa? (Ka = 1.8 × 10⁻⁵)',
-        options: ['4.76', '7.00', '9.24', '1.00'],
-        correct: '4.76',
-        explanation: 'pH = pKa + log([A⁻]/[HA]) = -log(1.8×10⁻⁵) + log(0.1/0.1) = 4.76 + 0 = 4.76',
-        difficulty: 'hard'
-      }
-    ]
-  },
-
-  {
-    id: 'grade12_electrochemistry',
-    name: 'Grade 12: Unit 2 - Electrochemistry',
-    description: 'Galvanic cells, electrolysis, and electrochemical reactions',
-    questions: [
-      {
-        id: 'g12_electro_easy_1',
-        question: 'What is electrochemistry?',
-        options: ['Study of chemical reactions involving electricity', 'Study of electrons only', 'Study of metals', 'Study of acids'],
-        correct: 'Study of chemical reactions involving electricity',
-        explanation: 'Electrochemistry studies chemical reactions that involve the transfer of electrons.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_electro_easy_2',
-        question: 'In a galvanic cell, which electrode is positive?',
-        options: ['Anode', 'Cathode', 'Both', 'Neither'],
-        correct: 'Cathode',
-        explanation: 'In a galvanic cell, the cathode is the positive electrode where reduction occurs.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_electro_easy_3',
-        question: 'What happens at the anode?',
-        options: ['Reduction', 'Oxidation', 'No reaction', 'Precipitation'],
-        correct: 'Oxidation',
-        explanation: 'Oxidation (loss of electrons) always occurs at the anode.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_electro_easy_4',
-        question: 'What is electrolysis?',
-        options: ['Spontaneous reaction', 'Non-spontaneous reaction driven by electricity', 'Acid-base reaction', 'Combustion'],
-        correct: 'Non-spontaneous reaction driven by electricity',
-        explanation: 'Electrolysis uses electrical energy to drive non-spontaneous chemical reactions.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_electro_easy_5',
-        question: 'What connects the two half-cells in a galvanic cell?',
-        options: ['Wire only', 'Salt bridge only', 'Wire and salt bridge', 'Nothing'],
-        correct: 'Wire and salt bridge',
-        explanation: 'A galvanic cell needs both a wire (for electron flow) and salt bridge (for ion flow).',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_electro_med_1',
-        question: 'What is the purpose of a salt bridge?',
-        options: ['Conduct electrons', 'Maintain electrical neutrality', 'Store energy', 'Increase voltage'],
-        correct: 'Maintain electrical neutrality',
-        explanation: 'The salt bridge allows ion flow to maintain electrical neutrality in both half-cells.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g12_electro_med_2',
-        question: 'What is the standard hydrogen electrode (SHE)?',
-        options: ['Reference electrode with E° = 0V', 'Strongest reducing agent', 'Strongest oxidizing agent', 'Most stable electrode'],
-        correct: 'Reference electrode with E° = 0V',
-        explanation: 'SHE is the reference electrode assigned a standard potential of 0.00 V.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g12_electro_med_3',
-        question: 'What does the Nernst equation calculate?',
-        options: ['Standard potential', 'Cell potential under non-standard conditions', 'Current', 'Resistance'],
-        correct: 'Cell potential under non-standard conditions',
-        explanation: 'The Nernst equation: E = E° - (RT/nF)ln(Q) calculates potential at non-standard conditions.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g12_electro_hard_1',
-        question: 'Calculate E°cell for Zn|Zn²⁺||Cu²⁺|Cu if E°(Zn²⁺/Zn) = -0.76V and E°(Cu²⁺/Cu) = +0.34V',
-        options: ['+1.10V', '-1.10V', '+0.42V', '-0.42V'],
-        correct: '+1.10V',
-        explanation: 'E°cell = E°cathode - E°anode = 0.34 - (-0.76) = +1.10V',
+        question: 'What is the autoionization of water?',
+        options: ['H2O → H+ + OH-', '2H2O ⇌ H3O+ + OH-', 'H2O → 2H+ + O2-', 'H2O + H2O → H4O2'],
+        correct: '2H2O ⇌ H3O+ + OH-',
+        explanation: 'Water autoionizes: 2H2O ⇌ H3O+ + OH-, with Kw = [H3O+][OH-] = 1.0 × 10^-14.',
         difficulty: 'hard'
       },
       {
-        id: 'g12_electro_hard_2',
-        question: 'How many grams of copper are deposited when 2 A current passes through CuSO₄ solution for 1 hour?',
-        options: ['1.18 g', '2.37 g', '4.74 g', '0.59 g'],
-        correct: '2.37 g',
-        explanation: 'Using Faraday\'s law: m = (I×t×M)/(n×F) = (2×3600×63.5)/(2×96500) = 2.37 g',
-        difficulty: 'hard'
-      }
-    ]
-  },
-
-  {
-    id: 'grade12_industrial_chemistry',
-    name: 'Grade 12: Unit 3 - Industrial Chemistry',
-    description: 'Large-scale chemical processes and industrial applications',
-    questions: [
-      {
-        id: 'g12_industrial_easy_1',
-        question: 'What is industrial chemistry?',
-        options: ['Small lab reactions', 'Large-scale chemical manufacturing', 'Academic research', 'Environmental cleanup'],
-        correct: 'Large-scale chemical manufacturing',
-        explanation: 'Industrial chemistry involves large-scale production of chemicals for commercial use.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_industrial_easy_2',
-        question: 'What is the main product of the Haber process?',
-        options: ['Hydrogen', 'Nitrogen', 'Ammonia', 'Water'],
-        correct: 'Ammonia',
-        explanation: 'The Haber process produces ammonia (NH₃) from nitrogen and hydrogen.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_industrial_easy_3',
-        question: 'What is the Contact process used to manufacture?',
-        options: ['Ammonia', 'Sulfuric acid', 'Nitric acid', 'Hydrochloric acid'],
-        correct: 'Sulfuric acid',
-        explanation: 'The Contact process is used to manufacture sulfuric acid (H₂SO₄).',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_industrial_easy_4',
-        question: 'What is a catalyst?',
-        options: ['Reactant', 'Product', 'Substance that speeds up reactions', 'Solvent'],
-        correct: 'Substance that speeds up reactions',
-        explanation: 'Catalysts speed up chemical reactions without being consumed.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_industrial_easy_5',
-        question: 'What is fractional distillation used for?',
-        options: ['Mixing chemicals', 'Separating mixtures by boiling point', 'Crystallization', 'Precipitation'],
-        correct: 'Separating mixtures by boiling point',
-        explanation: 'Fractional distillation separates components based on different boiling points.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_industrial_med_1',
-        question: 'What are the raw materials for the Haber process?',
-        options: ['N₂ and H₂', 'NH₃ and H₂O', 'N₂ and O₂', 'NH₃ and O₂'],
-        correct: 'N₂ and H₂',
-        explanation: 'The Haber process uses nitrogen and hydrogen: N₂ + 3H₂ ⇌ 2NH₃',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g12_industrial_med_2',
-        question: 'Why is high pressure used in the Haber process?',
-        options: ['Increases temperature', 'Favors forward reaction', 'Reduces cost', 'Improves catalyst'],
-        correct: 'Favors forward reaction',
-        explanation: 'High pressure favors the forward reaction as it reduces the number of gas molecules (4→2).',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g12_industrial_med_3',
-        question: 'What is cracking in petroleum refining?',
-        options: ['Breaking large molecules into smaller ones', 'Mixing different oils', 'Removing impurities', 'Adding chemicals'],
-        correct: 'Breaking large molecules into smaller ones',
-        explanation: 'Cracking breaks large hydrocarbon molecules into smaller, more useful ones.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g12_industrial_hard_1',
-        question: 'What are the optimal conditions for the Haber process?',
-        options: ['High T, High P', 'Low T, High P', 'Moderate T, High P, catalyst', 'High T, Low P'],
-        correct: 'Moderate T, High P, catalyst',
-        explanation: 'Optimal conditions: ~450°C (compromise), 200-300 atm pressure, iron catalyst.',
+        id: 'g12_acid_hard_3',
+        question: 'What is the value of Kw at 25°C?',
+        options: ['1.0 × 10^-7', '1.0 × 10^-14', '1.0 × 10^7', '1.0 × 10^14'],
+        correct: '1.0 × 10^-14',
+        explanation: 'The ion product of water (Kw) is 1.0 × 10^-14 at 25°C.',
         difficulty: 'hard'
       },
       {
-        id: 'g12_industrial_hard_2',
-        question: 'In the Contact process, what happens in the converter?',
-        options: ['SO₂ → SO₃', 'S → SO₂', 'SO₃ → H₂SO₄', 'H₂SO₄ → SO₃'],
-        correct: 'SO₂ → SO₃',
-        explanation: 'In the converter: 2SO₂ + O₂ ⇌ 2SO₃ using V₂O₅ catalyst at ~450°C.',
-        difficulty: 'hard'
-      }
-    ]
-  },
-
-  {
-    id: 'grade12_polymers',
-    name: 'Grade 12: Unit 4 - Polymers',
-    description: 'Macromolecules, polymerization, and synthetic materials',
-    questions: [
-      {
-        id: 'g12_polymer_easy_1',
-        question: 'What is a polymer?',
-        options: ['Small molecule', 'Large molecule made of repeating units', 'Metal compound', 'Gas molecule'],
-        correct: 'Large molecule made of repeating units',
-        explanation: 'Polymers are large molecules composed of many repeating monomer units.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_polymer_easy_2',
-        question: 'What is a monomer?',
-        options: ['Large molecule', 'Small repeating unit', 'Catalyst', 'Solvent'],
-        correct: 'Small repeating unit',
-        explanation: 'Monomers are small molecules that link together to form polymers.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_polymer_easy_3',
-        question: 'What is polyethylene made from?',
-        options: ['Ethane', 'Ethene', 'Ethanol', 'Ethanoic acid'],
-        correct: 'Ethene',
-        explanation: 'Polyethylene is made by polymerizing ethene (C₂H₄) monomers.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_polymer_easy_4',
-        question: 'What type of polymerization produces water as a byproduct?',
-        options: ['Addition', 'Condensation', 'Free radical', 'Ionic'],
-        correct: 'Condensation',
-        explanation: 'Condensation polymerization involves elimination of small molecules like water.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_polymer_easy_5',
-        question: 'Which polymer is used to make plastic bags?',
-        options: ['PVC', 'Polyethylene', 'Polystyrene', 'Nylon'],
-        correct: 'Polyethylene',
-        explanation: 'Polyethylene (PE) is commonly used to make plastic bags.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_polymer_med_1',
-        question: 'What is the difference between thermoplastics and thermosetting plastics?',
-        options: ['No difference', 'Thermoplastics can be remelted', 'Thermosetting can be remelted', 'Different colors'],
-        correct: 'Thermoplastics can be remelted',
-        explanation: 'Thermoplastics can be remelted and reshaped, while thermosetting plastics cannot.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g12_polymer_med_2',
-        question: 'What is cross-linking in polymers?',
-        options: ['Breaking chains', 'Connecting polymer chains', 'Monomer addition', 'Color change'],
-        correct: 'Connecting polymer chains',
-        explanation: 'Cross-linking creates bonds between polymer chains, affecting properties.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g12_polymer_med_3',
-        question: 'What makes nylon a condensation polymer?',
-        options: ['Uses addition reactions', 'Eliminates water during formation', 'Contains only C-C bonds', 'Is thermoplastic'],
-        correct: 'Eliminates water during formation',
-        explanation: 'Nylon forms through condensation reactions that eliminate water molecules.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g12_polymer_hard_1',
-        question: 'What is the repeating unit in PET (polyethylene terephthalate)?',
-        options: ['Ethene only', 'Terephthalic acid only', 'Ethylene glycol + terephthalic acid', 'Ethanol + acid'],
-        correct: 'Ethylene glycol + terephthalic acid',
-        explanation: 'PET is formed from ethylene glycol and terephthalic acid through condensation.',
+        id: 'g12_acid_hard_4',
+        question: 'What is the pH of a 0.01 M HCl solution?',
+        options: ['1', '2', '12', '13'],
+        correct: '2',
+        explanation: 'pH = -log[H+] = -log(0.01) = -log(10^-2) = 2.',
         difficulty: 'hard'
       },
       {
-        id: 'g12_polymer_hard_2',
-        question: 'Why does vulcanized rubber have different properties than natural rubber?',
-        options: ['Different monomers', 'Cross-linking with sulfur', 'Different temperature', 'Added colors'],
-        correct: 'Cross-linking with sulfur',
-        explanation: 'Vulcanization creates sulfur cross-links between rubber chains, improving properties.',
-        difficulty: 'hard'
-      }
-    ]
-  },
-
-  {
-    id: 'grade12_environmental_chemistry',
-    name: 'Grade 12: Unit 5 - Introduction to Environmental Chemistry',
-    description: 'Chemical processes in the environment and pollution',
-    questions: [
-      {
-        id: 'g12_env_easy_1',
-        question: 'What is environmental chemistry?',
-        options: ['Chemistry in labs only', 'Chemical processes in air, water, and soil', 'Only organic chemistry', 'Only inorganic chemistry'],
-        correct: 'Chemical processes in air, water, and soil',
-        explanation: 'Environmental chemistry studies chemical processes in the natural environment.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_env_easy_2',
-        question: 'What is the main cause of acid rain?',
-        options: ['CO₂', 'SO₂ and NOₓ', 'O₂', 'H₂O'],
-        correct: 'SO₂ and NOₓ',
-        explanation: 'Sulfur dioxide and nitrogen oxides in the atmosphere cause acid rain.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_env_easy_3',
-        question: 'What is the ozone layer?',
-        options: ['Layer of oxygen', 'Protective layer of O₃', 'Layer of nitrogen', 'Layer of CO₂'],
-        correct: 'Protective layer of O₃',
-        explanation: 'The ozone layer is made of O₃ and protects Earth from UV radiation.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_env_easy_4',
-        question: 'What is a greenhouse gas?',
-        options: ['Gas that cools Earth', 'Gas that traps heat', 'Gas from plants only', 'Oxygen'],
-        correct: 'Gas that traps heat',
-        explanation: 'Greenhouse gases trap heat in the atmosphere, causing global warming.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_env_easy_5',
-        question: 'What is BOD?',
-        options: ['Biological Oxygen Demand', 'Basic Organic Density', 'Bacterial Oil Decomposition', 'Biogas Output Data'],
-        correct: 'Biological Oxygen Demand',
-        explanation: 'BOD measures the amount of oxygen needed by bacteria to decompose organic matter.',
-        difficulty: 'easy'
-      },
-      {
-        id: 'g12_env_med_1',
-        question: 'How do CFCs damage the ozone layer?',
-        options: ['React directly with O₃', 'Release Cl atoms that catalyze O₃ destruction', 'Block sunlight', 'Absorb O₃'],
-        correct: 'Release Cl atoms that catalyze O₃ destruction',
-        explanation: 'CFCs release chlorine atoms that catalytically destroy ozone molecules.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g12_env_med_2',
-        question: 'What is eutrophication?',
-        options: ['Water purification', 'Excessive nutrient enrichment', 'Water cooling', 'pH increase'],
-        correct: 'Excessive nutrient enrichment',
-        explanation: 'Eutrophication is excessive nutrient enrichment leading to algal blooms and oxygen depletion.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g12_env_med_3',
-        question: 'What is photochemical smog?',
-        options: ['Fog with photos', 'Smog formed by light reactions', 'Industrial smoke', 'Natural mist'],
-        correct: 'Smog formed by light reactions',
-        explanation: 'Photochemical smog forms when sunlight reacts with NOₓ and hydrocarbons.',
-        difficulty: 'medium'
-      },
-      {
-        id: 'g12_env_hard_1',
-        question: 'What is the role of hydroxyl radicals (OH•) in the atmosphere?',
-        options: ['Cause pollution', 'Atmospheric detergent - remove pollutants', 'Form ozone', 'Block sunlight'],
-        correct: 'Atmospheric detergent - remove pollutants',
-        explanation: 'OH• radicals act as atmospheric detergents, removing many pollutants through oxidation.',
+        id: 'g12_acid_hard_5',
+        question: 'What is a polyprotic acid?',
+        options: ['Acid with one H+', 'Acid with multiple ionizable H+', 'Very strong acid', 'Organic acid'],
+        correct: 'Acid with multiple ionizable H+',
+        explanation: 'A polyprotic acid can donate more than one proton (H+) per molecule.',
         difficulty: 'hard'
       },
       {
-        id: 'g12_env_hard_2',
-        question: 'What is the carbon cycle\'s role in climate regulation?',
-        options: ['No role', 'Regulates atmospheric CO₂ levels', 'Only affects plants', 'Controls oxygen levels'],
-        correct: 'Regulates atmospheric CO₂ levels',
-        explanation: 'The carbon cycle regulates atmospheric CO₂, affecting global climate through the greenhouse effect.',
+        id: 'g12_acid_hard_6',
+        question: 'What is the common ion effect?',
+        options: ['No effect on equilibrium', 'Shifts equilibrium due to common ion', 'Increases ionization', 'Creates new compounds'],
+        correct: 'Shifts equilibrium due to common ion',
+        explanation: 'The common ion effect shifts equilibrium away from the side with the common ion.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_acid_hard_7',
+        question: 'What is an amphoteric substance?',
+        options: ['Only acidic', 'Only basic', 'Can act as acid or base', 'Neutral only'],
+        correct: 'Can act as acid or base',
+        explanation: 'An amphoteric substance can act as either an acid or a base depending on conditions.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_acid_hard_8',
+        question: 'What is the equivalence point in titration?',
+        options: ['Starting point', 'Point where acid equals base moles', 'End point', 'Buffer point'],
+        correct: 'Point where acid equals base moles',
+        explanation: 'The equivalence point is where moles of acid equal moles of base in a titration.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_acid_hard_9',
+        question: 'What is the relationship between Ka and Kb for conjugate pairs?',
+        options: ['Ka + Kb = Kw', 'Ka × Kb = Kw', 'Ka - Kb = Kw', 'Ka / Kb = Kw'],
+        correct: 'Ka × Kb = Kw',
+        explanation: 'For conjugate acid-base pairs, Ka × Kb = Kw at a given temperature.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_acid_hard_10',
+        question: 'What is the Lewis definition of acids and bases?',
+        options: ['Proton transfer', 'Electron pair transfer', 'Ion transfer', 'Neutron transfer'],
+        correct: 'Electron pair transfer',
+        explanation: 'Lewis acids accept electron pairs; Lewis bases donate electron pairs.',
         difficulty: 'hard'
       }
     ]
