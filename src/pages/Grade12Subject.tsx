@@ -1,4 +1,3 @@
-
 import { useParams, useNavigate } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -19,7 +18,9 @@ const Grade12Subject = () => {
 
   // Filter for Grade 12 chapters only
   const grade12Chapters = chapters.filter(chapter => 
-    chapter.id.includes('grade12') || chapter.name.includes('Grade 12')
+    chapter.id.includes('grade12') || 
+    chapter.name.includes('Grade 12') ||
+    chapter.id.includes('-12-') // This will catch hist-12-X format
   );
 
   const subjectNames: { [key: string]: string } = {
@@ -36,7 +37,8 @@ const Grade12Subject = () => {
     civics: 'Expert Civics',
     'physical-education': 'Expert PE',
     'information-technology': 'Expert IT',
-    'national-language': 'Expert National Language'
+    'national-language': 'Expert National Language',
+    agriculture: 'Agriculture'
   };
 
   const getDifficultyColor = (difficulty: string) => {
@@ -57,12 +59,12 @@ const Grade12Subject = () => {
       <div className="max-w-4xl mx-auto">
         <div className="mb-6">
           <Button 
-            onClick={() => navigate('/')} 
+            onClick={() => navigate('/grade-12')} 
             variant="outline"
             className="mb-4"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Home
+            Back to Grade 12
           </Button>
           
           <div className="text-center">
@@ -152,11 +154,11 @@ const Grade12Subject = () => {
               <CardContent className="text-center py-8">
                 <p className="text-gray-500">No Grade 12 chapters available for this subject yet.</p>
                 <Button 
-                  onClick={() => navigate('/')} 
+                  onClick={() => navigate('/grade-12')} 
                   variant="outline"
                   className="mt-4"
                 >
-                  Back to Home
+                  Back to Grade 12
                 </Button>
               </CardContent>
             </Card>
