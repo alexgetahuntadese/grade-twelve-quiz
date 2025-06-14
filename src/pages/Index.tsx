@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -66,9 +65,11 @@ const Index = () => {
                 Sign Up
               </Button>
             </Link>
-            <Button variant="ghost" className="text-gray-600 hover:text-gray-800">
-              Sign In
-            </Button>
+            <Link to="/login">
+              <Button variant="ghost" className="text-gray-600 hover:text-gray-800">
+                Sign In
+              </Button>
+            </Link>
           </div>
         </div>
 

@@ -5,20 +5,16 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { useNavigate, Link } from 'react-router-dom';
-import { UserPlus, Mail, Lock, User, Eye, EyeOff } from 'lucide-react';
+import { LogIn, Mail, Lock, Eye, EyeOff } from 'lucide-react';
 import { toast } from 'sonner';
 
-const Register = () => {
+const Login = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
     email: '',
-    password: '',
-    confirmPassword: ''
+    password: ''
   });
   const [showPassword, setShowPassword] = useState(false);
-  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -29,11 +25,11 @@ const Register = () => {
     }));
   };
 
-  const handleGoogleSignup = () => {
-    // Initialize Google OAuth for registration
+  const handleGoogleLogin = () => {
+    // Initialize Google OAuth
     window.open('https://accounts.google.com/oauth/authorize?client_id=YOUR_GOOGLE_CLIENT_ID&redirect_uri=' + 
       encodeURIComponent(window.location.origin + '/auth/google/callback') + 
-      '&scope=email profile&response_type=code&state=register', '_self');
+      '&scope=email profile&response_type=code', '_self');
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -41,40 +37,32 @@ const Register = () => {
     setIsLoading(true);
 
     // Basic validation
-    if (!formData.firstName || !formData.lastName || !formData.email || !formData.password) {
-      toast.error('Please fill in all required fields');
+    if (!formData.email || !formData.password) {
+      toast.error('Please fill in all fields');
       setIsLoading(false);
       return;
     }
 
-    if (formData.password !== formData.confirmPassword) {
-      toast.error('Passwords do not match');
-      setIsLoading(false);
-      return;
-    }
-
-    if (formData.password.length < 6) {
-      toast.error('Password must be at least 6 characters long');
-      setIsLoading(false);
-      return;
-    }
-
-    // Simulate registration process
+    // Simulate login process
     try {
       await new Promise(resolve => setTimeout(resolve, 1500));
       
-      // Store user data in localStorage for demo purposes
-      localStorage.setItem('registeredUser', JSON.stringify({
-        firstName: formData.firstName,
-        lastName: formData.lastName,
-        email: formData.email,
-        registeredAt: new Date().toISOString()
-      }));
-
-      toast.success('Registration successful! Welcome to the Quiz Platform.');
-      navigate('/');
+      // Check if user exists in localStorage (demo purposes)
+      const registeredUser = localStorage.getItem('registeredUser');
+      if (registeredUser) {
+        const userData = JSON.parse(registeredUser);
+        if (userData.email === formData.email) {
+          localStorage.setItem('currentUser', JSON.stringify(userData));
+          toast.success('Login successful! Welcome back.');
+          navigate('/');
+        } else {
+          toast.error('Invalid email or password');
+        }
+      } else {
+        toast.error('No account found. Please register first.');
+      }
     } catch (error) {
-      toast.error('Registration failed. Please try again.');
+      toast.error('Login failed. Please try again.');
     } finally {
       setIsLoading(false);
     }
@@ -86,59 +74,19 @@ const Register = () => {
         <Card className="shadow-2xl border-0 bg-white/90 backdrop-blur-sm">
           <CardHeader className="text-center pb-6">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mb-4 mx-auto">
-              <UserPlus className="w-8 h-8 text-white" />
+              <LogIn className="w-8 h-8 text-white" />
             </div>
-            <CardTitle className="text-2xl font-bold text-gray-800">Create Account</CardTitle>
+            <CardTitle className="text-2xl font-bold text-gray-800">Welcome Back</CardTitle>
             <CardDescription className="text-gray-600">
-              Join our educational platform and start your learning journey
+              Sign in to continue your learning journey
             </CardDescription>
           </CardHeader>
           
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="grid grid-cols-2 gap-3">
-                <div className="space-y-2">
-                  <Label htmlFor="firstName" className="text-sm font-medium">
-                    First Name *
-                  </Label>
-                  <div className="relative">
-                    <User className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
-                    <Input
-                      id="firstName"
-                      name="firstName"
-                      type="text"
-                      placeholder="First name"
-                      value={formData.firstName}
-                      onChange={handleInputChange}
-                      className="pl-10"
-                      required
-                    />
-                  </div>
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="lastName" className="text-sm font-medium">
-                    Last Name *
-                  </Label>
-                  <div className="relative">
-                    <User className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
-                    <Input
-                      id="lastName"
-                      name="lastName"
-                      type="text"
-                      placeholder="Last name"
-                      value={formData.lastName}
-                      onChange={handleInputChange}
-                      className="pl-10"
-                      required
-                    />
-                  </div>
-                </div>
-              </div>
-
               <div className="space-y-2">
                 <Label htmlFor="email" className="text-sm font-medium">
-                  Email Address *
+                  Email Address
                 </Label>
                 <div className="relative">
                   <Mail className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
@@ -157,7 +105,7 @@ const Register = () => {
 
               <div className="space-y-2">
                 <Label htmlFor="password" className="text-sm font-medium">
-                  Password *
+                  Password
                 </Label>
                 <div className="relative">
                   <Lock className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
@@ -165,7 +113,7 @@ const Register = () => {
                     id="password"
                     name="password"
                     type={showPassword ? "text" : "password"}
-                    placeholder="Create a password"
+                    placeholder="Enter your password"
                     value={formData.password}
                     onChange={handleInputChange}
                     className="pl-10 pr-10"
@@ -181,38 +129,12 @@ const Register = () => {
                 </div>
               </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="confirmPassword" className="text-sm font-medium">
-                  Confirm Password *
-                </Label>
-                <div className="relative">
-                  <Lock className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
-                  <Input
-                    id="confirmPassword"
-                    name="confirmPassword"
-                    type={showConfirmPassword ? "text" : "password"}
-                    placeholder="Confirm your password"
-                    value={formData.confirmPassword}
-                    onChange={handleInputChange}
-                    className="pl-10 pr-10"
-                    required
-                  />
-                  <button
-                    type="button"
-                    onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                    className="absolute right-3 top-3 text-gray-400 hover:text-gray-600"
-                  >
-                    {showConfirmPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
-                  </button>
-                </div>
-              </div>
-
               <Button 
                 type="submit" 
                 className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium py-3"
                 disabled={isLoading}
               >
-                {isLoading ? 'Creating Account...' : 'Create Account'}
+                {isLoading ? 'Signing In...' : 'Sign In'}
               </Button>
             </form>
 
@@ -230,7 +152,7 @@ const Register = () => {
                 type="button"
                 variant="outline"
                 className="w-full mt-4 border-gray-300 hover:bg-gray-50"
-                onClick={handleGoogleSignup}
+                onClick={handleGoogleLogin}
               >
                 <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24">
                   <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
@@ -244,12 +166,12 @@ const Register = () => {
 
             <div className="mt-6 text-center">
               <p className="text-sm text-gray-600">
-                Already have an account?{' '}
+                Don't have an account?{' '}
                 <Link 
-                  to="/login" 
+                  to="/register" 
                   className="text-blue-600 hover:text-blue-800 font-medium underline"
                 >
-                  Sign in here
+                  Sign up here
                 </Link>
               </p>
             </div>
@@ -269,4 +191,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Login;
