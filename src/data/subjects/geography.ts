@@ -1,11 +1,11 @@
 
 import { Chapter } from '../types';
-import { foundationGeographyChapters } from './geography/foundation';
-import { grade11GeographyChapters } from './geography/grade11';
-import { grade12EthiopianGeographyChapters } from './geography/grade12-ethiopian';
+import { foundationChapters } from './geography/foundation';
+import { grade11Chapters } from './geography/grade11';
+import { grade12EthiopianGeographyChapters } from './geography/grade12/index';
 
 export const geographyChapters: Chapter[] = [
-  ...foundationGeographyChapters,
-  ...grade11GeographyChapters,
+  ...foundationChapters,
+  ...grade11Chapters,
   ...grade12EthiopianGeographyChapters
 ];
