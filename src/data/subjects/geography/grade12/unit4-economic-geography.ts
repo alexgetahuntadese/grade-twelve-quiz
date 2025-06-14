@@ -1,4 +1,3 @@
-
 import { Question } from '../../../types';
 
 export const unit4EconomicGeography: Question[] = [
@@ -7,7 +6,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-1',
     question: 'What is the main economic activity in Ethiopia?',
     options: ['Manufacturing', 'Agriculture', 'Mining', 'Services'],
-    correctAnswer: 1,
+    correct: 'Agriculture',
     difficulty: 'easy',
     topic: 'Economic Geography'
   },
@@ -15,7 +14,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-2',
     question: 'Which crop is the leading export of Ethiopia?',
     options: ['Teff', 'Coffee', 'Barley', 'Maize'],
-    correctAnswer: 1,
+    correct: 'Coffee',
     difficulty: 'easy',
     topic: 'Economic Geography'
   },
@@ -23,7 +22,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-3',
     question: 'What percentage of Ethiopia\'s GDP comes from agriculture?',
     options: ['25%', '35%', '45%', '55%'],
-    correctAnswer: 2,
+    correct: '45%',
     difficulty: 'easy',
     topic: 'Economic Geography'
   },
@@ -31,7 +30,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-4',
     question: 'Which mineral is most abundant in Ethiopia?',
     options: ['Gold', 'Salt', 'Coal', 'Oil'],
-    correctAnswer: 1,
+    correct: 'Salt',
     difficulty: 'easy',
     topic: 'Economic Geography'
   },
@@ -39,7 +38,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-5',
     question: 'Where is the main industrial zone located in Ethiopia?',
     options: ['Around Addis Ababa', 'In Dire Dawa', 'In Bahir Dar', 'In Mekelle'],
-    correctAnswer: 0,
+    correct: 'Around Addis Ababa',
     difficulty: 'easy',
     topic: 'Economic Geography'
   },
@@ -47,7 +46,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-6',
     question: 'What type of farming system dominates in Ethiopian highlands?',
     options: ['Commercial farming', 'Subsistence farming', 'Plantation farming', 'Mixed farming'],
-    correctAnswer: 1,
+    correct: 'Subsistence farming',
     difficulty: 'easy',
     topic: 'Economic Geography'
   },
@@ -55,7 +54,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-7',
     question: 'Which livestock is most numerous in Ethiopia?',
     options: ['Cattle', 'Sheep', 'Goats', 'Chickens'],
-    correctAnswer: 0,
+    correct: 'Cattle',
     difficulty: 'easy',
     topic: 'Economic Geography'
   },
@@ -63,7 +62,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-8',
     question: 'What is the main source of energy in rural Ethiopia?',
     options: ['Electricity', 'Solar power', 'Biomass', 'Wind power'],
-    correctAnswer: 2,
+    correct: 'Biomass',
     difficulty: 'easy',
     topic: 'Economic Geography'
   },
@@ -71,7 +70,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-9',
     question: 'Which industry is growing fastest in Ethiopia?',
     options: ['Textile', 'Mining', 'Tourism', 'Construction'],
-    correctAnswer: 0,
+    correct: 'Textile',
     difficulty: 'easy',
     topic: 'Economic Geography'
   },
@@ -79,7 +78,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-10',
     question: 'What is the main cash crop grown for export besides coffee?',
     options: ['Cotton', 'Sugarcane', 'Flowers', 'Oil seeds'],
-    correctAnswer: 2,
+    correct: 'Flowers',
     difficulty: 'easy',
     topic: 'Economic Geography'
   },
@@ -89,7 +88,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-11',
     question: 'Which factor most limits agricultural productivity in Ethiopia?',
     options: ['Climate variability', 'Poor soil quality', 'Limited technology', 'Market access'],
-    correctAnswer: 0,
+    correct: 'Climate variability',
     difficulty: 'medium',
     topic: 'Economic Geography'
   },
@@ -97,7 +96,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-12',
     question: 'What is the contribution of manufacturing to Ethiopia\'s GDP?',
     options: ['5%', '10%', '15%', '20%'],
-    correctAnswer: 1,
+    correct: '10%',
     difficulty: 'medium',
     topic: 'Economic Geography'
   },
@@ -105,7 +104,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-13',
     question: 'Which region has the highest potential for hydroelectric power?',
     options: ['Blue Nile basin', 'Rift Valley', 'Awash basin', 'Omo-Gibe basin'],
-    correctAnswer: 0,
+    correct: 'Blue Nile basin',
     difficulty: 'medium',
     topic: 'Economic Geography'
   },
@@ -113,7 +112,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-14',
     question: 'What is the main constraint to industrial development in Ethiopia?',
     options: ['Lack of raw materials', 'Limited skilled labor', 'Poor infrastructure', 'Small market size'],
-    correctAnswer: 2,
+    correct: 'Poor infrastructure',
     difficulty: 'medium',
     topic: 'Economic Geography'
   },
@@ -121,7 +120,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-15',
     question: 'Which agricultural zone is best suited for coffee production?',
     options: ['Kolla', 'Woina Dega', 'Dega', 'Wurch'],
-    correctAnswer: 1,
+    correct: 'Woina Dega',
     difficulty: 'medium',
     topic: 'Economic Geography'
   },
@@ -129,7 +128,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-16',
     question: 'What percentage of the population depends on agriculture for livelihood?',
     options: ['60%', '70%', '80%', '90%'],
-    correctAnswer: 2,
+    correct: '80%',
     difficulty: 'medium',
     topic: 'Economic Geography'
   },
@@ -137,7 +136,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-17',
     question: 'Which mining activity has the greatest economic potential?',
     options: ['Gold mining', 'Salt extraction', 'Limestone quarrying', 'Potash mining'],
-    correctAnswer: 0,
+    correct: 'Gold mining',
     difficulty: 'medium',
     topic: 'Economic Geography'
   },
@@ -145,7 +144,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-18',
     question: 'What is the main challenge facing Ethiopian coffee farmers?',
     options: ['Disease outbreaks', 'Climate change', 'Price volatility', 'All of the above'],
-    correctAnswer: 3,
+    correct: 'All of the above',
     difficulty: 'medium',
     topic: 'Economic Geography'
   },
@@ -153,7 +152,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-19',
     question: 'Which sector provides the most employment in urban areas?',
     options: ['Manufacturing', 'Services', 'Construction', 'Trade'],
-    correctAnswer: 1,
+    correct: 'Services',
     difficulty: 'medium',
     topic: 'Economic Geography'
   },
@@ -161,7 +160,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-20',
     question: 'What is the average farm size in Ethiopia?',
     options: ['0.5 hectares', '1.0 hectares', '1.5 hectares', '2.0 hectares'],
-    correctAnswer: 1,
+    correct: '1.0 hectares',
     difficulty: 'medium',
     topic: 'Economic Geography'
   },
@@ -171,7 +170,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-21',
     question: 'How does Ethiopia\'s landlocked status affect its economic development?',
     options: ['Increases trade costs', 'Limits export opportunities', 'Affects competitiveness', 'All of the above'],
-    correctAnswer: 3,
+    correct: 'All of the above',
     difficulty: 'hard',
     topic: 'Economic Geography'
   },
@@ -179,7 +178,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-22',
     question: 'Which economic model best describes Ethiopia\'s development strategy?',
     options: ['Market economy', 'State-led development', 'Mixed economy', 'Socialist economy'],
-    correctAnswer: 1,
+    correct: 'State-led development',
     difficulty: 'hard',
     topic: 'Economic Geography'
   },
@@ -187,7 +186,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-23',
     question: 'What is the relationship between population growth and economic development in Ethiopia?',
     options: ['Positive correlation', 'Negative correlation', 'No correlation', 'Complex relationship'],
-    correctAnswer: 3,
+    correct: 'Complex relationship',
     difficulty: 'hard',
     topic: 'Economic Geography'
   },
@@ -195,7 +194,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-24',
     question: 'How do agro-ecological zones influence economic specialization?',
     options: ['Determine crop types', 'Affect livestock systems', 'Influence processing industries', 'All of the above'],
-    correctAnswer: 3,
+    correct: 'All of the above',
     difficulty: 'hard',
     topic: 'Economic Geography'
   },
@@ -203,7 +202,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-25',
     question: 'Which factor most constrains Ethiopia\'s integration into global value chains?',
     options: ['Limited infrastructure', 'Skills shortage', 'Institutional capacity', 'All of the above'],
-    correctAnswer: 3,
+    correct: 'All of the above',
     difficulty: 'hard',
     topic: 'Economic Geography'
   },
@@ -211,7 +210,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-26',
     question: 'What role does the informal economy play in Ethiopian urban areas?',
     options: ['Minimal role', 'Significant employer', 'Economic backbone', 'Declining importance'],
-    correctAnswer: 2,
+    correct: 'Economic backbone',
     difficulty: 'hard',
     topic: 'Economic Geography'
   },
@@ -219,7 +218,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-27',
     question: 'How does climate variability affect economic planning in Ethiopia?',
     options: ['Creates uncertainty', 'Affects resource allocation', 'Influences policy priorities', 'All of the above'],
-    correctAnswer: 3,
+    correct: 'All of the above',
     difficulty: 'hard',
     topic: 'Economic Geography'
   },
@@ -227,7 +226,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-28',
     question: 'Which spatial pattern characterizes industrial development in Ethiopia?',
     options: ['Dispersed pattern', 'Concentrated in few cities', 'Regional specialization', 'Random distribution'],
-    correctAnswer: 1,
+    correct: 'Concentrated in few cities',
     difficulty: 'hard',
     topic: 'Economic Geography'
   },
@@ -235,7 +234,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-29',
     question: 'What is the impact of land tenure systems on agricultural productivity?',
     options: ['Encourages investment', 'Limits mechanization', 'Affects credit access', 'All of the above'],
-    correctAnswer: 3,
+    correct: 'All of the above',
     difficulty: 'hard',
     topic: 'Economic Geography'
   },
@@ -243,7 +242,7 @@ export const unit4EconomicGeography: Question[] = [
     id: 'geo-12-4-30',
     question: 'How do regional economic disparities affect national development in Ethiopia?',
     options: ['Create migration flows', 'Affect political stability', 'Influence resource allocation', 'All of the above'],
-    correctAnswer: 3,
+    correct: 'All of the above',
     difficulty: 'hard',
     topic: 'Economic Geography'
   }
