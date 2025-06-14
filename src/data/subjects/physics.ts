@@ -1,3 +1,4 @@
+
 import { Chapter } from '../types';
 import { grade12PhysicsChapters } from './physics/grade12';
 
@@ -41,8 +42,6 @@ export const physicsChapters: Chapter[] = [
         explanation: 'Newton\'s first law is the law of inertia.',
         difficulty: 'easy'
       },
-
-      // Medium Questions
       {
         id: 'mech_med_1',
         question: 'If a car accelerates at 2 m/s² for 5 seconds, what is its change in velocity?',
@@ -67,8 +66,6 @@ export const physicsChapters: Chapter[] = [
         explanation: 'Momentum p = mv = 5 × 3 = 15 kg⋅m/s',
         difficulty: 'medium'
       },
-
-      // Hard Questions
       {
         id: 'mech_hard_1',
         question: 'A projectile is launched at 45° with initial velocity 20 m/s. What is its maximum height?',
@@ -125,8 +122,6 @@ export const physicsChapters: Chapter[] = [
         explanation: 'Sound waves are longitudinal waves with compressions and rarefactions.',
         difficulty: 'easy'
       },
-
-      // Medium Questions
       {
         id: 'wave_med_1',
         question: 'If a wave has frequency 60 Hz and wavelength 5 m, what is its speed?',
@@ -151,8 +146,6 @@ export const physicsChapters: Chapter[] = [
         explanation: 'When waves meet, their amplitudes add algebraically.',
         difficulty: 'medium'
       },
-
-      // Hard Questions
       {
         id: 'wave_hard_1',
         question: 'What is the critical angle for total internal reflection from water to air? (n_water = 1.33)',
@@ -171,7 +164,6 @@ export const physicsChapters: Chapter[] = [
       }
     ]
   },
-  // ... keep existing code (grade12_thermodynamics chapter)
   {
     id: 'grade12_thermodynamics',
     name: 'Grade 12: Thermodynamics',
@@ -210,8 +202,6 @@ export const physicsChapters: Chapter[] = [
         explanation: 'According to Charles\' law, volume is directly proportional to temperature.',
         difficulty: 'easy'
       },
-
-      // Medium Questions
       {
         id: 'g12_thermo_med_1',
         question: 'What is the first law of thermodynamics?',
@@ -236,8 +226,6 @@ export const physicsChapters: Chapter[] = [
         explanation: 'Specific heat is heat required to raise 1 kg of substance by 1 K.',
         difficulty: 'medium'
       },
-
-      // Hard Questions
       {
         id: 'g12_thermo_hard_1',
         question: 'What is the efficiency of a Carnot engine operating between 400 K and 300 K?',
@@ -252,6 +240,79 @@ export const physicsChapters: Chapter[] = [
         options: ['Entropy decreases', 'Entropy stays constant', 'Entropy increases in isolated systems', 'Entropy is zero'],
         correct: 'Entropy increases in isolated systems',
         explanation: 'The second law states that entropy of an isolated system always increases.',
+        difficulty: 'hard'
+      },
+      // New questions
+      {
+        id: 'g12_thermo_easy_5',
+        question: 'What is thermal equilibrium?',
+        options: ['When objects have different temperatures', 'When heat transfer stops between objects', 'When objects are moving', 'When pressure is constant'],
+        correct: 'When heat transfer stops between objects',
+        explanation: 'Thermal equilibrium occurs when two objects reach the same temperature and heat transfer ceases.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_thermo_easy_6',
+        question: 'What is the zeroth law of thermodynamics?',
+        options: ['Energy conservation', 'Entropy increase', 'Temperature definition', 'Thermal equilibrium transitivity'],
+        correct: 'Thermal equilibrium transitivity',
+        explanation: 'If A is in thermal equilibrium with C, and B is in thermal equilibrium with C, then A and B are in thermal equilibrium.',
+        difficulty: 'easy'
+      },
+      {
+        id: 'g12_thermo_med_4',
+        question: 'What is an isothermal process?',
+        options: ['Constant pressure', 'Constant volume', 'Constant temperature', 'No heat exchange'],
+        correct: 'Constant temperature',
+        explanation: 'In an isothermal process, temperature remains constant throughout.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_thermo_med_5',
+        question: 'What is the relationship between internal energy and temperature for an ideal gas?',
+        options: ['U ∝ T', 'U ∝ 1/T', 'U ∝ T²', 'No relationship'],
+        correct: 'U ∝ T',
+        explanation: 'For an ideal gas, internal energy is directly proportional to absolute temperature.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_thermo_med_6',
+        question: 'What happens to entropy in a reversible process?',
+        options: ['Increases', 'Decreases', 'Remains constant', 'Becomes zero'],
+        correct: 'Remains constant',
+        explanation: 'In a reversible process, the total entropy of the system and surroundings remains constant.',
+        difficulty: 'medium'
+      },
+      {
+        id: 'g12_thermo_hard_3',
+        question: 'What is the coefficient of performance (COP) of a refrigerator?',
+        options: ['Work input / Heat removed', 'Heat removed / Work input', 'Heat rejected / Work input', 'Work input / Heat rejected'],
+        correct: 'Heat removed / Work input',
+        explanation: 'COP of refrigerator = Qc/W, where Qc is heat removed from cold reservoir and W is work input.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_thermo_hard_4',
+        question: 'For an ideal gas undergoing an adiabatic process, what is true about PVγ?',
+        options: ['PVγ increases', 'PVγ decreases', 'PVγ = constant', 'PVγ = 0'],
+        correct: 'PVγ = constant',
+        explanation: 'For adiabatic processes in ideal gases, PVγ = constant, where γ is the heat capacity ratio.',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_thermo_hard_5',
+        question: 'What is the maximum theoretical efficiency of a heat engine operating between reservoirs at 600 K and 300 K?',
+        options: ['50%', '100%', '25%', '75%'],
+        correct: '50%',
+        explanation: 'Maximum efficiency = 1 - Tc/Th = 1 - 300/600 = 1 - 0.5 = 0.5 = 50%',
+        difficulty: 'hard'
+      },
+      {
+        id: 'g12_thermo_hard_6',
+        question: 'What is the entropy change when 1 kg of ice at 0°C melts to water at 0°C? (Latent heat of fusion = 334 kJ/kg)',
+        options: ['0 J/K', '1223 J/K', '334 J/K', '273 J/K'],
+        correct: '1223 J/K',
+        explanation: 'ΔS = Q/T = (334,000 J)/(273 K) = 1223 J/K',
         difficulty: 'hard'
       }
     ]
