@@ -4,203 +4,251 @@ import { Chapter } from '../../../types';
 export const unit2RuleOfLaw: Chapter = {
   id: 'grade12_rule_of_law',
   name: 'Grade 12: Rule of Law',
-  description: 'Constitution and laws, conflict management, governance, and anti-corruption efforts',
+  description: 'Constitution and other laws, rule of law and conflict management, rule of law and governments, rule of law and fight against corruption',
   questions: [
-    // Easy Questions (8)
+    // Easy Questions (10)
     {
-      id: 'rol_easy_1',
+      id: 'law_easy_1',
       question: 'What is the rule of law?',
-      options: ['Rule by the strongest', 'Everyone is subject to the law', 'Laws don\'t apply to leaders', 'No laws needed'],
-      correct: 'Everyone is subject to the law',
-      explanation: 'Rule of law means that everyone, including government officials, is subject to the law.',
+      options: ['Rule by law enforcement', 'Everyone is subject to and equal under the law', 'Government makes all rules', 'No rules exist'],
+      correct: 'Everyone is subject to and equal under the law',
+      explanation: 'Rule of law means everyone, including government officials, is subject to and equal under the law.',
       difficulty: 'easy'
     },
     {
-      id: 'rol_easy_2',
-      question: 'What is the hierarchy of laws in Ethiopia?',
-      options: ['All laws are equal', 'Constitution is supreme, then federal laws', 'Regional laws are supreme', 'No hierarchy exists'],
-      correct: 'Constitution is supreme, then federal laws',
-      explanation: 'The Constitution is the supreme law, followed by federal laws, then regional laws.',
+      id: 'law_easy_2',
+      question: 'What is a constitution?',
+      options: ['Ordinary law', 'Supreme law that establishes government structure', 'Government policy', 'International treaty'],
+      correct: 'Supreme law that establishes government structure',
+      explanation: 'A constitution is the supreme law that establishes the structure, powers, and limits of government.',
       difficulty: 'easy'
     },
     {
-      id: 'rol_easy_3',
+      id: 'law_easy_3',
+      question: 'What is the relationship between constitution and other laws?',
+      options: ['All laws are equal', 'Constitution is supreme, other laws must conform', 'Other laws override constitution', 'No relationship'],
+      correct: 'Constitution is supreme, other laws must conform',
+      explanation: 'The constitution is supreme law; all other laws must conform to constitutional principles.',
+      difficulty: 'easy'
+    },
+    {
+      id: 'law_easy_4',
       question: 'What is corruption?',
-      options: ['Good governance', 'Abuse of power for personal gain', 'Following rules', 'Public service'],
+      options: ['Legal behavior', 'Abuse of power for personal gain', 'Government service', 'Public benefit'],
       correct: 'Abuse of power for personal gain',
-      explanation: 'Corruption involves misusing public office or authority for personal benefit.',
+      explanation: 'Corruption involves the abuse of entrusted power for private gain.',
       difficulty: 'easy'
     },
     {
-      id: 'rol_easy_4',
-      question: 'What is conflict resolution?',
-      options: ['Avoiding problems', 'Peaceful settlement of disputes', 'Creating more conflict', 'Ignoring disputes'],
-      correct: 'Peaceful settlement of disputes',
-      explanation: 'Conflict resolution involves finding peaceful solutions to disagreements and disputes.',
+      id: 'law_easy_5',
+      question: 'Why is rule of law important for conflict management?',
+      options: ['It creates conflicts', 'Provides peaceful means to resolve disputes', 'Eliminates all conflicts', 'Ignores conflicts'],
+      correct: 'Provides peaceful means to resolve disputes',
+      explanation: 'Rule of law provides peaceful, legal mechanisms for resolving disputes and conflicts.',
       difficulty: 'easy'
     },
     {
-      id: 'rol_easy_5',
+      id: 'law_easy_6',
       question: 'What is legal equality?',
-      options: ['Different treatment for different people', 'Same laws apply to everyone', 'Laws only for the poor', 'Laws only for the rich'],
-      correct: 'Same laws apply to everyone',
-      explanation: 'Legal equality means all people are treated equally under the law.',
+      options: ['Different treatment for different people', 'Same legal treatment regardless of status', 'Special privileges for some', 'No legal system'],
+      correct: 'Same legal treatment regardless of status',
+      explanation: 'Legal equality means all people receive the same treatment under the law regardless of their status.',
       difficulty: 'easy'
     },
     {
-      id: 'rol_easy_6',
-      question: 'What is transparency in government?',
-      options: ['Government secrecy', 'Open and accountable governance', 'Hidden decisions', 'Closed meetings'],
-      correct: 'Open and accountable governance',
-      explanation: 'Transparency requires government to be open about its decisions and actions.',
-      difficulty: 'easy'
-    },
-    {
-      id: 'rol_easy_7',
+      id: 'law_easy_7',
       question: 'What is due process?',
-      options: ['Quick punishment', 'Fair legal procedures', 'No trial needed', 'Instant justice'],
-      correct: 'Fair legal procedures',
-      explanation: 'Due process ensures fair treatment through proper legal procedures.',
+      options: ['Quick legal action', 'Fair legal procedures must be followed', 'No procedures needed', 'Government decides everything'],
+      correct: 'Fair legal procedures must be followed',
+      explanation: 'Due process requires that fair legal procedures be followed in legal proceedings.',
       difficulty: 'easy'
     },
     {
-      id: 'rol_easy_8',
-      question: 'What is good governance?',
-      options: ['Authoritarian rule', 'Effective, accountable, and transparent leadership', 'Military control', 'Foreign management'],
-      correct: 'Effective, accountable, and transparent leadership',
-      explanation: 'Good governance involves effective, transparent, and accountable leadership.',
+      id: 'law_easy_8',
+      question: 'What is transparency in government?',
+      options: ['Government secrecy', 'Open access to government information', 'Hidden operations', 'Private government'],
+      correct: 'Open access to government information',
+      explanation: 'Transparency means citizens have access to government information and decision-making processes.',
+      difficulty: 'easy'
+    },
+    {
+      id: 'law_easy_9',
+      question: 'What is accountability?',
+      options: ['No responsibility', 'Being responsible for actions and decisions', 'Blaming others', 'Avoiding consequences'],
+      correct: 'Being responsible for actions and decisions',
+      explanation: 'Accountability means being responsible and answerable for one\'s actions and decisions.',
+      difficulty: 'easy'
+    },
+    {
+      id: 'law_easy_10',
+      question: 'What is the purpose of anti-corruption laws?',
+      options: ['To enable corruption', 'To prevent and punish corrupt practices', 'To hide corruption', 'To legalize corruption'],
+      correct: 'To prevent and punish corrupt practices',
+      explanation: 'Anti-corruption laws are designed to prevent corrupt practices and punish those who engage in them.',
       difficulty: 'easy'
     },
 
-    // Medium Questions (8)
+    // Medium Questions (10)
     {
-      id: 'rol_med_1',
-      question: 'How does rule of law contribute to conflict management?',
-      options: ['It creates more conflict', 'Provides peaceful, legal mechanisms for resolving disputes', 'Encourages violence', 'Ignores conflicts'],
-      correct: 'Provides peaceful, legal mechanisms for resolving disputes',
-      explanation: 'Rule of law offers legal frameworks and institutions for peaceful conflict resolution.',
+      id: 'law_med_1',
+      question: 'What is constitutional interpretation?',
+      options: ['Ignoring constitution', 'Process of determining constitutional meaning', 'Changing constitution daily', 'Personal opinion only'],
+      correct: 'Process of determining constitutional meaning',
+      explanation: 'Constitutional interpretation is the process of determining the meaning and application of constitutional provisions.',
       difficulty: 'medium'
     },
     {
-      id: 'rol_med_2',
+      id: 'law_med_2',
+      question: 'What is the hierarchy of laws?',
+      options: ['All laws equal', 'Constitution, laws, regulations, in order of supremacy', 'Random order', 'International law only'],
+      correct: 'Constitution, laws, regulations, in order of supremacy',
+      explanation: 'Legal hierarchy places constitution at top, followed by laws, then regulations and other legal instruments.',
+      difficulty: 'medium'
+    },
+    {
+      id: 'law_med_3',
+      question: 'What is alternative dispute resolution?',
+      options: ['Court litigation only', 'Non-court methods like mediation and arbitration', 'Military intervention', 'Ignoring disputes'],
+      correct: 'Non-court methods like mediation and arbitration',
+      explanation: 'Alternative dispute resolution includes mediation, arbitration, and other non-court conflict resolution methods.',
+      difficulty: 'medium'
+    },
+    {
+      id: 'law_med_4',
       question: 'What is the relationship between rule of law and democracy?',
-      options: ['They oppose each other', 'Rule of law is essential for democratic governance', 'No relationship', 'Democracy destroys rule of law'],
-      correct: 'Rule of law is essential for democratic governance',
-      explanation: 'Rule of law provides the legal framework necessary for democratic institutions to function.',
+      options: ['No relationship', 'Rule of law protects democratic processes and rights', 'They conflict', 'Democracy eliminates law'],
+      correct: 'Rule of law protects democratic processes and rights',
+      explanation: 'Rule of law provides the legal framework that protects democratic processes and individual rights.',
       difficulty: 'medium'
     },
     {
-      id: 'rol_med_3',
-      question: 'What are the consequences of corruption on society?',
-      options: ['Improves society', 'Undermines trust, fairness, and development', 'No impact', 'Only affects government'],
-      correct: 'Undermines trust, fairness, and development',
-      explanation: 'Corruption erodes public trust, creates inequality, and hinders economic development.',
+      id: 'law_med_5',
+      question: 'What is systemic corruption?',
+      options: ['Individual corruption only', 'Corruption embedded in institutions and systems', 'No corruption exists', 'Legal corruption'],
+      correct: 'Corruption embedded in institutions and systems',
+      explanation: 'Systemic corruption occurs when corrupt practices become embedded in institutional structures and processes.',
       difficulty: 'medium'
     },
     {
-      id: 'rol_med_4',
+      id: 'law_med_6',
       question: 'What is judicial independence?',
-      options: ['Courts controlled by government', 'Courts free from political interference', 'Courts above the law', 'Courts without oversight'],
-      correct: 'Courts free from political interference',
-      explanation: 'Judicial independence means courts can make decisions without political pressure.',
+      options: ['Courts controlled by government', 'Courts free from external interference', 'Courts above all law', 'No court system'],
+      correct: 'Courts free from external interference',
+      explanation: 'Judicial independence means courts can make decisions free from political or other external interference.',
       difficulty: 'medium'
     },
     {
-      id: 'rol_med_5',
-      question: 'What is constitutional review?',
-      options: ['Reading the constitution', 'Checking if laws comply with the constitution', 'Rewriting the constitution', 'Ignoring the constitution'],
-      correct: 'Checking if laws comply with the constitution',
-      explanation: 'Constitutional review examines whether laws and actions conform to constitutional requirements.',
+      id: 'law_med_7',
+      question: 'What is legal pluralism?',
+      options: ['One legal system only', 'Multiple legal systems operating simultaneously', 'No legal system', 'International law only'],
+      correct: 'Multiple legal systems operating simultaneously',
+      explanation: 'Legal pluralism involves multiple legal systems (formal, customary, religious) operating simultaneously.',
       difficulty: 'medium'
     },
     {
-      id: 'rol_med_6',
-      question: 'What is administrative law?',
-      options: ['Business law', 'Rules governing government administration', 'Criminal law', 'Family law'],
-      correct: 'Rules governing government administration',
-      explanation: 'Administrative law governs how government agencies operate and make decisions.',
-      difficulty: 'medium'
-    },
-    {
-      id: 'rol_med_7',
-      question: 'What is the role of civil society in promoting rule of law?',
-      options: ['No role', 'Monitoring government and advocating for legal compliance', 'Replacing courts', 'Making laws'],
-      correct: 'Monitoring government and advocating for legal compliance',
-      explanation: 'Civil society helps ensure government accountability and legal compliance.',
-      difficulty: 'medium'
-    },
-    {
-      id: 'rol_med_8',
+      id: 'law_med_8',
       question: 'What is restorative justice?',
-      options: ['Punitive justice only', 'Healing and repairing harm caused by crime', 'Ignoring victims', 'Revenge'],
+      options: ['Punishment only', 'Healing and repairing harm caused by crime', 'Ignoring victims', 'Revenge'],
       correct: 'Healing and repairing harm caused by crime',
-      explanation: 'Restorative justice focuses on healing relationships and communities affected by crime.',
+      explanation: 'Restorative justice focuses on healing relationships and repairing harm rather than just punishment.',
+      difficulty: 'medium'
+    },
+    {
+      id: 'law_med_9',
+      question: 'What is whistleblower protection?',
+      options: ['Silencing witnesses', 'Protecting those who report wrongdoing', 'Encouraging corruption', 'Punishing reporters'],
+      correct: 'Protecting those who report wrongdoing',
+      explanation: 'Whistleblower protection shields people who report corruption or wrongdoing from retaliation.',
+      difficulty: 'medium'
+    },
+    {
+      id: 'law_med_10',
+      question: 'What is constitutional review?',
+      options: ['Ignoring constitution', 'Examining laws for constitutional compliance', 'Changing constitution freely', 'Personal interpretation'],
+      correct: 'Examining laws for constitutional compliance',
+      explanation: 'Constitutional review examines whether laws and government actions comply with the constitution.',
       difficulty: 'medium'
     },
 
-    // Hard Questions (8)
+    // Hard Questions (10)
     {
-      id: 'rol_hard_1',
-      question: 'What is the paradox of rule of law in developing countries?',
-      options: ['No paradox exists', 'Need for strong institutions vs rapid development demands', 'Rule of law is perfect', 'Development is impossible'],
-      correct: 'Need for strong institutions vs rapid development demands',
-      explanation: 'Developing countries face tension between building strong legal institutions and meeting urgent development needs.',
+      id: 'law_hard_1',
+      question: 'What is the concept of living constitution?',
+      options: ['Dead constitution', 'Constitution that adapts to changing circumstances', 'Unchanging constitution', 'No constitution'],
+      correct: 'Constitution that adapts to changing circumstances',
+      explanation: 'A living constitution adapts its interpretation to changing social, political, and economic circumstances.',
       difficulty: 'hard'
     },
     {
-      id: 'rol_hard_2',
-      question: 'What is legal pluralism in Ethiopia?',
-      options: ['One legal system only', 'Coexistence of multiple legal systems', 'No legal system', 'Foreign legal system'],
-      correct: 'Coexistence of multiple legal systems',
-      explanation: 'Ethiopia recognizes both formal state law and customary/religious legal systems.',
-      difficulty: 'hard'
-    },
-    {
-      id: 'rol_hard_3',
-      question: 'What is systemic corruption and how does it differ from individual corruption?',
-      options: ['No difference', 'Systemic involves institutional practices, individual is personal acts', 'Only individual corruption exists', 'Only systemic corruption exists'],
-      correct: 'Systemic involves institutional practices, individual is personal acts',
-      explanation: 'Systemic corruption involves corrupt practices embedded in institutions, while individual corruption involves personal acts.',
-      difficulty: 'hard'
-    },
-    {
-      id: 'rol_hard_4',
-      question: 'What is the concept of legal certainty?',
-      options: ['Laws can change anytime', 'Predictability and clarity in legal rules', 'Laws are uncertain', 'No need for certainty'],
-      correct: 'Predictability and clarity in legal rules',
-      explanation: 'Legal certainty means laws are clear, predictable, and consistently applied.',
-      difficulty: 'hard'
-    },
-    {
-      id: 'rol_hard_5',
+      id: 'law_hard_2',
       question: 'What is transitional justice?',
-      options: ['Regular justice system', 'Addressing past violations during political transitions', 'No justice needed', 'Military justice'],
+      options: ['Regular justice', 'Addressing past violations during political transitions', 'No justice needed', 'Military justice'],
       correct: 'Addressing past violations during political transitions',
-      explanation: 'Transitional justice deals with past human rights violations during transitions to democracy.',
+      explanation: 'Transitional justice addresses past human rights violations and injustices during transitions to democracy.',
       difficulty: 'hard'
     },
     {
-      id: 'rol_hard_6',
-      question: 'What is the relationship between rule of law and economic development?',
-      options: ['No relationship', 'Strong rule of law supports sustainable economic growth', 'Rule of law hinders development', 'Development destroys rule of law'],
-      correct: 'Strong rule of law supports sustainable economic growth',
-      explanation: 'Rule of law provides legal certainty and protection needed for economic investment and growth.',
+      id: 'law_hard_3',
+      question: 'What is regulatory capture?',
+      options: ['Effective regulation', 'Regulators controlled by those they should regulate', 'No regulation', 'Perfect regulation'],
+      correct: 'Regulators controlled by those they should regulate',
+      explanation: 'Regulatory capture occurs when regulatory agencies are controlled by the industries they are supposed to regulate.',
       difficulty: 'hard'
     },
     {
-      id: 'rol_hard_7',
-      question: 'What is preventive justice?',
-      options: ['Punishing before crimes', 'Addressing root causes of legal problems', 'No prevention needed', 'Only punishment matters'],
-      correct: 'Addressing root causes of legal problems',
-      explanation: 'Preventive justice focuses on addressing underlying causes that lead to legal disputes and crimes.',
+      id: 'law_hard_4',
+      question: 'What is the concept of legal positivism vs natural law?',
+      options: ['Same concept', 'Positivism: law as rules, Natural law: law as morality', 'No difference matters', 'Both are wrong'],
+      correct: 'Positivism: law as rules, Natural law: law as morality',
+      explanation: 'Legal positivism sees law as rules made by authority; natural law sees law as based on moral principles.',
       difficulty: 'hard'
     },
     {
-      id: 'rol_hard_8',
-      question: 'What is the concept of legal empowerment?',
-      options: ['Lawyer control', 'Giving people knowledge and access to legal systems', 'Ignoring legal rights', 'Elite legal access'],
-      correct: 'Giving people knowledge and access to legal systems',
-      explanation: 'Legal empowerment involves providing people with legal knowledge and access to justice.',
+      id: 'law_hard_5',
+      question: 'What is institutional corruption?',
+      options: ['Individual corruption only', 'Corrupt practices built into institutional structures', 'No corruption exists', 'Legal practices'],
+      correct: 'Corrupt practices built into institutional structures',
+      explanation: 'Institutional corruption involves corrupt practices that become embedded in the structure and culture of institutions.',
+      difficulty: 'hard'
+    },
+    {
+      id: 'law_hard_6',
+      question: 'What is the tension between legal certainty and flexibility?',
+      options: ['No tension', 'Balancing predictable law with adaptability', 'Certainty always wins', 'Flexibility always wins'],
+      correct: 'Balancing predictable law with adaptability',
+      explanation: 'Legal systems must balance providing certainty and predictability with flexibility to adapt to new situations.',
+      difficulty: 'hard'
+    },
+    {
+      id: 'law_hard_7',
+      question: 'What is collective action problem in fighting corruption?',
+      options: ['No problems exist', 'Individual incentives conflict with collective good', 'Always easy to solve', 'No collective needed'],
+      correct: 'Individual incentives conflict with collective good',
+      explanation: 'Collective action problems occur when individual incentives conflict with achieving the collective good of reducing corruption.',
+      difficulty: 'hard'
+    },
+    {
+      id: 'law_hard_8',
+      question: 'What is legal formalism vs legal realism?',
+      options: ['Same approach', 'Formalism: mechanical application, Realism: contextual application', 'Both are wrong', 'No difference'],
+      correct: 'Formalism: mechanical application, Realism: contextual application',
+      explanation: 'Legal formalism applies law mechanically; legal realism considers social context and consequences.',
+      difficulty: 'hard'
+    },
+    {
+      id: 'law_hard_9',
+      question: 'What is the concept of legal legitimacy?',
+      options: ['Legal force only', 'Moral and social acceptance of legal authority', 'No legitimacy needed', 'Power equals legitimacy'],
+      correct: 'Moral and social acceptance of legal authority',
+      explanation: 'Legal legitimacy refers to the moral and social acceptance of legal authority and legal systems.',
+      difficulty: 'hard'
+    },
+    {
+      id: 'law_hard_10',
+      question: 'What is grand vs petty corruption?',
+      options: ['Same thing', 'Grand: high-level systemic, Petty: small-scale individual', 'No distinction', 'Both are legal'],
+      correct: 'Grand: high-level systemic, Petty: small-scale individual',
+      explanation: 'Grand corruption involves high-level officials and large amounts; petty corruption involves small-scale, everyday corrupt practices.',
       difficulty: 'hard'
     }
   ]

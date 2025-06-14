@@ -6,7 +6,7 @@ export const unit6Responsibility: Chapter = {
   name: 'Grade 12: Responsibility',
   description: 'Shouldering and executing responsibility, individual costs, international promises, cooperation among nations, HIV/AIDS as global issue',
   questions: [
-    // Easy Questions (5)
+    // Easy Questions (10)
     {
       id: 'resp_easy_1',
       question: 'What is responsibility?',
@@ -47,8 +47,48 @@ export const unit6Responsibility: Chapter = {
       explanation: 'HIV/AIDS is a global pandemic affecting people worldwide and requiring international cooperation.',
       difficulty: 'easy'
     },
+    {
+      id: 'resp_easy_6',
+      question: 'What is personal responsibility?',
+      options: ['Avoiding personal duties', 'Taking ownership of one\'s actions and choices', 'Blaming circumstances', 'Government responsibility'],
+      correct: 'Taking ownership of one\'s actions and choices',
+      explanation: 'Personal responsibility involves taking ownership of one\'s actions, choices, and their consequences.',
+      difficulty: 'easy'
+    },
+    {
+      id: 'resp_easy_7',
+      question: 'What is social responsibility?',
+      options: ['Individual concern only', 'Obligation to benefit society as a whole', 'Government duty only', 'No social obligations'],
+      correct: 'Obligation to benefit society as a whole',
+      explanation: 'Social responsibility is the obligation to act in ways that benefit society as a whole.',
+      difficulty: 'easy'
+    },
+    {
+      id: 'resp_easy_8',
+      question: 'What is a treaty?',
+      options: ['Informal agreement', 'Formal written agreement between countries', 'Personal contract', 'Business deal'],
+      correct: 'Formal written agreement between countries',
+      explanation: 'A treaty is a formal written agreement between two or more countries.',
+      difficulty: 'easy'
+    },
+    {
+      id: 'resp_easy_9',
+      question: 'What is multilateral cooperation?',
+      options: ['Two countries only', 'Multiple countries working together', 'No cooperation', 'Individual action'],
+      correct: 'Multiple countries working together',
+      explanation: 'Multilateral cooperation involves multiple countries working together on common issues.',
+      difficulty: 'easy'
+    },
+    {
+      id: 'resp_easy_10',
+      question: 'What is global health security?',
+      options: ['Individual health only', 'Collective action to address health threats globally', 'National health only', 'No health concerns'],
+      correct: 'Collective action to address health threats globally',
+      explanation: 'Global health security involves collective action to prevent, detect, and respond to health threats worldwide.',
+      difficulty: 'easy'
+    },
 
-    // Medium Questions (5)
+    // Medium Questions (10)
     {
       id: 'resp_med_1',
       question: 'What is collective responsibility?',
@@ -89,8 +129,48 @@ export const unit6Responsibility: Chapter = {
       explanation: 'Ethiopia actively participates in AU, UN, and other multilateral organizations for international cooperation.',
       difficulty: 'medium'
     },
+    {
+      id: 'resp_med_6',
+      question: 'What is moral responsibility?',
+      options: ['Legal obligation only', 'Accountability based on ethical principles', 'No moral dimensions', 'Religious duty only'],
+      correct: 'Accountability based on ethical principles',
+      explanation: 'Moral responsibility involves accountability based on ethical principles and moral standards.',
+      difficulty: 'medium'
+    },
+    {
+      id: 'resp_med_7',
+      question: 'What is environmental responsibility?',
+      options: ['No environmental duties', 'Obligation to protect and preserve environment', 'Only government concern', 'Economic priority only'],
+      correct: 'Obligation to protect and preserve environment',
+      explanation: 'Environmental responsibility involves the obligation to protect and preserve the environment for future generations.',
+      difficulty: 'medium'
+    },
+    {
+      id: 'resp_med_8',
+      question: 'What is the role of civil society in responsibility?',
+      options: ['No role', 'Promoting awareness and accountability', 'Government replacement', 'Creating problems'],
+      correct: 'Promoting awareness and accountability',
+      explanation: 'Civil society plays a crucial role in promoting awareness of responsibilities and holding actors accountable.',
+      difficulty: 'medium'
+    },
+    {
+      id: 'resp_med_9',
+      question: 'What is capacity building in international cooperation?',
+      options: ['Military building', 'Developing skills and institutions for effective action', 'Infrastructure only', 'No building needed'],
+      correct: 'Developing skills and institutions for effective action',
+      explanation: 'Capacity building involves developing the skills, institutions, and systems needed for effective action.',
+      difficulty: 'medium'
+    },
+    {
+      id: 'resp_med_10',
+      question: 'What is pandemic preparedness?',
+      options: ['Ignoring health threats', 'Planning and preparation for health emergencies', 'Only treatment focus', 'No preparation needed'],
+      correct: 'Planning and preparation for health emergencies',
+      explanation: 'Pandemic preparedness involves advance planning and preparation to effectively respond to health emergencies.',
+      difficulty: 'medium'
+    },
 
-    // Hard Questions (5)
+    // Hard Questions (10)
     {
       id: 'resp_hard_1',
       question: 'What is the concept of responsibility to protect in international law?',
@@ -129,6 +209,46 @@ export const unit6Responsibility: Chapter = {
       options: ['No corporate duties', 'Companies\' obligations to society and environment globally', 'Profit only matters', 'Government responsibility only'],
       correct: 'Companies\' obligations to society and environment globally',
       explanation: 'Corporate social responsibility involves companies\' obligations to contribute positively to society and environment.',
+      difficulty: 'hard'
+    },
+    {
+      id: 'resp_hard_6',
+      question: 'What is the concept of common but differentiated responsibilities?',
+      options: ['Same responsibilities for all', 'Shared responsibility with different capacities considered', 'No shared responsibility', 'Only developed countries responsible'],
+      correct: 'Shared responsibility with different capacities considered',
+      explanation: 'This principle recognizes shared responsibility for global issues while acknowledging different capacities and historical contributions.',
+      difficulty: 'hard'
+    },
+    {
+      id: 'resp_hard_7',
+      question: 'What is the tragedy of the commons in global responsibility?',
+      options: ['No problems exist', 'Individual rational action leads to collective irrationality', 'Always successful', 'Only local issues'],
+      correct: 'Individual rational action leads to collective irrationality',
+      explanation: 'The tragedy of the commons occurs when individual rational actions lead to collectively irrational outcomes.',
+      difficulty: 'hard'
+    },
+    {
+      id: 'resp_hard_8',
+      question: 'What is epistemic responsibility?',
+      options: ['No knowledge duties', 'Responsibility for what we know and believe', 'Only practical action', 'Ignoring knowledge'],
+      correct: 'Responsibility for what we know and believe',
+      explanation: 'Epistemic responsibility involves being accountable for our beliefs, knowledge claims, and how we form them.',
+      difficulty: 'hard'
+    },
+    {
+      id: 'resp_hard_9',
+      question: 'What is the concept of global public goods?',
+      options: ['Private goods only', 'Benefits available to all regardless of contribution', 'National goods only', 'No public goods'],
+      correct: 'Benefits available to all regardless of contribution',
+      explanation: 'Global public goods are benefits that are available to all countries and people regardless of their contribution.',
+      difficulty: 'hard'
+    },
+    {
+      id: 'resp_hard_10',
+      question: 'What is the collective action problem in global health?',
+      options: ['No problems exist', 'Free-riding and coordination challenges in health cooperation', 'Always easy cooperation', 'No collective action needed'],
+      correct: 'Free-riding and coordination challenges in health cooperation',
+      explanation: 'Collective action problems in global health include free-riding behaviors and coordination challenges among countries.',
       difficulty: 'hard'
     }
   ]

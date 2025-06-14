@@ -6,7 +6,7 @@ export const unit5Patriotism: Chapter = {
   name: 'Grade 12: Patriotism',
   description: 'Qualities of a patriot, Ethiopian history in international perspective, patriotic duties, international community concern',
   questions: [
-    // Easy Questions (6)
+    // Easy Questions (10)
     {
       id: 'pat_easy_1',
       question: 'What is patriotism?',
@@ -55,8 +55,40 @@ export const unit5Patriotism: Chapter = {
       explanation: 'True patriots engage in constructive criticism to help their country improve.',
       difficulty: 'easy'
     },
+    {
+      id: 'pat_easy_7',
+      question: 'What is national pride?',
+      options: ['Arrogance', 'Positive feeling about country\'s achievements', 'Superiority over others', 'Ignoring problems'],
+      correct: 'Positive feeling about country\'s achievements',
+      explanation: 'National pride is a positive feeling about one\'s country\'s achievements and values.',
+      difficulty: 'easy'
+    },
+    {
+      id: 'pat_easy_8',
+      question: 'What is civic duty?',
+      options: ['Optional activity', 'Responsibility to participate in civic life', 'Government job only', 'Military service only'],
+      correct: 'Responsibility to participate in civic life',
+      explanation: 'Civic duty is the responsibility of citizens to participate in civic and political life.',
+      difficulty: 'easy'
+    },
+    {
+      id: 'pat_easy_9',
+      question: 'Why is respecting national symbols important?',
+      options: ['It\'s not important', 'Shows respect for national identity and values', 'Just tradition', 'Government requirement only'],
+      correct: 'Shows respect for national identity and values',
+      explanation: 'Respecting national symbols demonstrates respect for national identity and shared values.',
+      difficulty: 'easy'
+    },
+    {
+      id: 'pat_easy_10',
+      question: 'What is global citizenship?',
+      options: ['Rejecting nationality', 'Being responsible member of global community', 'Only international law', 'No local responsibility'],
+      correct: 'Being responsible member of global community',
+      explanation: 'Global citizenship involves being a responsible member of the global community while maintaining local identity.',
+      difficulty: 'easy'
+    },
 
-    // Medium Questions (6)
+    // Medium Questions (10)
     {
       id: 'pat_med_1',
       question: 'How does Ethiopia contribute to international peace?',
@@ -105,8 +137,40 @@ export const unit5Patriotism: Chapter = {
       explanation: 'Cultural patriotism involves appreciating, preserving, and sharing one\'s cultural heritage.',
       difficulty: 'medium'
     },
+    {
+      id: 'pat_med_7',
+      question: 'What role does education play in patriotism?',
+      options: ['No role', 'Develops informed patriotism and civic knowledge', 'Creates blind loyalty', 'Prevents patriotism'],
+      correct: 'Develops informed patriotism and civic knowledge',
+      explanation: 'Education helps develop informed patriotism based on knowledge of history, values, and civic responsibilities.',
+      difficulty: 'medium'
+    },
+    {
+      id: 'pat_med_8',
+      question: 'What is Ethiopia\'s role in continental integration?',
+      options: ['No role', 'Leading role in African Union and continental initiatives', 'Opposing integration', 'Only observer'],
+      correct: 'Leading role in African Union and continental initiatives',
+      explanation: 'Ethiopia plays a leading role in African Union and continental integration efforts.',
+      difficulty: 'medium'
+    },
+    {
+      id: 'pat_med_9',
+      question: 'How does patriotism relate to environmental protection?',
+      options: ['No relationship', 'Protecting environment for future generations', 'Opposing environmental protection', 'Only economic development matters'],
+      correct: 'Protecting environment for future generations',
+      explanation: 'Patriotism includes protecting the country\'s environment for current and future generations.',
+      difficulty: 'medium'
+    },
+    {
+      id: 'pat_med_10',
+      question: 'What is the patriotic approach to diversity?',
+      options: ['Suppressing diversity', 'Celebrating diversity as national strength', 'Ignoring diversity', 'Creating division'],
+      correct: 'Celebrating diversity as national strength',
+      explanation: 'Patriotic approach celebrates the country\'s diversity as a source of strength and richness.',
+      difficulty: 'medium'
+    },
 
-    // Hard Questions (6)
+    // Hard Questions (10)
     {
       id: 'pat_hard_1',
       question: 'What is constitutional patriotism?',
@@ -153,6 +217,38 @@ export const unit5Patriotism: Chapter = {
       options: ['No role for diaspora', 'Contributing to homeland development from abroad', 'Must return home', 'Forget homeland'],
       correct: 'Contributing to homeland development from abroad',
       explanation: 'Modern diaspora communities can express patriotism by contributing to their homeland\'s development from abroad.',
+      difficulty: 'hard'
+    },
+    {
+      id: 'pat_hard_7',
+      question: 'What is the concept of civic republicanism?',
+      options: ['Private interests only', 'Citizens actively participating for common good', 'Government control', 'Individual freedom only'],
+      correct: 'Citizens actively participating for common good',
+      explanation: 'Civic republicanism emphasizes citizens\' active participation in public life for the common good.',
+      difficulty: 'hard'
+    },
+    {
+      id: 'pat_hard_8',
+      question: 'What is post-national patriotism?',
+      options: ['Rejecting all nations', 'Patriotism adapted to globalized world', 'Only nationalism matters', 'No patriotism needed'],
+      correct: 'Patriotism adapted to globalized world',
+      explanation: 'Post-national patriotism adapts patriotic feelings to the realities of a globalized, interconnected world.',
+      difficulty: 'hard'
+    },
+    {
+      id: 'pat_hard_9',
+      question: 'What is the relationship between patriotism and human rights?',
+      options: ['They conflict always', 'True patriotism supports universal human rights', 'No relationship', 'Rights oppose patriotism'],
+      correct: 'True patriotism supports universal human rights',
+      explanation: 'Authentic patriotism is compatible with and supports universal human rights and dignity.',
+      difficulty: 'hard'
+    },
+    {
+      id: 'pat_hard_10',
+      question: 'What is reflexive patriotism?',
+      options: ['Automatic response', 'Thoughtful, self-examining patriotism', 'Rejecting patriotism', 'Blind patriotism'],
+      correct: 'Thoughtful, self-examining patriotism',
+      explanation: 'Reflexive patriotism involves thoughtful, self-examining love of country that acknowledges both strengths and weaknesses.',
       difficulty: 'hard'
     }
   ]
