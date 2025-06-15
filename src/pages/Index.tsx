@@ -56,7 +56,8 @@ const Index = () => {
     {
       title: 'AI Study Assistant',
       description: 'Get personalized help with ChatGPT integration',
-      icon: '🤖'
+      icon: '🤖',
+      isSpecial: true
     },
     {
       title: 'Comprehensive Coverage',
@@ -89,13 +90,13 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Features Cards */}
+        {/* Features Cards with ChatGPT Integration */}
         <div className="mb-16">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Why Choose Our Platform?</h2>
             <p className="text-lg text-gray-600">Experience the best in online education</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             {features.map((feature, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-shadow">
                 <CardHeader>
@@ -107,6 +108,11 @@ const Index = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+          
+          {/* ChatGPT Component */}
+          <div className="mt-8">
+            <ChatGPT />
           </div>
         </div>
 
@@ -175,15 +181,6 @@ const Index = () => {
             <CarouselPrevious />
             <CarouselNext />
           </Carousel>
-        </div>
-
-        {/* ChatGPT Section */}
-        <div className="mb-16">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">AI Study Assistant</h2>
-            <p className="text-lg text-gray-600">Get personalized help with your studies using ChatGPT</p>
-          </div>
-          <ChatGPT />
         </div>
 
         {/* Footer Section */}
