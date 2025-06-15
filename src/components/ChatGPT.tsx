@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -68,6 +69,11 @@ const ChatGPT = () => {
       });
 
       if (!response.ok) {
+        if (response.status === 401) {
+          const errorData = await response.json();
+          const message = errorData?.error?.message || 'Authentication failed. Please check your API key.';
+          throw new Error(message);
+        }
         throw new Error(`API request failed: ${response.status} ${response.statusText}`);
       }
 
