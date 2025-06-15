@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -6,13 +7,11 @@ import { MessageCircle, Send, Star, Award, BookOpen, Users, TrendingUp } from 'l
 import ChatButton from '@/components/ChatButton';
 import { useState } from 'react';
 import ChatInterface from '@/components/ChatInterface';
-import PremiumFeatures from '@/components/PremiumFeatures';
 
 const Index = () => {
   const navigate = useNavigate();
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [chatMessage, setChatMessage] = useState('');
-  const [isPremiumUser, setIsPremiumUser] = useState(false);
 
   const handleChatSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -191,21 +190,6 @@ const Index = () => {
             })}
           </div>
         </div>
-
-        {/* Premium Features Section */}
-        <section className="mb-12">
-          <PremiumFeatures isPremiumUser={isPremiumUser} />
-          
-          {/* Demo toggle for testing */}
-          <div className="mt-4 text-center">
-            <button
-              onClick={() => setIsPremiumUser(!isPremiumUser)}
-              className="text-sm text-blue-600 hover:text-blue-800 underline"
-            >
-              {isPremiumUser ? 'Simulate Free User' : 'Simulate Premium User'}
-            </button>
-          </div>
-        </section>
 
         {/* Footer Section */}
         <div className="text-center py-8 border-t border-gray-200">
