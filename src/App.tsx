@@ -1,4 +1,5 @@
 
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
 import Index from './pages/Index';
@@ -21,19 +22,21 @@ function App() {
 
   return (
     <Router>
-      <OfflineIndicator />
-      <Routes>
-        <Route path="/" element={<Index />} />
-        <Route path="/grade-10" element={<Grade10 />} />
-        <Route path="/grade-11" element={<Grade11 />} />
-        <Route path="/grade-12" element={<Grade12 />} />
-        <Route path="/subject/:subject" element={<Subject />} />
-        <Route path="/quiz/:subject/:chapter/:difficulty" element={<Quiz />} />
-        <Route path="/grade11/:subject" element={<Grade11Subject />} />
-        <Route path="/grade11/:subject/:chapter/:difficulty" element={<Grade11Quiz />} />
-        <Route path="/grade12/:subject" element={<Grade12Subject />} />
-        <Route path="/grade12/:subject/:chapter/:difficulty" element={<Grade12Quiz />} />
-      </Routes>
+      <div className="App">
+        <OfflineIndicator />
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/grade-10" element={<Grade10 />} />
+          <Route path="/grade-11" element={<Grade11 />} />
+          <Route path="/grade-12" element={<Grade12 />} />
+          <Route path="/subject/:subject" element={<Subject />} />
+          <Route path="/quiz/:subject/:chapter/:difficulty" element={<Quiz />} />
+          <Route path="/grade11/:subject" element={<Grade11Subject />} />
+          <Route path="/grade11/:subject/:chapter/:difficulty" element={<Grade11Quiz />} />
+          <Route path="/grade12/:subject" element={<Grade12Subject />} />
+          <Route path="/grade12/:subject/:chapter/:difficulty" element={<Grade12Quiz />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
