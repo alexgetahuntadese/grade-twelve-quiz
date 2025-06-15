@@ -1,11 +1,10 @@
-
-import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useNavigate } from 'react-router-dom';
 import { MessageCircle, Send, Star, Award, BookOpen, Users, TrendingUp } from 'lucide-react';
 import ChatButton from '@/components/ChatButton';
+import { useState } from 'react';
 import ChatInterface from '@/components/ChatInterface';
 import PremiumFeatures from '@/components/PremiumFeatures';
 
@@ -57,7 +56,7 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
-        <div className="text-center mb-12 pt-6">
+        <div className="text-center mb-12">
           <h1 className="text-5xl font-bold text-gray-800 mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             Educational Quiz Platform
           </h1>

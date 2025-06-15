@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -19,7 +20,6 @@ interface PremiumFeaturesProps {
 }
 
 const PremiumFeatures: React.FC<PremiumFeaturesProps> = ({ isPremiumUser }) => {
-  
   const [isDownloading, setIsDownloading] = useState(false);
   const [downloadProgress, setDownloadProgress] = useState(0);
   const [downloadStep, setDownloadStep] = useState('');
@@ -75,7 +75,6 @@ const PremiumFeatures: React.FC<PremiumFeaturesProps> = ({ isPremiumUser }) => {
     toast.success('Offline content deleted');
   };
 
-  
   if (!isPremiumUser) {
     return (
       <Card className="border-yellow-200 bg-gradient-to-br from-yellow-50 to-orange-50">

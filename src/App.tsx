@@ -1,8 +1,6 @@
 
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
-import Navigation from './components/Navigation';
 import Index from './pages/Index';
 import Subject from './pages/Subject';
 import Quiz from './pages/Quiz';
@@ -22,9 +20,8 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <Router>
       <OfflineIndicator />
-      <Navigation />
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/grade-10" element={<Grade10 />} />
@@ -37,7 +34,7 @@ function App() {
         <Route path="/grade12/:subject" element={<Grade12Subject />} />
         <Route path="/grade12/:subject/:chapter/:difficulty" element={<Grade12Quiz />} />
       </Routes>
-    </div>
+    </Router>
   );
 }
 

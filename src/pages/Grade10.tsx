@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, BookOpen, Calculator, Atom, Leaf, Globe, History, Palette, Users, Heart, Computer, Languages, Briefcase, Flag } from 'lucide-react';
-import Navigation from '@/components/Navigation';
 
 const Grade10 = () => {
   const navigate = useNavigate();
@@ -76,10 +75,8 @@ const Grade10 = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-cyan-100">
-      <Navigation />
-      
-      <div className="max-w-6xl mx-auto p-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-cyan-100 p-4">
+      <div className="max-w-6xl mx-auto">
         <div className="mb-6">
           <Button 
             onClick={() => navigate('/')} 
