@@ -1,12 +1,12 @@
-
 import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ArrowLeft, Clock, CheckCircle, XCircle, RotateCcw } from 'lucide-react';
+import { ArrowLeft, Clock, CheckCircle, XCircle, RotateCcw, WifiOff } from 'lucide-react';
 import { getQuestionsForQuiz } from '@/data/questions';
 import { Question } from '@/data/types';
+import { saveQuizToOfflineStorage, getQuizFromOfflineStorage, clearOfflineStorage, isOnline } from '@/utils/offlineStorage';
 
 const Quiz = () => {
   const { subject, chapter, difficulty } = useParams<{ 
@@ -23,14 +23,62 @@ const Quiz = () => {
   const [score, setScore] = useState(0);
   const [answers, setAnswers] = useState<{ [key: number]: string }>({});
   const [quizCompleted, setQuizCompleted] = useState(false);
+  const [offlineMode, setOfflineMode] = useState(!isOnline());
+
+  useEffect(() => {
+    const handleOnline = () => setOfflineMode(false);
+    const handleOffline = () => setOfflineMode(true);
+
+    window.addEventListener('online', handleOnline);
+    window.addEventListener('offline', handleOffline);
+
+    return () => {
+      window.removeEventListener('online', handleOnline);
+      window.removeEventListener('offline', handleOffline);
+    };
+  }, []);
 
   useEffect(() => {
     if (subject && chapter && difficulty) {
-      // Always load new quiz
-      const quizQuestions = getQuestionsForQuiz(subject, chapter, difficulty, 10);
-      setQuestions(quizQuestions);
+      // Check for offline stored quiz first
+      const offlineQuiz = getQuizFromOfflineStorage();
+      
+      if (offlineQuiz && 
+          offlineQuiz.subject === subject && 
+          offlineQuiz.chapter === chapter && 
+          offlineQuiz.difficulty === difficulty) {
+        // Resume offline quiz
+        setQuestions(offlineQuiz.questions);
+        setCurrentQuestionIndex(offlineQuiz.progress.currentQuestionIndex);
+        setAnswers(offlineQuiz.progress.answers);
+        setScore(offlineQuiz.progress.score);
+      } else {
+        // Load new quiz
+        const quizQuestions = getQuestionsForQuiz(subject, chapter, difficulty, 10);
+        setQuestions(quizQuestions);
+        clearOfflineStorage(); // Clear any old data
+      }
     }
   }, [subject, chapter, difficulty]);
+
+  // Save progress to offline storage whenever quiz state changes
+  useEffect(() => {
+    if (questions.length > 0 && subject && chapter && difficulty) {
+      const quizData = {
+        subject,
+        chapter,
+        difficulty,
+        questions,
+        progress: {
+          currentQuestionIndex,
+          answers,
+          score
+        },
+        timestamp: Date.now()
+      };
+      saveQuizToOfflineStorage(quizData);
+    }
+  }, [questions, currentQuestionIndex, answers, score, subject, chapter, difficulty]);
 
   const currentQuestion = questions[currentQuestionIndex];
 
@@ -51,6 +99,7 @@ const Quiz = () => {
       setSelectedAnswer('');
     } else {
       setQuizCompleted(true);
+      clearOfflineStorage(); // Clear storage when quiz is completed
     }
   };
 
@@ -127,6 +176,13 @@ const Quiz = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
       <div className="max-w-2xl mx-auto">
+        {offlineMode && (
+          <div className="mb-4 p-3 bg-orange-100 border border-orange-200 rounded-lg flex items-center gap-2">
+            <WifiOff className="w-4 h-4 text-orange-600" />
+            <span className="text-sm text-orange-700">You're in offline mode. Your progress is being saved locally.</span>
+          </div>
+        )}
+
         <div className="mb-6">
           <Button 
             onClick={() => navigate(`/subject/${subject}`)} 
