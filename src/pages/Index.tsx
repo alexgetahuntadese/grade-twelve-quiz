@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
@@ -41,6 +42,21 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex h-14 items-center justify-between">
+            <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/')}>
+              <BookOpen className="w-7 h-7 text-blue-600" />
+              <span className="text-xl font-bold text-gray-800">QuizPlatform</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Button variant="ghost" onClick={() => navigate('/login')}>Sign In</Button>
+              <Button onClick={() => navigate('/signup')}>Sign Up</Button>
+            </div>
+          </div>
+        </div>
+      </header>
+
       <div className="max-w-7xl mx-auto px-4">
         {/* Header Section */}
         <div className="text-center mb-12 pt-16">
