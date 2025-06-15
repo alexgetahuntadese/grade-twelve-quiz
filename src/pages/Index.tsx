@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -7,7 +8,6 @@ import { MessageCircle, Send, Star, Award, BookOpen, Users, TrendingUp } from 'l
 import ChatButton from '@/components/ChatButton';
 import ChatInterface from '@/components/ChatInterface';
 import PremiumFeatures from '@/components/PremiumFeatures';
-import Navigation from '@/components/Navigation';
 
 const Index = () => {
   const navigate = useNavigate();
@@ -55,8 +55,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-      <Navigation />
-      
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12 pt-6">
