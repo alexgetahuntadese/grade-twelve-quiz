@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -14,8 +15,8 @@ interface Message {
 
 const ChatGPT = () => {
   const [apiKey, setApiKey] = useState(() => {
-    // Try to get API key from localStorage, otherwise use the provided key
-    return localStorage.getItem('openai_api_key') || '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';
+    // Try to get API key from localStorage
+    return localStorage.getItem('openai_api_key') || '';
   });
   const [showApiKey, setShowApiKey] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
