@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -12,7 +11,6 @@ interface Message {
 }
 
 const ChatGPT = () => {
-  // API key is now hardcoded and hidden from user
   const apiKey = 'sk-proj-dI-LtdNBFPf8g6aNmEpxqPyJgMPJOuOITlLnZK8y-UYbU7V6Qjn1wJfF7ET3BlbkFJxNVsI2IYGJ1-rBHJOHhCJOGNUjOJW5n7dHFBo-Pm5Y2QoUh7xP9Tn2s';
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputMessage, setInputMessage] = useState('');
