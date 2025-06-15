@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
 import { Star, Award, BookOpen, Users, TrendingUp } from 'lucide-react';
+import ChatGPT from '@/components/ChatGPT';
 
 const Index = () => {
   const navigate = useNavigate();
@@ -39,7 +40,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-4">
         {/* Header Section */}
         <div className="text-center mb-12 pt-16">
           <h1 className="text-5xl font-bold text-gray-800 mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -56,6 +57,15 @@ const Index = () => {
               <span className="text-sm font-medium">Grade 12 Expert</span>
             </div>
           </div>
+        </div>
+
+        {/* ChatGPT Section */}
+        <div className="mb-16">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">AI Study Assistant</h2>
+            <p className="text-lg text-gray-600">Get help with your studies using ChatGPT</p>
+          </div>
+          <ChatGPT />
         </div>
 
         {/* Grades Section */}
