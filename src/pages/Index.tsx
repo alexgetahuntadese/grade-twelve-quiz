@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
@@ -37,6 +36,8 @@ const Index = () => {
       subjects: '12+ Subjects'
     }
   ];
+
+  console.log("Rendering Index page");
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">

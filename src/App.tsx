@@ -13,6 +13,34 @@ import Grade12Subject from './pages/Grade12Subject';
 import Grade12Quiz from './pages/Grade12Quiz';
 import OfflineIndicator from './components/OfflineIndicator';
 import { register as registerSW } from './utils/serviceWorker';
+import React from 'react';
+
+// Simple Error Boundary component
+class ErrorBoundary extends React.Component<{children: React.ReactNode}, {hasError: boolean, error: any}> {
+  constructor(props: any) {
+    super(props);
+    this.state = { hasError: false, error: null };
+  }
+  static getDerivedStateFromError(error: any) {
+    return { hasError: true, error };
+  }
+  componentDidCatch(error: any, info: any) {
+    // Log error details for debugging
+    console.error("ErrorBoundary caught:", error, info);
+  }
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="p-6 bg-red-100 text-red-800 rounded-xl m-8 text-center">
+          <h1 className="text-2xl font-bold mb-2">A component crashed:</h1>
+          <pre className="whitespace-pre-line">{String(this.state.error)}</pre>
+          <div className="mt-4">Please send this message to your developer or try refreshing the app.</div>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
 
 function App() {
   useEffect(() => {
@@ -20,21 +48,23 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <OfflineIndicator />
-      <Routes>
-        <Route path="/" element={<Index />} />
-        <Route path="/grade-10" element={<Grade10 />} />
-        <Route path="/grade-11" element={<Grade11 />} />
-        <Route path="/grade-12" element={<Grade12 />} />
-        <Route path="/subject/:subject" element={<Subject />} />
-        <Route path="/quiz/:subject/:chapter/:difficulty" element={<Quiz />} />
-        <Route path="/grade11/:subject" element={<Grade11Subject />} />
-        <Route path="/grade11/:subject/:chapter/:difficulty" element={<Grade11Quiz />} />
-        <Route path="/grade12/:subject" element={<Grade12Subject />} />
-        <Route path="/grade12/:subject/:chapter/:difficulty" element={<Grade12Quiz />} />
-      </Routes>
-    </Router>
+    <ErrorBoundary>
+      <Router>
+        <OfflineIndicator />
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/grade-10" element={<Grade10 />} />
+          <Route path="/grade-11" element={<Grade11 />} />
+          <Route path="/grade-12" element={<Grade12 />} />
+          <Route path="/subject/:subject" element={<Subject />} />
+          <Route path="/quiz/:subject/:chapter/:difficulty" element={<Quiz />} />
+          <Route path="/grade11/:subject" element={<Grade11Subject />} />
+          <Route path="/grade11/:subject/:chapter/:difficulty" element={<Grade11Quiz />} />
+          <Route path="/grade12/:subject" element={<Grade12Subject />} />
+          <Route path="/grade12/:subject/:chapter/:difficulty" element={<Grade12Quiz />} />
+        </Routes>
+      </Router>
+    </ErrorBoundary>
   );
 }
 
