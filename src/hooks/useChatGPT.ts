@@ -1,5 +1,5 @@
-
 import { useState } from 'react';
+import { useToast } from '@/components/ui/use-toast';
 
 export interface Message {
   role: 'user' | 'assistant';
@@ -7,6 +7,7 @@ export interface Message {
 }
 
 export const useChatGPT = () => {
+  const { toast } = useToast();
   const [apiKey, setApiKey] = useState(() => {
     // Try to get API key from localStorage
     return typeof window !== 'undefined' ? localStorage.getItem('openai_api_key') || '' : '';
@@ -21,6 +22,12 @@ export const useChatGPT = () => {
     if (apiKey.trim()) {
       localStorage.setItem('openai_api_key', apiKey.trim());
       setError('');
+      toast({
+        title: "API Key Saved",
+        description: "Your key is stored securely in your browser's local storage.",
+      });
+    } else {
+      setError("Please enter an API key before saving.");
     }
   };
 
