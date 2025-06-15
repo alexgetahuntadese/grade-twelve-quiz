@@ -1,5 +1,4 @@
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
@@ -14,6 +13,9 @@ interface Message {
 }
 
 const ChatGPT = () => {
+  console.log("React version (ChatGPT):", React?.version ?? "unknown");
+  console.log("typeof useState:", typeof useState);
+
   const [apiKey, setApiKey] = useState(() => {
     // Try to get API key from localStorage
     return localStorage.getItem('openai_api_key') || '';
