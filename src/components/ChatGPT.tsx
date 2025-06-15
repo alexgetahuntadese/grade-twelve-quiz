@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
@@ -13,9 +13,12 @@ interface Message {
 }
 
 const ChatGPT = () => {
+  console.log("React version (ChatGPT):", React?.version ?? "unknown");
+  console.log("typeof useState:", typeof useState);
+
   const [apiKey, setApiKey] = useState(() => {
-    // Try to get API key from localStorage, otherwise use the provided key
-    return localStorage.getItem('openai_api_key') || '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';
+    // Try to get API key from localStorage
+    return localStorage.getItem('openai_api_key') || '';
   });
   const [showApiKey, setShowApiKey] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
@@ -57,7 +60,7 @@ const ChatGPT = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          model: 'gpt-4o', // UPDATED model name
+          model: 'gpt-4o-mini',
           messages: newMessages,
           max_tokens: 1000,
           temperature: 0.7,
@@ -65,20 +68,12 @@ const ChatGPT = () => {
       });
 
       if (!response.ok) {
-        // Try to get the API error message if it's JSON
-        let detailedError = '';
-        try {
-          const errorData = await response.json();
-          detailedError = (errorData && errorData.error && errorData.error.message) ? errorData.error.message : '';
-        } catch {
-          // ignore if not json
-        }
-        throw new Error(`API request failed: ${response.status} ${response.statusText}${detailedError ? ` - ${detailedError}` : ''}`);
+        throw new Error(`API request failed: ${response.status} ${response.statusText}`);
       }
 
       const data = await response.json();
       console.log('Received response from OpenAI:', data);
-
+      
       if (data.choices && data.choices[0] && data.choices[0].message) {
         const assistantMessage: Message = {
           role: 'assistant',
