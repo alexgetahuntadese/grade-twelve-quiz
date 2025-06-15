@@ -1,59 +1,56 @@
 
-import * as React from "react"
+import * as React from "react";
 
 type Toast = {
-  id: string
-  title?: React.ReactNode
-  description?: React.ReactNode
-  action?: React.ReactNode
-  duration?: number
-  variant?: "default" | "destructive"
-}
+  id: string;
+  title?: React.ReactNode;
+  description?: React.ReactNode;
+  action?: React.ReactNode;
+  duration?: number;
+  variant?: "default" | "destructive";
+};
 
-type ToastProps = Toast
-
-type ToastAction = {
-  action: React.ReactNode
-}
-
-type AddToast = (toast: Toast) => void
-type RemoveToast = (id: string) => void
+type AddToast = (toast: Toast) => void;
+type RemoveToast = (id: string) => void;
 
 interface ToastContextType {
-  toasts: Toast[]
-  addToast: AddToast
-  removeToast: RemoveToast
+  toasts: Toast[];
+  addToast: AddToast;
+  removeToast: RemoveToast;
 }
 
-const ToastContext = React.createContext<ToastContextType | undefined>(undefined)
+const ToastContext = React.createContext<ToastContextType | undefined>(undefined);
 
-export const ToastProvider: React.FC<{children: React.ReactNode}> = ({ children }) => {
-  const [toasts, setToasts] = React.useState<Toast[]>([])
+// Fixed: Properly return JSX in arrow function and correct generic usage
+export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const [toasts, setToasts] = React.useState<Toast[]>([]);
 
   const addToast: AddToast = React.useCallback((toast) => {
-    setToasts((prev) => [...prev, { ...toast, id: toast.id || Date.now().toString() }])
-  }, [])
+    setToasts((prev) => [
+      ...prev,
+      { ...toast, id: toast.id || Date.now().toString() }
+    ]);
+  }, []);
 
   const removeToast: RemoveToast = React.useCallback((id) => {
-    setToasts((prev) => prev.filter((toast) => toast.id !== id))
-  }, [])
+    setToasts((prev) => prev.filter((toast) => toast.id !== id));
+  }, []);
 
   return (
     <ToastContext.Provider value={{ toasts, addToast, removeToast }}>
       {children}
     </ToastContext.Provider>
-  )
-}
+  );
+};
 
 export const useToast = () => {
-  const context = React.useContext(ToastContext)
+  const context = React.useContext(ToastContext);
   if (!context) {
-    throw new Error("useToast must be used within a ToastProvider")
+    throw new Error("useToast must be used within a ToastProvider");
   }
   return {
     toasts: context.toasts,
     toast: context.addToast,
-    removeToast: context.removeToast,
-  }
-}
-
+    removeToast: context.removeToast
+  };
+};
