@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App.tsx';
 import './index.css';
 import { register as registerSW } from './utils/serviceWorker';
@@ -11,7 +12,12 @@ if (!rootElement) {
 }
 
 const root = createRoot(rootElement);
-root.render(<App />);
+root.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
 
 // Register service worker for offline functionality
 registerSW();
+
