@@ -2,9 +2,8 @@
 import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { MessageCircle, Send, Key, Loader2 } from 'lucide-react';
+import { MessageCircle, Send, Loader2 } from 'lucide-react';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 
 interface Message {
@@ -13,21 +12,16 @@ interface Message {
 }
 
 const ChatGPT = () => {
-  const [apiKey, setApiKey] = useState(localStorage.getItem('openai-api-key') || '');
+  // API key is now hardcoded and hidden from user
+  const apiKey = 'sk-proj-dI-LtdNBFPf8g6aNmEpxqPyJgMPJOuOITlLnZK8y-UYbU7V6Qjn1wJfF7ET3BlbkFJxNVsI2IYGJ1-rBHJOHhCJOGNUjOJW5n7dHFBo-Pm5Y2QoUh7xP9Tn2s';
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputMessage, setInputMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const saveApiKey = () => {
-    localStorage.setItem('openai-api-key', apiKey);
-    setError('');
-    console.log('API key saved to localStorage');
-  };
-
   const sendMessage = async () => {
-    if (!inputMessage.trim() || !apiKey) {
-      setError('Please enter both an API key and a message');
+    if (!inputMessage.trim()) {
+      setError('Please enter a message');
       return;
     }
 
@@ -91,31 +85,11 @@ const ChatGPT = () => {
           ChatGPT Assistant
         </CardTitle>
         <CardDescription>
-          Chat with OpenAI's GPT model. Enter your API key to get started.
+          Chat with OpenAI's GPT model. Start typing your message below.
         </CardDescription>
       </CardHeader>
       
       <CardContent className="space-y-4">
-        {/* API Key Input */}
-        <div className="flex gap-2">
-          <div className="flex-1">
-            <div className="flex items-center gap-2 mb-2">
-              <Key className="w-4 h-4" />
-              <span className="text-sm font-medium">OpenAI API Key</span>
-            </div>
-            <Input
-              type="password"
-              placeholder="sk-..."
-              value={apiKey}
-              onChange={(e) => setApiKey(e.target.value)}
-              className="font-mono text-sm"
-            />
-          </div>
-          <Button onClick={saveApiKey} variant="outline" className="mt-6">
-            Save Key
-          </Button>
-        </div>
-
         {/* Error Display */}
         {error && (
           <Alert variant="destructive">
@@ -183,7 +157,7 @@ const ChatGPT = () => {
           <div className="flex flex-col gap-2">
             <Button 
               onClick={sendMessage} 
-              disabled={isLoading || !inputMessage.trim() || !apiKey}
+              disabled={isLoading || !inputMessage.trim()}
               className="px-4"
             >
               {isLoading ? (
@@ -205,8 +179,7 @@ const ChatGPT = () => {
 
         {/* Info */}
         <div className="text-xs text-gray-500 bg-gray-100 p-3 rounded">
-          <p><strong>Note:</strong> Your API key is stored locally in your browser. For production use, consider using a backend service to securely handle API keys.</p>
-          <p className="mt-1">Press Enter to send a message, Shift+Enter for new line.</p>
+          <p><strong>Note:</strong> Press Enter to send a message, Shift+Enter for new line.</p>
         </div>
       </CardContent>
     </Card>
