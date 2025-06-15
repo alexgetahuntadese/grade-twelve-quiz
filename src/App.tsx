@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Index from './pages/Index';
 import Subject from './pages/Subject';
@@ -11,8 +11,6 @@ import Grade11Subject from './pages/Grade11Subject';
 import Grade11Quiz from './pages/Grade11Quiz';
 import Grade12Subject from './pages/Grade12Subject';
 import Grade12Quiz from './pages/Grade12Quiz';
-import OfflineIndicator from './components/OfflineIndicator';
-import { register as registerSW } from './utils/serviceWorker';
 
 // Simple Error Boundary component
 class ErrorBoundary extends React.Component<{children: React.ReactNode}, {hasError: boolean, error: any}> {
@@ -42,14 +40,9 @@ class ErrorBoundary extends React.Component<{children: React.ReactNode}, {hasErr
 }
 
 function App() {
-  useEffect(() => {
-    registerSW();
-  }, []);
-
   return (
     <ErrorBoundary>
       <Router>
-        <OfflineIndicator />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/grade-10" element={<Grade10 />} />
@@ -68,4 +61,3 @@ function App() {
 }
 
 export default App;
-
