@@ -1,6 +1,6 @@
 
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useEffect } from 'react';
 import Index from './pages/Index';
 import Subject from './pages/Subject';
 import Quiz from './pages/Quiz';
@@ -13,7 +13,6 @@ import Grade12Subject from './pages/Grade12Subject';
 import Grade12Quiz from './pages/Grade12Quiz';
 import OfflineIndicator from './components/OfflineIndicator';
 import { register as registerSW } from './utils/serviceWorker';
-import React from 'react';
 
 // Simple Error Boundary component
 class ErrorBoundary extends React.Component<{children: React.ReactNode}, {hasError: boolean, error: any}> {
@@ -69,3 +68,4 @@ function App() {
 }
 
 export default App;
+
