@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import {
@@ -15,13 +14,12 @@ const Navigation = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Add error boundary for navigation
   const handleNavigation = (path: string) => {
     try {
       navigate(path);
     } catch (error) {
       console.error('Navigation error:', error);
-      window.location.href = path; // Fallback to regular navigation
+      window.location.href = path;
     }
   };
 
