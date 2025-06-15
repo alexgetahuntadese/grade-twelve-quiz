@@ -13,6 +13,7 @@ const Navigation = () => {
       navigate(path);
     } catch (error) {
       console.error('Navigation error:', error);
+      // Fallback to window.location if React Router fails
       window.location.href = path;
     }
   };
