@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import {
   Menubar,
   MenubarContent,
@@ -13,6 +13,17 @@ import { BookOpen, GraduationCap, MessageCircle, Download, Home } from 'lucide-r
 
 const Navigation = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  // Add error boundary for navigation
+  const handleNavigation = (path: string) => {
+    try {
+      navigate(path);
+    } catch (error) {
+      console.error('Navigation error:', error);
+      window.location.href = path; // Fallback to regular navigation
+    }
+  };
 
   return (
     <div className="w-full bg-white border-b border-gray-200 shadow-sm">
@@ -24,7 +35,7 @@ const Navigation = () => {
               Home
             </MenubarTrigger>
             <MenubarContent>
-              <MenubarItem onClick={() => navigate('/')}>
+              <MenubarItem onClick={() => handleNavigation('/')}>
                 Dashboard
               </MenubarItem>
             </MenubarContent>
@@ -36,13 +47,13 @@ const Navigation = () => {
               Grade Levels
             </MenubarTrigger>
             <MenubarContent>
-              <MenubarItem onClick={() => navigate('/grade-10')}>
+              <MenubarItem onClick={() => handleNavigation('/grade-10')}>
                 Grade 10
               </MenubarItem>
-              <MenubarItem onClick={() => navigate('/grade-11')}>
+              <MenubarItem onClick={() => handleNavigation('/grade-11')}>
                 Grade 11
               </MenubarItem>
-              <MenubarItem onClick={() => navigate('/grade-12')}>
+              <MenubarItem onClick={() => handleNavigation('/grade-12')}>
                 Grade 12
               </MenubarItem>
             </MenubarContent>
@@ -54,26 +65,26 @@ const Navigation = () => {
               Subjects
             </MenubarTrigger>
             <MenubarContent>
-              <MenubarItem onClick={() => navigate('/subject/mathematics')}>
+              <MenubarItem onClick={() => handleNavigation('/subject/mathematics')}>
                 Mathematics
               </MenubarItem>
-              <MenubarItem onClick={() => navigate('/subject/physics')}>
+              <MenubarItem onClick={() => handleNavigation('/subject/physics')}>
                 Physics
               </MenubarItem>
-              <MenubarItem onClick={() => navigate('/subject/chemistry')}>
+              <MenubarItem onClick={() => handleNavigation('/subject/chemistry')}>
                 Chemistry
               </MenubarItem>
-              <MenubarItem onClick={() => navigate('/subject/biology')}>
+              <MenubarItem onClick={() => handleNavigation('/subject/biology')}>
                 Biology
               </MenubarItem>
               <MenubarSeparator />
-              <MenubarItem onClick={() => navigate('/subject/history')}>
+              <MenubarItem onClick={() => handleNavigation('/subject/history')}>
                 History
               </MenubarItem>
-              <MenubarItem onClick={() => navigate('/subject/geography')}>
+              <MenubarItem onClick={() => handleNavigation('/subject/geography')}>
                 Geography
               </MenubarItem>
-              <MenubarItem onClick={() => navigate('/subject/english')}>
+              <MenubarItem onClick={() => handleNavigation('/subject/english')}>
                 English
               </MenubarItem>
             </MenubarContent>
