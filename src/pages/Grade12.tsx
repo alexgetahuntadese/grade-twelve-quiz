@@ -1,11 +1,10 @@
 
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Calculator, Atom, Leaf, Globe, History, Languages, Briefcase, Flag, Computer, Heart, Wrench, Wheat } from 'lucide-react';
 
-const Grade12: React.FC = () => {
+const Grade12 = () => {
   const navigate = useNavigate();
 
   const subjects = [
