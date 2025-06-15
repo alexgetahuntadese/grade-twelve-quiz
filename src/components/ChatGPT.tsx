@@ -57,7 +57,7 @@ const ChatGPT = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          model: 'gpt-4o', // UPDATED model name
+          model: 'gpt-4o-mini',
           messages: newMessages,
           max_tokens: 1000,
           temperature: 0.7,
@@ -65,20 +65,12 @@ const ChatGPT = () => {
       });
 
       if (!response.ok) {
-        // Try to get the API error message if it's JSON
-        let detailedError = '';
-        try {
-          const errorData = await response.json();
-          detailedError = (errorData && errorData.error && errorData.error.message) ? errorData.error.message : '';
-        } catch {
-          // ignore if not json
-        }
-        throw new Error(`API request failed: ${response.status} ${response.statusText}${detailedError ? ` - ${detailedError}` : ''}`);
+        throw new Error(`API request failed: ${response.status} ${response.statusText}`);
       }
 
       const data = await response.json();
       console.log('Received response from OpenAI:', data);
-
+      
       if (data.choices && data.choices[0] && data.choices[0].message) {
         const assistantMessage: Message = {
           role: 'assistant',

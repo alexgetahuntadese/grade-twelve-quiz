@@ -21,7 +21,6 @@ function App() {
 
   return (
     <Router>
-      {/* The error may occur if OfflineIndicator is called as a function, not as a component! */}
       <OfflineIndicator />
       <Routes>
         <Route path="/" element={<Index />} />
@@ -40,4 +39,3 @@ function App() {
 }
 
 export default App;
-
