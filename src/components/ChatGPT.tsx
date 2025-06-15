@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
-import { MessageCircle, Send, Loader2 } from 'lucide-react';
+import { Input } from '@/components/ui/input';
+import { MessageCircle, Send, Loader2, Key, Eye, EyeOff } from 'lucide-react';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 
 interface Message {
@@ -12,14 +13,29 @@ interface Message {
 }
 
 const ChatGPT = () => {
-  // API key is now hardcoded and hidden from user
-  const apiKey = 'sk-proj-dI-LtdNBFPf8g6aNmEpxqPyJgMPJOuOITlLnZK8y-UYbU7V6Qjn1wJfF7ET3BlbkFJxNVsI2IYGJ1-rBHJOHhCJOGNUjOJW5n7dHFBo-Pm5Y2QoUh7xP9Tn2s';
+  const [apiKey, setApiKey] = useState(() => {
+    // Try to get API key from localStorage
+    return localStorage.getItem('openai_api_key') || '';
+  });
+  const [showApiKey, setShowApiKey] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputMessage, setInputMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
 
+  const saveApiKey = () => {
+    if (apiKey.trim()) {
+      localStorage.setItem('openai_api_key', apiKey.trim());
+      setError('');
+    }
+  };
+
   const sendMessage = async () => {
+    if (!apiKey.trim()) {
+      setError('Please enter your OpenAI API key first');
+      return;
+    }
+
     if (!inputMessage.trim()) {
       setError('Please enter a message');
       return;
@@ -37,7 +53,7 @@ const ChatGPT = () => {
       const response = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
-          'Authorization': `Bearer ${apiKey}`,
+          'Authorization': `Bearer ${apiKey.trim()}`,
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
@@ -85,11 +101,46 @@ const ChatGPT = () => {
           ChatGPT Assistant
         </CardTitle>
         <CardDescription>
-          Chat with OpenAI's GPT model. Start typing your message below.
+          Chat with OpenAI's GPT model. Enter your OpenAI API key and start typing your message below.
         </CardDescription>
       </CardHeader>
       
       <CardContent className="space-y-4">
+        {/* API Key Input */}
+        <div className="space-y-2">
+          <div className="flex items-center gap-2">
+            <Key className="w-4 h-4" />
+            <span className="text-sm font-medium">OpenAI API Key</span>
+          </div>
+          <div className="flex gap-2">
+            <div className="relative flex-1">
+              <Input
+                type={showApiKey ? "text" : "password"}
+                placeholder="Enter your OpenAI API key (sk-...)"
+                value={apiKey}
+                onChange={(e) => setApiKey(e.target.value)}
+                className="pr-10"
+              />
+              <Button
+                type="button"
+                variant="ghost"
+                size="sm"
+                className="absolute right-0 top-0 h-full px-3"
+                onClick={() => setShowApiKey(!showApiKey)}
+              >
+                {showApiKey ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+              </Button>
+            </div>
+            <Button onClick={saveApiKey} variant="outline" size="sm">
+              Save
+            </Button>
+          </div>
+          <div className="text-xs text-gray-500">
+            Your API key is stored locally in your browser and never sent to our servers.
+            Get your key from <a href="https://platform.openai.com/account/api-keys" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">OpenAI Platform</a>.
+          </div>
+        </div>
+
         {/* Error Display */}
         {error && (
           <Alert variant="destructive">
@@ -152,12 +203,12 @@ const ChatGPT = () => {
               }
             }}
             className="flex-1 min-h-[60px]"
-            disabled={isLoading}
+            disabled={isLoading || !apiKey.trim()}
           />
           <div className="flex flex-col gap-2">
             <Button 
               onClick={sendMessage} 
-              disabled={isLoading || !inputMessage.trim()}
+              disabled={isLoading || !inputMessage.trim() || !apiKey.trim()}
               className="px-4"
             >
               {isLoading ? (
