@@ -1,10 +1,8 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useNavigate } from 'react-router-dom';
 import { MessageCircle, Send, Star, Award, BookOpen, Users, TrendingUp } from 'lucide-react';
-import ChatButton from '@/components/ChatButton';
 import { useState } from 'react';
 import ChatInterface from '@/components/ChatInterface';
 
@@ -197,7 +195,6 @@ const Index = () => {
         </div>
       </div>
       
-      <ChatButton />
       <ChatInterface 
         isOpen={isChatOpen} 
         onClose={() => setIsChatOpen(false)} 
