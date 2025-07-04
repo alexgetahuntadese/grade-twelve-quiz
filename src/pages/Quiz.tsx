@@ -1,4 +1,3 @@
-
 import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -7,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { ArrowLeft, Clock, CheckCircle, XCircle, RotateCcw } from 'lucide-react';
 import { getQuestionsForQuiz } from '@/data/questions';
 import { Question } from '@/data/types';
+import AIExplanation from '@/components/AIExplanation';
 
 const Quiz = () => {
   const { subject, chapter, difficulty } = useParams<{ 
@@ -205,7 +205,18 @@ const Quiz = () => {
               </div>
             )}
 
-            <div className="flex gap-2">
+            {/* AI-Generated Explanation Section */}
+            {showResult && (
+              <AIExplanation
+                question={currentQuestion.question}
+                selectedAnswer={selectedAnswer}
+                correctAnswer={currentQuestion.correct}
+                isCorrect={selectedAnswer === currentQuestion.correct}
+                subject={subject || 'General'}
+              />
+            )}
+
+            <div className="flex gap-2 mt-6">
               {!showResult ? (
                 <Button 
                   onClick={() => setShowResult(true)}
