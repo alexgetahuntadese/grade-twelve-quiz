@@ -1,11 +1,12 @@
 import { Chapter } from '../types';
-import { grade12EnglishChapters } from './english/grade12';
+import { grade11EnglishChapters } from './english/grade11';
+import { grade12EnglishChapters } from './english/grade12/index';
 
 export const englishChapters: Chapter[] = [
   {
-    id: 'grammar',
-    name: 'Grammar and Language Skills',
-    description: 'Parts of speech, sentence structure, and language mechanics',
+    id: 'grammar_basics',
+    name: 'Grammar Fundamentals', 
+    description: 'Essential grammar rules and sentence structure',
     questions: [
       // Easy Questions
       {
@@ -89,7 +90,7 @@ export const englishChapters: Chapter[] = [
   {
     id: 'reading_comprehension',
     name: 'Reading Comprehension',
-    description: 'Understanding texts, making inferences, and analyzing literature',
+    description: 'Understanding and analyzing written texts',
     questions: [
       // Easy Questions
       {
@@ -173,7 +174,7 @@ export const englishChapters: Chapter[] = [
   {
     id: 'writing_skills',
     name: 'Writing Skills',
-    description: 'Essay writing, creative writing, and communication skills',
+    description: 'Developing effective writing techniques',
     questions: [
       // Easy Questions
       {
@@ -254,6 +255,9 @@ export const englishChapters: Chapter[] = [
       }
     ]
   },
-  // Add Grade 12 chapters
+  // Add all Grade 11 chapters
+  ...grade11EnglishChapters,
+  
+  // Add all Grade 12 chapters
   ...grade12EnglishChapters
 ];
