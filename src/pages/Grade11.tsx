@@ -1,10 +1,11 @@
 
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Calculator, Atom, Leaf, Globe, History, Palette, Users, Heart, Computer, Languages, Briefcase, Flag, Wrench } from 'lucide-react';
 
-const Grade11 = () => {
+const Grade11: React.FC = () => {
   const navigate = useNavigate();
 
   const naturalScienceSubjects = [
@@ -128,6 +129,14 @@ const Grade11 = () => {
     }
   ];
 
+  const handleNavigation = (path: string) => {
+    try {
+      navigate(path);
+    } catch (error) {
+      console.error('Navigation error:', error);
+    }
+  };
+
   const SubjectSection = ({ title, subjects, bgColor }: { title: string; subjects: any[]; bgColor: string }) => (
     <div className="mb-8">
       <div className={`${bgColor} text-white p-4 rounded-t-lg`}>
@@ -140,7 +149,7 @@ const Grade11 = () => {
             <Card 
               key={subject.id}
               className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer border-2 border-amber-200"
-              onClick={() => navigate(`/grade11/${subject.id}`)}
+              onClick={() => handleNavigation(`/grade11/${subject.id}`)}
             >
               <CardHeader className="text-center pb-4">
                 <div className={`w-16 h-16 ${subject.color} rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform shadow-lg`}>
@@ -163,7 +172,7 @@ const Grade11 = () => {
                   className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-medium py-2 rounded-lg transition-all duration-300"
                   onClick={(e) => {
                     e.stopPropagation();
-                    navigate(`/grade11/${subject.id}`);
+                    handleNavigation(`/grade11/${subject.id}`);
                   }}
                 >
                   Start Learning
@@ -181,7 +190,7 @@ const Grade11 = () => {
       <div className="max-w-7xl mx-auto">
         <div className="mb-6">
           <Button 
-            onClick={() => navigate('/')} 
+            onClick={() => handleNavigation('/')} 
             variant="outline"
             className="mb-4"
           >
