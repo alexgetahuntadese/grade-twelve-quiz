@@ -8,6 +8,16 @@ import { ArrowLeft, Calculator, Atom, Leaf, Globe, History, Languages, Briefcase
 const Grade12: React.FC = () => {
   const navigate = useNavigate();
 
+  const handleNavigation = (path: string) => {
+    try {
+      navigate(path);
+    } catch (error) {
+      console.error('Navigation error:', error);
+      // Fallback to window.location if navigate fails
+      window.location.href = path;
+    }
+  };
+
   const subjects = [
     {
       id: 'mathematics',
@@ -107,12 +117,14 @@ const Grade12: React.FC = () => {
     }
   ];
 
+  console.log("Rendering Grade12 page");
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-100 p-4">
       <div className="max-w-6xl mx-auto">
         <div className="mb-6">
           <Button 
-            onClick={() => navigate('/')} 
+            onClick={() => handleNavigation('/')} 
             variant="outline"
             className="mb-4"
           >
@@ -133,7 +145,7 @@ const Grade12: React.FC = () => {
               <Card 
                 key={subject.id}
                 className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer border-2 border-purple-200"
-                onClick={() => navigate(`/grade12/${subject.id}`)}
+                onClick={() => handleNavigation(`/grade12/${subject.id}`)}
               >
                 <CardHeader className="text-center pb-4">
                   <div className={`w-16 h-16 ${subject.color} rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform shadow-lg`}>
@@ -156,7 +168,7 @@ const Grade12: React.FC = () => {
                     className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-medium py-2 rounded-lg transition-all duration-300"
                     onClick={(e) => {
                       e.stopPropagation();
-                      navigate(`/grade12/${subject.id}`);
+                      handleNavigation(`/grade12/${subject.id}`);
                     }}
                   >
                     Start Learning
