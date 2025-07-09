@@ -3,7 +3,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
 import { Star, Award, BookOpen, Users, TrendingUp } from 'lucide-react';
-// import ChatGPT from '@/components/ChatGPT';
 
 const Index = () => {
   const navigate = useNavigate();
@@ -38,6 +37,16 @@ const Index = () => {
     }
   ];
 
+  const handleNavigation = (path: string) => {
+    try {
+      navigate(path);
+    } catch (error) {
+      console.error('Navigation error:', error);
+      // Fallback to window.location if navigate fails
+      window.location.href = path;
+    }
+  };
+
   console.log("Rendering Index page");
 
   return (
@@ -45,13 +54,13 @@ const Index = () => {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex h-14 items-center justify-between">
-            <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/')}>
+            <div className="flex items-center gap-2 cursor-pointer" onClick={() => handleNavigation('/')}>
               <BookOpen className="w-7 h-7 text-blue-600" />
               <span className="text-xl font-bold text-gray-800">QuizPlatform</span>
             </div>
             <div className="flex items-center space-x-2">
-              <Button variant="ghost" onClick={() => navigate('/login')}>Sign In</Button>
-              <Button onClick={() => navigate('/signup')}>Sign Up</Button>
+              <Button variant="ghost" onClick={() => handleNavigation('/login')}>Sign In</Button>
+              <Button onClick={() => handleNavigation('/signup')}>Sign Up</Button>
             </div>
           </div>
         </div>
@@ -76,17 +85,6 @@ const Index = () => {
           </div>
         </div>
 
-        {/* ChatGPT Section - Temporarily removed to fix an error */}
-        {/*
-        <div className="mb-16">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">AI Study Assistant</h2>
-            <p className="text-lg text-gray-600">Get help with your studies using ChatGPT</p>
-          </div>
-          <ChatGPT />
-        </div>
-        */}
-
         {/* Grades Section */}
         <div className="mb-16">
           <div className="text-center mb-12">
@@ -101,7 +99,7 @@ const Index = () => {
                 <Card 
                   key={grade.id}
                   className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer border-0 bg-white/80 backdrop-blur-sm overflow-hidden"
-                  onClick={() => navigate(grade.route)}
+                  onClick={() => handleNavigation(grade.route)}
                 >
                   <CardHeader className="text-center pb-4">
                     <div className={`w-20 h-20 bg-gradient-to-r ${grade.color} rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform shadow-lg`}>
@@ -124,7 +122,7 @@ const Index = () => {
                       className={`w-full bg-gradient-to-r ${grade.color} hover:shadow-lg text-white font-medium py-3 rounded-lg transition-all duration-300 group-hover:scale-105`}
                       onClick={(e) => {
                         e.stopPropagation();
-                        navigate(grade.route);
+                        handleNavigation(grade.route);
                       }}
                     >
                       Explore {grade.title}
