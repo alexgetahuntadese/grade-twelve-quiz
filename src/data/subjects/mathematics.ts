@@ -1,5 +1,6 @@
 import { Chapter } from '../types';
 import { grade11MathematicsChapters } from './mathematics/grade11';
+import { grade12MathematicsChapters } from './mathematics/grade12';
 
 export const mathematicsChapters: Chapter[] = [
   {
@@ -265,5 +266,8 @@ export const mathematicsChapters: Chapter[] = [
   },
   
   // Add all Grade 11 chapters
-  ...grade11MathematicsChapters
+  ...grade11MathematicsChapters,
+  
+  // Add all Grade 12 chapters
+  ...grade12MathematicsChapters
 ];
